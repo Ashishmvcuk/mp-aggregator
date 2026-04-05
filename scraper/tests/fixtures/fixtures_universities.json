@@ -1,0 +1,9 @@
+[
+  {
+    "university": "FixtureRGPV",
+    "parser": "rgpv",
+    "html_file": "tests/fixtures/sample_rgpv.html",
+    "source_url": "https://www.rgpv.ac.in/",
+    "enabled": true
+  }
+]

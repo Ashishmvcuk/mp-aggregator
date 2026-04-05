@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.vite/
 
 # Editor
 .vscode/*
@@ -22,3 +23,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Scraper (generated / local)
+scraper/logs/*.log
+scraper/output/history/
+scraper/output/*.json
+scraper/output/csv/
+scraper/.venv/
+
+# Python
+__pycache__/
+*.pyc

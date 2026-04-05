@@ -1,65 +1,65 @@
 # MP University Results
 
-A small React (Vite) dashboard that lists **latest university examination result links** for Madhya Pradesh. Data is loaded from static JSON today; the same shape can later be filled by a scraper or API.
+Dashboard for **Madhya Pradesh university examination results** (and related links). The **React + Vite** frontend lives in [`website/`](website/); a **Python scraper** in [`scraper/`](scraper/) can refresh static JSON under `website/public/data/` for GitHub Pages or local preview.
 
-## Run locally
+## Repository layout
+
+| Path | Purpose |
+|------|---------|
+| [`website/`](website/) | Vite + React app (`npm ci`, `npm run build` → `website/dist/`) |
+| [`website/public/data/results.json`](website/public/data/results.json) | Results feed (`result_url`, `title`, `university`, `date`) — also written by the scraper when a run succeeds |
+| [`scraper/`](scraper/) | Fetch → parse → normalize → dedupe → validate → output + optional sync to `website/public/data/` |
+| [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) | Build from `website/` and publish `website/dist` to `gh-pages` |
+| [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | Scraper: fetch, validate JSON, sync `website/public/data/` (optional commit) |
+
+## Frontend (website)
 
 ```bash
+cd website
 npm install
 npm run dev
 ```
 
-Open the URL shown in the terminal (usually `http://localhost:5173/`).
-
-- **Production build:** `npm run build` → output in `dist/`
-- **Preview production build:** `npm run preview`
+- **Production build:** `npm run build` → `website/dist/`
+- **Preview:** `npm run preview`
 - **Lint:** `npm run lint`
 
-## Project layout
+Open the URL shown in the terminal (usually `http://localhost:5173/`).
 
-| Path | Purpose |
-|------|---------|
-| `public/results.json` | Mock data (`university`, `title`, `result_url`, `date`) |
-| `src/services/resultsService.js` | Data loading — swap for API later |
-| `src/hooks/useResults.js` | Fetch + search filter + summary metrics |
-| `src/pages/HomePage.jsx` | Page composition |
-| `src/components/` | `Header`, `SearchBar`, `SummaryCards`, `ResultsList`, `ResultTableRow`, `SidebarQuickLinks`, `DashboardChart`, `Footer` |
+Data loading is implemented in `website/src/services/resultsService.js` (static JSON at `data/results.json` under the Vite `BASE_URL`).
 
-## GitHub Pages (free hosting)
+## Scraper
 
-### 1. Repository name and Vite `base`
+See [`scraper/README.md`](scraper/README.md) for architecture, categories, and configuration.
 
-GitHub project sites are served at `https://<user>.github.io/<repo>/`. The app must load assets from that subpath.
+Quick start:
 
-In `vite.config.js`, set `repoName` to **your GitHub repository name** (default here is `mp-aggregator`):
-
-```js
-const repoName = 'mp-aggregator'
+```bash
+cd scraper
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python main.py
 ```
 
-`base` is `/` during `npm run dev` and `/<repoName>/` for production builds.
+**Validate output and CI:** see [`scraper/README.md`](scraper/README.md) (`validate_output.py`, `run_fixtures.py`, GitHub Actions `scrape.yml`).
 
-### 2. Enable GitHub Pages
 
-1. Push this repo to GitHub.
-2. **Settings → Pages**
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch **`gh-pages`**, folder **`/`** (root), then save.
+Scheduled runs (default interval 5 minutes):
 
-The first deploy is created by the workflow below after you push to `main`.
+```bash
+export SCRAPER_INTERVAL_SECONDS=300   # optional override
+python scheduler.py
+```
 
-### 3. GitHub Actions deploy
+**Note:** CI does not run the scraper yet; refresh `website/public/data/` locally (or in another job) if you want the live site to pick up new JSON without committing manual edits.
 
-Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+## GitHub Pages
 
-- **Trigger:** push to `main`
-- **Steps:** `npm ci` → `npm run build` → publish `dist/` to the **`gh-pages`** branch via [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages).
+Project sites are served at `https://<user>.github.io/<repo>/`. In `website/vite.config.js`, set `repoName` to your GitHub repository name (default: `mp-aggregator`).
 
-The workflow uses `GITHUB_TOKEN` (no extra secrets). `permissions: contents: write` allows pushing to `gh-pages`.
+**Pages setup:** Settings → Pages → deploy from branch **`gh-pages`**, folder **`/`**.
 
-After a successful run, the site is available at:
-
-`https://<your-username>.github.io/<repo-name>/`
+The deploy workflow runs on pushes to **`main`**, installs npm dependencies in **`website/`**, builds, and publishes **`website/dist`** to **`gh-pages`** via [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages).
 
 ---
 

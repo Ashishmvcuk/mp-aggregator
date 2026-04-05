@@ -1,0 +1,26 @@
+[
+  {
+    "university": "RGPV",
+    "url": "https://www.rgpv.ac.in/",
+    "parser": "rgpv",
+    "enabled": true
+  },
+  {
+    "university": "DAVV",
+    "url": "https://www.dauniv.ac.in/",
+    "parser": "davv",
+    "enabled": true
+  },
+  {
+    "university": "Jiwaji University",
+    "url": "https://www.jiwaji.edu/",
+    "parser": "jiwaji",
+    "enabled": true
+  },
+  {
+    "university": "Barkatullah University",
+    "url": "https://www.bubhopal.ac.in/",
+    "parser": "rgpv",
+    "enabled": false
+  }
+]

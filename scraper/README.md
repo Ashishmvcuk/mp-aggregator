@@ -1,0 +1,182 @@
+# MP Aggregator scraper
+
+Python pipeline that fetches configured university portals, parses HTML into normalized records, validates them, writes JSON under `scraper/output/`, and **conditionally** syncs files into `website/public/data/` for the static React app.
+
+## Architecture
+
+```mermaid
+flowchart TD
+  cfg[Load universities.json]
+  loop[For each enabled source]
+  fetch[fetcher.get HTML]
+  parse[Parser.parse grouped dict]
+  merge[Merge by category]
+  norm[normalizer per item]
+  dedupe[dedupe per category]
+  val[validator per category]
+  write[Write scraper/output/*.json + history]
+  copy[Copy to website/public/data if valid and non-empty]
+  cfg --> loop
+  loop --> fetch --> parse --> merge --> norm --> dedupe --> val --> write --> copy
+```
+
+## Categories
+
+Allowed category keys (every parser returns all five; empty lists are fine):
+
+| Category       | Output file              |
+|----------------|--------------------------|
+| `results`      | `results.json`           |
+| `news`         | `news.json`              |
+| `syllabus`     | `syllabus.json`          |
+| `admit_cards`  | `admit_cards.json`       |
+| `blogs`        | `blogs.json`             |
+
+## Data shape
+
+**Canonical record** (internal and `scraper/output/<category>.json` except website-facing results):
+
+```json
+{
+  "university": "RGPV",
+  "title": "…",
+  "url": "https://…",
+  "date": "2026-04-05",
+  "category": "results"
+}
+```
+
+**Website `results.json`** uses `result_url` instead of `url` (same value) so the existing React service keeps working. Other categories copied to the site keep the canonical `url` field until the UI consumes them.
+
+Rows whose titles start with **`[MOCK]`** are deterministic placeholders when a parser cannot find matching links yet; replace them with real selectors in the parser modules.
+
+## Configuration
+
+Edit [`config/universities.json`](config/universities.json): array of `{ "university", "url", "parser", "enabled" }`.
+
+- **`parser`**: registry key — `rgpv`, `davv`, or `jiwaji` (see [`parsers/`](parsers/)).
+- **`enabled`**: `false` skips the source.
+
+## Run
+
+From the **`scraper/`** directory (so imports resolve):
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+
+Continuous polling (default **300** seconds between runs):
+
+```bash
+python scheduler.py
+```
+
+Override the interval (values below **30** are clamped to 30 to avoid accidental tight loops):
+
+```bash
+export SCRAPER_INTERVAL_SECONDS=600
+python scheduler.py
+```
+
+Settings live in [`scheduler_config.py`](scheduler_config.py); the scheduler logs the effective interval and whether it came from the environment or the default.
+
+Logs: console plus rotating `scraper/logs/scraper.log`. Use **DEBUG** on the `utils.normalizer` / `utils.dedupe` loggers to see per-item drops and dedupe skips.
+
+## Outputs
+
+| Path | Purpose |
+|------|---------|
+| `scraper/output/<category>.json` | Latest validated items per category (may be empty arrays). |
+| `scraper/output/history/<UTC>_<category>.json` | Per-run snapshot. |
+| `scraper/output/run_summary.json` | Per-run rollup: `run_id`, `run_timestamp`, university counts, `raw_counts` (items parsed into each bucket before normalization), `unique_counts` (after dedupe), `categories` (per-category pipeline stats), `copy_status`, `failures`. |
+
+### `run_summary.json` — `categories` fields
+
+Each category key includes:
+
+- `parsed_from_sources` — rows emitted by parsers into that bucket
+- `normalized_kept` / `normalized_dropped` — kept vs dropped by the normalizer
+- `after_dedupe` / `dedupe_removed` — list size after dedupe and how many were skipped as duplicates
+- `validation_error_count` / `valid_for_output` — validator results
+- `copy_status` / `copy_reason` — website sync outcome
+- `website_relative_path` — e.g. `public/data/results.json`
+| `website/public/data/<category>.json` | Synced only when that category’s list is **valid and non-empty**; otherwise the previous file is left unchanged. |
+
+Generated `scraper/output/` JSON and `scraper/logs/*.log` are listed in the repo root `.gitignore`.
+
+## Website sync rules
+
+1. Validate required fields: `university`, `title`, `url`, `date`, `category`, and category in the allowlist; plus light semantic checks (ISO date string, `http`/`https` URL).
+2. If validation errors exist **or** the valid list is **empty** → **do not** copy to `website/public/data/` (preserves existing site data).
+3. **Safe write:** JSON is serialized and round-trip parsed in memory, written to a temp file in the same directory, read back once, then atomically replaced — so a bad payload should not clobber an existing good file.
+
+## Deduplication
+
+Implemented in [`utils/dedupe.py`](utils/dedupe.py):
+
+- **`results`**, **`syllabus`**, **`admit_cards`**: same URL after stripping common tracking query params (`utm_*`, `fbclid`, `gclid`, etc.) counts as one row (first wins).
+- **`news`**, **`blogs`**: key is normalized title plus URL host (URLs are often unstable on these pages).
+
+## Add a parser
+
+1. Subclass [`parsers/base_parser.py`](parsers/base_parser.py) and implement `parse(html, university, source_url) -> dict[str, list[dict]]`. Reuse helpers such as `raw_item`, `iter_anchor_candidates`, and `empty_categories` where possible.
+2. Register the class in [`parsers/registry.py`](parsers/registry.py) `PARSER_REGISTRY`.
+3. Re-export from [`parsers/__init__.py`](parsers/__init__.py) if you want a stable package import.
+4. Add a row to `config/universities.json` with the matching `parser` key.
+
+## Add a category
+
+1. Add the name to `CATEGORY_ORDER` / `ALLOWED_CATEGORIES` in [`utils/normalizer.py`](utils/normalizer.py).
+2. Extend `empty_categories()` / base parser contract so every parser returns the new key (empty list allowed).
+3. Adjust dedupe strategy in [`utils/dedupe.py`](utils/dedupe.py) if the new category needs URL- vs title-based keys.
+4. Update [`utils/validator.py`](utils/validator.py) if field rules differ.
+
+## Customize behavior
+
+- **URLs and enable flags:** `config/universities.json`
+- **Selectors and heuristics:** `parsers/*_parser.py`
+- **Date formats / locale:** `utils/normalizer.py`
+- **SSL / flaky sites:** failures are logged per source; the run continues. For strict certificate issues on some hosts you may need OS trust store updates or a custom session (not enabled by default).
+
+## CI
+
+- **Site:** [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) builds `website/` and publishes to `gh-pages`.
+- **Scraper:** [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml) runs the pipeline, validates JSON, syncs `website/public/data/`, and can optionally commit data (see Testing and validation).
+
+## Optional future work
+
+- **Playwright** (or similar) for JavaScript-heavy portals — not part of the default path today.
+
+## Testing and validation
+
+**Why JSON first:** The site and tooling consume structured records with typed fields. JSON round-trips through `json.loads` checks in website writes and keeps one canonical shape per category under `scraper/output/`. CSV is a **derived** view for spreadsheets only.
+
+**Commands** (from `scraper/`):
+
+| Command | Purpose |
+|---------|---------|
+| `python main.py` | Live fetch, normalize, dedupe, validate; writes `output/*.json` and optionally syncs to `website/public/data/` |
+| `python validate_output.py` | Validate existing `output/<category>.json` (required fields, URLs, dates, no duplicate dedupe-keys) |
+| `python validate_output.py --strict-run` | Also fail if `run_summary.json` shows `universities_success >= 1` but `all_categories_empty` |
+| `python export_csv.py` | Optional: write `output/csv/<category>.csv` from JSON |
+| `python sync_to_website.py` | Copy **only** categories that pass validation and are non-empty into `website/public/data/` |
+| `python run_scraper_validate.py` | Run `main.py` then `validate_output.py` (use `--skip-website` to set `SCRAPER_SKIP_WEBSITE_SYNC=1` on the scraper step) |
+| `python run_fixtures.py --validate` | Offline run using `tests/fixtures/` HTML + `fixtures_universities.json`, then validate |
+
+**Environment:**
+
+- `SCRAPER_SKIP_WEBSITE_SYNC=1` — `main.py` / `run_fixtures` write `scraper/output/` but do **not** update `website/public/data/` (useful in CI before `sync_to_website.py`).
+
+**Pytest:** `pip install -r requirements-dev.txt` then `python -m pytest tests/ -q`.
+
+## GitHub Actions
+
+Workflow: [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml).
+
+- **Triggers:** `workflow_dispatch` (optional CSV export + optional commit) and daily `schedule` cron.
+- **Steps:** install deps, pytest, run `main.py` with `SCRAPER_SKIP_WEBSITE_SYNC`, `validate_output.py --strict-run`, `sync_to_website.py`, optional CSV, optional commit of `website/public/data/` only.
+
+Scheduled runs do not commit by default. Use **workflow_dispatch** with **commit_data** to push updated JSON for GitHub Pages after the site build workflow deploys `website/dist`.

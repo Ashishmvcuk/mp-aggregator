@@ -1,9 +1,10 @@
 /**
  * Data access for university results.
+ * Static file path matches scraper output: `website/public/data/results.json`.
  * Swap `fetchLocalResults` for an API client when the backend/scraper is ready.
  */
 
-const LOCAL_JSON_PATH = `${import.meta.env.BASE_URL}results.json`
+const LOCAL_JSON_PATH = `${import.meta.env.BASE_URL}data/results.json`
 
 /**
  * @typedef {Object} UniversityResult
