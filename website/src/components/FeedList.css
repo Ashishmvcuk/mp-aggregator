@@ -1,26 +1,34 @@
+/* Aligned with ResultsList.css — shared table palette site-wide */
+
 .feed-board {
   margin-top: 1rem;
   padding: 0.85rem 0.85rem 1rem;
   background: #fff;
   border: 1px solid #e3e3e3;
   border-radius: 10px;
-  box-shadow: 0 4px 24px rgba(45, 20, 20, 0.06);
+  box-shadow: 0 6px 28px rgba(45, 20, 20, 0.07);
 }
 
 .feed-board__title {
   margin: 0 0 0.4rem;
+  padding: 0.5rem 0.85rem;
   font-size: 1.05rem;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #5c0606;
+  color: #fff;
+  background: linear-gradient(135deg, #8e1518 0%, #5c0606 55%, #4a0505 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(92, 6, 6, 0.2);
 }
 
 .feed-board__note {
   margin: 0 0 0.65rem;
   font-size: 0.82rem;
-  color: #4a4a4a;
+  color: #555;
   line-height: 1.45;
+  padding: 0 0.15rem;
 }
 
 .feed-board__empty {
@@ -34,32 +42,34 @@
   overflow: auto;
   margin-top: 0.4rem;
   max-height: clamp(13rem, 36vh, 22rem);
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
-  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 28px rgba(45, 20, 20, 0.07);
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  min-width: 0;
 }
 
 .feed-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.84rem;
-  line-height: 1.4;
+  font-size: 0.87rem;
+  line-height: 1.45;
 }
 
 .feed-table thead .feed-table__th {
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 0 2px 0 #e0c4c4;
+  box-shadow: 0 2px 0 rgba(183, 28, 28, 0.35);
 }
 
 .feed-table__th,
 .feed-table__td {
   border: none;
-  border-bottom: 1px solid #ececec;
-  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #ebebeb;
+  padding: 0.6rem 0.55rem;
   text-align: left;
   vertical-align: top;
 }
@@ -68,17 +78,29 @@
   border-bottom: none;
 }
 
+.feed-table tbody tr:nth-child(even) .feed-table__td {
+  background: #fdfcfa;
+}
+
 .feed-table tbody tr:hover .feed-table__td {
-  background: rgba(183, 28, 28, 0.04);
+  background: rgba(183, 28, 28, 0.045);
 }
 
 .feed-table__th {
-  background: linear-gradient(180deg, #fff5f5 0%, #f8eded 100%);
-  color: #5c0606;
+  background: linear-gradient(180deg, #c62828 0%, #b71c1c 100%);
+  color: #fff;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 0.68rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  vertical-align: bottom;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.feed-table__th:last-child {
+  border-right: none;
 }
 
 .feed-table__th--date,
@@ -100,9 +122,15 @@
   max-width: 11rem;
 }
 
+.feed-table__td:nth-child(2) {
+  font-weight: 700;
+  color: #8b1014;
+}
+
 .feed-table__td:nth-child(3) {
-  color: #2c2c2c;
+  color: #2a2a2a;
   word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .feed-table__th--link,
@@ -112,25 +140,33 @@
   vertical-align: middle;
 }
 
+.feed-table__th--link {
+  white-space: nowrap;
+}
+
 .feed-table__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2rem;
-  padding: 0.35rem 0.55rem;
+  min-height: 2.1rem;
+  padding: 0.4rem 0.55rem;
   font-weight: 800;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: #fff;
-  background: linear-gradient(180deg, #1565c0 0%, #0d47a1 100%);
+  background: linear-gradient(180deg, #1e88e5 0%, #1565c0 100%);
   text-decoration: none;
   border-radius: 6px;
-  box-shadow: 0 1px 2px rgba(13, 71, 161, 0.25);
+  box-shadow: 0 1px 3px rgba(21, 101, 192, 0.35);
+  white-space: nowrap;
 }
 
-.feed-table__link:hover {
-  background: linear-gradient(180deg, #1976d2 0%, #1565c0 100%);
+.feed-table__link:hover,
+.feed-table__link:focus-visible {
+  background: linear-gradient(180deg, #2196f3 0%, #1976d2 100%);
+  outline: 2px solid #ffd54f;
+  outline-offset: 2px;
   color: #fff;
 }
 
@@ -143,7 +179,7 @@
 
 .feed-board__footer a {
   font-weight: 800;
-  color: #0d47a1;
+  color: #1565c0;
   text-decoration: none;
 }
 

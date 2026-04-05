@@ -22,15 +22,21 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
       ) : (
         <div className="results-board__scroll">
           <table className="results-table">
+            <colgroup>
+              <col className="results-table__col results-table__col--date" />
+              <col className="results-table__col results-table__col--uni" />
+              <col className="results-table__col results-table__col--title" />
+              <col className="results-table__col results-table__col--link" />
+            </colgroup>
             <thead>
               <tr>
                 <th scope="col" className="results-table__th results-table__th--date">
                   Date
                 </th>
-                <th scope="col" className="results-table__th">
+                <th scope="col" className="results-table__th results-table__th--uni">
                   University
                 </th>
-                <th scope="col" className="results-table__th">
+                <th scope="col" className="results-table__th results-table__th--title">
                   Examination / result
                 </th>
                 <th scope="col" className="results-table__th results-table__th--link">

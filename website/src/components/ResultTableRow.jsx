@@ -8,7 +8,7 @@ export function ResultTableRow({ result, index }) {
     <tr className={index % 2 === 0 ? 'results-table__row results-table__row--even' : 'results-table__row'}>
       <td className="results-table__cell results-table__cell--date">{formatDateShort(result.date)}</td>
       <td className="results-table__cell results-table__cell--uni">
-        <span className="results-table__uni">{result.university}</span>
+        {result.university}
       </td>
       <td className="results-table__cell results-table__cell--title">{result.title}</td>
       <td className="results-table__cell results-table__cell--link">
