@@ -3,29 +3,33 @@
 }
 
 .results-board__title {
-  margin: 0 0 0.35rem;
-  padding: 0.35rem 0.65rem;
+  margin: 0 0 0.4rem;
+  padding: 0.5rem 0.85rem;
   font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #fff;
-  background: #0d47a1;
-  border: 1px solid #042a6b;
+  background: linear-gradient(135deg, #8e1518 0%, #5c0606 55%, #4a0505 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(92, 6, 6, 0.2);
 }
 
 .results-board__note {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.55rem;
   font-size: 0.8rem;
-  color: #444;
-  line-height: 1.45;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 0.15rem;
 }
 
 .results-board__empty {
   padding: 1.25rem;
   text-align: center;
-  background: #fff8e1;
-  border: 1px dashed #f4b400;
+  background: #fffbf0;
+  border: 1px dashed #e6c86a;
+  border-radius: 8px;
   color: #5d4037;
   margin: 0;
   font-weight: 600;
@@ -34,9 +38,10 @@
 .results-board__scroll {
   overflow: auto;
   max-height: clamp(15rem, 42vh, 26rem);
-  border: 2px solid #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
   background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 28px rgba(45, 20, 20, 0.07);
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
 }
@@ -45,35 +50,41 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 0 1px 0 #7f0000;
+  box-shadow: 0 2px 0 rgba(183, 28, 28, 0.35);
 }
 
 .results-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 0.87rem;
+  line-height: 1.45;
   min-width: 640px;
 }
 
 .results-table__th {
-  background: #b71c1c;
+  background: linear-gradient(180deg, #c62828 0%, #b71c1c 100%);
   color: #fff;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 0.72rem;
-  padding: 0.55rem 0.5rem;
-  border: 1px solid #7f0000;
+  letter-spacing: 0.05em;
+  font-size: 0.68rem;
+  padding: 0.65rem 0.8rem;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   text-align: left;
   white-space: nowrap;
 }
 
+.results-table__th:last-child {
+  border-right: none;
+}
+
 .results-table__th--date {
-  width: 6.5rem;
+  width: 6.75rem;
 }
 
 .results-table__th--link {
-  width: 6rem;
+  width: 6.5rem;
   text-align: center;
 }
 
@@ -82,26 +93,39 @@
 }
 
 .results-table__row--even {
-  background: #fffef7;
+  background: #fdfcfa;
+}
+
+.results-table__row:hover .results-table__cell {
+  background: rgba(183, 28, 28, 0.045);
 }
 
 .results-table__cell {
-  padding: 0.5rem 0.5rem;
-  border: 1px solid #ccc;
-  vertical-align: top;
-  color: #222;
+  padding: 0.65rem 0.8rem;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  vertical-align: middle;
+  color: #2a2a2a;
+}
+
+.results-table tbody tr:last-child .results-table__cell {
+  border-bottom: none;
 }
 
 .results-table__cell--date {
   font-weight: 700;
-  color: #1a237e;
+  font-variant-numeric: tabular-nums;
+  color: #37474f;
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 .results-table__cell--uni {
   font-weight: 700;
-  color: #b71c1c;
+  color: #8b1014;
   white-space: nowrap;
+  vertical-align: middle;
+  max-width: 12rem;
 }
 
 .results-table__uni {
@@ -109,6 +133,7 @@
   max-width: 10rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  vertical-align: bottom;
 }
 
 @media (min-width: 768px) {
@@ -118,32 +143,38 @@
 }
 
 .results-table__cell--title {
-  line-height: 1.4;
+  line-height: 1.45;
+  vertical-align: middle;
+  word-break: break-word;
 }
 
 .results-table__cell--link {
   text-align: center;
   vertical-align: middle;
+  width: 6.5rem;
 }
 
 .results-table__link {
-  display: inline-block;
-  padding: 0.35rem 0.65rem;
-  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.1rem;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: #fff;
-  background: #1565c0;
-  border: 1px solid #0d47a1;
+  background: linear-gradient(180deg, #1e88e5 0%, #1565c0 100%);
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(21, 101, 192, 0.35);
   white-space: nowrap;
 }
 
 .results-table__link:hover,
 .results-table__link:focus-visible {
-  background: #0d47a1;
-  outline: 2px solid #f4b400;
-  outline-offset: 1px;
+  background: linear-gradient(180deg, #2196f3 0%, #1976d2 100%);
+  outline: 2px solid #ffd54f;
+  outline-offset: 2px;
 }
