@@ -1,0 +1,17 @@
+{
+  "scrapedAt": "2026-04-05T21:14:58.468756Z",
+  "runId": "20260405T211458Z",
+  "scraperVersion": "1.0.0",
+  "siteReleaseVersion": "1.1.0",
+  "universitiesSuccess": 30,
+  "universitiesFailed": 10,
+  "categoryCounts": {
+    "results": 40,
+    "news": 241,
+    "syllabus": 37,
+    "admit_cards": 1,
+    "blogs": 18,
+    "jobs": 54
+  },
+  "ciRunId": "24010625747"
+}
