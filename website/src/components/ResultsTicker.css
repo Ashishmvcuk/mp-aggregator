@@ -67,7 +67,7 @@
     rgba(255, 213, 79, 0.06) 55%,
     transparent 100%
   );
-  animation: results-ticker-sweep 3.5s ease-in-out infinite;
+  animation: results-ticker-sweep 10s ease-in-out infinite;
   z-index: 2;
 }
 
@@ -97,7 +97,7 @@
 .results-ticker__marquee {
   display: flex;
   width: max-content;
-  animation: results-ticker-scroll 55s linear infinite;
+  animation: results-ticker-scroll 90s linear infinite;
 }
 
 .results-ticker:hover .results-ticker__marquee {
