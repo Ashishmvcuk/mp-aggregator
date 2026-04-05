@@ -46,6 +46,22 @@
   background: #fff8f8;
 }
 
+.admin-page__steps {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+  line-height: 1.55;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.admin-page__steps li {
+  margin-bottom: 0.45rem;
+}
+
+.admin-page__steps code {
+  font-size: 0.88em;
+}
+
 .admin-page__panel--note h2 {
   margin-top: 0;
   font-size: 1.1rem;

@@ -223,19 +223,50 @@ export function AdminPage() {
                 </button>
               </section>
               <section className="admin-page__panel admin-page__panel--note" aria-labelledby="admin-setup-h">
-                <h2 id="admin-setup-h">Supabase not configured</h2>
+                <h2 id="admin-setup-h">Database not connected (optional)</h2>
                 <p>
-                  To let editors add rows without editing Git, create a free{' '}
-                  <a href="https://supabase.com" target="_blank" rel="noreferrer">
-                    Supabase
-                  </a>{' '}
-                  project, run the SQL in <code>docs/supabase-manual-entries.sql</code>, create an auth user, then set
-                  repository secrets <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code> and rebuild the
-                  site.
+                  The live site was built <strong>without</strong> Supabase environment variables, so the form below
+                  cannot save to a database yet. That is normal until you add them.
                 </p>
                 <p>
-                  Until then, commit edits to{' '}
-                  <code>website/public/data/manual_additions.json</code> (same shape as scraped JSON per category).
+                  <strong>Option A — Edit JSON in Git (no Supabase):</strong> Commit changes to{' '}
+                  <code>website/public/data/manual_additions.json</code> on the <code>main</code> branch (same field
+                  shapes as scraped data: <code>result_url</code> for results, <code>url</code> for other sections).
+                  Deploy will pick them up.
+                </p>
+                <p>
+                  <strong>Option B — Connect Supabase:</strong>
+                </p>
+                <ol className="admin-page__steps">
+                  <li>
+                    Create a project at{' '}
+                    <a href="https://supabase.com/dashboard" target="_blank" rel="noreferrer">
+                      supabase.com
+                    </a>
+                    .
+                  </li>
+                  <li>
+                    SQL Editor → run the script in repo file <code>docs/supabase-manual-entries.sql</code>.
+                  </li>
+                  <li>
+                    Authentication → Users → add a user (email + password) for editors.
+                  </li>
+                  <li>
+                    Project Settings → API → copy <strong>Project URL</strong> and <strong>anon public</strong> key.
+                  </li>
+                  <li>
+                    <strong>GitHub:</strong> Repo → Settings → Secrets and variables → Actions → <strong>New repository
+                    secret</strong> → add <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code> (exact
+                    names). Push any commit or re-run the <strong>Deploy</strong> workflow so the site rebuilds.
+                  </li>
+                  <li>
+                    <strong>Local dev:</strong> In <code>website/</code> create <code>.env.local</code> with those two
+                    variables (see <code>website/.env.example</code>), then restart <code>npm run dev</code>.
+                  </li>
+                </ol>
+                <p className="admin-page__muted">
+                  Vite bakes these values in at <strong>build time</strong>; changing secrets alone is not enough until
+                  GitHub Actions runs a new build.
                 </p>
               </section>
             </>
