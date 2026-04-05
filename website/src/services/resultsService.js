@@ -1,8 +1,11 @@
 /**
  * Data access for university results.
  * Static file path matches scraper output: `website/public/data/results.json`.
- * Swap `fetchLocalResults` for an API client when the backend/scraper is ready.
+ * Merges `manual_additions.json` + optional Supabase `manual_entries` (see manualEntriesService).
  */
+
+import { getManualItemsForCategory } from './manualEntriesService'
+import { mergeWithManual } from '../utils/mergeFeedData'
 
 const LOCAL_JSON_PATH = `${import.meta.env.BASE_URL}data/results.json`
 
@@ -35,5 +38,9 @@ export async function fetchLocalResults() {
  * @returns {Promise<UniversityResult[]>}
  */
 export async function fetchResults() {
-  return fetchLocalResults()
+  const [staticList, manual] = await Promise.all([
+    fetchLocalResults(),
+    getManualItemsForCategory('results'),
+  ])
+  return mergeWithManual(manual, staticList, 'result_url')
 }

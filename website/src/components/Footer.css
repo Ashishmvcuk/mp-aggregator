@@ -11,6 +11,23 @@
   margin: 0 auto;
 }
 
+.sr-footer__admin-link {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+}
+
+.sr-footer__admin-link a {
+  color: #ffd54f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.sr-footer__admin-link a:hover,
+.sr-footer__admin-link a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
 .sr-footer__strip {
   display: flex;
   flex-wrap: wrap;

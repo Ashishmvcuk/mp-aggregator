@@ -32,10 +32,20 @@
 }
 
 .results-board__scroll {
-  overflow-x: auto;
+  overflow: auto;
+  max-height: clamp(15rem, 42vh, 26rem);
   border: 2px solid #333;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.results-table thead .results-table__th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 1px 0 #7f0000;
 }
 
 .results-table {

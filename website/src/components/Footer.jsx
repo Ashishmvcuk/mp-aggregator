@@ -1,9 +1,13 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export function Footer() {
   return (
     <footer className="sr-footer">
       <div className="sr-footer__inner">
+        <p className="sr-footer__admin-link">
+          <Link to="/admin">Content admin</Link>
+        </p>
         <div className="sr-footer__strip">
           <span className="sr-footer__badge">Disclaimer</span>
           <p className="sr-footer__text">

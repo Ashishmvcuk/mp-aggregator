@@ -1,6 +1,9 @@
 /**
- * Static JSON under `public/data/` (synced by scraper).
+ * Static JSON under `public/data/` (synced by scraper), merged with manual entries.
  */
+
+import { loadAllManualGroupedCached } from './manualEntriesService'
+import { mergeWithManual } from '../utils/mergeFeedData'
 
 function dataUrl(path) {
   const base = import.meta.env.BASE_URL || '/'
@@ -39,31 +42,43 @@ export async function fetchScrapeMeta() {
   }
 }
 
-export function loadDashboardFeeds() {
-  return Promise.all([
+export async function loadDashboardFeeds() {
+  const [news, blogs, jobs, manual] = await Promise.all([
     fetchJsonArray('data/news.json'),
     fetchJsonArray('data/blogs.json'),
     fetchJsonArray('data/jobs.json'),
-  ]).then(([news, blogs, jobs]) => ({ news, blogs, jobs }))
+    loadAllManualGroupedCached(),
+  ])
+  return {
+    news: mergeWithManual(manual.news, news, 'url'),
+    blogs: mergeWithManual(manual.blogs, blogs, 'url'),
+    jobs: mergeWithManual(manual.jobs, jobs, 'url'),
+  }
 }
 
 /** All category feeds used on the landing page (except results — loaded separately). */
-export function loadLandingFeeds() {
-  return Promise.all([
+export async function loadLandingFeeds() {
+  const [news, jobs, syllabus, admit_cards, blogs, manual] = await Promise.all([
     fetchJsonArray('data/news.json'),
     fetchJsonArray('data/jobs.json'),
     fetchJsonArray('data/syllabus.json'),
     fetchJsonArray('data/admit_cards.json'),
     fetchJsonArray('data/blogs.json'),
-  ]).then(([news, jobs, syllabus, admit_cards, blogs]) => ({
-    news,
-    jobs,
-    syllabus,
-    admit_cards,
-    blogs,
-  }))
+    loadAllManualGroupedCached(),
+  ])
+  return {
+    news: mergeWithManual(manual.news, news, 'url'),
+    jobs: mergeWithManual(manual.jobs, jobs, 'url'),
+    syllabus: mergeWithManual(manual.syllabus, syllabus, 'url'),
+    admit_cards: mergeWithManual(manual.admit_cards, admit_cards, 'url'),
+    blogs: mergeWithManual(manual.blogs, blogs, 'url'),
+  }
 }
 
-export function loadAdmitCards() {
-  return fetchJsonArray('data/admit_cards.json')
+export async function loadAdmitCards() {
+  const [staticItems, manual] = await Promise.all([
+    fetchJsonArray('data/admit_cards.json'),
+    loadAllManualGroupedCached().then((m) => m.admit_cards || []),
+  ])
+  return mergeWithManual(manual, staticItems, 'url')
 }

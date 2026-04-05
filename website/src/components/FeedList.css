@@ -30,8 +30,20 @@
 }
 
 .feed-board__scroll {
-  overflow-x: auto;
+  overflow: auto;
   margin-top: 0.35rem;
+  max-height: clamp(13rem, 36vh, 22rem);
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.feed-table thead .feed-table__th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 1px 0 #ccc;
 }
 
 .feed-table {

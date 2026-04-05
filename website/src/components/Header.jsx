@@ -84,6 +84,11 @@ export function Header() {
                 Dashboard
               </SectionNavLink>
             </li>
+            <li>
+              <Link to="/admin" className="sr-header__nav-link">
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
