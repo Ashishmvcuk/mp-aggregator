@@ -1,9 +1,15 @@
 # Builds the Vite app and pushes static output to the gh-pages branch for GitHub Pages.
+# Runs on push to main when website/** or this file changes (path filter). Scraper commits to
+# website/public/data/ therefore trigger deploy; scraper-only pushes do not.
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
+    paths:
+      # Skip deploy when only scraper/docs change and no website files — data updates always touch website/public/data/
+      - "website/**"
+      - ".github/workflows/deploy.yml"
 
 permissions:
   contents: write

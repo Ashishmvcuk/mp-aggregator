@@ -1,74 +1,113 @@
-# Scraper: fetch portals, validate JSON, sync website/public/data, optional CSV + commit.
+# Scraper → validate → sync → verify JSON + production build → commit only if data changed.
+# If any step fails, nothing is pushed: the live site on GitHub (main + gh-pages) is unchanged by this run.
 name: Scraper
 
 on:
   workflow_dispatch:
     inputs:
       export_csv:
-        description: Generate scraper/output/csv/*.csv
-        type: boolean
-        default: false
-      commit_data:
-        description: Commit website/public/data and scraper/output (if changed)
+        description: Generate CSV under scraper/output/csv (runner only, not committed)
         type: boolean
         default: false
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * *" # UTC — edit here to change frequency
+  push:
+    branches: [main]
+    paths:
+      - "scraper/**"
+      - ".github/workflows/scrape.yml"
 
 permissions:
   contents: write
+
+env:
+  SCRAPER_SKIP_WEBSITE_SYNC: "1"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: "Setup: Python 3.11"
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: scraper/requirements.txt
 
-      - name: Install dependencies
+      - name: "Install: Python dependencies"
         run: |
           pip install -r scraper/requirements.txt
           pip install -r scraper/requirements-dev.txt
 
-      - name: Pytest
+      - name: "Test: pytest"
         working-directory: scraper
         run: python -m pytest tests/ -q
 
-      - name: Run scraper
+      - name: "Scrape: fetch and write scraper/output"
         working-directory: scraper
-        env:
-          SCRAPER_SKIP_WEBSITE_SYNC: "1"
-        run: python main.py
+        run: |
+          echo "::group::Scraper run"
+          python main.py
+          echo "::endgroup::"
 
-      - name: Validate output
+      - name: "Validate: scraper output JSON"
         working-directory: scraper
-        run: python validate_output.py --strict-run
+        run: |
+          echo "::group::validate_output.py --strict-run"
+          python validate_output.py --strict-run
+          echo "::endgroup::"
 
-      - name: Sync to website public data
+      - name: "Sync: copy valid categories to website/public/data"
         working-directory: scraper
-        run: python sync_to_website.py
+        run: |
+          echo "::group::sync_to_website.py"
+          python sync_to_website.py
+          echo "::endgroup::"
 
-      - name: Export CSV
+      - name: "Validate: website/public/data JSON (parse + array root)"
+        run: |
+          echo "::group::ci_validate_website_public_json.py"
+          python scraper/scripts/ci_validate_website_public_json.py
+          echo "::endgroup::"
+
+      - name: "Verify: production build (blocks bad data from reaching main)"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - name: "Verify: npm ci && npm run build"
+        working-directory: website
+        run: |
+          echo "::group::Website production build"
+          npm ci
+          npm run build
+          echo "::endgroup::"
+
+      - name: "Optional: export CSV"
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.export_csv == 'true'
         working-directory: scraper
         run: python export_csv.py
 
-      - name: Commit data
-        if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_data == 'true'
+      - name: "Commit: website/public/data/*.json if changed"
+        run: bash scraper/scripts/ci_commit_website_data.sh
+
+      - name: "Artifact: scraper diagnostics"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-diagnostics-${{ github.run_id }}
+          if-no-files-found: warn
+          path: |
+            scraper/output/run_summary.json
+            scraper/logs/*.log
+
+      - name: "On failure: recovery hints"
+        if: failure()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add website/public/data || true
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update scraper and website data"
-            git push
-          fi
+          echo "::notice::This run did not update main. Your published site is whatever the last successful Deploy built."
+          echo "::notice::Open the job summary above, download artifact scraper-diagnostics-* if present, and check run_summary.json / logs."

@@ -143,8 +143,8 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 
 ## CI
 
-- **Site:** [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) builds `website/` and publishes to `gh-pages`.
-- **Scraper:** [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml) runs the pipeline, validates JSON, syncs `website/public/data/`, and can optionally commit data (see Testing and validation).
+- **Site:** [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) builds `website/` and publishes to `gh-pages` on every push to **`main`** (including `chore: update scraped website data` from the scraper).
+- **Scraper:** [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml) runs pytest → scrape → validate → `sync_to_website.py` → [`ci_validate_website_public_json.py`](scripts/ci_validate_website_public_json.py) → **production `npm run build`** → commits only `website/public/data/*.json` if changed ([`scripts/ci_commit_website_data.sh`](scripts/ci_commit_website_data.sh)). A failed step does **not** push; the live site is unchanged.
 
 ## Optional future work
 
@@ -176,7 +176,7 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 
 Workflow: [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml).
 
-- **Triggers:** `workflow_dispatch` (optional CSV export + optional commit) and daily `schedule` cron.
-- **Steps:** install deps, pytest, run `main.py` with `SCRAPER_SKIP_WEBSITE_SYNC`, `validate_output.py --strict-run`, `sync_to_website.py`, optional CSV, optional commit of `website/public/data/` only.
+- **Triggers:** `schedule` (cron, default 06:00 UTC), `workflow_dispatch` (optional **export_csv**), and `push` to **`main`** when `scraper/**` or this workflow file changes.
+- **Steps:** install deps → pytest → `main.py` → `validate_output.py --strict-run` → `sync_to_website.py` → validate public JSON → **`npm ci` / `npm run build` in `website/`** (blocks a bad commit) → optional CSV → commit/push only changed `*.json` → artifact **`scraper-diagnostics-<run_id>`** (`if: always()`).
 
-Scheduled runs do not commit by default. Use **workflow_dispatch** with **commit_data** to push updated JSON for GitHub Pages after the site build workflow deploys `website/dist`.
+A push to `main` that changes **`website/**`** (including data commits) triggers **Deploy** (path-filtered); see root [README.md](../README.md).
