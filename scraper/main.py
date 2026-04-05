@@ -18,6 +18,7 @@ from utils.file_ops import (
     write_category_output,
     write_history_snapshot,
     write_run_summary,
+    write_scrape_meta,
 )
 from utils.logger import setup_logging
 from utils.normalizer import CATEGORY_ORDER, normalize_item_for_category
@@ -183,6 +184,7 @@ def _finalize_pipeline(
         "failures": failures,
     }
     write_run_summary(summary)
+    write_scrape_meta(summary)
     logger.info(
         "[%s] Run finished: universities ok=%d fail=%d",
         run_id,

@@ -7,12 +7,35 @@ import json
 import logging
 from pathlib import Path
 
-from utils.file_ops import OUTPUT_DIR, sync_category_to_website
+from utils.file_ops import OUTPUT_DIR, WEBSITE_DATA_DIR, safe_write_json, sync_category_to_website
 from utils.logger import setup_logging
 from utils.normalizer import CATEGORY_ORDER
 from utils.validator import validate_category_bucket
 
 logger = logging.getLogger("scraper.sync")
+
+
+def sync_scrape_meta(output_dir: Path) -> bool:
+    meta_path = output_dir / "scrape_meta.json"
+    if not meta_path.is_file():
+        logger.warning("Missing scrape_meta.json — skip (incomplete run?)")
+        return True
+    try:
+        with open(meta_path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        logger.error("scrape_meta.json: invalid (%s)", e)
+        return False
+    if not isinstance(data, dict):
+        logger.error("scrape_meta.json: root must be a JSON object")
+        return False
+    try:
+        safe_write_json(WEBSITE_DATA_DIR / "scrape_meta.json", data)
+    except Exception:
+        logger.exception("Failed writing scrape_meta to website/public/data/")
+        return False
+    logger.info("Synced scrape_meta.json")
+    return True
 
 
 def main() -> int:
@@ -48,6 +71,8 @@ def main() -> int:
         except Exception as e:
             logger.exception("Sync failed for %s", cat)
             failed = True
+    if not sync_scrape_meta(args.output_dir):
+        failed = True
     return 1 if failed else 0
 
 

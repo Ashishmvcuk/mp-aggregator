@@ -17,12 +17,14 @@ flowchart TD
   write[Write scraper/output/*.json + history]
   copy[Copy to website/public/data if valid and non-empty]
   cfg --> loop
-  loop --> fetch --> parse --> merge --> norm --> dedupe --> val --> write --> copy
+  loop --> fetch --> parse --> merge --> norm --> dedupe --> val -->   write --> copy
 ```
+
+Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`sync_to_website.py`** copies it to **`website/public/data/scrape_meta.json`** so the deployed UI can show when data last refreshed without a new frontend build.
 
 ## Categories
 
-Allowed category keys (every parser returns all five; empty lists are fine):
+Allowed category keys (every parser returns all six; empty lists are fine):
 
 | Category       | Output file              |
 |----------------|--------------------------|
@@ -31,6 +33,7 @@ Allowed category keys (every parser returns all five; empty lists are fine):
 | `syllabus`     | `syllabus.json`          |
 | `admit_cards`  | `admit_cards.json`       |
 | `blogs`        | `blogs.json`             |
+| `jobs`         | `jobs.json`              |
 
 ## Data shape
 
@@ -50,12 +53,21 @@ Allowed category keys (every parser returns all five; empty lists are fine):
 
 Rows whose titles start with **`[MOCK]`** are deterministic placeholders when a parser cannot find matching links yet; replace them with real selectors in the parser modules.
 
+**Titles in the UI:** During normalization, [`utils/title_refine.py`](utils/title_refine.py) shortens noisy anchor text (table rows, “click here…”, long boilerplate) into a headline-style `title` per category. [`parsers/base_parser.py`](parsers/base_parser.py) `iter_anchor_candidates` prefers the HTML `title` attribute when visible link text is very long.
+
 ## Configuration
 
-Edit [`config/universities.json`](config/universities.json): array of `{ "university", "url", "parser", "enabled" }`.
+Edit [`config/universities.json`](config/universities.json): array of objects with:
 
-- **`parser`**: registry key — `rgpv`, `davv`, or `jiwaji` (see [`parsers/`](parsers/)).
-- **`enabled`**: `false` skips the source.
+| Field | Required | Meaning |
+|-------|----------|---------|
+| `university` | yes | Display name |
+| `url` | yes | Portal URL to fetch |
+| `parser` | yes | Registry key — `mp_portal` (default for MP sites), or `rgpv` / `davv` / `jiwaji` (see [`parsers/`](parsers/)) |
+| `enabled` | no (default `true`) | `false` skips the source |
+| `group` | no | Metadata only (`central`, `state_government`, `state_specialized`, `deemed`, `private`) — ignored by the runner |
+
+The file includes a broad **Madhya Pradesh inventory** (central, state, specialized, deemed, and major private universities). Only sources with a **tested parser** should stay **`enabled: true`** today (RGPV, DAVV, Jiwaji). For others, set **`enabled: true`** only after you add a dedicated parser or confirm the generic **`rgpv`** link harvester does not emit unwanted **`[MOCK]`** rows on that site.
 
 ## Run
 
@@ -161,7 +173,7 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 | `python main.py` | Live fetch, normalize, dedupe, validate; writes `output/*.json` and optionally syncs to `website/public/data/` |
 | `python validate_output.py` | Validate existing `output/<category>.json` (required fields, URLs, dates, no duplicate dedupe-keys) |
 | `python validate_output.py --strict-run` | Also fail if `run_summary.json` shows `universities_success >= 1` but `all_categories_empty` |
-| `python export_csv.py` | Optional: write `output/csv/<category>.csv` from JSON |
+| `python export_csv.py` | Write `output/csv/<category>.csv` from JSON (`date_time` = noon UTC for the row `date`; `exported_at` = UTC timestamp when the CSV was generated) |
 | `python sync_to_website.py` | Copy **only** categories that pass validation and are non-empty into `website/public/data/` |
 | `python run_scraper_validate.py` | Run `main.py` then `validate_output.py` (use `--skip-website` to set `SCRAPER_SKIP_WEBSITE_SYNC=1` on the scraper step) |
 | `python run_fixtures.py --validate` | Offline run using `tests/fixtures/` HTML + `fixtures_universities.json`, then validate |
@@ -176,7 +188,8 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 
 Workflow: [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml).
 
-- **Triggers:** `schedule` (cron, default 06:00 UTC), `workflow_dispatch` (optional **export_csv**), and `push` to **`main`** when `scraper/**` or this workflow file changes.
+- **Triggers:** `schedule` (cron, default **every 5 minutes** UTC), `workflow_dispatch` (optional **export_csv**), and `push` to **`main`** when `scraper/**` or this workflow file changes.
+- **Scraper version (UI):** bump [`VERSION`](VERSION) when the scraper pipeline meaningfully changes; the **Deploy** workflow passes it into the site build as **Scraper v…** in the corner.
 - **Steps:** install deps → pytest → `main.py` → `validate_output.py --strict-run` → `sync_to_website.py` → validate public JSON → **`npm ci` / `npm run build` in `website/`** (blocks a bad commit) → optional CSV → commit/push only changed `*.json` → artifact **`scraper-diagnostics-<run_id>`** (`if: always()`).
 
 A push to `main` that changes **`website/**`** (including data commits) triggers **Deploy** (path-filtered); see root [README.md](../README.md).

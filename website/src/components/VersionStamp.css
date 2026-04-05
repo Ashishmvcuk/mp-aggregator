@@ -1,0 +1,61 @@
+.version-stamp {
+  position: fixed;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.08rem;
+  padding: 0.35rem 0.5rem;
+  max-width: min(12rem, 42vw);
+  font-size: 0.65rem;
+  line-height: 1.25;
+  text-align: right;
+  color: #333;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+}
+
+.version-stamp__site {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5c0606;
+}
+
+.version-stamp__scraper {
+  font-weight: 700;
+  color: #444;
+}
+
+.version-stamp__data {
+  font-weight: 600;
+  font-size: 0.6rem;
+  color: #2a5a2a;
+}
+
+.version-stamp__run {
+  font-weight: 600;
+  font-size: 0.58rem;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+}
+
+.version-stamp__time {
+  font-weight: 600;
+  font-size: 0.6rem;
+  color: #666;
+}
+
+@media (max-width: 520px) {
+  .version-stamp {
+    right: 0.25rem;
+    bottom: 0.25rem;
+    font-size: 0.6rem;
+    max-width: 9rem;
+  }
+}

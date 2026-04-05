@@ -10,7 +10,8 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "0 6 * * *" # UTC — edit here to change frequency
+    # Every 5 minutes (UTC). Uses Actions minutes quota; reduce cadence if needed.
+    - cron: "*/5 * * * *"
   push:
     branches: [main]
     paths:
@@ -20,12 +21,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: scraper-${{ github.repository }}
+  cancel-in-progress: false
+
 env:
   SCRAPER_SKIP_WEBSITE_SYNC: "1"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -48,6 +54,8 @@ jobs:
 
       - name: "Scrape: fetch and write scraper/output"
         working-directory: scraper
+        env:
+          SCRAPER_CI_RUN_ID: ${{ github.run_id }}
         run: |
           echo "::group::Scraper run"
           python main.py
@@ -104,6 +112,7 @@ jobs:
           if-no-files-found: warn
           path: |
             scraper/output/run_summary.json
+            scraper/output/scrape_meta.json
             scraper/logs/*.log
 
       - name: "On failure: recovery hints"

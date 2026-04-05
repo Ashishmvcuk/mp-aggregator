@@ -14,7 +14,7 @@ const LINKS = [
  */
 export function SidebarQuickLinks({ onPick }) {
   return (
-    <aside className="sr-sidebar" aria-label="Quick university filters">
+    <aside className="sr-sidebar" aria-label="Quick university filters" id="universities">
       <h2 className="sr-sidebar__title">Popular universities</h2>
       <p className="sr-sidebar__text">Tap a name to filter the main table.</p>
       <ul className="sr-sidebar__list">

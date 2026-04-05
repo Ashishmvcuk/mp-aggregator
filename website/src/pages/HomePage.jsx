@@ -1,30 +1,70 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { DashboardChart } from '../components/DashboardChart'
+import { FeedList } from '../components/FeedList'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { ResultsList } from '../components/ResultsList'
+import { ResultsTicker } from '../components/ResultsTicker'
 import { SearchBar } from '../components/SearchBar'
+import { SectionNavLink } from '../components/SectionNavLink'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
 import { SummaryCards } from '../components/SummaryCards'
+import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
 import { useResults } from '../hooks/useResults'
 import './HomePage.css'
 
 export function HomePage() {
   const [query, setQuery] = useState('')
   const { items, filtered, summary, loading, error } = useResults(query)
+  const feeds = useDashboardFeeds()
 
   return (
     <div className="home-page">
       <Header />
+      <ResultsTicker results={items} loading={loading} />
       <main className="home-page__main">
         <div className="home-page__container">
           <div className="home-page__layout">
             <div className="home-page__primary">
+              <p className="home-page__intro">
+                Quick jump:{' '}
+                <SectionNavLink hashId="latest-news" className="home-page__intro-link">
+                  Latest news
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="landing-jobs" className="home-page__intro-link">
+                  Jobs
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="latest-results" className="home-page__intro-link">
+                  Results
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="landing-admit" className="home-page__intro-link">
+                  Admit cards
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="landing-syllabus" className="home-page__intro-link">
+                  Syllabus
+                </SectionNavLink>
+                {' · '}
+                <Link to="/admit-cards" className="home-page__intro-link">
+                  Full admit list
+                </Link>
+              </p>
+
               <SearchBar value={query} onChange={setQuery} disabled={loading || !!error} />
 
               {error && (
                 <div className="home-page__banner home-page__banner--error" role="alert">
                   {error}
+                </div>
+              )}
+
+              {feeds.error && (
+                <div className="home-page__banner home-page__banner--error" role="alert">
+                  {feeds.error}
                 </div>
               )}
 
@@ -36,9 +76,66 @@ export function HomePage() {
                 <>
                   <SummaryCards summary={summary} />
                   <ResultsList results={filtered} />
-                  <DashboardChart items={items} />
                 </>
               )}
+
+              {feeds.loading ? (
+                <p className="home-page__loading home-page__loading--secondary" role="status">
+                  Loading news, jobs, syllabus, and admit cards…
+                </p>
+              ) : (
+                <>
+                  <FeedList
+                    id="latest-news"
+                    title="Latest news & notices"
+                    subtitle="From the last 30 days (scrape date). Official university links only."
+                    items={feeds.newsLast30Days}
+                    emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
+                  />
+                  <FeedList
+                    id="landing-jobs"
+                    title="Latest jobs & recruitment"
+                    subtitle="Vacancy and career links detected on university homepages."
+                    items={feeds.jobsSorted}
+                    emptyMessage="No job links in data yet — sync scraper output to website/public/data/jobs.json."
+                  />
+                </>
+              )}
+
+              {!feeds.loading && (
+                <>
+                  <FeedList
+                    id="landing-admit"
+                    title="Admit cards & hall tickets"
+                    subtitle={
+                      feeds.admitCardsTotal > feeds.admitCardsHomePreview.length
+                        ? `Showing ${feeds.admitCardsHomePreview.length} of ${feeds.admitCardsTotal} on file.`
+                        : 'All matching links on file are shown below.'
+                    }
+                    items={feeds.admitCardsHomePreview}
+                    emptyMessage="No admit cards in data yet — they appear here after a successful scrape and sync."
+                    footer={
+                      <Link to="/admit-cards">Open full admit cards page →</Link>
+                    }
+                  />
+                  <FeedList
+                    id="landing-syllabus"
+                    title="Syllabus & schemes"
+                    subtitle="Curriculum and scheme links from university portals."
+                    items={feeds.syllabusSorted}
+                    emptyMessage="No syllabus links in data yet — sync scraper output to website/public/data/syllabus.json."
+                  />
+                  <FeedList
+                    id="blogs"
+                    title="Blogs & articles"
+                    subtitle="Editorial and magazine-style links."
+                    items={feeds.blogsSorted}
+                    emptyMessage="No blog links scraped yet."
+                  />
+                </>
+              )}
+
+              {!loading && <DashboardChart items={items} />}
             </div>
             <SidebarQuickLinks onPick={setQuery} />
           </div>

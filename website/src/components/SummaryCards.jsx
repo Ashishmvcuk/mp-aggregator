@@ -12,7 +12,7 @@ export function SummaryCards({ summary }) {
   ]
 
   return (
-    <section className="sr-summary" aria-label="Summary statistics" id="universities">
+    <section className="sr-summary" aria-label="Summary statistics" id="summary-stats">
       <h2 className="sr-summary__heading">Important information</h2>
       <ul className="sr-summary__list">
         {cards.map((c) => (

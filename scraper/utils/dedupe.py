@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 # results/syllabus/admit_cards: same URL (after stripping tracking params) => duplicate.
 # news/blogs: URL often unstable — dedupe by (title_lower, netloc).
 _URL_KEY_CATEGORIES = frozenset({"results", "syllabus", "admit_cards"})
-_TITLE_NETLOC_CATEGORIES = frozenset({"news", "blogs"})
+_TITLE_NETLOC_CATEGORIES = frozenset({"news", "blogs", "jobs"})
 
 
 def _dedupe_key(category: str, item: dict[str, Any]) -> str:

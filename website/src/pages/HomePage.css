@@ -33,6 +33,26 @@
   min-width: 0;
 }
 
+.home-page__intro {
+  margin: 0 0 0.65rem;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #222;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+}
+
+.home-page__intro-link {
+  font-weight: 800;
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+.home-page__intro-link:hover {
+  color: #5c0606;
+}
+
 .home-page__banner {
   padding: 0.65rem 0.75rem;
   margin-bottom: 0.75rem;
@@ -57,4 +77,10 @@
   color: #5c0606;
   background: #fff;
   border: 2px dashed #999;
+}
+
+.home-page__loading--secondary {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  font-size: 0.82rem;
 }

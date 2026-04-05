@@ -1,26 +1,282 @@
 [
   {
-    "university": "RGPV",
-    "url": "https://www.rgpv.ac.in/",
-    "parser": "rgpv",
-    "enabled": true
+    "university": "Indira Gandhi National Tribal University (IGNTU)",
+    "url": "https://igntu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "central"
   },
   {
-    "university": "DAVV",
-    "url": "https://www.dauniv.ac.in/",
-    "parser": "davv",
-    "enabled": true
+    "university": "Dr. Hari Singh Gour University, Sagar",
+    "url": "https://dhsgsu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
   },
   {
-    "university": "Jiwaji University",
-    "url": "https://www.jiwaji.edu/",
-    "parser": "jiwaji",
-    "enabled": true
-  },
-  {
-    "university": "Barkatullah University",
+    "university": "Barkatullah University, Bhopal",
     "url": "https://www.bubhopal.ac.in/",
-    "parser": "rgpv",
-    "enabled": false
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya (DAVV), Indore",
+    "url": "https://www.dauniv.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Jiwaji University, Gwalior",
+    "url": "https://www.jiwaji.edu/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Rani Durgavati University, Jabalpur",
+    "url": "https://rdunijbpin.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Vikram University, Ujjain",
+    "url": "https://vikramuniv.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Awadhesh Pratap Singh University, Rewa",
+    "url": "https://apsurewa.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Maharaja Chhatrasal Bundelkhand University",
+    "url": "https://mchhatrasaluniversity.com/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Madhya Pradesh Bhoj Open University",
+    "url": "https://mpbou.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "url": "https://abvhv.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_government"
+  },
+  {
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+    "url": "https://www.rgpv.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "Madhya Pradesh Medical Science University",
+    "url": "https://mpmsu.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "Nanaji Deshmukh Veterinary Science University",
+    "url": "https://ndvsu.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "url": "https://mptmusicandartsuniversity.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "IIITM Gwalior",
+    "url": "https://iiitm.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "deemed"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education (LNIPE)",
+    "url": "https://lnipe.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "deemed"
+  },
+  {
+    "university": "Jagran Lakecity University, Bhopal",
+    "url": "https://jlu.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "People's University, Bhopal",
+    "url": "https://peoplesuniversity.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "url": "https://sageuniversity.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Mansarovar Global University, Bhopal",
+    "url": "https://mgu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Rabindranath Tagore University, Bhopal",
+    "url": "https://rntu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "RKDF University, Bhopal",
+    "url": "https://rkdfuniversity.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "LNCT University, Bhopal",
+    "url": "https://lnctu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Sarvepalli Radhakrishnan University, Bhopal",
+    "url": "https://sru.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Medi-Caps University, Indore",
+    "url": "https://medicaps.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "url": "https://sageuniversity.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Oriental University, Indore",
+    "url": "https://orientaluniversity.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Malwanchal University, Indore",
+    "url": "https://malwanchaluniversity.com/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "ITM University, Gwalior",
+    "url": "https://itmuniversity.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Amity University, Gwalior",
+    "url": "https://www.amity.edu/gwalior/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Prestige University, Indore",
+    "url": "https://prestigeuniversity.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "AKS University, Satna",
+    "url": "https://aksuniversity.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Avantika University, Ujjain",
+    "url": "https://avantikauniversity.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Mahakaushal University",
+    "url": "https://mahakaushaluniversity.com/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Mandsaur University",
+    "url": "https://mandsauruniversity.edu.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Swami Vivekanand University",
+    "url": "https://svnuniversity.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Vikrant University",
+    "url": "https://vikrantuniversity.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Madhyanchal Professional University",
+    "url": "https://mpu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
+  },
+  {
+    "university": "Shri Krishna University, Chhatarpur",
+    "url": "https://skuniversity.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "private"
   }
 ]

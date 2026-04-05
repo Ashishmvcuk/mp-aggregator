@@ -43,7 +43,15 @@ def iter_anchor_candidates(
     """Yield (absolute_url, link_text) for anchors suitable for downstream normalization."""
     for a in soup.find_all("a", href=True):
         href = (a.get("href") or "").strip()
-        text = " ".join(a.get_text().split())
+        visible = " ".join(a.get_text().split())
+        title_attr = " ".join((a.get("title") or "").split())
+        text = visible
+        # Long visible text is often a whole table row; <a title="…"> is usually the real label
+        if title_attr and len(title_attr) >= 8 and len(visible) > 72:
+            if len(title_attr) <= min(len(visible) - 1, 220):
+                text = title_attr
+        elif title_attr and len(visible) > 160 and 8 <= len(title_attr) <= 180:
+            text = title_attr
         if not href or not text or len(text) < min_text_len:
             continue
         low = href.lower()
@@ -63,7 +71,7 @@ def ensure_category_keys(d: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
 
 
 class BaseParser(ABC):
-    """Parse HTML into five category buckets (empty lists allowed)."""
+    """Parse HTML into category buckets (empty lists allowed)."""
 
     @abstractmethod
     def parse(self, html: str, university: str, source_url: str) -> dict[str, list[dict[str, Any]]]:

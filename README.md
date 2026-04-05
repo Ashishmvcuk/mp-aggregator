@@ -12,7 +12,7 @@ Dashboard for **Madhya Pradesh university examination results** (and related lin
 | [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) | Build `website/` and publish to **`gh-pages`** (runs on pushes to `main` that touch `website/**` or this workflow) |
 | [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | Scraper: test → scrape → validate → sync → verify JSON → **production build** → commit data **only if changed** |
 | [`scraper/scripts/ci_commit_website_data.sh`](scraper/scripts/ci_commit_website_data.sh) | Stages only `website/public/data/*.json`, prints diff, commits if needed |
-| [`scraper/scripts/ci_validate_website_public_json.py`](scraper/scripts/ci_validate_website_public_json.py) | CI check: every public data JSON parses and is a JSON array |
+| [`scraper/scripts/ci_validate_website_public_json.py`](scraper/scripts/ci_validate_website_public_json.py) | CI check: category JSON parses as arrays; `scrape_meta.json` is a small metadata object for the UI |
 
 ## End-to-end automation (scraper → live site)
 
@@ -28,11 +28,11 @@ flowchart LR
   deploy --> pages
 ```
 
-1. **[`scrape.yml`](.github/workflows/scrape.yml)** runs on a **schedule** (default **06:00 UTC** daily), **workflow_dispatch**, or **push to `main`** when `scraper/**` or this workflow changes.
+1. **[`scrape.yml`](.github/workflows/scrape.yml)** runs on a **schedule** (default **every 5 minutes** UTC), **workflow_dispatch**, or **push to `main`** when `scraper/**` or this workflow changes.
 2. **`main.py`** runs with **`SCRAPER_SKIP_WEBSITE_SYNC`** (writes under `scraper/output/` only).
 3. **`validate_output.py --strict-run`** must pass, or the job stops (nothing is pushed).
-4. **`sync_to_website.py`** copies only categories that are **valid and non-empty** (existing repo files are not overwritten with empty/invalid payloads).
-5. **`ci_validate_website_public_json.py`** ensures every `website/public/data/*.json` parses and has a **JSON array** root.
+4. **`sync_to_website.py`** copies only categories that are **valid and non-empty** (existing repo files are not overwritten with empty/invalid payloads), then copies **`scrape_meta.json`** (run id, scrape time, versions) so the live UI can show **when data last refreshed** without rebuilding the app.
+5. **`ci_validate_website_public_json.py`** ensures category files parse as **JSON arrays** and **`scrape_meta.json`** parses as an object with required keys.
 6. **`npm ci` and `npm run build`** in **`website/`** must succeed, or the job stops **before** any git commit — so broken data cannot reach `main` via this workflow.
 7. **`ci_commit_website_data.sh`** stages **only** `website/public/data/*.json`. If there is no diff, it **does not commit**. If there is a diff, it commits with **`chore: update scraped website data`** and **pushes**.
 8. That push changes **`website/**`**, which triggers **[`deploy.yml`](.github/workflows/deploy.yml)** (path filter). Deploy builds and publishes **`gh-pages`** via [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages).
@@ -84,7 +84,10 @@ npm run dev
 
 Open the URL shown in the terminal (usually `http://localhost:5173/`).
 
-Data loading is implemented in `website/src/services/resultsService.js` (static JSON at `data/results.json` under the Vite `BASE_URL`).
+The app uses **HashRouter** for GitHub Pages: home is `…/mp-aggregator/#/`, admit cards `…/mp-aggregator/#/admit-cards`.  
+Data: `website/src/services/resultsService.js` (`results.json`) plus `dashboardDataService.js` for `news.json`, `blogs.json`, `jobs.json`; admit cards page reads `admit_cards.json`.
+
+**Deployed version badge:** [`website/package.json`](website/package.json) `version` is shown as **v…** (e.g. v1.1.0); [`scraper/VERSION`](scraper/VERSION) is shown as **Scraper v…**. **Deploy** injects `VITE_*` at build time. Bump `package.json` for site releases and `scraper/VERSION` when the scraper changes.
 
 ## Scraper
 

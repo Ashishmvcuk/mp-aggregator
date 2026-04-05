@@ -6,9 +6,11 @@ from datetime import datetime
 from typing import Any, Optional
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
+from utils.title_refine import TITLE_CAPS, refine_link_title
+
 logger = logging.getLogger(__name__)
 
-CATEGORY_ORDER = ("results", "news", "syllabus", "admit_cards", "blogs")
+CATEGORY_ORDER = ("results", "news", "syllabus", "admit_cards", "blogs", "jobs")
 ALLOWED_CATEGORIES = frozenset(CATEGORY_ORDER)
 
 # Category-specific title rules (after whitespace normalize)
@@ -98,6 +100,20 @@ def normalize_item_for_category(
     if not title:
         logger.debug("Dropped item: empty title (bucket=%s)", category)
         return None
+
+    raw_url_for_title = str(item.get("url") or "").strip()
+    refined = refine_link_title(title, category, raw_url_for_title)
+    min_len = _MIN_TITLE_LEN.get(category, _DEFAULT_MIN_TITLE_LEN)
+    if len(refined) >= min_len:
+        title = refined
+    elif len(title) > TITLE_CAPS.get(category, 130) + 25:
+        soft = TITLE_CAPS.get(category, 130) + 40
+        chunk = title[:soft]
+        sp = chunk.rfind(" ")
+        title = (chunk[:sp] if sp >= min_len else chunk).rstrip(",;:") + ("…" if len(title) > soft else "")
+    else:
+        title = refined or title
+
     if not _title_ok_for_category(category, title):
         logger.debug("Dropped item: title length out of range for %s (title=%r)", category, title[:80])
         return None

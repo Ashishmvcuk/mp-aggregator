@@ -139,5 +139,44 @@ def write_run_summary(summary: dict[str, Any]) -> Path:
     return path
 
 
+def read_scraper_version_file() -> str:
+    p = SCRAPER_ROOT / "VERSION"
+    if p.is_file():
+        return p.read_text(encoding="utf-8").strip()
+    return "0.0.0"
+
+
+def read_site_package_version() -> str:
+    pkg = REPO_ROOT / "website" / "package.json"
+    if not pkg.is_file():
+        return "0.0.0"
+    try:
+        with open(pkg, encoding="utf-8") as f:
+            data = json.load(f)
+        v = data.get("version")
+        return str(v).strip() if v is not None else "0.0.0"
+    except (json.JSONDecodeError, OSError, TypeError):
+        return "0.0.0"
+
+
+def write_scrape_meta(summary: dict[str, Any]) -> Path:
+    """Last-run metadata for the website UI (synced to public/data/scrape_meta.json)."""
+    payload: dict[str, Any] = {
+        "scrapedAt": summary["run_timestamp"],
+        "runId": summary["run_id"],
+        "scraperVersion": read_scraper_version_file(),
+        "siteReleaseVersion": read_site_package_version(),
+        "universitiesSuccess": summary["universities_success"],
+        "universitiesFailed": summary["universities_failed"],
+        "categoryCounts": summary.get("unique_counts", {}),
+    }
+    ci = os.environ.get("SCRAPER_CI_RUN_ID", "").strip()
+    if ci:
+        payload["ciRunId"] = ci
+    path = OUTPUT_DIR / "scrape_meta.json"
+    write_json(path, payload)
+    return path
+
+
 def website_relative_data_path(category: str) -> str:
     return f"public/data/{category}.json"
