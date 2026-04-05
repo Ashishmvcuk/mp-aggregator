@@ -188,7 +188,7 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 
 Workflow: [`.github/workflows/scrape.yml`](../.github/workflows/scrape.yml).
 
-- **Triggers:** `schedule` (cron, default **every 5 minutes** UTC), `workflow_dispatch` (optional **export_csv**), and `push` to **`main`** when `scraper/**` or this workflow file changes.
+- **Triggers:** `schedule` (cron, default **weekly** Sundays **00:00 UTC**), `workflow_dispatch` (optional **export_csv**), and `push` to **`main`** when `scraper/**` or this workflow file changes.
 - **Scraper version (UI):** bump [`VERSION`](VERSION) when the scraper pipeline meaningfully changes; the **Deploy** workflow passes it into the site build as **Scraper v…** in the corner.
 - **Steps:** install deps → pytest → `main.py` → `validate_output.py --strict-run` → `sync_to_website.py` → validate public JSON → **`npm ci` / `npm run build` in `website/`** (blocks a bad commit) → optional CSV → commit/push only changed `*.json` → artifact **`scraper-diagnostics-<run_id>`** (`if: always()`).
 

@@ -10,8 +10,8 @@ on:
         type: boolean
         default: false
   schedule:
-    # Every 5 minutes (UTC). Uses Actions minutes quota; reduce cadence if needed.
-    - cron: "*/5 * * * *"
+    # Weekly: Sundays 00:00 UTC. Manual runs still available via workflow_dispatch.
+    - cron: "0 0 * * 0"
   push:
     branches: [main]
     paths:

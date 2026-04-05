@@ -28,7 +28,7 @@ flowchart LR
   deploy --> pages
 ```
 
-1. **[`scrape.yml`](.github/workflows/scrape.yml)** runs on a **schedule** (default **every 5 minutes** UTC), **workflow_dispatch**, or **push to `main`** when `scraper/**` or this workflow changes.
+1. **[`scrape.yml`](.github/workflows/scrape.yml)** runs on a **schedule** (default **weekly**, Sundays **00:00 UTC**), **workflow_dispatch**, or **push to `main`** when `scraper/**` or this workflow changes.
 2. **`main.py`** runs with **`SCRAPER_SKIP_WEBSITE_SYNC`** (writes under `scraper/output/` only).
 3. **`validate_output.py --strict-run`** must pass, or the job stops (nothing is pushed).
 4. **`sync_to_website.py`** copies only categories that are **valid and non-empty** (existing repo files are not overwritten with empty/invalid payloads), then copies **`scrape_meta.json`** (run id, scrape time, versions) so the live UI can show **when data last refreshed** without rebuilding the app.
