@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadLandingFeeds } from '../services/dashboardDataService'
 import { isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
+import { isEnrollmentRelated } from '../utils/enrollmentFilter'
 
 const NEWS_DAYS = 30
 const MAX_NEWS = 45
+const MAX_ENROLLMENT_SIDEBAR = 10
 const MAX_JOBS = 40
 const MAX_SYLLABUS = 30
 const MAX_ADMIT_HOME = 15
@@ -68,7 +70,13 @@ export function useDashboardFeeds() {
 
   const blogsSorted = useMemo(() => sortByDateDesc(blogs).slice(0, MAX_BLOGS), [blogs])
 
+  const enrollmentOpenLatest = useMemo(() => {
+    const matches = news.filter((item) => isEnrollmentRelated(item))
+    return sortByDateDesc(matches).slice(0, MAX_ENROLLMENT_SIDEBAR)
+  }, [news])
+
   return {
+    enrollmentOpenLatest,
     newsLast30Days,
     jobsSorted,
     syllabusSorted,

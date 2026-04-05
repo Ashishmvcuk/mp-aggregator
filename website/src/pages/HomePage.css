@@ -33,6 +33,33 @@
   min-width: 0;
 }
 
+.home-page__sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+/* Enrollment block: near top + collapsible on phone; full table in desktop sidebar only */
+.home-page__enroll-mobile {
+  display: none;
+  margin-bottom: 0.75rem;
+}
+
+.home-page__enroll-desktop {
+  display: block;
+}
+
+@media (max-width: 899px) {
+  .home-page__enroll-mobile {
+    display: block;
+  }
+
+  .home-page__enroll-desktop {
+    display: none;
+  }
+}
+
 .home-page__intro {
   margin: 0 0 0.65rem;
   padding: 0.55rem 0.65rem;

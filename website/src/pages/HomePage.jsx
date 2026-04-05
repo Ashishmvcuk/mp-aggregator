@@ -8,6 +8,7 @@ import { ResultsList } from '../components/ResultsList'
 import { ResultsTicker } from '../components/ResultsTicker'
 import { SearchBar } from '../components/SearchBar'
 import { SectionNavLink } from '../components/SectionNavLink'
+import { SidebarEnrollmentTable } from '../components/SidebarEnrollmentTable'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
 import { SummaryCards } from '../components/SummaryCards'
 import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
@@ -31,6 +32,10 @@ export function HomePage() {
                 Quick jump:{' '}
                 <SectionNavLink hashId="latest-news" className="home-page__intro-link">
                   Latest news
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="enrollment-open" className="home-page__intro-link">
+                  Enrollment open
                 </SectionNavLink>
                 {' · '}
                 <SectionNavLink hashId="landing-jobs" className="home-page__intro-link">
@@ -65,6 +70,12 @@ export function HomePage() {
               {feeds.error && (
                 <div className="home-page__banner home-page__banner--error" role="alert">
                   {feeds.error}
+                </div>
+              )}
+
+              {!feeds.loading && (
+                <div className="home-page__enroll-mobile">
+                  <SidebarEnrollmentTable items={feeds.enrollmentOpenLatest} placement="mobile" />
                 </div>
               )}
 
@@ -137,7 +148,14 @@ export function HomePage() {
 
               {!loading && <DashboardChart items={items} />}
             </div>
-            <SidebarQuickLinks onPick={setQuery} />
+            <div className="home-page__sidebar-col">
+              <SidebarQuickLinks onPick={setQuery} />
+              {!feeds.loading && (
+                <div className="home-page__enroll-desktop">
+                  <SidebarEnrollmentTable items={feeds.enrollmentOpenLatest} placement="sidebar" />
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </main>
