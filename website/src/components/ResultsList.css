@@ -64,38 +64,38 @@
   line-height: 1.45;
 }
 
-/* Column widths: fixed date/link; university wider than examination/result */
+/* Fixed layout + col widths; uni gets more space than examination/result */
 .results-table__col--date {
-  width: 6.25rem;
+  width: 6.5rem;
 }
 
 .results-table__col--uni {
-  width: 36%;
+  width: 44%;
 }
 
 .results-table__col--title {
-  width: 32%;
+  width: 24%;
 }
 
 .results-table__col--link {
-  width: 6.25rem;
+  width: 6.5rem;
 }
 
 @media (max-width: 640px) {
   .results-table__col--date {
-    width: 5.5rem;
+    width: 5.75rem;
   }
 
   .results-table__col--uni {
-    width: 34%;
+    width: 40%;
   }
 
   .results-table__col--title {
-    width: 28%;
+    width: 22%;
   }
 
   .results-table__col--link {
-    width: 5.5rem;
+    width: 5.75rem;
   }
 }
 
@@ -120,20 +120,50 @@
 }
 
 .results-table__th--date {
+  width: 6.5rem;
+  max-width: 6.5rem;
   white-space: nowrap;
 }
 
 .results-table__th--uni {
+  width: 44%;
+  min-width: 11rem;
   white-space: normal;
 }
 
 .results-table__th--title {
+  width: 24%;
+  min-width: 0;
   white-space: normal;
+  text-align: left;
 }
 
 .results-table__th--link {
+  width: 6.5rem;
+  max-width: 6.5rem;
   text-align: center;
   white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .results-table__th--date {
+    width: 5.75rem;
+    max-width: 5.75rem;
+  }
+
+  .results-table__th--uni {
+    width: 40%;
+    min-width: 9rem;
+  }
+
+  .results-table__th--title {
+    width: 22%;
+  }
+
+  .results-table__th--link {
+    width: 5.75rem;
+    max-width: 5.75rem;
+  }
 }
 
 .results-table__row {
@@ -176,12 +206,36 @@
   white-space: normal;
   vertical-align: top;
   line-height: 1.35;
+  width: 44%;
+  min-width: 11rem;
 }
 
 .results-table__cell--title {
   line-height: 1.45;
   vertical-align: top;
   white-space: normal;
+  hyphens: auto;
+  width: 24%;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .results-table__cell--uni {
+    width: 40%;
+    min-width: 9rem;
+  }
+
+  .results-table__cell--title {
+    width: 22%;
+  }
+}
+
+/* Constrains long names/titles so they wrap inside the column instead of overlapping */
+.results-table__cell-wrap {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: auto;
 }
 

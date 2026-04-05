@@ -4,8 +4,10 @@ const url = import.meta.env.VITE_SUPABASE_URL
 const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 let client = null
+let createFailed = false
 
 export function isSupabaseConfigured() {
+  if (createFailed) return false
   return Boolean(
     typeof url === 'string' &&
       url.startsWith('http') &&
@@ -18,7 +20,14 @@ export function isSupabaseConfigured() {
 export function getSupabase() {
   if (!isSupabaseConfigured()) return null
   if (!client) {
-    client = createClient(url, anonKey)
+    try {
+      client = createClient(url.trim(), anonKey.trim())
+    } catch (e) {
+      console.error('[supabase] createClient failed:', e)
+      createFailed = true
+      client = null
+      return null
+    }
   }
   return client
 }

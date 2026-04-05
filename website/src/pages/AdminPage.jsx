@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
-import { getSupabase, isSupabaseConfigured } from '../lib/supabaseClient'
+import { getSupabase } from '../lib/supabaseClient'
 import {
   MANUAL_CATEGORIES,
   resetManualEntriesCache,
@@ -39,7 +39,7 @@ export function AdminPage() {
   const [listError, setListError] = useState(null)
   const [formMessage, setFormMessage] = useState(null)
 
-  const sb = isSupabaseConfigured() ? getSupabase() : null
+  const sb = getSupabase()
 
   const refreshList = useCallback(async () => {
     if (!sb || !supabaseSession) return
@@ -53,12 +53,30 @@ export function AdminPage() {
   }, [sb, supabaseSession])
 
   useEffect(() => {
-    if (!sb) return
-    sb.auth.getSession().then(({ data }) => setSupabaseSession(data.session))
-    const {
-      data: { subscription },
-    } = sb.auth.onAuthStateChange((_e, s) => setSupabaseSession(s))
-    return () => subscription.unsubscribe()
+    if (!sb) return undefined
+    let cancelled = false
+    sb.auth
+      .getSession()
+      .then(({ data }) => {
+        if (!cancelled) setSupabaseSession(data.session ?? null)
+      })
+      .catch((err) => {
+        console.error('[admin] getSession failed:', err)
+        if (!cancelled) setSupabaseSession(null)
+      })
+
+    const { data } = sb.auth.onAuthStateChange((_event, session) => {
+      setSupabaseSession(session ?? null)
+    })
+    const sub = data?.subscription
+    return () => {
+      cancelled = true
+      try {
+        sub?.unsubscribe()
+      } catch {
+        /* ignore */
+      }
+    }
   }, [sb])
 
   useEffect(() => {
@@ -194,7 +212,7 @@ export function AdminPage() {
                 </button>
               </form>
             </section>
-          ) : !isSupabaseConfigured() ? (
+          ) : !sb ? (
             <>
               <section className="admin-page__panel admin-page__panel--toolbar">
                 <p className="admin-page__signed">
@@ -266,11 +284,22 @@ export function AdminPage() {
                 </form>
               </section>
             </>
+          ) : !supabaseSession.user ? (
+            <section className="admin-page__panel admin-page__panel--note" role="alert">
+              <h2>Session incomplete</h2>
+              <p className="admin-page__muted">
+                You are signed in to the database but the user profile is missing. Try signing out and signing in again,
+                or check your Supabase Auth configuration.
+              </p>
+              <button type="button" className="admin-page__btn admin-page__btn--ghost" onClick={handleGateSignOut}>
+                Sign out
+              </button>
+            </section>
           ) : (
             <>
               <section className="admin-page__panel admin-page__panel--toolbar">
                 <p className="admin-page__signed">
-                  <strong>{supabaseSession.user.email}</strong>
+                  <strong>{supabaseSession.user.email ?? 'Editor'}</strong>
                 </p>
                 <div className="admin-page__toolbar-actions">
                   <button type="button" className="admin-page__btn admin-page__btn--ghost" onClick={handleSupabaseSignOut}>
@@ -361,11 +390,11 @@ export function AdminPage() {
                   <p className="admin-page__muted">No database entries yet.</p>
                 ) : (
                   <ul className="admin-page__list">
-                    {rows.map((row) => {
+                    {rows.map((row, idx) => {
                       const item = supabaseRowToItem(row)
                       const link = item.result_url || item.url
                       return (
-                        <li key={row.id} className="admin-page__list-item">
+                        <li key={row.id != null ? String(row.id) : `row-${idx}`} className="admin-page__list-item">
                           <div className="admin-page__list-meta">
                             <span className="admin-page__badge">{row.category}</span>
                             <span className="admin-page__list-title">{item.title}</span>
