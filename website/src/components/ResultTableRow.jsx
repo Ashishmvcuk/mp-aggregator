@@ -6,14 +6,16 @@ import { formatDateShort } from '../utils/formatDate'
 export function ResultTableRow({ result, index }) {
   return (
     <tr className={index % 2 === 0 ? 'results-table__row results-table__row--even' : 'results-table__row'}>
-      <td className="results-table__cell results-table__cell--date">{formatDateShort(result.date)}</td>
-      <td className="results-table__cell results-table__cell--uni">
+      <td className="results-table__cell results-table__cell--date" data-label="Date">
+        {formatDateShort(result.date)}
+      </td>
+      <td className="results-table__cell results-table__cell--uni" data-label="University">
         <div className="results-table__cell-wrap">{result.university}</div>
       </td>
-      <td className="results-table__cell results-table__cell--title">
+      <td className="results-table__cell results-table__cell--title" data-label="Examination / result">
         <div className="results-table__cell-wrap">{result.title}</div>
       </td>
-      <td className="results-table__cell results-table__cell--link">
+      <td className="results-table__cell results-table__cell--link" data-label="Link">
         <a
           className="results-table__link"
           href={result.result_url}

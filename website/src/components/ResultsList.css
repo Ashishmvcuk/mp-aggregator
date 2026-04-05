@@ -269,3 +269,89 @@
   outline: 2px solid #ffd54f;
   outline-offset: 2px;
 }
+
+/* ——— Mobile: card rows (no forced min-widths, no nested scroll trap) ——— */
+@media (max-width: 640px) {
+  .results-board__scroll {
+    max-height: none;
+    overflow: visible;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .results-table {
+    display: block;
+    width: 100%;
+    font-size: 0.84rem;
+  }
+
+  .results-table colgroup {
+    display: none;
+  }
+
+  .results-table thead {
+    display: none;
+  }
+
+  .results-table tbody {
+    display: block;
+  }
+
+  .results-table tbody tr {
+    display: block;
+    margin-bottom: 0.85rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(45, 20, 20, 0.07);
+  }
+
+  .results-table tbody tr.results-table__row--even {
+    background: #fdfcfa;
+  }
+
+  .results-table tbody td {
+    display: grid;
+    grid-template-columns: minmax(5.25rem, 34%) 1fr;
+    gap: 0.35rem 0.6rem;
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid #ebebeb;
+    align-items: start;
+    min-width: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .results-table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .results-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #8b1014;
+    line-height: 1.35;
+    padding-top: 0.2rem;
+  }
+
+  .results-table tbody td.results-table__cell--date {
+    white-space: normal;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .results-table tbody td.results-table__cell--link {
+    text-align: left;
+  }
+
+  .results-table tbody td.results-table__cell--link .results-table__link {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+}

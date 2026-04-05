@@ -187,3 +187,83 @@
   color: #5c0606;
   text-decoration: underline;
 }
+
+/* ——— Mobile: card rows ——— */
+@media (max-width: 640px) {
+  .feed-board__scroll {
+    max-height: none;
+    overflow: visible;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .feed-table {
+    display: block;
+    width: 100%;
+    font-size: 0.84rem;
+  }
+
+  .feed-table thead {
+    display: none;
+  }
+
+  .feed-table tbody {
+    display: block;
+  }
+
+  .feed-table tbody tr {
+    display: block;
+    margin-bottom: 0.85rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(45, 20, 20, 0.07);
+  }
+
+  .feed-table tbody tr:nth-child(even) {
+    background: #fdfcfa;
+  }
+
+  .feed-table tbody td {
+    display: grid;
+    grid-template-columns: minmax(5.25rem, 34%) 1fr;
+    gap: 0.35rem 0.6rem;
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid #ebebeb;
+    align-items: start;
+    min-width: 0 !important;
+    max-width: none !important;
+    width: auto !important;
+  }
+
+  .feed-table tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .feed-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #8b1014;
+    line-height: 1.35;
+    padding-top: 0.2rem;
+  }
+
+  .feed-table tbody td.feed-table__td--date {
+    white-space: normal;
+  }
+
+  .feed-table tbody td.feed-table__td--link {
+    text-align: left;
+  }
+
+  .feed-table__link {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

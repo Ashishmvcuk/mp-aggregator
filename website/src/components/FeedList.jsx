@@ -38,10 +38,16 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
             <tbody>
               {items.map((r, i) => (
                 <tr key={`${r.university}-${r.title}-${r.date}-${i}`}>
-                  <td className="feed-table__td feed-table__td--date">{r.date}</td>
-                  <td className="feed-table__td">{r.university}</td>
-                  <td className="feed-table__td">{r.title}</td>
-                  <td className="feed-table__td feed-table__td--link">
+                  <td className="feed-table__td feed-table__td--date" data-label="Date">
+                    {r.date}
+                  </td>
+                  <td className="feed-table__td" data-label="University">
+                    {r.university}
+                  </td>
+                  <td className="feed-table__td" data-label="Title">
+                    {r.title}
+                  </td>
+                  <td className="feed-table__td feed-table__td--link" data-label="Link">
                     <a
                       href={r.url}
                       target="_blank"
