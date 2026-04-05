@@ -1,14 +1,7 @@
-import { useEffect, useState } from 'react'
-import { fetchScrapeMeta } from '../services/dashboardDataService'
+import { useScrapeMeta } from '../context/ScrapeMetaContext'
+import { formatScrapedAtUtc } from '../utils/scrapeMetaFormat'
 import { BUILD_TIME_LABEL, SCRAPER_VERSION_LABEL, SITE_VERSION_LABEL } from '../version'
 import './VersionStamp.css'
-
-function formatScrapedAt(iso) {
-  if (!iso || typeof iso !== 'string') return null
-  const d = new Date(iso)
-  if (Number.isNaN(d.getTime())) return iso.slice(0, 19).replace('T', ' ')
-  return `${d.toISOString().slice(0, 16).replace('T', ' ')} UTC`
-}
 
 function scraperLabelFromMeta(meta) {
   const v = meta?.scraperVersion
@@ -18,20 +11,10 @@ function scraperLabelFromMeta(meta) {
 }
 
 export function VersionStamp() {
-  const [meta, setMeta] = useState(null)
-
-  useEffect(() => {
-    let cancelled = false
-    fetchScrapeMeta().then((m) => {
-      if (!cancelled) setMeta(m)
-    })
-    return () => {
-      cancelled = true
-    }
-  }, [])
+  const { meta } = useScrapeMeta()
 
   const scraperLine = scraperLabelFromMeta(meta) ?? `Scraper ${SCRAPER_VERSION_LABEL}`
-  const dataUpdated = meta?.scrapedAt ? formatScrapedAt(meta.scrapedAt) : null
+  const dataUpdated = meta?.scrapedAt ? formatScrapedAtUtc(meta.scrapedAt) : null
   const runRef =
     meta?.runId != null && String(meta.runId).trim() !== ''
       ? String(meta.runId).trim()

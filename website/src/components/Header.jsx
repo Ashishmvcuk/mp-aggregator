@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useScrapeMeta } from '../context/ScrapeMetaContext'
+import { formatScrapedAtUtc } from '../utils/scrapeMetaFormat'
 import { SectionNavLink } from './SectionNavLink'
 import './Header.css'
 
 export function Header() {
+  const { meta, loading } = useScrapeMeta()
+  const lastRunLabel = meta?.scrapedAt ? formatScrapedAtUtc(meta.scrapedAt) : null
+
   return (
     <header className="sr-header">
       <div className="sr-header__brand-band">
@@ -13,6 +18,20 @@ export function Header() {
           <p className="sr-header__tagline">
             MP University Result {new Date().getFullYear()} — Official style dashboard for Madhya Pradesh
             university examination links
+          </p>
+          <p className="sr-header__last-run" role="status">
+            {loading ? (
+              <span className="sr-header__last-run-muted">Checking last scraper run…</span>
+            ) : lastRunLabel ? (
+              <>
+                Last scraper run:{' '}
+                <time className="sr-header__last-run-time" dateTime={String(meta.scrapedAt)}>
+                  {lastRunLabel}
+                </time>
+              </>
+            ) : (
+              <span className="sr-header__last-run-muted">Last scraper run: not available</span>
+            )}
           </p>
         </div>
       </div>
