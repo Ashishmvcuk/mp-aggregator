@@ -1,0 +1,91 @@
+.sr-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.sr-header__brand-band {
+  background: linear-gradient(180deg, #7a0a0a 0%, #5c0606 100%);
+  color: #fff;
+  padding: 0.65rem 0.75rem 0.85rem;
+  text-align: center;
+}
+
+.sr-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sr-header__logo {
+  display: inline-block;
+  font-size: clamp(1.15rem, 3.5vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.sr-header__reg {
+  font-size: 0.55em;
+  vertical-align: super;
+  font-weight: 600;
+}
+
+.sr-header__tagline {
+  margin: 0.4rem 0 0;
+  font-size: clamp(0.78rem, 2vw, 0.9rem);
+  line-height: 1.45;
+  color: #fde8a8;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sr-header__accent {
+  height: 4px;
+  background: linear-gradient(90deg, #f4b400 0%, #ffd54f 50%, #f4b400 100%);
+}
+
+.sr-header__nav {
+  background: #1a1a1a;
+  border-bottom: 2px solid #b71c1c;
+}
+
+.sr-header__nav-inner {
+  padding: 0;
+}
+
+.sr-header__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+.sr-header__menu li {
+  border-right: 1px solid #333;
+}
+
+.sr-header__menu li:first-child .sr-header__nav-link {
+  padding-left: 0.5rem;
+}
+
+.sr-header__nav-link {
+  display: block;
+  padding: 0.55rem 0.85rem;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sr-header__nav-link:hover,
+.sr-header__nav-link:focus-visible {
+  background: #b71c1c;
+  color: #fff;
+  outline: none;
+}

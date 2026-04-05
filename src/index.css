@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Verdana, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  background: #e8e8e8;
+}
+
+#root {
+  min-height: 100vh;
+}
