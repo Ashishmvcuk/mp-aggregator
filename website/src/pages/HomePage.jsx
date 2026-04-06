@@ -10,6 +10,7 @@ import { SearchBar } from '../components/SearchBar'
 import { SectionNavLink } from '../components/SectionNavLink'
 import { SidebarEnrollmentTable } from '../components/SidebarEnrollmentTable'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
+import { SidebarUniversitiesDirectory } from '../components/SidebarUniversitiesDirectory'
 import { SummaryCards } from '../components/SummaryCards'
 import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
 import { useResults } from '../hooks/useResults'
@@ -36,6 +37,10 @@ export function HomePage() {
                 {' · '}
                 <SectionNavLink hashId="enrollment-open" className="home-page__intro-link">
                   Enrollment open
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="university-portals" className="home-page__intro-link">
+                  University portals
                 </SectionNavLink>
                 {' · '}
                 <Link to="/enrollments" className="home-page__intro-link">
@@ -84,6 +89,7 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="mobile"
                   />
+                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} />
                 </div>
               )}
 
@@ -165,6 +171,7 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="sidebar"
                   />
+                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} />
                 </div>
               )}
             </div>

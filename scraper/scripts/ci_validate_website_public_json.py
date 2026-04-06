@@ -19,6 +19,7 @@ MANUAL_ADDITIONS_FILE = "manual_additions.json"
 MANUAL_CATEGORY_KEYS = frozenset(
     {"results", "news", "jobs", "syllabus", "admit_cards", "blogs", "enrollments"}
 )
+UNIVERSITIES_FILE = "universities.json"
 
 
 def main() -> int:
@@ -70,6 +71,29 @@ def main() -> int:
                 if not isinstance(data[key], list):
                     print(
                         f"::error::{p.relative_to(REPO_ROOT)}: manual_additions[{key!r}] must be a JSON array"
+                    )
+                    failed = True
+        elif p.name == UNIVERSITIES_FILE:
+            if not isinstance(data, list):
+                print(f"::error::{p.relative_to(REPO_ROOT)}: root must be a JSON array")
+                failed = True
+                continue
+            for i, row in enumerate(data):
+                if not isinstance(row, dict):
+                    print(
+                        f"::error::{p.relative_to(REPO_ROOT)}: universities[{i}] must be an object"
+                    )
+                    failed = True
+                    continue
+                u, url = row.get("university"), row.get("url")
+                if not isinstance(u, str) or not u.strip():
+                    print(
+                        f"::error::{p.relative_to(REPO_ROOT)}: universities[{i}]: missing non-empty university"
+                    )
+                    failed = True
+                if not isinstance(url, str) or not url.strip():
+                    print(
+                        f"::error::{p.relative_to(REPO_ROOT)}: universities[{i}]: missing non-empty url"
                     )
                     failed = True
         elif not isinstance(data, list):

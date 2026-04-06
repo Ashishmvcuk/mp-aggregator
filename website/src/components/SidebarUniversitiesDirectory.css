@@ -1,0 +1,157 @@
+/* Sidebar directory of official university homepages — matches enrollment sidebar chrome */
+
+.sr-uni {
+  background: #fff;
+  border: none;
+  padding: 0.5rem 0.5rem 0.65rem;
+  height: fit-content;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  min-width: 0;
+}
+
+.sr-uni__details-wrap {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.sr-uni__details-inner .sr-uni__text {
+  margin-top: 0;
+}
+
+.sr-uni__title {
+  margin: 0 0 0.35rem;
+  padding: 0.3rem 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: linear-gradient(135deg, #33691e 0%, #2e7d32 55%, #1b5e20 100%);
+  border: 1px solid #1b5e20;
+}
+
+.sr-uni__text {
+  margin: 0 0 0.45rem;
+  font-size: 0.7rem;
+  color: #444;
+  line-height: 1.35;
+}
+
+.sr-uni__text code {
+  font-size: 0.88em;
+}
+
+.sr-uni__empty {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.sr-uni__scroll {
+  overflow: auto;
+  max-height: min(50vh, 20rem);
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  min-width: 0;
+}
+
+.sr-uni__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  table-layout: fixed;
+}
+
+.sr-uni__th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.35rem 0.3rem;
+  text-align: left;
+  font-weight: 800;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(180deg, #558b2f 0%, #33691e 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.sr-uni__th--link {
+  width: 2.85rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sr-uni__td {
+  padding: 0.35rem 0.3rem;
+  border-bottom: 1px solid #ebebeb;
+  vertical-align: middle;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.sr-uni__td--name {
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.sr-uni__name {
+  display: block;
+  line-height: 1.25;
+}
+
+.sr-uni__td--link {
+  text-align: center;
+  width: 2.85rem;
+}
+
+.sr-uni__open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.55rem;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.55rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(180deg, #43a047 0%, #2e7d32 100%);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.sr-uni__open:hover,
+.sr-uni__open:focus-visible {
+  background: linear-gradient(180deg, #66bb6a 0%, #388e3c 100%);
+  outline: 2px solid #ffd54f;
+  outline-offset: 1px;
+}
+
+.sr-uni__table tbody tr:nth-child(even) .sr-uni__td {
+  background: #f9fdf7;
+}
+
+.sr-uni__table tbody tr:last-child .sr-uni__td {
+  border-bottom: none;
+}
+
+@media (max-width: 899px) {
+  .sr-uni__table {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .sr-uni__scroll {
+    max-height: none;
+  }
+}

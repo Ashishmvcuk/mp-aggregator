@@ -5,5 +5,12 @@
     "html_file": "tests/fixtures/sample_rgpv.html",
     "source_url": "https://www.rgpv.ac.in/",
     "enabled": true
+  },
+  {
+    "university": "Fixture MP Portal (enrollments smoke)",
+    "parser": "mp_portal",
+    "html_file": "tests/fixtures/sample_mp_portal.html",
+    "source_url": "https://fixture-mp-portal.example.edu/",
+    "enabled": true
   }
 ]

@@ -44,15 +44,19 @@
 .home-page__enroll-mobile {
   display: none;
   margin-bottom: 0.75rem;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .home-page__enroll-desktop {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 @media (max-width: 899px) {
   .home-page__enroll-mobile {
-    display: block;
+    display: flex;
   }
 
   .home-page__enroll-desktop {

@@ -7,7 +7,13 @@ import json
 import logging
 from pathlib import Path
 
-from utils.file_ops import OUTPUT_DIR, WEBSITE_DATA_DIR, safe_write_json, sync_category_to_website
+from utils.file_ops import (
+    OUTPUT_DIR,
+    WEBSITE_DATA_DIR,
+    safe_write_json,
+    sync_category_to_website,
+    sync_universities_directory_to_website,
+)
 from utils.logger import setup_logging
 from utils.normalizer import CATEGORY_ORDER
 from utils.validator import validate_category_bucket
@@ -72,6 +78,11 @@ def main() -> int:
             logger.exception("Sync failed for %s", cat)
             failed = True
     if not sync_scrape_meta(args.output_dir):
+        failed = True
+    try:
+        sync_universities_directory_to_website()
+    except Exception as e:
+        logger.exception("Failed syncing universities directory: %s", e)
         failed = True
     return 1 if failed else 0
 

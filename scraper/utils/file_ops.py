@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 
 SCRAPER_ROOT = Path(__file__).resolve().parent.parent
 REPO_ROOT = SCRAPER_ROOT.parent
+UNIVERSITIES_CONFIG_PATH = SCRAPER_ROOT / "config" / "universities.json"
 OUTPUT_DIR = SCRAPER_ROOT / "output"
 OUTPUT_CSV_DIR = OUTPUT_DIR / "csv"
 HISTORY_DIR = OUTPUT_DIR / "history"
@@ -180,3 +181,32 @@ def write_scrape_meta(summary: dict[str, Any]) -> Path:
 
 def website_relative_data_path(category: str) -> str:
     return f"public/data/{category}.json"
+
+
+def sync_universities_directory_to_website() -> Path:
+    """
+    Write website/public/data/universities.json from config/universities.json
+    (enabled entries only: official portal name + URL for the sidebar directory).
+    """
+    if not UNIVERSITIES_CONFIG_PATH.is_file():
+        raise FileNotFoundError(f"Missing {UNIVERSITIES_CONFIG_PATH}")
+    with open(UNIVERSITIES_CONFIG_PATH, encoding="utf-8") as f:
+        data = json.load(f)
+    if not isinstance(data, list):
+        raise ValueError("universities.json config must be a JSON array")
+    out: list[dict[str, str]] = []
+    for row in data:
+        if not isinstance(row, dict):
+            continue
+        if row.get("enabled", True) is False:
+            continue
+        uni = str(row.get("university", "")).strip()
+        url = str(row.get("url", "")).strip()
+        if not uni or not url:
+            continue
+        out.append({"university": uni, "url": url})
+    out.sort(key=lambda x: x["university"].lower())
+    dest = WEBSITE_DATA_DIR / "universities.json"
+    safe_write_json(dest, out)
+    logger.info("Website universities.json: wrote %d enabled portal(s)", len(out))
+    return dest

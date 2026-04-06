@@ -98,11 +98,46 @@ Settings live in [`scheduler_config.py`](scheduler_config.py); the scheduler log
 
 Logs: console plus rotating `scraper/logs/scraper.log`. Use **DEBUG** on the `utils.normalizer` / `utils.dedupe` loggers to see per-item drops and dedupe skips.
 
+## Test enrollments locally
+
+**Why `enrollments.json` can stay empty after a live run**
+
+- The **`mp_portal`** parser only picks links whose **visible anchor text or URL path** contains enrollment-style keywords (e.g. `admission`, `enrollment`, `prospectus`). If the live homepage does not expose those words on links the scraper sees, the bucket stays empty.
+- **Website sync** does **not** overwrite `website/public/data/enrollments.json` when the validated list is **empty** (see [Website sync rules](#website-sync-rules) below), so the site may still show an old empty file even after a successful run.
+
+**Offline smoke test (no network, proves the enrollments pipeline works)**
+
+From the `scraper/` directory, with dependencies installed:
+
+```bash
+export SCRAPER_SKIP_WEBSITE_SYNC=1
+python run_fixtures.py --validate
+python3 -c "import json; d=json.load(open('output/enrollments.json')); print('enrollments count:', len(d)); print(d[:2] if d else '[]')"
+```
+
+Fixtures include [`tests/fixtures/sample_mp_portal.html`](tests/fixtures/sample_mp_portal.html) (fake admission + enrollment links). You should see **`enrollments count: 2`** (or more if other fixtures add rows).
+
+**Live run and inspect**
+
+```bash
+export SCRAPER_SKIP_WEBSITE_SYNC=0   # default; set to 1 to avoid touching website/public/data/
+python main.py
+```
+
+Then check:
+
+```bash
+python3 -c "import json; s=json.load(open('output/run_summary.json')); print('enrollments parsed:', s['raw_counts'].get('enrollments')); print('valid out:', s['categories']['enrollments']['valid_for_output'])"
+```
+
+If `parsed` is **0**, no source homepage produced matching links. If `parsed` is positive but `valid out` is **0**, open `run_summary.json` → `validation_status` / logs for normalization or validation errors.
+
 ## Outputs
 
 | Path | Purpose |
 |------|---------|
 | `scraper/output/<category>.json` | Latest validated items per category (may be empty arrays). |
+| `website/public/data/universities.json` | Enabled universities from `config/universities.json` (name + official URL); written whenever **`sync_to_website.py`** runs or **`main.py`** syncs to the site. |
 | `scraper/output/history/<UTC>_<category>.json` | Per-run snapshot. |
 | `scraper/output/run_summary.json` | Per-run rollup: `run_id`, `run_timestamp`, university counts, `raw_counts` (items parsed into each bucket before normalization), `unique_counts` (after dedupe), `categories` (per-category pipeline stats), `copy_status`, `failures`. |
 

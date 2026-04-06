@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { loadLandingFeeds } from '../services/dashboardDataService'
+import { loadLandingFeeds, loadUniversityPortals } from '../services/dashboardDataService'
 import { isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
 
 const NEWS_DAYS = 30
@@ -25,6 +25,7 @@ export function useDashboardFeeds() {
   const [syllabus, setSyllabus] = useState(/** @type {FeedItem[]} */ ([]))
   const [admitCards, setAdmitCards] = useState(/** @type {FeedItem[]} */ ([]))
   const [enrollments, setEnrollments] = useState(/** @type {FeedItem[]} */ ([]))
+  const [universityPortals, setUniversityPortals] = useState(/** @type {{ university: string; url: string }[]} */ ([]))
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(/** @type {string|null} */ (null))
 
@@ -32,8 +33,8 @@ export function useDashboardFeeds() {
     let cancelled = false
     setLoading(true)
     setError(null)
-    loadLandingFeeds()
-      .then(({ news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a, enrollments: e }) => {
+    Promise.all([loadLandingFeeds(), loadUniversityPortals()])
+      .then(([{ news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a, enrollments: e }, portals]) => {
         if (cancelled) return
         setNews(n)
         setBlogs(b)
@@ -41,6 +42,7 @@ export function useDashboardFeeds() {
         setSyllabus(s)
         setAdmitCards(a)
         setEnrollments(e)
+        setUniversityPortals(portals)
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load feeds')
@@ -83,6 +85,7 @@ export function useDashboardFeeds() {
   return {
     enrollmentsPreview,
     enrollmentsTotal,
+    universityPortals,
     newsLast30Days,
     jobsSorted,
     syllabusSorted,

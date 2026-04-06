@@ -14,6 +14,7 @@ from utils.fetcher import fetch_html
 from utils.file_ops import (
     ensure_directories,
     sync_category_to_website,
+    sync_universities_directory_to_website,
     website_relative_data_path,
     write_category_output,
     write_history_snapshot,
@@ -167,6 +168,15 @@ def _finalize_pipeline(
             categories_detail[cat]["valid_for_output"],
             copy_status[cat],
         )
+
+    if not skip_website_sync:
+        try:
+            sync_universities_directory_to_website()
+        except Exception as e:
+            logger.exception("[%s] Website sync failed for universities directory", run_id)
+            failures.append(
+                {"university": "*", "stage": "copy", "message": f"universities.json: {e}"}
+            )
 
     summary = {
         "run_id": run_id,

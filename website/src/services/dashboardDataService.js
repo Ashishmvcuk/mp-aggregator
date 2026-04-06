@@ -92,3 +92,15 @@ export async function loadEnrollments() {
   ])
   return mergeWithManual(manual, staticItems, 'url')
 }
+
+/** Enabled universities from `public/data/universities.json` (synced from scraper config). */
+export async function loadUniversityPortals() {
+  const rows = await fetchJsonArray('data/universities.json')
+  return rows
+    .filter((r) => r && typeof r === 'object')
+    .map((r) => ({
+      university: String(r.university || '').trim(),
+      url: String(r.url || '').trim(),
+    }))
+    .filter((r) => r.university && r.url)
+}
