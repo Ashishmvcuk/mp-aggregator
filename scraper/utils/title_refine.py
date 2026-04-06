@@ -11,6 +11,7 @@ TITLE_CAPS: dict[str, int] = {
     "news": 140,
     "syllabus": 110,
     "admit_cards": 110,
+    "enrollments": 130,
     "blogs": 165,
     "jobs": 115,
 }

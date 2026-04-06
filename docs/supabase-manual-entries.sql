@@ -1,4 +1,7 @@
 -- Run in Supabase SQL Editor after creating a project.
+--
+-- If the table already exists without `enrollments`, alter the check constraint in the SQL editor
+-- (drop the old CHECK on `category` and add one that includes `'enrollments'`), or recreate the table from this file.
 -- Then: Authentication → Users → add user (email + password) for editors.
 
 create table if not exists public.manual_entries (
@@ -10,7 +13,8 @@ create table if not exists public.manual_entries (
       'jobs',
       'syllabus',
       'admit_cards',
-      'blogs'
+      'blogs',
+      'enrollments'
     )
   ),
   university text not null,

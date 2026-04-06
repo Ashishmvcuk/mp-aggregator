@@ -12,6 +12,7 @@ def test_mp_portal_classifies_buckets() -> None:
     <a href="/jobs.html">Faculty Recruitment 2026</a>
     <a href="/syllabus.pdf">Syllabus B.Tech</a>
     <a href="/blog/post">Editorial blog post title here</a>
+    <a href="/pg-admission.pdf">PG Admission prospectus 2026</a>
     </body></html>
     """
     p = MpPortalParser()
@@ -19,6 +20,7 @@ def test_mp_portal_classifies_buckets() -> None:
     assert len(out["results"]) >= 1
     assert len(out["news"]) >= 1
     assert len(out["admit_cards"]) >= 1
+    assert len(out["enrollments"]) >= 1
     assert len(out["jobs"]) >= 1
     assert len(out["syllabus"]) >= 1
     assert len(out["blogs"]) >= 1

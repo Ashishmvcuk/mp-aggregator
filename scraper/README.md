@@ -24,7 +24,7 @@ Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions
 
 ## Categories
 
-Allowed category keys (every parser returns all six; empty lists are fine):
+Allowed category keys (every parser returns all seven; empty lists are fine):
 
 | Category       | Output file              |
 |----------------|--------------------------|
@@ -32,6 +32,7 @@ Allowed category keys (every parser returns all six; empty lists are fine):
 | `news`         | `news.json`              |
 | `syllabus`     | `syllabus.json`          |
 | `admit_cards`  | `admit_cards.json`       |
+| `enrollments`  | `enrollments.json`       |
 | `blogs`        | `blogs.json`             |
 | `jobs`         | `jobs.json`              |
 

@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadLandingFeeds } from '../services/dashboardDataService'
 import { isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
-import { isEnrollmentRelated } from '../utils/enrollmentFilter'
 
 const NEWS_DAYS = 30
 const MAX_NEWS = 45
@@ -25,6 +24,7 @@ export function useDashboardFeeds() {
   const [jobs, setJobs] = useState(/** @type {FeedItem[]} */ ([]))
   const [syllabus, setSyllabus] = useState(/** @type {FeedItem[]} */ ([]))
   const [admitCards, setAdmitCards] = useState(/** @type {FeedItem[]} */ ([]))
+  const [enrollments, setEnrollments] = useState(/** @type {FeedItem[]} */ ([]))
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(/** @type {string|null} */ (null))
 
@@ -33,13 +33,14 @@ export function useDashboardFeeds() {
     setLoading(true)
     setError(null)
     loadLandingFeeds()
-      .then(({ news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a }) => {
+      .then(({ news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a, enrollments: e }) => {
         if (cancelled) return
         setNews(n)
         setBlogs(b)
         setJobs(j)
         setSyllabus(s)
         setAdmitCards(a)
+        setEnrollments(e)
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load feeds')
@@ -70,13 +71,18 @@ export function useDashboardFeeds() {
 
   const blogsSorted = useMemo(() => sortByDateDesc(blogs).slice(0, MAX_BLOGS), [blogs])
 
-  const enrollmentOpenLatest = useMemo(() => {
-    const matches = news.filter((item) => isEnrollmentRelated(item))
-    return sortByDateDesc(matches).slice(0, MAX_ENROLLMENT_SIDEBAR)
-  }, [news])
+  const enrollmentsSorted = useMemo(() => sortByDateDesc(enrollments), [enrollments])
+
+  const enrollmentsPreview = useMemo(
+    () => enrollmentsSorted.slice(0, MAX_ENROLLMENT_SIDEBAR),
+    [enrollmentsSorted]
+  )
+
+  const enrollmentsTotal = enrollmentsSorted.length
 
   return {
-    enrollmentOpenLatest,
+    enrollmentsPreview,
+    enrollmentsTotal,
     newsLast30Days,
     jobsSorted,
     syllabusSorted,

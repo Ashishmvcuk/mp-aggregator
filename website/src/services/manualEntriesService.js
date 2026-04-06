@@ -17,6 +17,7 @@ export const MANUAL_CATEGORIES = [
   'jobs',
   'syllabus',
   'admit_cards',
+  'enrollments',
   'blogs',
 ]
 

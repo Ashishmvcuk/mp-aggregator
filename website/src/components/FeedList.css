@@ -267,3 +267,14 @@
     box-sizing: border-box;
   }
 }
+
+/* Collapsible mobile layout: avoid nested white card around <details> */
+@media (max-width: 899px) {
+  .feed-board--mobile-collapse {
+    padding: 0.35rem 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

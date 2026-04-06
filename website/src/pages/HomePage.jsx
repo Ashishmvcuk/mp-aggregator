@@ -38,6 +38,10 @@ export function HomePage() {
                   Enrollment open
                 </SectionNavLink>
                 {' · '}
+                <Link to="/enrollments" className="home-page__intro-link">
+                  All enrollments
+                </Link>
+                {' · '}
                 <SectionNavLink hashId="landing-jobs" className="home-page__intro-link">
                   Jobs
                 </SectionNavLink>
@@ -75,7 +79,11 @@ export function HomePage() {
 
               {!feeds.loading && (
                 <div className="home-page__enroll-mobile">
-                  <SidebarEnrollmentTable items={feeds.enrollmentOpenLatest} placement="mobile" />
+                  <SidebarEnrollmentTable
+                    items={feeds.enrollmentsPreview}
+                    totalCount={feeds.enrollmentsTotal}
+                    placement="mobile"
+                  />
                 </div>
               )}
 
@@ -92,7 +100,7 @@ export function HomePage() {
 
               {feeds.loading ? (
                 <p className="home-page__loading home-page__loading--secondary" role="status">
-                  Loading news, jobs, syllabus, and admit cards…
+                  Loading news, enrollments, jobs, syllabus, and admit cards…
                 </p>
               ) : (
                 <>
@@ -152,7 +160,11 @@ export function HomePage() {
               <SidebarQuickLinks onPick={setQuery} />
               {!feeds.loading && (
                 <div className="home-page__enroll-desktop">
-                  <SidebarEnrollmentTable items={feeds.enrollmentOpenLatest} placement="sidebar" />
+                  <SidebarEnrollmentTable
+                    items={feeds.enrollmentsPreview}
+                    totalCount={feeds.enrollmentsTotal}
+                    placement="sidebar"
+                  />
                 </div>
               )}
             </div>

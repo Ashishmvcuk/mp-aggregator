@@ -17,7 +17,7 @@ SCRAPE_META_REQUIRED_KEYS = frozenset(
 
 MANUAL_ADDITIONS_FILE = "manual_additions.json"
 MANUAL_CATEGORY_KEYS = frozenset(
-    {"results", "news", "jobs", "syllabus", "admit_cards", "blogs"}
+    {"results", "news", "jobs", "syllabus", "admit_cards", "blogs", "enrollments"}
 )
 
 

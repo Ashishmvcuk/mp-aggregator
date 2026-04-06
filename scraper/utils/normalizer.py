@@ -10,7 +10,7 @@ from utils.title_refine import TITLE_CAPS, refine_link_title
 
 logger = logging.getLogger(__name__)
 
-CATEGORY_ORDER = ("results", "news", "syllabus", "admit_cards", "blogs", "jobs")
+CATEGORY_ORDER = ("results", "news", "syllabus", "admit_cards", "enrollments", "blogs", "jobs")
 ALLOWED_CATEGORIES = frozenset(CATEGORY_ORDER)
 
 # Category-specific title rules (after whitespace normalize)

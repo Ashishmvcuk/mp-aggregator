@@ -1,4 +1,4 @@
-/* Sidebar enrollment table — matches sr-sidebar chrome, compact for ~200px column */
+/* Sidebar enrollment — single notice column per row, no table header */
 
 .sr-enroll--mobile {
   margin-top: 0.15rem;
@@ -6,8 +6,8 @@
 
 .sr-enroll__details {
   margin: 0;
-  border: 2px solid #333;
-  border-radius: 2px;
+  border: none;
+  border-radius: 8px;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
@@ -72,7 +72,7 @@
 
 .sr-enroll {
   background: #fff;
-  border: 2px solid #333;
+  border: none;
   padding: 0.5rem 0.5rem 0.65rem;
   height: fit-content;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -125,35 +125,8 @@
   table-layout: fixed;
 }
 
-.sr-enroll__th {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  padding: 0.35rem 0.3rem;
-  text-align: left;
-  font-weight: 800;
-  font-size: 0.58rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #fff;
-  background: linear-gradient(180deg, #c62828 0%, #b71c1c 100%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  vertical-align: bottom;
-}
-
-.sr-enroll__th--date {
-  width: 3.35rem;
-  white-space: nowrap;
-}
-
-.sr-enroll__th--link {
-  width: 2.35rem;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.sr-enroll__td {
-  padding: 0.4rem 0.3rem;
+.sr-enroll__notice-cell {
+  padding: 0.45rem 0.4rem;
   border-bottom: 1px solid #ebebeb;
   vertical-align: top;
   word-break: break-word;
@@ -161,16 +134,13 @@
   min-width: 0;
 }
 
-.sr-enroll__td--date {
+.sr-enroll__date {
+  display: block;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: #37474f;
-  white-space: nowrap;
-  width: 3.35rem;
-}
-
-.sr-enroll__td--notice {
-  min-width: 0;
+  font-size: 0.62rem;
+  color: #546e7a;
+  margin-bottom: 0.2rem;
 }
 
 .sr-enroll__uni {
@@ -178,7 +148,7 @@
   font-weight: 800;
   font-size: 0.62rem;
   color: #8b1014;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
   line-height: 1.25;
 }
 
@@ -196,68 +166,43 @@
   color: #5c0606;
 }
 
-.sr-enroll__td--link {
+.sr-enroll__more {
+  margin: 0.45rem 0 0;
+  padding: 0;
+  font-size: 0.72rem;
   text-align: center;
-  vertical-align: middle;
-  width: 2.35rem;
 }
 
-.sr-enroll__open {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 1.65rem;
-  padding: 0.2rem 0.35rem;
-  font-size: 0.58rem;
+.sr-enroll__more-link {
   font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: #fff;
-  text-decoration: none;
-  background: linear-gradient(180deg, #1e88e5 0%, #1565c0 100%);
-  border-radius: 4px;
-  white-space: nowrap;
+  color: #1565c0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.sr-enroll__open:hover,
-.sr-enroll__open:focus-visible {
-  background: linear-gradient(180deg, #2196f3 0%, #1976d2 100%);
-  outline: 2px solid #ffd54f;
-  outline-offset: 1px;
+.sr-enroll__more-link:hover,
+.sr-enroll__more-link:focus-visible {
+  color: #5c0606;
 }
 
-.sr-enroll__table tbody tr:nth-child(even) .sr-enroll__td {
+.sr-enroll__text code {
+  font-size: 0.88em;
+}
+
+.sr-enroll__table tbody tr:nth-child(even) .sr-enroll__notice-cell {
   background: #fdfcfa;
 }
 
-.sr-enroll__table tbody tr:last-child .sr-enroll__td {
+.sr-enroll__table tbody tr:last-child .sr-enroll__notice-cell {
   border-bottom: none;
 }
 
-/* Full-width layout: allow table to breathe */
 @media (max-width: 899px) {
   .sr-enroll__table {
     font-size: 0.74rem;
   }
-
-  .sr-enroll__th--date {
-    width: 4rem;
-  }
-
-  .sr-enroll__th--link {
-    width: 2.75rem;
-  }
-
-  .sr-enroll__td--date {
-    width: 4rem;
-  }
-
-  .sr-enroll__td--link {
-    width: 2.75rem;
-  }
 }
 
-/* Stacked rows on very narrow screens */
 @media (max-width: 420px) {
   .sr-enroll__scroll {
     max-height: none;
@@ -267,10 +212,6 @@
 
   .sr-enroll__table {
     display: block;
-  }
-
-  .sr-enroll__table thead {
-    display: none;
   }
 
   .sr-enroll__table tbody {
@@ -286,41 +227,9 @@
     background: #fff;
   }
 
-  .sr-enroll__table tbody td {
+  .sr-enroll__table tbody td.sr-enroll__notice-cell {
     display: block;
-    width: auto !important;
-    border-bottom: 1px solid #eee;
-    padding: 0.45rem 0.55rem;
-  }
-
-  .sr-enroll__table tbody td:last-child {
     border-bottom: none;
-  }
-
-  .sr-enroll__td--date::before {
-    content: 'Date: ';
-    font-weight: 800;
-    color: #8b1014;
-    font-size: 0.62rem;
-    text-transform: uppercase;
-  }
-
-  .sr-enroll__td--notice::before {
-    content: 'Notice: ';
-    font-weight: 800;
-    color: #8b1014;
-    font-size: 0.62rem;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.25rem;
-  }
-
-  .sr-enroll__td--link {
-    text-align: left;
-  }
-
-  .sr-enroll__open {
-    width: 100%;
-    box-sizing: border-box;
+    padding: 0.55rem 0.65rem;
   }
 }

@@ -58,11 +58,12 @@ export async function loadDashboardFeeds() {
 
 /** All category feeds used on the landing page (except results — loaded separately). */
 export async function loadLandingFeeds() {
-  const [news, jobs, syllabus, admit_cards, blogs, manual] = await Promise.all([
+  const [news, jobs, syllabus, admit_cards, enrollments, blogs, manual] = await Promise.all([
     fetchJsonArray('data/news.json'),
     fetchJsonArray('data/jobs.json'),
     fetchJsonArray('data/syllabus.json'),
     fetchJsonArray('data/admit_cards.json'),
+    fetchJsonArray('data/enrollments.json'),
     fetchJsonArray('data/blogs.json'),
     loadAllManualGroupedCached(),
   ])
@@ -71,6 +72,7 @@ export async function loadLandingFeeds() {
     jobs: mergeWithManual(manual.jobs, jobs, 'url'),
     syllabus: mergeWithManual(manual.syllabus, syllabus, 'url'),
     admit_cards: mergeWithManual(manual.admit_cards, admit_cards, 'url'),
+    enrollments: mergeWithManual(manual.enrollments, enrollments, 'url'),
     blogs: mergeWithManual(manual.blogs, blogs, 'url'),
   }
 }
@@ -79,6 +81,14 @@ export async function loadAdmitCards() {
   const [staticItems, manual] = await Promise.all([
     fetchJsonArray('data/admit_cards.json'),
     loadAllManualGroupedCached().then((m) => m.admit_cards || []),
+  ])
+  return mergeWithManual(manual, staticItems, 'url')
+}
+
+export async function loadEnrollments() {
+  const [staticItems, manual] = await Promise.all([
+    fetchJsonArray('data/enrollments.json'),
+    loadAllManualGroupedCached().then((m) => m.enrollments || []),
   ])
   return mergeWithManual(manual, staticItems, 'url')
 }
