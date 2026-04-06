@@ -120,7 +120,6 @@ export function HomePage() {
                   <FeedList
                     id="landing-jobs"
                     title="Latest jobs & recruitment"
-                    subtitle="Vacancy and career links detected on university homepages."
                     items={feeds.jobsSorted}
                     emptyMessage="No job links in data yet — sync scraper output to website/public/data/jobs.json."
                   />
@@ -135,7 +134,7 @@ export function HomePage() {
                     subtitle={
                       feeds.admitCardsTotal > feeds.admitCardsHomePreview.length
                         ? `Showing ${feeds.admitCardsHomePreview.length} of ${feeds.admitCardsTotal} on file.`
-                        : 'All matching links on file are shown below.'
+                        : undefined
                     }
                     items={feeds.admitCardsHomePreview}
                     emptyMessage="No admit cards in data yet — they appear here after a successful scrape and sync."
@@ -146,14 +145,12 @@ export function HomePage() {
                   <FeedList
                     id="landing-syllabus"
                     title="Syllabus & schemes"
-                    subtitle="Curriculum and scheme links from university portals."
                     items={feeds.syllabusSorted}
                     emptyMessage="No syllabus links in data yet — sync scraper output to website/public/data/syllabus.json."
                   />
                   <FeedList
                     id="blogs"
                     title="Blogs & articles"
-                    subtitle="Editorial and magazine-style links."
                     items={feeds.blogsSorted}
                     emptyMessage="No blog links scraped yet."
                   />

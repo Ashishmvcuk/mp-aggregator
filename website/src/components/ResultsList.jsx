@@ -5,13 +5,6 @@ import './MobileCollapsibleTable.css'
 
 const RESULTS_TITLE = 'Latest MP university results'
 
-const RESULTS_NOTE = (
-  <>
-    All links open the official university portal in a new tab. Verify marks and notifications only on the
-    university website.
-  </>
-)
-
 /**
  * @param {{ results: Array<{ university: string; title: string; result_url: string; date: string }>; emptyMessage?: string }} props
  */
@@ -76,7 +69,6 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
             </span>
           </summary>
           <div className="table-collapse__inner">
-            <p className="results-board__note">{RESULTS_NOTE}</p>
             {tableBlock}
           </div>
         </details>
@@ -89,7 +81,6 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
       <h2 id="results-heading" className="results-board__title">
         {RESULTS_TITLE}
       </h2>
-      <p className="results-board__note">{RESULTS_NOTE}</p>
       {tableBlock}
     </section>
   )

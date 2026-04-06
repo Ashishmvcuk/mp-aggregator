@@ -12,30 +12,17 @@ export function SidebarUniversitiesDirectory({ portals }) {
   const table = (
     <div className="sr-uni__scroll">
       <table className="sr-uni__table">
-        <thead>
-          <tr>
-            <th scope="col" className="sr-uni__th">
-              University
-            </th>
-            <th scope="col" className="sr-uni__th sr-uni__th--link">
-              Portal
-            </th>
-          </tr>
-        </thead>
         <tbody>
           {portals.map((row) => (
             <tr key={row.url}>
-              <td className="sr-uni__td sr-uni__td--name">
-                <span className="sr-uni__name">{row.university}</span>
-              </td>
-              <td className="sr-uni__td sr-uni__td--link">
+              <td className="sr-uni__td">
                 <a
                   href={row.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="sr-uni__open"
+                  className="sr-uni__link"
                 >
-                  Visit
+                  {row.university}
                 </a>
               </td>
             </tr>
@@ -47,7 +34,6 @@ export function SidebarUniversitiesDirectory({ portals }) {
 
   const body = (
     <>
-      <p className="sr-uni__text">Official homepages of universities tracked by the scraper (same list as config).</p>
       {n === 0 ? (
         <p className="sr-uni__empty" role="status">
           No university list loaded yet. It appears after data sync from the project scraper.

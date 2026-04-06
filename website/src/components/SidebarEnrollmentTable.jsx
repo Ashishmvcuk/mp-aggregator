@@ -87,9 +87,6 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
   return (
     <aside className="sr-enroll" aria-label="Latest enrollment and admission notices">
       <h2 className="sr-enroll__title">Enrollment & admissions open</h2>
-      <p className="sr-enroll__text">
-        Latest from the scraper (<code>enrollments.json</code>), newest first. Up to ten shown here.
-      </p>
       {tableOrEmpty}
       {viewMore}
     </aside>
