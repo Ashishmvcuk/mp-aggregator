@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-04-08T18:54:17.693176Z",
-  "runId": "20260408T185417Z",
+  "scrapedAt": "2026-04-08T19:02:45.382449Z",
+  "runId": "20260408T190245Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
   "universitiesSuccess": 30,
@@ -14,5 +14,5 @@
     "blogs": 15,
     "jobs": 54
   },
-  "ciRunId": "24152828312"
+  "ciRunId": "24153171550"
 }
