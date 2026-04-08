@@ -29,22 +29,8 @@
   },
   {
     "university": "Indira Gandhi National Tribal University (IGNTU)",
-    "title": "Online Bus Portal",
-    "url": "http://admission.igntuonline.in/OnlineBusPortal/BusPayment.aspx",
-    "date": "2026-04-08",
-    "category": "enrollments"
-  },
-  {
-    "university": "Indira Gandhi National Tribal University (IGNTU)",
     "title": "Online Fee Payment Portal(Misc. Fee)",
     "url": "http://admission.igntuonline.in/OnlineFeePortal/OnlineFeeForm.aspx",
-    "date": "2026-04-08",
-    "category": "enrollments"
-  },
-  {
-    "university": "Indira Gandhi National Tribal University (IGNTU)",
-    "title": "Online IQAC Feedback Portal",
-    "url": "http://admission.igntuonline.in/FeedBack_Home.aspx",
     "date": "2026-04-08",
     "category": "enrollments"
   },
@@ -241,7 +227,7 @@
     "university": "Awadhesh Pratap Singh University, Rewa",
     "title": "ug,pg,ncte,dte enrollment revised notification",
     "url": "https://apsurewa.ac.in/en/exam/ug-pg-ncte-dte-enrollment-revised-notification-6",
-    "date": "2026-04-08",
+    "date": "2026-03-11",
     "category": "enrollments"
   },
   {
@@ -616,6 +602,62 @@
     "category": "enrollments"
   },
   {
+    "university": "SAGE University, Bhopal",
+    "title": "SAGE Entrance Exam(SEE)",
+    "url": "https://sageuniversity.edu.in/bhopal-admission?utm_source=Website-Lead&utm_medium=Top-SEE-Button&utm_campaign=Admissions-2026",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Provisional Fees Payment",
+    "url": "https://portal.sageuniversity.edu.in/Accsoft/AdmissionRegPayment.aspx",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Admission Procedure",
+    "url": "https://sageuniversity.edu.in/admission-procedure",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Online Application & Enquiry",
+    "url": "https://admission.sageuniversity.edu.in/?utm_source=Website-Organic-Lead&utm_medium=Organic&utm_campaign=Admissions-Open-2025",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "PhD Admission Guideline & Registration Link",
+    "url": "https://sageuniversity.edu.in/PhD-Admission-Guideline",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Admissions Open",
+    "url": "https://admission.sageuniversity.edu.in/?utm_source=Website-Lead&utm_medium=Google&utm_campaign=Admissions-2025",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Read More",
+    "url": "https://sageuniversity.edu.in/blogs/btech-admission-2026-eligibility-fees-entrance-exams-career-scope",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Bhopal",
+    "title": "Enquire Now 2026-27",
+    "url": "https://admission.sageuniversity.edu.in/?utm_source=Website-Lead&utm_medium=Google&utm_campaign=Admissions-2024",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
     "university": "Rabindranath Tagore University, Bhopal",
     "title": "Admission",
     "url": "https://rntu.ac.in/",
@@ -864,6 +906,62 @@
     "university": "Medi-Caps University, Indore",
     "title": "Eligibility Criteria",
     "url": "https://www.medicaps.ac.in/admission-overview#admission-eligibility",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "Click For Enquiry",
+    "url": "https://admission.sageuniversity.in/",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "International Admission",
+    "url": "https://sageuniversity.in/international",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "Admission Procedure",
+    "url": "https://sageuniversity.in/admission-procedure",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "Provisional Admission Fee",
+    "url": "https://portal.sageuniversity.in/accsoft/AdmissionRegPayment.aspx",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "Admission Offices",
+    "url": "https://sageuniversity.in/offices",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "SAGE University, Indore",
+    "title": "Read More",
+    "url": "https://sageuniversity.in/blogs/sage-university-admission-open-2026-law-design-management",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "Oriental University, Indore",
+    "title": "Admission",
+    "url": "https://admission.oui.edu.in/",
+    "date": "2026-04-08",
+    "category": "enrollments"
+  },
+  {
+    "university": "Oriental University, Indore",
+    "title": "NCTE REGULATONS 2014 CLAUSE 8(14)",
+    "url": "https://oui.edu.in/storage/2026/02/Intake-scaled.jpg",
     "date": "2026-04-08",
     "category": "enrollments"
   },
@@ -1158,7 +1256,7 @@
     "university": "Madhyanchal Professional University",
     "title": "NOTIFICATION DATE OF ENROLLMENT REGISTRATION FORM IS EXTENDED TILL - 04-12-2025",
     "url": "https://mpu.ac.in/uploads/2025/MPU-Circular-for-filling-enrollment-form-(27.11.25).pdf",
-    "date": "2026-04-08",
+    "date": "2025-12-04",
     "category": "enrollments"
   },
   {
