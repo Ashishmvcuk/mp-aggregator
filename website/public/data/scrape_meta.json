@@ -1,18 +1,18 @@
 {
-  "scrapedAt": "2026-04-06T00:23:03.865344Z",
-  "runId": "20260406T002303Z",
+  "scrapedAt": "2026-04-08T18:54:17.693176Z",
+  "runId": "20260408T185417Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
   "universitiesSuccess": 30,
   "universitiesFailed": 10,
   "categoryCounts": {
-    "results": 40,
+    "results": 41,
     "news": 217,
     "syllabus": 36,
     "admit_cards": 1,
     "enrollments": 185,
     "blogs": 15,
-    "jobs": 52
+    "jobs": 54
   },
-  "ciRunId": "24013806215"
+  "ciRunId": "24152828312"
 }
