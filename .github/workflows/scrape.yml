@@ -35,6 +35,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Full history so git fetch/rebase before push can find a common ancestor (default depth-1 breaks rebase).
+          fetch-depth: 0
 
       - name: "Setup: Python 3.11"
         uses: actions/setup-python@v5

@@ -30,6 +30,15 @@ echo "---- Staged files ----"
 git diff --staged --name-only
 
 git commit -m "chore: update scraped website data"
-git push
+
+# Remote main may have moved (deploys, other commits). Rebase our commit on top, then push.
+BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
+git fetch origin "$BRANCH"
+if ! git rebase "origin/${BRANCH}"; then
+  echo "Rebase onto origin/${BRANCH} failed (likely overlapping edits). Resolve on a clone or merge main locally, then rerun."
+  exit 1
+fi
+
+git push origin "$BRANCH"
 
 echo "Committed and pushed updated website data."
