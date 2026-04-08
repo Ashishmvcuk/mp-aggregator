@@ -39,6 +39,8 @@ flowchart LR
 
 **Why a failed scraper run does not break the live site:** `main` and `gh-pages` are only updated after a **successful** push. Failed steps occur **before** `git push`, so the previous successful deploy stays live. Download the **`scraper-diagnostics-*`** artifact from the failed job for `run_summary.json` and logs.
 
+**Optional CI integrations** (see [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml)): repository **variables** `SCRAPER_MAX_UNIVERSITY_FAILURES` and/or `SCRAPER_MAX_FAILURE_RATIO` feed [`scraper/scripts/ci_scrape_healthcheck.py`](scraper/scripts/ci_scrape_healthcheck.py) and can fail the job when too many universities fail in one run. Secret **`SCRAPER_WEBHOOK_URL`** receives a JSON POST of `run_summary` and `scrape_meta` after each run (`always()`). The workflow also runs on a **weekday schedule** (Mon–Fri 06:30 UTC) in addition to weekly Sunday.
+
 ### Operational checklist (exact clicks)
 
 **Run a scrape now (manual)**  
@@ -93,6 +95,8 @@ Editors can add links in any section without running the scraper:
 
 1. **Git-only (no database):** Edit [`website/public/data/manual_additions.json`](website/public/data/manual_additions.json). Use the same object shape as scraped data per category (`results` items need `result_url`; others use `url`). Commit and deploy.
 2. **Supabase (live UI):** Run [`docs/supabase-manual-entries.sql`](docs/supabase-manual-entries.sql) in your project, create an **Auth** user for editors, then add repository secrets **`VITE_SUPABASE_URL`** and **`VITE_SUPABASE_ANON_KEY`** so **Deploy** and **Scraper** builds embed them. Open **Content admin** in the site footer, sign in, add or remove rows.
+
+3. **Admin gate (password before Supabase):** For production builds, set optional secrets **`VITE_ADMIN_USERNAME`** and **`VITE_ADMIN_PASSWORD`** so the first login screen is not the demo `admin`/`admin`. Local `npm run dev` still allows `admin`/`admin` unless you set those env vars. **`VITE_ADMIN_ALLOW_DEMO=true`** (repo variable) can re-enable the demo pair on deployed builds if needed.
 
 Duplicate URLs are deduped: manual entries win over scraped rows.
 

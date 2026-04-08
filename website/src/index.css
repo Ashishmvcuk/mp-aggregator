@@ -10,10 +10,19 @@ html {
 
 body {
   margin: 0;
-  font-family: Tahoma, Verdana, 'Segoe UI', Arial, sans-serif;
+  /* Latin + Devanagari (Hindi, Marathi, etc.); system fonts as fallback for other scripts */
+  font-family:
+    'Noto Sans',
+    'Noto Sans Devanagari',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Tahoma,
+    sans-serif;
   line-height: 1.45;
   color: #222;
   background: #e8e8e8;
+  text-rendering: optimizeLegibility;
 }
 
 #root {

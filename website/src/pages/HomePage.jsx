@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DashboardChart } from '../components/DashboardChart'
 import { FeedList } from '../components/FeedList'
@@ -18,8 +18,23 @@ import './HomePage.css'
 
 export function HomePage() {
   const [query, setQuery] = useState('')
-  const { items, filtered, summary, loading, error, universityNames, titleSuggestions } = useResults(query)
+  const [groupFilter, setGroupFilter] = useState('all')
   const feeds = useDashboardFeeds()
+  const universityToGroup = useMemo(() => {
+    const m = new Map()
+    for (const p of feeds.universityPortals) {
+      if (p.group) m.set(p.university, p.group)
+    }
+    return m
+  }, [feeds.universityPortals])
+  const groupOptions = useMemo(() => {
+    const s = new Set(feeds.universityPortals.map((p) => p.group).filter(Boolean))
+    return [...s].sort((a, b) => a.localeCompare(b))
+  }, [feeds.universityPortals])
+  const { items, filtered, summary, loading, error, universityNames, titleSuggestions } = useResults(
+    query,
+    { groupFilter, universityToGroup }
+  )
 
   return (
     <div className="home-page">
@@ -68,6 +83,27 @@ export function HomePage() {
                 </Link>
               </p>
 
+              {!feeds.loading && groupOptions.length > 0 && (
+                <div className="home-page__group-filter">
+                  <label htmlFor="home-group-filter" className="home-page__group-filter-label">
+                    University group
+                  </label>
+                  <select
+                    id="home-group-filter"
+                    className="home-page__group-filter-select"
+                    value={groupFilter}
+                    onChange={(e) => setGroupFilter(e.target.value)}
+                  >
+                    <option value="all">All groups</option>
+                    {groupOptions.map((g) => (
+                      <option key={g} value={g}>
+                        {g.replace(/_/g, ' ')}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
               <SearchBar
                 value={query}
                 onChange={setQuery}
@@ -95,7 +131,11 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="mobile"
                   />
-                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} filterQuery={query} />
+                  <SidebarUniversitiesDirectory
+                    portals={feeds.universityPortals}
+                    filterQuery={query}
+                    groupFilter={groupFilter}
+                  />
                 </div>
               )}
 
@@ -174,7 +214,11 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="sidebar"
                   />
-                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} filterQuery={query} />
+                  <SidebarUniversitiesDirectory
+                    portals={feeds.universityPortals}
+                    filterQuery={query}
+                    groupFilter={groupFilter}
+                  />
                 </div>
               )}
             </div>

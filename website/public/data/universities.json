@@ -1,162 +1,217 @@
 [
   {
     "university": "AKS University, Satna",
-    "url": "https://aksuniversity.ac.in/"
+    "url": "https://aksuniversity.ac.in/",
+    "group": "private"
   },
   {
     "university": "Amity University, Gwalior",
-    "url": "https://www.amity.edu/gwalior/"
+    "url": "https://www.amity.edu/gwalior/",
+    "group": "private"
   },
   {
     "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
-    "url": "https://abvhv.org/"
+    "url": "https://abvhv.org/",
+    "group": "state_government"
   },
   {
     "university": "Avantika University, Ujjain",
-    "url": "https://avantikauniversity.edu.in/"
+    "url": "https://avantikauniversity.edu.in/",
+    "group": "private"
   },
   {
     "university": "Awadhesh Pratap Singh University, Rewa",
-    "url": "https://apsurewa.ac.in/"
+    "url": "https://apsurewa.ac.in/",
+    "group": "state_government"
   },
   {
     "university": "Barkatullah University, Bhopal",
-    "url": "https://www.bubhopal.ac.in/"
+    "url": "https://www.bubhopal.ac.in/",
+    "group": "state_government"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya (DAVV), Indore",
-    "url": "https://www.dauniv.ac.in/"
+    "url": "https://www.dauniv.ac.in/",
+    "group": "state_government"
   },
   {
     "university": "Dr. Hari Singh Gour University, Sagar",
-    "url": "https://dhsgsu.ac.in/"
+    "url": "https://dhsgsu.ac.in/",
+    "group": "state_government"
   },
   {
     "university": "IIITM Gwalior",
-    "url": "https://iiitm.ac.in/"
+    "url": "https://iiitm.ac.in/",
+    "group": "deemed"
   },
   {
     "university": "Indira Gandhi National Tribal University (IGNTU)",
-    "url": "https://igntu.ac.in/"
+    "url": "https://igntu.ac.in/",
+    "group": "central"
   },
   {
     "university": "ITM University, Gwalior",
-    "url": "https://itmuniversity.ac.in/"
+    "url": "https://itmuniversity.ac.in/",
+    "group": "private"
   },
   {
     "university": "Jagran Lakecity University, Bhopal",
-    "url": "https://jlu.edu.in/"
+    "url": "https://jlu.edu.in/",
+    "group": "private"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya (JNKVV), Jabalpur",
+    "url": "https://www.jnkvv.org/",
+    "group": "state_specialized"
   },
   {
     "university": "Jiwaji University, Gwalior",
-    "url": "https://www.jiwaji.edu/"
+    "url": "https://www.jiwaji.edu/",
+    "group": "state_government"
   },
   {
     "university": "Lakshmibai National Institute of Physical Education (LNIPE)",
-    "url": "https://lnipe.edu.in/"
+    "url": "https://lnipe.edu.in/",
+    "group": "deemed"
   },
   {
     "university": "LNCT University, Bhopal",
-    "url": "https://lnctu.ac.in/"
+    "url": "https://lnctu.ac.in/",
+    "group": "private"
   },
   {
     "university": "Madhya Pradesh Bhoj Open University",
-    "url": "https://mpbou.edu.in/"
+    "url": "https://mpbou.edu.in/",
+    "group": "state_government"
   },
   {
     "university": "Madhya Pradesh Medical Science University",
-    "url": "https://mpmsu.edu.in/"
+    "url": "https://mpmsu.edu.in/",
+    "group": "state_specialized"
   },
   {
     "university": "Madhyanchal Professional University",
-    "url": "https://mpu.ac.in/"
+    "url": "https://mpu.ac.in/",
+    "group": "private"
   },
   {
     "university": "Mahakaushal University",
-    "url": "https://mahakaushaluniversity.com/"
+    "url": "https://mahakaushaluniversity.com/",
+    "group": "private"
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand University",
-    "url": "https://mchhatrasaluniversity.com/"
+    "url": "https://mchhatrasaluniversity.com/",
+    "group": "state_government"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "url": "https://www.mcu.ac.in/",
+    "group": "state_specialized"
   },
   {
     "university": "Malwanchal University, Indore",
-    "url": "https://malwanchaluniversity.com/"
+    "url": "https://malwanchaluniversity.com/",
+    "group": "private"
   },
   {
     "university": "Mandsaur University",
-    "url": "https://mandsauruniversity.edu.in/"
+    "url": "https://mandsauruniversity.edu.in/",
+    "group": "private"
   },
   {
     "university": "Mansarovar Global University, Bhopal",
-    "url": "https://mgu.ac.in/"
+    "url": "https://mgu.ac.in/",
+    "group": "private"
   },
   {
     "university": "Medi-Caps University, Indore",
-    "url": "https://medicaps.ac.in/"
+    "url": "https://medicaps.ac.in/",
+    "group": "private"
   },
   {
     "university": "Nanaji Deshmukh Veterinary Science University",
-    "url": "https://ndvsu.org/"
+    "url": "https://ndvsu.org/",
+    "group": "state_specialized"
   },
   {
     "university": "Oriental University, Indore",
-    "url": "https://orientaluniversity.in/"
+    "url": "https://orientaluniversity.in/",
+    "group": "private"
   },
   {
     "university": "People's University, Bhopal",
-    "url": "https://peoplesuniversity.edu.in/"
+    "url": "https://peoplesuniversity.edu.in/",
+    "group": "private"
   },
   {
     "university": "Prestige University, Indore",
-    "url": "https://prestigeuniversity.edu.in/"
+    "url": "https://prestigeuniversity.edu.in/",
+    "group": "private"
   },
   {
     "university": "Rabindranath Tagore University, Bhopal",
-    "url": "https://rntu.ac.in/"
+    "url": "https://rntu.ac.in/",
+    "group": "private"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
-    "url": "https://mptmusicandartsuniversity.org/"
+    "url": "https://mptmusicandartsuniversity.org/",
+    "group": "state_specialized"
   },
   {
     "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
-    "url": "https://www.rgpv.ac.in/"
+    "url": "https://www.rgpv.ac.in/",
+    "group": "state_specialized"
+  },
+  {
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwavidyalaya (RVSKVV), Gwalior",
+    "url": "https://www.rvskvv.net/",
+    "group": "state_specialized"
   },
   {
     "university": "Rani Durgavati University, Jabalpur",
-    "url": "https://rdunijbpin.org/"
+    "url": "https://rdunijbpin.org/",
+    "group": "state_government"
   },
   {
     "university": "RKDF University, Bhopal",
-    "url": "https://rkdfuniversity.org/"
+    "url": "https://rkdfuniversity.org/",
+    "group": "private"
   },
   {
     "university": "SAGE University, Bhopal",
-    "url": "https://sageuniversity.edu.in/"
+    "url": "https://sageuniversity.edu.in/",
+    "group": "private"
   },
   {
     "university": "SAGE University, Indore",
-    "url": "https://sageuniversity.in/"
+    "url": "https://sageuniversity.in/",
+    "group": "private"
   },
   {
     "university": "Sarvepalli Radhakrishnan University, Bhopal",
-    "url": "https://sru.edu.in/"
+    "url": "https://sru.edu.in/",
+    "group": "private"
   },
   {
     "university": "Shri Krishna University, Chhatarpur",
-    "url": "https://skuniversity.org/"
+    "url": "https://skuniversity.org/",
+    "group": "private"
   },
   {
     "university": "Swami Vivekanand University",
-    "url": "https://svnuniversity.ac.in/"
+    "url": "https://svnuniversity.ac.in/",
+    "group": "private"
   },
   {
     "university": "Vikram University, Ujjain",
-    "url": "https://vikramuniv.ac.in/"
+    "url": "https://vikramuniv.ac.in/",
+    "group": "state_government"
   },
   {
     "university": "Vikrant University",
-    "url": "https://vikrantuniversity.ac.in/"
+    "url": "https://vikrantuniversity.ac.in/",
+    "group": "private"
   }
 ]

@@ -96,6 +96,12 @@ def main() -> int:
                         f"::error::{p.relative_to(REPO_ROOT)}: universities[{i}]: missing non-empty url"
                     )
                     failed = True
+                g = row.get("group")
+                if g is not None and not isinstance(g, str):
+                    print(
+                        f"::error::{p.relative_to(REPO_ROOT)}: universities[{i}]: group must be a string if present"
+                    )
+                    failed = True
         elif not isinstance(data, list):
             print(f"::error::{p.relative_to(REPO_ROOT)}: root must be a JSON array")
             failed = True

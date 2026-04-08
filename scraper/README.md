@@ -22,6 +22,14 @@ flowchart TD
 
 Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`sync_to_website.py`** copies it to **`website/public/data/scrape_meta.json`** so the deployed UI can show when data last refreshed without a new frontend build.
 
+**HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a shared `requests.Session`; retries transient failures (connection errors and HTTP 429 / 5xx) up to four attempts with exponential backoff and jitter.
+
+**Config** ([`config/universities.json`](config/universities.json)):
+
+- **`url`**: primary page (used as the base URL for normalization).
+- **`seed_urls`** (optional): extra URLs fetched for the same row; HTML from each page is parsed and merged (same parser(s), deduped later).
+- **`parser`** or **`parsers`**: single parser name or list (e.g. `["mp_portal", "rgpv"]`); each parser runs on each fetched HTML.
+
 ## Categories
 
 Allowed category keys (every parser returns all seven; empty lists are fine):

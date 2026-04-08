@@ -23,10 +23,6 @@ export function EnrollmentsPage() {
           </nav>
 
           <h1 className="admit-page__h1">Enrollment & admissions</h1>
-          <p className="admit-page__lead">
-            Links classified by the scraper (admission, enrollment, prospectus, counselling, etc.). Same data as the
-            dashboard preview, with optional manual rows from <code>manual_additions.json</code> or the database.
-          </p>
 
           <SearchBar
             id="enrollments-search"

@@ -84,6 +84,28 @@
   color: #5c0606;
 }
 
+.home-page__group-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+  font-size: 0.88rem;
+}
+
+.home-page__group-filter-label {
+  font-weight: 600;
+  color: #222;
+}
+
+.home-page__group-filter-select {
+  min-width: 10rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+}
+
 .home-page__banner {
   padding: 0.65rem 0.75rem;
   margin-bottom: 0.75rem;

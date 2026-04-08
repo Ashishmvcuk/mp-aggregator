@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from typing import Any
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -25,13 +24,4 @@ class DavvParser(BaseParser):
             out[bucket].append(raw_item(university, text[:500], abs_url, bucket, date=d))
             if len(out["results"]) + len(out["news"]) >= 25:
                 break
-        if not out["results"] and not out["news"]:
-            out["results"] = [
-                raw_item(
-                    university,
-                    "[MOCK] Sample DAVV pipeline row — replace with real selectors",
-                    urljoin(source_url, "/"),
-                    "results",
-                )
-            ]
         return out

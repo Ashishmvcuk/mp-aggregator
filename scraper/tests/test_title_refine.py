@@ -28,3 +28,11 @@ def test_refine_prefix_click_here() -> None:
     out = refine_link_title("Click here to view examination result", "results", "")
     assert not out.lower().startswith("click here")
     assert "result" in out.lower()
+
+
+def test_refine_truncates_at_devanagari_danda() -> None:
+    # Long Devanagari text: prefer break at । (U+0964) rather than mid-word
+    long_hi = "क" * 45 + "। " + "क" * 200
+    out = refine_link_title(long_hi, "results", "")
+    assert out.endswith("।")
+    assert len(out) < len(long_hi)

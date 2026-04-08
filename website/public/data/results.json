@@ -108,6 +108,18 @@
     "date": "2026-04-08"
   },
   {
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+    "title": "Exam Notification",
+    "result_url": "https://www.rgpv.ac.in/AboutRGTU/Examination.aspx",
+    "date": "2026-04-08"
+  },
+  {
+    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+    "title": "Controller of the Examination",
+    "result_url": "https://www.rgpv.ac.in/AboutRGTU/Examination_Controller.aspx",
+    "date": "2026-04-08"
+  },
+  {
     "university": "Nanaji Deshmukh Veterinary Science University",
     "title": "Examination Result",
     "result_url": "https://ndvsu.org/academics/examination_result",
@@ -244,5 +256,41 @@
     "title": "PHD ENTRANCE MAR 2025 RESULT (FIRST MERIT LIST)",
     "result_url": "https://mpu.ac.in/uploads/phd-entrance-2025/PHD-ENTRANCE-MAR-2025-RESULT-(FIRST-MERIT-LIST).pdf",
     "date": "2026-04-08"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya (JNKVV), Jabalpur",
+    "title": "Result / Revaluation",
+    "result_url": "https://www.jnkvv.org/result-revaluation",
+    "date": "2026-04-08"
+  },
+  {
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwavidyalaya (RVSKVV), Gwalior",
+    "title": "Result (ProgramSelect)",
+    "result_url": "http://ums.rvskvv.net/Exam/ProgramSelect.aspx",
+    "date": "2026-04-08"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "title": "Results of December, 2025-January, 2026",
+    "result_url": "http://103.12.1.55:81/mkhu_dec_2025_results_1225/",
+    "date": "2026-04-08"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "title": "Examinations & Results",
+    "result_url": "https://www.mcu.ac.in/examinations/",
+    "date": "2026-04-08"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "title": "Notification for May–June 2026 Main Examination Dated 26.03.2026",
+    "result_url": "https://www.mcu.ac.in/2026/04/01/notification-for-may-june-2026-main-examination-dated-26-03-2026/",
+    "date": "2026-04-27"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "title": "Notification for December 2025 - January 2026 Main Examination dated 03.10.2025",
+    "result_url": "https://www.mcu.ac.in/2025/10/06/examinations-7/",
+    "date": "2025-11-26"
   }
 ]

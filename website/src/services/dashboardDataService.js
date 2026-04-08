@@ -101,6 +101,7 @@ export async function loadUniversityPortals() {
     .map((r) => ({
       university: String(r.university || '').trim(),
       url: String(r.url || '').trim(),
+      group: String(r.group || '').trim(),
     }))
     .filter((r) => r.university && r.url)
 }

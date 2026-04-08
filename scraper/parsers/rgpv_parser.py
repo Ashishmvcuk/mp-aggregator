@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from typing import Any
-from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
@@ -24,13 +23,4 @@ class RgpvParser(BaseParser):
             out["results"].append(raw_item(university, text[:500], abs_url, "results", date=d))
             if len(out["results"]) >= 25:
                 break
-        if not out["results"]:
-            out["results"] = [
-                raw_item(
-                    university,
-                    "[MOCK] Sample RGPV pipeline row — replace with real selectors",
-                    urljoin(source_url, "/Result/frmStudentResult.aspx"),
-                    "results",
-                )
-            ]
         return out

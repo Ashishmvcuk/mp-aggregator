@@ -3,9 +3,12 @@ import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
 
 /**
- * Loads results once; exposes optional client-side filter by university or title.
+ * Loads results once; optional filter by university or title, and by config `group` (when map provided).
+ * @param {string} searchQuery
+ * @param {{ groupFilter?: string; universityToGroup?: Map<string, string> }} [options]
  */
-export function useResults(searchQuery) {
+export function useResults(searchQuery, options = {}) {
+  const { groupFilter = 'all', universityToGroup = new Map() } = options
   const [items, setItems] = useState([])
   const [scrapedAt, setScrapedAt] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -36,14 +39,18 @@ export function useResults(searchQuery) {
 
   const q = searchQuery.trim().toLowerCase()
   const filtered = useMemo(() => {
-    if (!q) return items
-    return items.filter(
+    let rows = items
+    if (groupFilter && groupFilter !== 'all' && universityToGroup.size > 0) {
+      rows = rows.filter((r) => universityToGroup.get(r.university) === groupFilter)
+    }
+    if (!q) return rows
+    return rows.filter(
       (r) =>
         r.university.toLowerCase().includes(q) || r.title.toLowerCase().includes(q)
     )
-  }, [items, q])
+  }, [items, q, groupFilter, universityToGroup])
 
-  const summary = useMemo(() => computeSummary(items, scrapedAt), [items, scrapedAt])
+  const summary = useMemo(() => computeSummary(filtered, scrapedAt), [filtered, scrapedAt])
 
   const universityNames = useMemo(() => {
     const s = new Set(items.map((r) => r.university).filter(Boolean))

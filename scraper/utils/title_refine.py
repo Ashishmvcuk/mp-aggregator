@@ -78,7 +78,8 @@ def refine_link_title(title: str, category: str, url: str = "") -> str:
     if len(t) > cap:
         chunk = t[:cap]
         end = -1
-        for p in ".?!":
+        # Latin + Devanagari sentence boundaries (दंड / double danda)
+        for p in ".?!।॥":
             i = chunk.rfind(p)
             if i >= max(36, cap // 3):
                 end = max(end, i)
@@ -87,9 +88,9 @@ def refine_link_title(title: str, category: str, url: str = "") -> str:
         else:
             sp = chunk.rfind(" ")
             if sp >= cap * 0.5:
-                t = chunk[:sp].rstrip(",;:") + "…"
+                t = chunk[:sp].rstrip(",;:!।") + "…"
             else:
-                t = chunk.rstrip(",;:") + "…"
+                t = chunk.rstrip(",;:!।") + "…"
 
     # If we stripped too aggressively, enrich from URL path (e.g. Result2024.aspx)
     if len(t) < 10 and url:

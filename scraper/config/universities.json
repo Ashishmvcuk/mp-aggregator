@@ -23,7 +23,7 @@
   {
     "university": "Devi Ahilya Vishwavidyalaya (DAVV), Indore",
     "url": "https://www.dauniv.ac.in/",
-    "parser": "mp_portal",
+    "parsers": ["mp_portal", "davv"],
     "enabled": true,
     "group": "state_government"
   },
@@ -79,7 +79,8 @@
   {
     "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
     "url": "https://www.rgpv.ac.in/",
-    "parser": "mp_portal",
+    "parsers": ["mp_portal", "rgpv"],
+    "seed_urls": ["https://result.rgpv.ac.in/"],
     "enabled": true,
     "group": "state_specialized"
   },
@@ -278,5 +279,26 @@
     "parser": "mp_portal",
     "enabled": true,
     "group": "private"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya (JNKVV), Jabalpur",
+    "url": "https://www.jnkvv.org/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwavidyalaya (RVSKVV), Gwalior",
+    "url": "https://www.rvskvv.net/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "url": "https://www.mcu.ac.in/",
+    "parser": "mp_portal",
+    "enabled": true,
+    "group": "state_specialized"
   }
 ]

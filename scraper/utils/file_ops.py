@@ -204,7 +204,11 @@ def sync_universities_directory_to_website() -> Path:
         url = str(row.get("url", "")).strip()
         if not uni or not url:
             continue
-        out.append({"university": uni, "url": url})
+        row_out: dict[str, str] = {"university": uni, "url": url}
+        grp = str(row.get("group", "")).strip()
+        if grp:
+            row_out["group"] = grp
+        out.append(row_out)
     out.sort(key=lambda x: x["university"].lower())
     dest = WEBSITE_DATA_DIR / "universities.json"
     safe_write_json(dest, out)

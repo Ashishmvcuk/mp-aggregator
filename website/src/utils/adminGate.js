@@ -1,11 +1,22 @@
 /**
  * Demo gate for /admin (client-only; credentials are visible in the built bundle).
- * Replace with a real backend or Supabase-only auth before production.
+ * Set VITE_ADMIN_USERNAME + VITE_ADMIN_PASSWORD for production-like gate, or
+ * VITE_ADMIN_ALLOW_DEMO=true for local dev (admin/admin).
  */
 const STORAGE_KEY = 'mp_admin_gate_v1'
 
-const GATE_USERNAME = 'admin'
-const GATE_PASSWORD = 'admin'
+// Production: set VITE_ADMIN_USERNAME/PASSWORD via secrets, or rely on Supabase only.
+// Local `npm run dev`: DEV is true so admin/admin works unless env credentials override.
+const allowDemo =
+  import.meta.env.VITE_ADMIN_ALLOW_DEMO === 'true' || import.meta.env.DEV
+const envUser =
+  typeof import.meta.env.VITE_ADMIN_USERNAME === 'string'
+    ? import.meta.env.VITE_ADMIN_USERNAME.trim()
+    : ''
+const envPass =
+  typeof import.meta.env.VITE_ADMIN_PASSWORD === 'string'
+    ? import.meta.env.VITE_ADMIN_PASSWORD.trim()
+    : ''
 
 export function isAdminGateOpen() {
   try {
@@ -32,7 +43,14 @@ export function closeAdminGate() {
 }
 
 export function tryAdminGateLogin(username, password) {
-  if (username === GATE_USERNAME && password === GATE_PASSWORD) {
+  if (envUser && envPass) {
+    if (username === envUser && password === envPass) {
+      openAdminGate()
+      return true
+    }
+    return false
+  }
+  if (allowDemo && username === 'admin' && password === 'admin') {
     openAdminGate()
     return true
   }

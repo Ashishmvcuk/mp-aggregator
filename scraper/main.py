@@ -40,6 +40,42 @@ def load_universities() -> list[dict[str, Any]]:
     return data
 
 
+def _entry_urls(entry: dict[str, Any]) -> list[str]:
+    """Primary `url` plus optional `seed_urls` (deduped, order preserved)."""
+    primary = str(entry.get("url", "")).strip()
+    if not primary:
+        return []
+    out: list[str] = []
+    seen: set[str] = set()
+    seeds = entry.get("seed_urls")
+    extra: list[str] = seeds if isinstance(seeds, list) else []
+    for u in [primary] + extra:
+        u = str(u).strip()
+        if not u or u in seen:
+            continue
+        seen.add(u)
+        out.append(u)
+    return out
+
+
+def _parser_names_for_entry(entry: dict[str, Any]) -> list[str]:
+    """Single `parser` or list `parsers` (e.g. mp_portal + rgpv for result-heavy sites)."""
+    raw = entry.get("parsers")
+    if isinstance(raw, list) and raw:
+        names = [str(x).strip().lower() for x in raw if str(x).strip()]
+        return names if names else ["mp_portal"]
+    name = str(entry.get("parser", "mp_portal")).strip().lower()
+    return [name] if name else ["mp_portal"]
+
+
+def _merge_category_dicts(parts: list[dict[str, Any]]) -> dict[str, Any]:
+    merged: dict[str, list[dict[str, Any]]] = {c: [] for c in CATEGORY_ORDER}
+    for p in parts:
+        for c in CATEGORY_ORDER:
+            merged[c].extend(p.get(c, []))
+    return ensure_category_keys(merged)
+
+
 def _skip_website_sync() -> bool:
     return os.environ.get("SCRAPER_SKIP_WEBSITE_SYNC", "").strip().lower() in ("1", "true", "yes")
 
@@ -231,53 +267,76 @@ def run_once() -> dict[str, Any]:
 
     for entry in enabled:
         uni = str(entry.get("university", "")).strip()
-        url = str(entry.get("url", "")).strip()
-        parser_name = str(entry.get("parser", "")).strip().lower()
-        parser_cls = PARSER_REGISTRY.get(parser_name)
-        if not parser_cls:
+        primary_url = str(entry.get("url", "")).strip()
+        parser_names = _parser_names_for_entry(entry)
+        unknown = [n for n in parser_names if n not in PARSER_REGISTRY]
+        if unknown:
             failed_n += 1
             failures.append(
                 {
                     "university": uni or "?",
                     "stage": "config",
-                    "message": f"Unknown parser {parser_name!r}",
+                    "message": f"Unknown parser(s): {unknown!r}",
                 }
             )
-            logger.error("[%s] Unknown parser %r for %s", run_id, parser_name, uni)
+            logger.error("[%s] Unknown parser(s) %r for %s", run_id, unknown, uni)
             continue
-        if not url:
+        if not primary_url:
             failed_n += 1
             failures.append({"university": uni, "stage": "config", "message": "Missing url"})
             continue
 
-        logger.info("[%s] Fetch: %s (%s)", run_id, uni, url)
-        html = fetch_html(url)
-        if html is None:
+        fetch_urls = _entry_urls(entry)
+        if not fetch_urls:
             failed_n += 1
-            failures.append({"university": uni, "stage": "fetch", "message": "Request failed or empty"})
+            failures.append({"university": uni, "stage": "config", "message": "No fetch URLs"})
             continue
 
-        try:
-            parser = parser_cls()
-            raw_parsed = parser.parse(html, uni, url)
-            parsed = ensure_category_keys(raw_parsed)
-        except Exception as e:
+        html_parts: list[tuple[str, str]] = []
+        for fetch_url in fetch_urls:
+            logger.info("[%s] Fetch: %s (%s)", run_id, uni, fetch_url)
+            html = fetch_html(fetch_url)
+            if html is not None:
+                html_parts.append((fetch_url, html))
+        if not html_parts:
+            failed_n += 1
+            failures.append(
+                {"university": uni, "stage": "fetch", "message": "All fetch URLs failed or empty"}
+            )
+            continue
+
+        parse_chunks: list[dict[str, Any]] = []
+        parse_errors: list[str] = []
+        for fetch_url, html in html_parts:
+            for pname in parser_names:
+                parser_cls = PARSER_REGISTRY[pname]
+                try:
+                    parser = parser_cls()
+                    raw_parsed = parser.parse(html, uni, fetch_url)
+                    parse_chunks.append(ensure_category_keys(raw_parsed))
+                except Exception as e:
+                    msg = f"{pname}@{fetch_url}: {type(e).__name__}: {e}"
+                    parse_errors.append(msg)
+                    logger.exception("[%s] Parse failed %s for %s", run_id, pname, uni)
+
+        if not parse_chunks:
             failed_n += 1
             failures.append(
                 {
                     "university": uni,
                     "stage": "parse",
-                    "message": f"{type(e).__name__}: {e}",
+                    "message": "; ".join(parse_errors) if parse_errors else "No successful parse",
                 }
             )
-            logger.exception("[%s] Parse failed for %s", run_id, uni)
             continue
+
+        parsed = _merge_category_dicts(parse_chunks)
 
         for cat in CATEGORY_ORDER:
             bucket_items = parsed.get(cat, [])
             parsed_from_sources[cat] += len(bucket_items)
             for item in bucket_items:
-                norm = normalize_item_for_category(item, url, cat)
+                norm = normalize_item_for_category(item, primary_url, cat)
                 if norm:
                     merged[cat].append(norm)
                     normalized_kept[cat] += 1

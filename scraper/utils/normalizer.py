@@ -186,7 +186,7 @@ def normalize_item_for_category(
         soft = TITLE_CAPS.get(category, 130) + 40
         chunk = title[:soft]
         sp = chunk.rfind(" ")
-        title = (chunk[:sp] if sp >= min_len else chunk).rstrip(",;:") + ("…" if len(title) > soft else "")
+        title = (chunk[:sp] if sp >= min_len else chunk).rstrip(",;:!।") + ("…" if len(title) > soft else "")
     else:
         title = refined or title
 

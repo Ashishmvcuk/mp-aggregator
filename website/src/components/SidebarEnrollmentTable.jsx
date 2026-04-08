@@ -17,8 +17,7 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
   const tableOrEmpty =
     count === 0 ? (
       <p className="sr-enroll__empty" role="status">
-        No enrollment links in <code>enrollments.json</code> yet — run the scraper and sync, or add rows under{' '}
-        <code>manual_additions.json</code> → <code>enrollments</code>.
+        No enrollment links in <code>enrollments.json</code> yet — run the scraper and sync.
       </p>
     ) : (
       <div className="sr-enroll__scroll">
@@ -73,9 +72,6 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
             </span>
           </summary>
           <div className="sr-enroll__details-inner">
-            <p className="sr-enroll__text">
-              Scraped <code>enrollments</code> bucket (admission / enrollment keywords). Manual rows merge here too.
-            </p>
             {tableOrEmpty}
             {viewMore}
           </div>

@@ -66,10 +66,6 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.sr-enroll__details-inner .sr-enroll__text {
-  margin-top: 0;
-}
-
 .sr-enroll {
   background: #fff;
   border: none;
@@ -89,13 +85,6 @@
   color: #fff;
   background: linear-gradient(135deg, #8e1518 0%, #5c0606 55%, #4a0505 100%);
   border: 1px solid #3e0404;
-}
-
-.sr-enroll__text {
-  margin: 0 0 0.45rem;
-  font-size: 0.7rem;
-  color: #444;
-  line-height: 1.35;
 }
 
 .sr-enroll__empty {
@@ -183,10 +172,6 @@
 .sr-enroll__more-link:hover,
 .sr-enroll__more-link:focus-visible {
   color: #5c0606;
-}
-
-.sr-enroll__text code {
-  font-size: 0.88em;
 }
 
 .sr-enroll__table tbody tr:nth-child(even) .sr-enroll__notice-cell {
