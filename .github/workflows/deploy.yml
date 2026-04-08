@@ -4,6 +4,7 @@
 name: Deploy to GitHub Pages
 
 on:
+  workflow_dispatch: # Run after setting repo variable CUSTOM_DOMAIN (no code push needed)
   push:
     branches: [main]
     paths:
