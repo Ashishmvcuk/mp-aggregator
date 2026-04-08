@@ -40,12 +40,26 @@ jobs:
           echo "VITE_SCRAPER_VERSION=v${SCR_VER}" >> "$GITHUB_ENV"
           echo "VITE_BUILD_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> "$GITHUB_ENV"
 
+      # Custom domain (repo variable CUSTOM_DOMAIN): root path / and gh-pages CNAME. Omit variable to keep
+      # default project-site URL https://<user>.github.io/<repo>/
+      - name: Set deploy base for Pages
+        run: |
+          if [ -n "${{ vars.CUSTOM_DOMAIN }}" ]; then
+            echo "DEPLOY_BASE=/" >> "$GITHUB_ENV"
+          else
+            echo "DEPLOY_BASE=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+          fi
+
       - name: Build
         working-directory: website
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         run: npm run build
+
+      - name: Add CNAME for custom domain
+        if: ${{ vars.CUSTOM_DOMAIN != '' }}
+        run: echo "${{ vars.CUSTOM_DOMAIN }}" > website/dist/CNAME
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

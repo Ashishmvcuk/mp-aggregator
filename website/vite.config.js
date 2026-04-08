@@ -18,15 +18,20 @@ const siteLabel = process.env.VITE_APP_VERSION || `v${pkg.version}`
 const scraperLabel = process.env.VITE_SCRAPER_VERSION || `v${scraperVersion}`
 const buildTime = process.env.VITE_BUILD_TIME || new Date().toISOString()
 
-// GitHub Pages project sites use /<repo-name>/; local dev uses '/' for simpler URLs.
+// GitHub Pages: project sites use /<repo-name>/; custom domains use '/'. CI sets DEPLOY_BASE.
 const repoName = 'mp-aggregator'
 
-export default defineConfig(({ mode }) => ({
-  plugins: [react()],
-  base: mode === 'production' ? `/${repoName}/` : '/',
-  define: {
-    __APP_VERSION__: JSON.stringify(siteLabel),
-    __SCRAPER_VERSION__: JSON.stringify(scraperLabel),
-    __BUILD_TIME__: JSON.stringify(buildTime),
-  },
-}))
+export default defineConfig(({ mode }) => {
+  const deployBase =
+    process.env.DEPLOY_BASE ||
+    (mode === 'production' ? `/${repoName}/` : '/')
+  return {
+    plugins: [react()],
+    base: mode === 'development' ? '/' : deployBase.replace(/\/?$/, '/'),
+    define: {
+      __APP_VERSION__: JSON.stringify(siteLabel),
+      __SCRAPER_VERSION__: JSON.stringify(scraperLabel),
+      __BUILD_TIME__: JSON.stringify(buildTime),
+    },
+  }
+})
