@@ -18,7 +18,7 @@ import './HomePage.css'
 
 export function HomePage() {
   const [query, setQuery] = useState('')
-  const { items, filtered, summary, loading, error } = useResults(query)
+  const { items, filtered, summary, loading, error, universityNames, titleSuggestions } = useResults(query)
   const feeds = useDashboardFeeds()
 
   return (
@@ -68,7 +68,13 @@ export function HomePage() {
                 </Link>
               </p>
 
-              <SearchBar value={query} onChange={setQuery} disabled={loading || !!error} />
+              <SearchBar
+                value={query}
+                onChange={setQuery}
+                disabled={loading || !!error}
+                universityNames={universityNames}
+                titleSuggestions={titleSuggestions}
+              />
 
               {error && (
                 <div className="home-page__banner home-page__banner--error" role="alert">
@@ -89,7 +95,7 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="mobile"
                   />
-                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} />
+                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} filterQuery={query} />
                 </div>
               )}
 
@@ -168,7 +174,7 @@ export function HomePage() {
                     totalCount={feeds.enrollmentsTotal}
                     placement="sidebar"
                   />
-                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} />
+                  <SidebarUniversitiesDirectory portals={feeds.universityPortals} filterQuery={query} />
                 </div>
               )}
             </div>

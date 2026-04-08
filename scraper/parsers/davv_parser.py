@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from parsers.base_parser import BaseParser, empty_categories, iter_anchor_candidates, raw_item
+from parsers.base_parser import BaseParser, empty_categories, extract_date_near_anchor, iter_anchor_candidates_with_tags, raw_item
 
 
 class DavvParser(BaseParser):
@@ -13,7 +13,7 @@ class DavvParser(BaseParser):
         out = empty_categories()
         soup = BeautifulSoup(html, "html.parser")
         seen: set[str] = set()
-        for abs_url, text in iter_anchor_candidates(soup, source_url):
+        for abs_url, text, anchor in iter_anchor_candidates_with_tags(soup, source_url):
             low = text.lower()
             if not any(k in low for k in ("result", "exam", "notice", "circular")):
                 continue
@@ -21,7 +21,8 @@ class DavvParser(BaseParser):
                 continue
             seen.add(abs_url)
             bucket = "news" if "notice" in low or "circular" in low else "results"
-            out[bucket].append(raw_item(university, text[:500], abs_url, bucket))
+            d = extract_date_near_anchor(anchor)
+            out[bucket].append(raw_item(university, text[:500], abs_url, bucket, date=d))
             if len(out["results"]) + len(out["news"]) >= 25:
                 break
         if not out["results"] and not out["news"]:

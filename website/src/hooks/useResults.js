@@ -45,7 +45,22 @@ export function useResults(searchQuery) {
 
   const summary = useMemo(() => computeSummary(items, scrapedAt), [items, scrapedAt])
 
-  return { items, filtered, summary, loading, error }
+  const universityNames = useMemo(() => {
+    const s = new Set(items.map((r) => r.university).filter(Boolean))
+    return [...s].sort((a, b) => a.localeCompare(b))
+  }, [items])
+
+  const titleSuggestions = useMemo(() => {
+    const s = new Set()
+    for (const r of items) {
+      const t = (r.title || '').trim()
+      if (t.length >= 4) s.add(t)
+      if (s.size >= 400) break
+    }
+    return [...s].sort((a, b) => a.localeCompare(b))
+  }, [items])
+
+  return { items, filtered, summary, loading, error, universityNames, titleSuggestions }
 }
 
 function computeSummary(items, scrapedAtIso) {

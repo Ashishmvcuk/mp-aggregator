@@ -9,7 +9,7 @@ import './AdmitCardsPage.css'
 
 export function EnrollmentsPage() {
   const [query, setQuery] = useState('')
-  const { filtered, loading, error } = useEnrollments(query)
+  const { filtered, loading, error, universityNames, titleSuggestions } = useEnrollments(query)
 
   return (
     <div className="admit-page">
@@ -35,6 +35,8 @@ export function EnrollmentsPage() {
             onChange={setQuery}
             placeholder="Search by university or title…"
             disabled={loading || !!error}
+            universityNames={universityNames}
+            titleSuggestions={titleSuggestions}
           />
 
           {error && (

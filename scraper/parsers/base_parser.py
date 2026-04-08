@@ -1,13 +1,14 @@
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
+import re
 from datetime import date
 from typing import Any, Iterator
 from urllib.parse import urljoin
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
-from utils.normalizer import CATEGORY_ORDER
+from utils.normalizer import CATEGORY_ORDER, find_first_iso_date_in_string, parse_dd_mon_cell
 
 
 def default_today_iso() -> str:
@@ -34,13 +35,13 @@ def raw_item(
     }
 
 
-def iter_anchor_candidates(
+def iter_anchor_candidates_with_tags(
     soup: BeautifulSoup,
     source_url: str,
     *,
     min_text_len: int = 4,
-) -> Iterator[tuple[str, str]]:
-    """Yield (absolute_url, link_text) for anchors suitable for downstream normalization."""
+) -> Iterator[tuple[str, str, Any]]:
+    """Yield (absolute_url, link_text, anchor_tag) for anchors suitable for downstream normalization."""
     for a in soup.find_all("a", href=True):
         href = (a.get("href") or "").strip()
         visible = " ".join(a.get_text().split())
@@ -57,7 +58,77 @@ def iter_anchor_candidates(
         low = href.lower()
         if low.startswith(("javascript:", "mailto:", "#")):
             continue
-        yield urljoin(source_url, href), text
+        yield urljoin(source_url, href), text, a
+
+
+def iter_anchor_candidates(
+    soup: BeautifulSoup,
+    source_url: str,
+    *,
+    min_text_len: int = 4,
+) -> Iterator[tuple[str, str]]:
+    """Yield (absolute_url, link_text) for anchors suitable for downstream normalization."""
+    for abs_url, text, _ in iter_anchor_candidates_with_tags(soup, source_url, min_text_len=min_text_len):
+        yield abs_url, text
+
+
+def _dates_from_table_row(row: Tag) -> str | None:
+    """ddMon / DD/MM/YYYY / ISO fragments in same <tr> as a link."""
+    ctx = row.get_text(" ", strip=True)
+    for td in row.find_all("td"):
+        cell = " ".join(td.get_text().split())
+        compact = re.sub(r"\s+", "", cell)
+        iso = parse_dd_mon_cell(compact, ctx)
+        if iso:
+            return iso
+        for token in re.split(r"[\s|/]+", cell):
+            t = re.sub(r"\s+", "", token)
+            if len(t) < 5:
+                continue
+            iso = parse_dd_mon_cell(t, ctx)
+            if iso:
+                return iso
+        iso = find_first_iso_date_in_string(cell, ctx)
+        if iso:
+            return iso
+    return None
+
+
+def extract_date_near_anchor(anchor: Tag) -> str | None:
+    """
+    Best-effort real calendar date for results / news / jobs / admission links:
+    table row first, then list item, then nearby parent text.
+    """
+    row = anchor.find_parent("tr")
+    if row:
+        d = _dates_from_table_row(row)
+        if d:
+            return d
+    li = anchor.find_parent("li")
+    if li:
+        ctx = li.get_text(" ", strip=True)
+        d = find_first_iso_date_in_string(ctx, ctx)
+        if d:
+            return d
+        for word in re.split(r"[\s|]+", ctx):
+            w = re.sub(r"\s+", "", word)
+            if len(w) < 5:
+                continue
+            d = parse_dd_mon_cell(w, ctx)
+            if d:
+                return d
+    el: Any = anchor
+    for _ in range(5):
+        if el is None or not hasattr(el, "get_text"):
+            break
+        txt = el.get_text(" ", strip=True)
+        if len(txt) > 800:
+            txt = txt[:800]
+        d = find_first_iso_date_in_string(txt, txt)
+        if d:
+            return d
+        el = getattr(el, "parent", None)
+    return None
 
 
 def ensure_category_keys(d: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:

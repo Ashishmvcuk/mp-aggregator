@@ -6,7 +6,13 @@ from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 
-from parsers.base_parser import BaseParser, empty_categories, iter_anchor_candidates, raw_item
+from parsers.base_parser import (
+    BaseParser,
+    empty_categories,
+    extract_date_near_anchor,
+    iter_anchor_candidates_with_tags,
+    raw_item,
+)
 
 # First matching rule wins (order matters: specific before broad).
 _CLASSIFICATION_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -132,6 +138,20 @@ def _classify_link(text: str, abs_url: str) -> str | None:
     return None
 
 
+def _skip_enrollment_utility_url(abs_url: str) -> bool:
+    """Drop bus / IQAC feedback / misc fee portals — not admission notices."""
+    u = abs_url.lower().replace("\\", "/")
+    if "busportal" in u or "buspayment" in u or "/bus/" in u:
+        return True
+    if "feedback" in u and ("home" in u or "feed" in u):
+        return True
+    if "onlinefee" in u and "misc" in u:
+        return True
+    if "onlinefeeform" in u and "misc" in u:
+        return True
+    return False
+
+
 class MpPortalParser(BaseParser):
     """Extract anchor links from a university portal using keyword buckets."""
 
@@ -141,17 +161,20 @@ class MpPortalParser(BaseParser):
         seen_url: set[str] = set()
 
         soup = BeautifulSoup(html, "html.parser")
-        for abs_url, text in iter_anchor_candidates(soup, source_url, min_text_len=3):
+        for abs_url, text, anchor in iter_anchor_candidates_with_tags(soup, source_url, min_text_len=3):
             if abs_url in seen_url:
                 continue
             category = _classify_link(text, abs_url)
             if category is None:
                 continue
+            if category == "enrollments" and _skip_enrollment_utility_url(abs_url):
+                continue
             if per_cat[category] >= _MAX_PER_CATEGORY:
                 continue
             seen_url.add(abs_url)
+            row_date = extract_date_near_anchor(anchor)
             out[category].append(
-                raw_item(university, text[:500], abs_url, category),
+                raw_item(university, text[:500], abs_url, category, date=row_date),
             )
             per_cat[category] += 1
 

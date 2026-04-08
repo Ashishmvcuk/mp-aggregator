@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import re
-from datetime import datetime
+from datetime import date, datetime
 from typing import Any, Optional
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
@@ -42,6 +42,56 @@ def normalize_url(item_url: Any, base: str) -> Optional[str]:
     return joined
 
 
+_MONTH_ABBREV = {
+    "jan": 1,
+    "feb": 2,
+    "mar": 3,
+    "apr": 4,
+    "may": 5,
+    "jun": 6,
+    "jul": 7,
+    "aug": 8,
+    "sep": 9,
+    "oct": 10,
+    "nov": 11,
+    "dec": 12,
+}
+
+
+def infer_notice_calendar_year(row_text: str, month: int) -> int:
+    """
+    Map table-row text (e.g. 'Admission 2026') + month to calendar year for ddMon cells.
+    December notices for 'Admission 2026' are usually the previous calendar year.
+    """
+    years = [int(x) for x in re.findall(r"\b(20\d{2})\b", row_text)]
+    if not years:
+        return date.today().year
+    y_min = min(years)
+    if month == 12 and y_min >= date.today().year:
+        return y_min - 1
+    return y_min
+
+
+def parse_dd_mon_cell(text: str, row_context: str) -> Optional[str]:
+    """
+    Parse compact dates like '05Jan', '16 Dec' from admission table cells (e.g. IGNTU).
+    """
+    t = re.sub(r"\s+", "", (text or "").strip())
+    m = re.match(r"^(\d{1,2})([A-Za-z]{3,})$", t, re.I)
+    if not m:
+        return None
+    day_s, mon_s = m.group(1), m.group(2).lower()[:3]
+    if mon_s not in _MONTH_ABBREV:
+        return None
+    month = _MONTH_ABBREV[mon_s]
+    day = int(day_s)
+    year = infer_notice_calendar_year(row_context, month)
+    try:
+        return date(year, month, day).isoformat()
+    except ValueError:
+        return None
+
+
 def parse_date_iso(value: Any) -> Optional[str]:
     if value is None:
         return None
@@ -62,6 +112,32 @@ def parse_date_iso(value: Any) -> Optional[str]:
             return datetime.strptime(chunk, fmt).date().isoformat()
         except ValueError:
             continue
+    iso = parse_dd_mon_cell(s, s)
+    if iso:
+        return iso
+    return None
+
+
+# Scan free text for embedded numeric dates (notices, PDF titles, table cells).
+_DATE_FRAGMENT = re.compile(
+    r"\b(\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{4}[./-]\d{1,2}[./-]\d{1,2})\b"
+)
+
+
+def find_first_iso_date_in_string(text: str, _context: str = "") -> Optional[str]:
+    """
+    First parseable ISO date in a blob (whole string, then regex fragments).
+    """
+    if not text or not str(text).strip():
+        return None
+    t = str(text).strip()
+    iso = parse_date_iso(t)
+    if iso:
+        return iso
+    for m in _DATE_FRAGMENT.finditer(t):
+        iso = parse_date_iso(m.group(1))
+        if iso:
+            return iso
     return None
 
 
