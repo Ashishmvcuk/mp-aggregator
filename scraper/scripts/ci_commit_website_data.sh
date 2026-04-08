@@ -31,12 +31,21 @@ git diff --staged --name-only
 
 git commit -m "chore: update scraped website data"
 
-# Remote main may have moved (deploys, other commits). Rebase our commit on top, then push.
+# Remote may have advanced during the job. Merge it in; for JSON conflicts, keep this run's scrape (--ours).
 BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
 git fetch origin "$BRANCH"
-if ! git rebase "origin/${BRANCH}"; then
-  echo "Rebase onto origin/${BRANCH} failed (likely overlapping edits). Resolve on a clone or merge main locally, then rerun."
-  exit 1
+
+if ! git merge "origin/${BRANCH}" -m "Merge origin/${BRANCH} before push"; then
+  OUTSIDE=$(git diff --name-only --diff-filter=U | grep -vE '^website/public/data/[^/]+\.json$' || true)
+  if [ -n "$OUTSIDE" ]; then
+    echo "Merge conflict outside website/public/data — resolve in a clone, then rerun:"
+    echo "$OUTSIDE"
+    git merge --abort
+    exit 1
+  fi
+  git checkout --ours -- website/public/data/
+  git add website/public/data/
+  GIT_EDITOR=true git commit --no-edit
 fi
 
 git push origin "$BRANCH"

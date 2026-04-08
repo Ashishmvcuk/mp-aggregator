@@ -1,10 +1,12 @@
-/** @param {string | null | undefined} iso */
+/** @param {string | null | undefined} iso Date-only `YYYY-MM-DD` or full ISO datetime (e.g. scrape_meta `scrapedAt`). */
 export function formatDateMedium(iso) {
   if (!iso) return '—'
   try {
+    const s = String(iso).trim()
+    const d = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T12:00:00`) : new Date(s)
     return new Intl.DateTimeFormat('en-IN', {
       dateStyle: 'medium',
-    }).format(new Date(iso + 'T12:00:00'))
+    }).format(d)
   } catch {
     return iso
   }

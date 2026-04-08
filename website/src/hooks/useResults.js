@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
 
 /**
@@ -6,6 +7,7 @@ import { fetchResults } from '../services/resultsService'
  */
 export function useResults(searchQuery) {
   const [items, setItems] = useState([])
+  const [scrapedAt, setScrapedAt] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -13,9 +15,13 @@ export function useResults(searchQuery) {
     let cancelled = false
     setLoading(true)
     setError(null)
-    fetchResults()
-      .then((data) => {
-        if (!cancelled) setItems(data)
+    Promise.all([fetchResults(), fetchScrapeMeta()])
+      .then(([data, meta]) => {
+        if (!cancelled) {
+          setItems(data)
+          const raw = meta && typeof meta.scrapedAt === 'string' ? meta.scrapedAt : null
+          setScrapedAt(raw)
+        }
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load data')
@@ -37,21 +43,23 @@ export function useResults(searchQuery) {
     )
   }, [items, q])
 
-  const summary = useMemo(() => computeSummary(items), [items])
+  const summary = useMemo(() => computeSummary(items, scrapedAt), [items, scrapedAt])
 
   return { items, filtered, summary, loading, error }
 }
 
-function computeSummary(items) {
+function computeSummary(items, scrapedAtIso) {
   const universities = new Set(items.map((r) => r.university))
   const dates = items.map((r) => r.date).filter(Boolean)
-  const latest =
+  const latestFromItems =
     dates.length > 0
       ? dates.reduce((a, b) => (a > b ? a : b))
       : null
+  // Show last scraper sync time when available; else newest result row date.
+  const latestDate = scrapedAtIso || latestFromItems
   return {
     universityCount: universities.size,
     resultCount: items.length,
-    latestDate: latest,
+    latestDate,
   }
 }
