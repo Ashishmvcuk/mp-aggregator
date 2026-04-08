@@ -1,14 +1,59 @@
+import { useEffect, useState } from 'react'
 import { useIsMobileLayout } from '../hooks/useIsMobileLayout'
 import './FeedList.css'
 import './MobileCollapsibleTable.css'
 
 /**
- * @param {{ title: string; subtitle?: string; id?: string; items: Array<{ university: string; title: string; url: string; date: string }>; emptyMessage?: string; footer?: import('react').ReactNode }} props
+ * @param {{
+ *   title: string
+ *   subtitle?: string
+ *   id?: string
+ *   items: Array<{ university: string; title: string; url: string; date: string }>
+ *   emptyMessage?: string
+ *   footer?: import('react').ReactNode
+ *   disableMobileCollapse?: boolean
+ *   pageSize?: number
+ *   loadMoreIncrement?: number
+ *   tallScroll?: boolean
+ * }} props
  */
-export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing to show yet.', footer = null }) {
+export function FeedList({
+  title,
+  subtitle,
+  id,
+  items,
+  emptyMessage = 'Nothing to show yet.',
+  footer = null,
+  disableMobileCollapse = false,
+  pageSize = 0,
+  loadMoreIncrement = 20,
+  tallScroll = false,
+}) {
   const headingId = id ? `${id}-heading` : undefined
   const mobile = useIsMobileLayout()
+  const useCollapse = mobile && !disableMobileCollapse
   const hasItems = items.length > 0
+
+  /** How many times user clicked "Load more" after the first page. */
+  const [extraLoadBatches, setExtraLoadBatches] = useState(0)
+
+  useEffect(() => {
+    setExtraLoadBatches(0)
+  }, [items])
+
+  const visibleCap =
+    pageSize > 0
+      ? Math.min(items.length, pageSize + extraLoadBatches * loadMoreIncrement)
+      : items.length
+  const displayItems = pageSize > 0 ? items.slice(0, visibleCap) : items
+  const canLoadMore = pageSize > 0 && visibleCap < items.length
+  const remaining = pageSize > 0 ? Math.max(0, items.length - visibleCap) : 0
+
+  const loadMore = () => {
+    setExtraLoadBatches((b) => b + 1)
+  }
+
+  const scrollClassName = `feed-board__scroll${tallScroll ? ' feed-board__scroll--tall' : ''}`
 
   const tableBlock =
     items.length === 0 ? (
@@ -16,7 +61,7 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
         {emptyMessage}
       </p>
     ) : (
-      <div className="feed-board__scroll">
+      <div className={scrollClassName}>
         <table className="feed-table">
           <thead>
             <tr>
@@ -35,7 +80,7 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
             </tr>
           </thead>
           <tbody>
-            {items.map((r, i) => (
+            {displayItems.map((r, i) => (
               <tr key={`${r.university}-${r.title}-${r.date}-${i}`}>
                 <td className="feed-table__td feed-table__td--date" data-label="Date">
                   {r.date}
@@ -65,7 +110,23 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
 
   const footerNode = footer ? <div className="feed-board__footer">{footer}</div> : null
 
-  if (mobile) {
+  const loadMoreNode =
+    canLoadMore ? (
+      <div className="feed-board__load-more">
+        <button type="button" className="feed-board__load-more-btn" onClick={loadMore}>
+          Load more ({remaining} remaining)
+        </button>
+      </div>
+    ) : null
+
+  const countNote =
+    pageSize > 0 && hasItems ? (
+      <p className="feed-board__count" role="status">
+        Showing {displayItems.length} of {items.length}
+      </p>
+    ) : null
+
+  if (useCollapse) {
     const rowWord = items.length === 1 ? 'row' : 'rows'
     return (
       <section
@@ -84,7 +145,9 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
           </summary>
           <div className="table-collapse__inner">
             {subtitle ? <p className="feed-board__note">{subtitle}</p> : null}
+            {countNote}
             {tableBlock}
+            {loadMoreNode}
             {footerNode}
           </div>
         </details>
@@ -98,7 +161,9 @@ export function FeedList({ title, subtitle, id, items, emptyMessage = 'Nothing t
         {title}
       </h2>
       {subtitle ? <p className="feed-board__note">{subtitle}</p> : null}
+      {countNote}
       {tableBlock}
+      {loadMoreNode}
       {footerNode}
     </section>
   )

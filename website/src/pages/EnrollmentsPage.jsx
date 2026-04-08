@@ -55,6 +55,10 @@ export function EnrollmentsPage() {
               title="All enrollment & admission links"
               items={filtered}
               emptyMessage="No enrollments match your search, or none have been scraped yet — run the scraper and sync enrollments.json."
+              disableMobileCollapse
+              pageSize={20}
+              loadMoreIncrement={20}
+              tallScroll
             />
           )}
         </div>

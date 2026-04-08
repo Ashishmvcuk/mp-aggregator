@@ -51,6 +51,45 @@
   min-width: 0;
 }
 
+/* Full-page feeds (e.g. /enrollments): readable table height instead of ~22rem cap */
+.feed-board__scroll--tall {
+  max-height: min(78vh, 920px);
+}
+
+.feed-board__count {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.feed-board__load-more {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.feed-board__load-more-btn {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: linear-gradient(180deg, #5c0606 0%, #3e0404 100%);
+  border: 2px solid #2a0202;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(92, 6, 6, 0.25);
+}
+
+.feed-board__load-more-btn:hover,
+.feed-board__load-more-btn:focus-visible {
+  background: linear-gradient(180deg, #8e1518 0%, #5c0606 100%);
+  outline: 2px solid #ffd54f;
+  outline-offset: 2px;
+}
+
 .feed-table {
   width: 100%;
   border-collapse: collapse;
