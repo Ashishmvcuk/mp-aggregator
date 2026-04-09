@@ -1,6 +1,6 @@
 {
-  "scrapedAt": "2026-04-08T20:02:17.868151Z",
-  "runId": "20260408T200217Z",
+  "scrapedAt": "2026-04-09T08:01:32.492729Z",
+  "runId": "20260409T080132Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
   "universitiesSuccess": 33,
@@ -11,8 +11,8 @@
     "syllabus": 43,
     "admit_cards": 1,
     "enrollments": 200,
-    "blogs": 17,
+    "blogs": 18,
     "jobs": 58
   },
-  "ciRunId": "24155845689"
+  "ciRunId": "24179372802"
 }
