@@ -10,9 +10,8 @@ on:
         type: boolean
         default: false
   schedule:
-    # Weekly: Sundays 00:00 UTC. Weekdays 06:30 UTC for fresher notices during term (disable if too costly).
-    - cron: "0 0 * * 0"
-    - cron: "30 6 * * 1-5"
+    # Daily run (UTC) to refresh runtime JSON without full site rebuild.
+    - cron: "30 2 * * *"
   push:
     branches: [main]
     paths:
@@ -136,7 +135,25 @@ jobs:
           if-no-files-found: warn
 
       - name: "Commit: website/public/data/*.json if changed"
+        if: github.event_name != 'schedule'
         run: bash scraper/scripts/ci_commit_website_data.sh
+
+      - name: "Prepare: runtime data payload for gh-pages"
+        if: github.event_name == 'schedule'
+        run: |
+          rm -rf pages-data
+          mkdir -p pages-data/data
+          cp website/public/data/*.json pages-data/data/
+
+      - name: "Publish: runtime JSON to gh-pages/data (no rebuild)"
+        if: github.event_name == 'schedule'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: pages-data
+          destination_dir: data
+          keep_files: true
 
       - name: "Artifact: scraper diagnostics"
         if: always()
