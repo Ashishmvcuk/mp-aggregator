@@ -4,19 +4,32 @@ import './MobileCollapsibleTable.css'
 import './SidebarUniversitiesDirectory.css'
 
 /**
- * @param {{ portals: Array<{ university: string; url: string; group?: string }>; filterQuery?: string; groupFilter?: string }} props
+ * @param {{
+ *  portals: Array<{ university: string; name?: string; url: string; type?: string }>
+ *  filterQuery?: string
+ *  selectedUniversity?: string
+ *  typeFilter?: string
+ * }} props
  */
-export function SidebarUniversitiesDirectory({ portals, filterQuery = '', groupFilter = 'all' }) {
+export function SidebarUniversitiesDirectory({
+  portals,
+  filterQuery = '',
+  selectedUniversity = 'all',
+  typeFilter = 'all',
+}) {
   const mobile = useIsMobileLayout()
   const q = filterQuery.trim().toLowerCase()
   const filtered = useMemo(() => {
     let rows = portals
-    if (groupFilter && groupFilter !== 'all') {
-      rows = rows.filter((p) => (p.group || '') === groupFilter)
+    if (typeFilter && typeFilter !== 'all') {
+      rows = rows.filter((p) => (p.type || '') === typeFilter)
+    }
+    if (selectedUniversity && selectedUniversity !== 'all') {
+      rows = rows.filter((p) => p.university === selectedUniversity)
     }
     if (!q) return rows
     return rows.filter((p) => p.university.toLowerCase().includes(q))
-  }, [portals, q, groupFilter])
+  }, [portals, q, selectedUniversity, typeFilter])
   const n = filtered.length
   const total = portals.length
 

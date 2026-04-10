@@ -97,7 +97,7 @@
 .results-ticker__marquee {
   display: flex;
   width: max-content;
-  animation: results-ticker-scroll 420s linear infinite;
+  animation: results-ticker-scroll 1500s linear infinite;
 }
 
 .results-ticker:hover .results-ticker__marquee {

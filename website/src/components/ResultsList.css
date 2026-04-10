@@ -239,6 +239,20 @@
   hyphens: auto;
 }
 
+.results-table__badge {
+  display: inline-block;
+  margin-top: 0.28rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #3f8f52;
+  background: #edf9f0;
+  color: #226236;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 .results-table__cell--link {
   text-align: center;
   vertical-align: middle;

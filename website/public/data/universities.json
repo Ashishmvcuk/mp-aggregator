@@ -1,217 +1,530 @@
 [
   {
-    "university": "AKS University, Satna",
-    "url": "https://aksuniversity.ac.in/",
-    "group": "private"
+    "name": "A.K.S. University",
+    "university": "A.K.S. University",
+    "url": "https://www.aksuniversity.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "Amity University, Gwalior",
-    "url": "https://www.amity.edu/gwalior/",
-    "group": "private"
+    "name": "Abhyuday University",
+    "university": "Abhyuday University",
+    "url": "https://abhyudayuniversity.edu.in/",
+    "type": "Private"
   },
   {
+    "name": "Amaltas University",
+    "university": "Amaltas University",
+    "url": "https://amaltasuniversity.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Amity University",
+    "university": "Amity University",
+    "url": "https://www.amity.edu/",
+    "type": "Private"
+  },
+  {
+    "name": "Aryavart University",
+    "university": "Aryavart University",
+    "url": "https://www.auindia.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
     "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
-    "url": "https://abvhv.org/",
-    "group": "state_government"
+    "url": "https://www.abvhv.edu.in/",
+    "type": "State"
   },
   {
-    "university": "Avantika University, Ujjain",
-    "url": "https://avantikauniversity.edu.in/",
-    "group": "private"
+    "name": "Avantika University",
+    "university": "Avantika University",
+    "url": "https://www.avantikauniversity.edu.in/",
+    "type": "Private"
   },
   {
-    "university": "Awadhesh Pratap Singh University, Rewa",
+    "name": "Awadesh Pratap Singh University",
+    "university": "Awadesh Pratap Singh University",
     "url": "https://apsurewa.ac.in/",
-    "group": "state_government"
+    "type": "State"
   },
   {
-    "university": "Barkatullah University, Bhopal",
-    "url": "https://www.bubhopal.ac.in/",
-    "group": "state_government"
+    "name": "Azim Premji University",
+    "university": "Azim Premji University",
+    "url": "https://azimpremjiuniversity.edu.in/bhopal",
+    "type": "Private"
   },
   {
-    "university": "Devi Ahilya Vishwavidyalaya (DAVV), Indore",
+    "name": "Barkatullaah University",
+    "university": "Barkatullaah University",
+    "url": "https://bubhopal.ac.in/1068/Home",
+    "type": "State"
+  },
+  {
+    "name": "Bhabha University",
+    "university": "Bhabha University",
+    "url": "https://www.bhabhauniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Chirayu University",
+    "university": "Chirayu University",
+    "url": "https://cmchbhopal.com/",
+    "type": "Private"
+  },
+  {
+    "name": "Devi Ahilya Vishwavidyalaya",
+    "university": "Devi Ahilya Vishwavidyalaya",
     "url": "https://www.dauniv.ac.in/",
-    "group": "state_government"
+    "type": "State"
   },
   {
-    "university": "Dr. Hari Singh Gour University, Sagar",
-    "url": "https://dhsgsu.ac.in/",
-    "group": "state_government"
+    "name": "Dharmashastra National Law University",
+    "university": "Dharmashastra National Law University",
+    "url": "https://www.mpdnlu.ac.in/",
+    "type": "State"
   },
   {
-    "university": "IIITM Gwalior",
-    "url": "https://iiitm.ac.in/",
-    "group": "deemed"
+    "name": "Dr C V Raman University",
+    "university": "Dr C V Raman University",
+    "url": "https://cvrump.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "Indira Gandhi National Tribal University (IGNTU)",
-    "url": "https://igntu.ac.in/",
-    "group": "central"
+    "name": "Dr. A.P.J Abdul Kalam University",
+    "university": "Dr. A.P.J Abdul Kalam University",
+    "url": "https://www.aku.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "ITM University, Gwalior",
-    "url": "https://itmuniversity.ac.in/",
-    "group": "private"
+    "name": "Dr. B. R. Ambedkar University of Social Sciences",
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "url": "https://brauss.mp.gov.in/",
+    "type": "State"
   },
   {
-    "university": "Jagran Lakecity University, Bhopal",
+    "name": "Dr. Harisingh Gour Vishwavidyalaya",
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "url": "https://dhsgsu.edu.in/index.php/en/",
+    "type": "Central"
+  },
+  {
+    "name": "Dr. Preeti Global University",
+    "university": "Dr. Preeti Global University",
+    "url": "https://www.drpreetiglobaluniversity.com/",
+    "type": "Private"
+  },
+  {
+    "name": "Eklavya University",
+    "university": "Eklavya University",
+    "url": "https://eklavyauniversity.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "G.H Raisoni University",
+    "university": "G.H Raisoni University",
+    "url": "https://www.ghru.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Gyanodaya University",
+    "university": "Gyanodaya University",
+    "url": "https://gyanodayauniversity.ac.in/home",
+    "type": "Private"
+  },
+  {
+    "name": "Gyanveer University",
+    "university": "Gyanveer University",
+    "url": "https://www.gyanveeruniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "I.E.S. University",
+    "university": "I.E.S. University",
+    "url": "https://www.gyanveeruniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Indian Institute of Forest Management (IIFM)",
+    "university": "Indian Institute of Forest Management (IIFM)",
+    "url": "https://iifm.ac.in/home",
+    "type": "Deemed to be Universities"
+  },
+  {
+    "name": "ITM University",
+    "university": "ITM University",
+    "url": "https://www.itmuniversity.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "J. N. C. T professional University",
+    "university": "J. N. C. T professional University",
+    "url": "https://www.jnctpu.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Jagran Lakecity University",
+    "university": "Jagran Lakecity University",
     "url": "https://jlu.edu.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
-    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya (JNKVV), Jabalpur",
+    "name": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
     "url": "https://www.jnkvv.org/",
-    "group": "state_specialized"
+    "type": "State"
   },
   {
-    "university": "Jiwaji University, Gwalior",
+    "name": "Jaypee University of Engineering & Technology",
+    "university": "Jaypee University of Engineering & Technology",
+    "url": "https://www.juet.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Jiwaji University",
+    "university": "Jiwaji University",
     "url": "https://www.jiwaji.edu/",
-    "group": "state_government"
+    "type": "State"
   },
   {
-    "university": "Lakshmibai National Institute of Physical Education (LNIPE)",
-    "url": "https://lnipe.edu.in/",
-    "group": "deemed"
+    "name": "Krantisurya Tantya Bhil Vishwavidyalaya",
+    "university": "Krantisurya Tantya Bhil Vishwavidyalaya",
+    "url": "https://ktbuniv.ac.in/",
+    "type": "State"
   },
   {
-    "university": "LNCT University, Bhopal",
+    "name": "Krantivir Tatya Tope Vishwavidyalaya",
+    "university": "Krantivir Tatya Tope Vishwavidyalaya",
+    "url": "https://kttv.edu.in/",
+    "type": "State"
+  },
+  {
+    "name": "Lakshmibai National Institute of Physical Education",
+    "university": "Lakshmibai National Institute of Physical Education",
+    "url": "https://www.lnipe.edu.in/",
+    "type": "Deemed to be Universities"
+  },
+  {
+    "name": "LNCT University",
+    "university": "LNCT University",
     "url": "https://lnctu.ac.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
-    "university": "Madhya Pradesh Bhoj Open University",
+    "name": "LNCT Vidhyapeeth University",
+    "university": "LNCT Vidhyapeeth University",
+    "url": "https://lnctvu.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "M.P.Bhoj (open) University",
+    "university": "M.P.Bhoj (open) University",
     "url": "https://mpbou.edu.in/",
-    "group": "state_government"
+    "type": "State"
   },
   {
+    "name": "Madhav Institute of Technology and Science",
+    "university": "Madhav Institute of Technology and Science",
+    "url": "https://web.mitsgwalior.in/",
+    "type": "Deemed to be Universities"
+  },
+  {
+    "name": "Madhya Pradesh Medical Science University",
     "university": "Madhya Pradesh Medical Science University",
     "url": "https://mpmsu.edu.in/",
-    "group": "state_specialized"
+    "type": "State"
   },
   {
+    "name": "Madhyanchal Professional University",
     "university": "Madhyanchal Professional University",
     "url": "https://mpu.ac.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
+    "name": "Mahakaushal University",
     "university": "Mahakaushal University",
-    "url": "https://mahakaushaluniversity.com/",
-    "group": "private"
+    "url": "https://mku.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "Maharaja Chhatrasal Bundelkhand University",
-    "url": "https://mchhatrasaluniversity.com/",
-    "group": "state_government"
+    "name": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "url": "https://mcbu.ac.in/",
+    "type": "State"
   },
   {
-    "university": "Makhanlal Chaturvedi National University of Journalism and Communication",
+    "name": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+    "university": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+    "url": "https://www.mmyvv.com/",
+    "type": "Private"
+  },
+  {
+    "name": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "url": "https://mpsvv.ac.in/index.php/en/",
+    "type": "State"
+  },
+  {
+    "name": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "url": "https://gramodayachitrakoot.ac.in/",
+    "type": "State"
+  },
+  {
+    "name": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
     "url": "https://www.mcu.ac.in/",
-    "group": "state_specialized"
+    "type": "State"
   },
   {
-    "university": "Malwanchal University, Indore",
-    "url": "https://malwanchaluniversity.com/",
-    "group": "private"
+    "name": "Malwanchal University",
+    "university": "Malwanchal University",
+    "url": "https://malwanchaluniversity.in/",
+    "type": "Private"
   },
   {
+    "name": "Mandsaur University",
     "university": "Mandsaur University",
-    "url": "https://mandsauruniversity.edu.in/",
-    "group": "private"
+    "url": "https://meu.edu.in/",
+    "type": "Private"
   },
   {
-    "university": "Mansarovar Global University, Bhopal",
-    "url": "https://mgu.ac.in/",
-    "group": "private"
+    "name": "Mangalayatan University",
+    "university": "Mangalayatan University",
+    "url": "https://www.mangalayatan.in/",
+    "type": "Private"
   },
   {
-    "university": "Medi-Caps University, Indore",
-    "url": "https://medicaps.ac.in/",
-    "group": "private"
+    "name": "Mansarovar Global University",
+    "university": "Mansarovar Global University",
+    "url": "https://www.mguindia.com/",
+    "type": "Private"
   },
   {
-    "university": "Nanaji Deshmukh Veterinary Science University",
-    "url": "https://ndvsu.org/",
-    "group": "state_specialized"
+    "name": "Medi-Caps University",
+    "university": "Medi-Caps University",
+    "url": "https://www.medicaps.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "Oriental University, Indore",
-    "url": "https://orientaluniversity.in/",
-    "group": "private"
+    "name": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
+    "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
+    "url": "https://www.ndvsu.org/",
+    "type": "State"
   },
   {
-    "university": "People's University, Bhopal",
-    "url": "https://peoplesuniversity.edu.in/",
-    "group": "private"
+    "name": "National Institute of Technical Teachers Training & Research (NITTTR)",
+    "university": "National Institute of Technical Teachers Training & Research (NITTTR)",
+    "url": "https://nitttrbpl.ac.in/",
+    "type": "Deemed to be Universities"
   },
   {
-    "university": "Prestige University, Indore",
+    "name": "National Law Institute University",
+    "university": "National Law Institute University",
+    "url": "https://nliu.ac.in/",
+    "type": "State"
+  },
+  {
+    "name": "Oriental University",
+    "university": "Oriental University",
+    "url": "https://oui.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "P.K. University",
+    "university": "P.K. University",
+    "url": "https://pkuniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Pandit S N Shukla University",
+    "university": "Pandit S N Shukla University",
+    "url": "https://ptsnsuniversity.ac.in/",
+    "type": "State"
+  },
+  {
+    "name": "People's University",
+    "university": "People's University",
+    "url": "https://www.peoplesuniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Prestige Institute of Management and Research (PIMR)",
+    "university": "Prestige Institute of Management and Research (PIMR)",
+    "url": "https://pimrindore.ac.in/",
+    "type": "Deemed to be Universities"
+  },
+  {
+    "name": "Prestige University",
+    "university": "Prestige University",
     "url": "https://prestigeuniversity.edu.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
-    "university": "Rabindranath Tagore University, Bhopal",
+    "name": "Rabindranath Tagore University (formerly known as AISECT University)",
+    "university": "Rabindranath Tagore University (formerly known as AISECT University)",
     "url": "https://rntu.ac.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
+    "name": "Raja Mansingh Tomar Music & Arts University",
     "university": "Raja Mansingh Tomar Music & Arts University",
-    "url": "https://mptmusicandartsuniversity.org/",
-    "group": "state_specialized"
+    "url": "https://rmtmusicandartsuniversity.com/",
+    "type": "State"
   },
   {
-    "university": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+    "name": "Raja Shankar Shah University, Chhindwara",
+    "university": "Raja Shankar Shah University, Chhindwara",
+    "url": "https://cuc.ac.in/",
+    "type": "State"
+  },
+  {
+    "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
     "url": "https://www.rgpv.ac.in/",
-    "group": "state_specialized"
+    "type": "State"
   },
   {
-    "university": "Rajmata Vijayaraje Scindia Krishi Vishwavidyalaya (RVSKVV), Gwalior",
+    "name": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
     "url": "https://www.rvskvv.net/",
-    "group": "state_specialized"
+    "type": "State"
   },
   {
-    "university": "Rani Durgavati University, Jabalpur",
-    "url": "https://rdunijbpin.org/",
-    "group": "state_government"
+    "name": "Rani Awantibai Lodhi Vishwavidyalaya",
+    "university": "Rani Awantibai Lodhi Vishwavidyalaya",
+    "url": "https://ralvv.mp.gov.in/",
+    "type": "State"
   },
   {
-    "university": "RKDF University, Bhopal",
-    "url": "https://rkdfuniversity.org/",
-    "group": "private"
+    "name": "Rani Durgavati Vishwavidyalaya",
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "url": "https://rdunijbpin.mponline.gov.in/1068/Home",
+    "type": "State"
   },
   {
-    "university": "SAGE University, Bhopal",
-    "url": "https://sageuniversity.edu.in/",
-    "group": "private"
+    "name": "Renaissance University",
+    "university": "Renaissance University",
+    "url": "https://renaissance.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "SAGE University, Indore",
+    "name": "RKDF University",
+    "university": "RKDF University",
+    "url": "https://erplive.rkdf.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Sage University",
+    "university": "Sage University",
     "url": "https://sageuniversity.in/",
-    "group": "private"
+    "type": "Private"
   },
   {
-    "university": "Sarvepalli Radhakrishnan University, Bhopal",
-    "url": "https://sru.edu.in/",
-    "group": "private"
+    "name": "SAM Global University",
+    "university": "SAM Global University",
+    "url": "https://www.samglobaluniversity.ac.in/",
+    "type": "Private"
   },
   {
-    "university": "Shri Krishna University, Chhatarpur",
-    "url": "https://skuniversity.org/",
-    "group": "private"
+    "name": "Sanchi University of Buddhist-Indic Studies",
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/",
+    "type": "State"
   },
   {
+    "name": "Sanjeev Agrawal Global Educational University",
+    "university": "Sanjeev Agrawal Global Educational University",
+    "url": "https://sageuniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Sardar Patel University",
+    "university": "Sardar Patel University",
+    "url": "https://spubgt.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Sarvepalli Radhakrishnan University",
+    "university": "Sarvepalli Radhakrishnan University",
+    "url": "https://www.srku.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Scope Global Skills University",
+    "university": "Scope Global Skills University",
+    "url": "https://sgsuniversity.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Shri Krishna University",
+    "university": "Shri Krishna University",
+    "url": "https://www.skuindia.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+    "university": "Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+    "url": "https://www.svvv.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Shubham University",
+    "university": "Shubham University",
+    "url": "https://www.shubhamuniversity.com/",
+    "type": "Private"
+  },
+  {
+    "name": "Sri Aurobindo University",
+    "university": "Sri Aurobindo University",
+    "url": "https://www.sriaurobindouniversity.edu.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Sri Satya Sai University of Technology & Medical Sciences",
+    "university": "Sri Satya Sai University of Technology & Medical Sciences",
+    "url": "https://sssutms.co.in/cms/Website",
+    "type": "Private"
+  },
+  {
+    "name": "Swami Vivekanand University",
     "university": "Swami Vivekanand University",
-    "url": "https://svnuniversity.ac.in/",
-    "group": "private"
+    "url": "https://www.svnuniversity.org/",
+    "type": "Private"
   },
   {
-    "university": "Vikram University, Ujjain",
+    "name": "Symbiosis University of Applied Sciences (SUAS)",
+    "university": "Symbiosis University of Applied Sciences (SUAS)",
+    "url": "https://www.suas.ac.in/",
+    "type": "Private"
+  },
+  {
+    "name": "Techno Global University",
+    "university": "Techno Global University",
+    "url": "https://www.technoglobaluniversitysironjmp.com/",
+    "type": "Private"
+  },
+  {
+    "name": "The Indira Gandhi National Tribal University",
+    "university": "The Indira Gandhi National Tribal University",
+    "url": "https://www.igntu.ac.in/",
+    "type": "Central"
+  },
+  {
+    "name": "Vikram University",
+    "university": "Vikram University",
     "url": "https://vikramuniv.ac.in/",
-    "group": "state_government"
+    "type": "State"
   },
   {
+    "name": "Vikrant University",
     "university": "Vikrant University",
     "url": "https://vikrantuniversity.ac.in/",
-    "group": "private"
+    "type": "Private"
+  },
+  {
+    "name": "VIT Bhopal University",
+    "university": "VIT Bhopal University",
+    "url": "https://vitbhopal.ac.in/",
+    "type": "Private"
   }
 ]

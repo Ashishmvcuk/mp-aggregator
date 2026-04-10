@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import logging
+import os
 import random
 import time
+from urllib.parse import urlparse
 from typing import Optional
 
 import requests
@@ -19,6 +21,16 @@ USER_AGENT = (
 _RETRYABLE_STATUS = frozenset({429, 500, 502, 503, 504})
 # Initial attempt + retries (matches backlog: backoff + jitter on transient failures).
 _MAX_ATTEMPTS = 4
+_DEFAULT_INSECURE_TLS_HOSTS = frozenset(
+    {
+        "www.dauniv.ac.in",
+        "www.amity.edu",
+        "mpmsu.edu.in",
+        "ralvv.mp.gov.in",
+        "www.suas.ac.in",
+        "rdunijbpin.mponline.gov.in",
+    }
+)
 
 _SESSION: requests.Session | None = None
 
@@ -37,6 +49,23 @@ def _backoff_sleep(attempt: int) -> None:
     base = 0.4 * (2 ** (attempt - 1))
     jitter = random.uniform(0, 0.35)
     time.sleep(base + jitter)
+
+
+def _insecure_tls_hosts() -> set[str]:
+    """
+    Hosts allowed to retry once with TLS verify disabled.
+    Controlled fallback for known misconfigured university cert chains.
+    """
+    raw = os.environ.get("SCRAPER_INSECURE_TLS_HOSTS", "").strip()
+    env_hosts = {h.strip().lower() for h in raw.split(",") if h.strip()} if raw else set()
+    return set(_DEFAULT_INSECURE_TLS_HOSTS) | env_hosts
+
+
+def _hostname(url: str) -> str:
+    try:
+        return (urlparse(url).hostname or "").lower()
+    except Exception:
+        return ""
 
 
 def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
@@ -65,6 +94,23 @@ def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
             logger.warning("Fetch failed for %s: %s", url, e)
             return None
         except requests.RequestException as e:
+            host = _hostname(url)
+            if (
+                isinstance(e, requests.exceptions.SSLError)
+                and host in _insecure_tls_hosts()
+            ):
+                try:
+                    logger.warning(
+                        "TLS verify failed for %s; retrying once with verify=False for host %s",
+                        url,
+                        host,
+                    )
+                    resp = session.get(url, timeout=timeout, verify=False)
+                    resp.raise_for_status()
+                    return resp.text
+                except requests.RequestException as e2:
+                    logger.warning("Fetch failed for %s after TLS fallback: %s", url, e2)
+                    return None
             if attempt < _MAX_ATTEMPTS:
                 logger.warning(
                     "Fetch error for %s (attempt %d/%d): %s — retrying after backoff",

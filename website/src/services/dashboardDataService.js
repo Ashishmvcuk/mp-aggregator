@@ -99,9 +99,10 @@ export async function loadUniversityPortals() {
   return rows
     .filter((r) => r && typeof r === 'object')
     .map((r) => ({
-      university: String(r.university || '').trim(),
+      university: String(r.university || r.name || '').trim(),
+      name: String(r.name || r.university || '').trim(),
       url: String(r.url || '').trim(),
-      group: String(r.group || '').trim(),
+      type: String(r.type || '').trim(),
     }))
     .filter((r) => r.university && r.url)
 }

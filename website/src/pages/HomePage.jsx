@@ -18,22 +18,20 @@ import './HomePage.css'
 
 export function HomePage() {
   const [query, setQuery] = useState('')
-  const [groupFilter, setGroupFilter] = useState('all')
+  const [typeFilter, setTypeFilter] = useState('all')
+  const [selectedUniversity, setSelectedUniversity] = useState('all')
   const feeds = useDashboardFeeds()
-  const universityToGroup = useMemo(() => {
-    const m = new Map()
-    for (const p of feeds.universityPortals) {
-      if (p.group) m.set(p.university, p.group)
-    }
-    return m
-  }, [feeds.universityPortals])
-  const groupOptions = useMemo(() => {
-    const s = new Set(feeds.universityPortals.map((p) => p.group).filter(Boolean))
+  const typeOptions = useMemo(() => {
+    const s = new Set(feeds.universityPortals.map((p) => p.type).filter(Boolean))
     return [...s].sort((a, b) => a.localeCompare(b))
   }, [feeds.universityPortals])
+  const universityOptions = useMemo(
+    () => [...feeds.universityPortals].map((p) => p.university).sort((a, b) => a.localeCompare(b)),
+    [feeds.universityPortals]
+  )
   const { items, filtered, summary, loading, error, universityNames, titleSuggestions } = useResults(
     query,
-    { groupFilter, universityToGroup }
+    { typeFilter, selectedUniversity, referenceRows: feeds.universityPortals }
   )
 
   return (
@@ -83,21 +81,37 @@ export function HomePage() {
                 </Link>
               </p>
 
-              {!feeds.loading && groupOptions.length > 0 && (
+              {!feeds.loading && (typeOptions.length > 0 || universityOptions.length > 0) && (
                 <div className="home-page__group-filter">
-                  <label htmlFor="home-group-filter" className="home-page__group-filter-label">
-                    University group
+                  <label htmlFor="home-type-filter" className="home-page__group-filter-label">
+                    University type
                   </label>
                   <select
-                    id="home-group-filter"
+                    id="home-type-filter"
                     className="home-page__group-filter-select"
-                    value={groupFilter}
-                    onChange={(e) => setGroupFilter(e.target.value)}
+                    value={typeFilter}
+                    onChange={(e) => setTypeFilter(e.target.value)}
                   >
-                    <option value="all">All groups</option>
-                    {groupOptions.map((g) => (
-                      <option key={g} value={g}>
-                        {g.replace(/_/g, ' ')}
+                    <option value="all">All types</option>
+                    {typeOptions.map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
+                    ))}
+                  </select>
+                  <label htmlFor="home-university-filter" className="home-page__group-filter-label">
+                    University
+                  </label>
+                  <select
+                    id="home-university-filter"
+                    className="home-page__group-filter-select"
+                    value={selectedUniversity}
+                    onChange={(e) => setSelectedUniversity(e.target.value)}
+                  >
+                    <option value="all">All universities</option>
+                    {universityOptions.map((u) => (
+                      <option key={u} value={u}>
+                        {u}
                       </option>
                     ))}
                   </select>
@@ -134,7 +148,8 @@ export function HomePage() {
                   <SidebarUniversitiesDirectory
                     portals={feeds.universityPortals}
                     filterQuery={query}
-                    groupFilter={groupFilter}
+                    selectedUniversity={selectedUniversity}
+                    typeFilter={typeFilter}
                   />
                 </div>
               )}
@@ -217,7 +232,8 @@ export function HomePage() {
                   <SidebarUniversitiesDirectory
                     portals={feeds.universityPortals}
                     filterQuery={query}
-                    groupFilter={groupFilter}
+                    selectedUniversity={selectedUniversity}
+                    typeFilter={typeFilter}
                   />
                 </div>
               )}

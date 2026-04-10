@@ -1,7 +1,7 @@
 import { formatDateShort } from '../utils/formatDate'
 
 /**
- * @param {{ result: { university: string; title: string; result_url: string; date: string }; index: number }} props
+ * @param {{ result: { university: string; title: string; result_url: string; date: string; officialReferenceMatch?: boolean }; index: number }} props
  */
 export function ResultTableRow({ result, index }) {
   return (
@@ -10,7 +10,14 @@ export function ResultTableRow({ result, index }) {
         {formatDateShort(result.date)}
       </td>
       <td className="results-table__cell results-table__cell--uni" data-label="University">
-        <div className="results-table__cell-wrap">{result.university}</div>
+        <div className="results-table__cell-wrap">
+          {result.university}
+          {result.officialReferenceMatch && (
+            <span className="results-table__badge" title="University + URL host matches official reference">
+              Official reference match
+            </span>
+          )}
+        </div>
       </td>
       <td className="results-table__cell results-table__cell--title" data-label="Examination / result">
         <div className="results-table__cell-wrap">{result.title}</div>

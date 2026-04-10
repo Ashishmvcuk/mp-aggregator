@@ -1,0 +1,882 @@
+[
+  {
+    "sr_no": 1,
+    "type": "Private",
+    "name": "A.K.S. University",
+    "website": "https://www.aksuniversity.ac.in/",
+    "address": "SherGanj, Satna",
+    "zip": "485001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 2,
+    "type": "Private",
+    "name": "Abhyuday University",
+    "website": "https://abhyudayuniversity.edu.in/",
+    "address": "Garam Magriya, Khandwa Road, Khargone",
+    "zip": "451001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 3,
+    "type": "Private",
+    "name": "Amaltas University",
+    "website": "https://amaltasuniversity.in/",
+    "address": "Dewas, Dewas-Ujjain State Highway, Bangar, District-Dewas",
+    "zip": "455001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 4,
+    "type": "Private",
+    "name": "Amity University",
+    "website": "https://www.amity.edu/",
+    "address": "Maharajpura, Gwalior Gwalior",
+    "zip": "474005",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 5,
+    "type": "Private",
+    "name": "Aryavart University",
+    "website": "https://www.auindia.ac.in/",
+    "address": "National Highway-46, Jharkheda, Tehsil-Shyampur, Sehore",
+    "zip": "466001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 6,
+    "type": "State",
+    "name": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "website": "https://www.abvhv.edu.in/",
+    "address": "Mungalia Kot,Rajharsh Colony, Kolar MargBhopal",
+    "zip": "462038",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 7,
+    "type": "Private",
+    "name": "Avantika University",
+    "website": "https://www.avantikauniversity.edu.in/",
+    "address": "Avantika University, Vishwanathpuram, Lekoda Village, Ujjian, MP, IndiaLekoda VillageUjjain",
+    "zip": "456006",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 8,
+    "type": "State",
+    "name": "Awadesh Pratap Singh University",
+    "website": "http://www.apsurewa.nic.in/",
+    "address": "Sirmour Road,Ananthpur,Rewa",
+    "zip": "486003",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 9,
+    "type": "Private",
+    "name": "Azim Premji University",
+    "website": "https://azimpremjiuniversity.edu.in/bhopal",
+    "address": "Bypass Road, Kanhasaiya, Tehsil-Huzur, Bhopal",
+    "zip": "462010",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 10,
+    "type": "State",
+    "name": "Barkatullaah University",
+    "website": "https://bubhopal.ac.in/1068/Home",
+    "address": "Hoshangabad Road, Bhopal",
+    "zip": "462026",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 11,
+    "type": "Private",
+    "name": "Bhabha University",
+    "website": "https://www.bhabhauniversity.edu.in/",
+    "address": "NH-12, Hoshangabad, Jatkhedi, Bhopal",
+    "zip": "462026",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 12,
+    "type": "Private",
+    "name": "Chirayu University",
+    "website": "https://cmchbhopal.com/",
+    "address": "Bhopal-Indore Highway, Near Bairagarh, Bhainsakhedi",
+    "zip": "462030",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 13,
+    "type": "State",
+    "name": "Devi Ahilya Vishwavidyalaya",
+    "website": "https://www.dauniv.ac.in/view-all/important-announcements",
+    "address": "R.N.Tagore Marg,Indore",
+    "zip": "452001",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 14,
+    "type": "State",
+    "name": "Dharmashastra National Law University",
+    "website": "https://www.mpdnlu.ac.in/",
+    "address": "BRBRAITT Campus South Civil Lines ,Ridge Road Jabalpur Ridge Road,Civil Lines, Jabalpur",
+    "zip": "482001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 15,
+    "type": "Private",
+    "name": "Dr C V Raman University",
+    "website": "https://cvrump.ac.in/",
+    "address": "village & post CHHAIGAON MAKHAN,Dist-KhandwaPost-Chhaigaon MakhanKhandwa",
+    "zip": "450771",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 16,
+    "type": "Private",
+    "name": "Dr. A.P.J Abdul Kalam University",
+    "website": "https://www.aku.ac.in/",
+    "address": "Indore Dewas Bypass, Arandia, IndoreVillage- Arandia, Post- Jhalaria,Indore",
+    "zip": "452016",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 17,
+    "type": "State",
+    "name": "Dr. B. R. Ambedkar University of Social Sciences",
+    "website": "https://brauss.mp.gov.in/",
+    "address": "Dr. Ambedkar Nagar, Mhow-453441Dist-Indore, MP",
+    "zip": "453441",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 18,
+    "type": "Central",
+    "name": "Dr. Harisingh Gour Vishwavidyalaya",
+    "website": "https://dhsgsu.edu.in/index.php/en/",
+    "address": "Sagar,Gour Nagar,Patharia Hills",
+    "zip": "470003",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 19,
+    "type": "Private",
+    "name": "Dr. Preeti Global University",
+    "website": "https://www.drpreetiglobaluniversity.com/",
+    "address": "Gram Dinara, Teh Karera,District-Shivpuri",
+    "zip": "473665",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 20,
+    "type": "Private",
+    "name": "Eklavya University",
+    "website": "https://eklavyauniversity.ac.in/",
+    "address": "Ojaswini Nagar,Sagar Road,Damoh",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 21,
+    "type": "Private",
+    "name": "G.H Raisoni University",
+    "website": "https://www.ghru.edu.in/",
+    "address": "Dhoda Borgaon, Village Saikheda, Tah Sausar, Dist Chhindwara(M.P) Tah-Saunsar,Dist-Chhindwara",
+    "zip": "480334",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 22,
+    "type": "Private",
+    "name": "Gyanodaya University",
+    "website": "https://gyanodayauniversity.ac.in/home",
+    "address": "Village- SuwakhedaDistrict-NeemuchMadhya Pradesh",
+    "zip": "458441",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 23,
+    "type": "Private",
+    "name": "Gyanveer University",
+    "website": "https://www.gyanveeruniversity.edu.in/",
+    "address": "Village- Maa-Emliya, Ph-20, Block-Rahatgarh, Sagar",
+    "zip": "470115",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 24,
+    "type": "Private",
+    "name": "I.E.S. University",
+    "website": "https://www.gyanveeruniversity.edu.in/",
+    "address": "IES Campus Ratibad Main RoadBhopal",
+    "zip": "462044",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 25,
+    "type": "Deemed to be Universities",
+    "name": "Indian Institute of Forest Management (IIFM)",
+    "website": "https://iifm.ac.in/home",
+    "address": "PO Box 357, Nehru Nagar, Bhopal,",
+    "zip": "462003",
+    "state": "Madhya Pradesh",
+    "status": "Section-III"
+  },
+  {
+    "sr_no": 26,
+    "type": "Private",
+    "name": "ITM University",
+    "website": "https://www.itmuniversity.ac.in/",
+    "address": "Opp. Sithouli Rly. StationNH-75, Jhansi RoadGwalior",
+    "zip": "474001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 27,
+    "type": "Private",
+    "name": "J. N. C. T professional University",
+    "website": "https://www.jnctpu.edu.in/",
+    "address": "New Chouksey Nagar, Lambakheda, Berasia Road, Bhopal,",
+    "zip": "462038",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 28,
+    "type": "Private",
+    "name": "Jagran Lakecity University",
+    "website": "https://jlu.edu.in/",
+    "address": "Gram Panchayat Mugaliya ChhapTehsil Huzur, Bhopal",
+    "zip": "462044",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 29,
+    "type": "State",
+    "name": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "website": "https://www.jnkvv.org/",
+    "address": "Krishinagar, Jabalpur,",
+    "zip": "482004",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 30,
+    "type": "Private",
+    "name": "Jaypee University of Engineering & Technology",
+    "website": "https://www.juet.ac.in/",
+    "address": "Raghogarh, Guna MPRaghogarhDistt, Guna",
+    "zip": "473226",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 31,
+    "type": "State",
+    "name": "Jiwaji University",
+    "website": "https://www.jiwaji.edu/",
+    "address": "GwaliorPIN - 474 001. (MP)",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 32,
+    "type": "State",
+    "name": "Krantisurya Tantya Bhil Vishwavidyalaya",
+    "website": "https://ktbuniv.ac.in/",
+    "address": "Khargone, Bistant Road, Khargone",
+    "zip": "451001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 33,
+    "type": "State",
+    "name": "Krantivir Tatya Tope Vishwavidyalaya",
+    "website": "https://kttv.edu.in/",
+    "address": "Guna, Ladli Laxmi Path Jaganpura Chak, Guna",
+    "zip": "473001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 34,
+    "type": "Deemed to be Universities",
+    "name": "Lakshmibai National Institute of Physical Education",
+    "website": "https://www.lnipe.edu.in/",
+    "address": "Shaktinagar, Mela Road, Gwalior",
+    "zip": "474002",
+    "state": "Madhya Pradesh",
+    "status": "Section-III & 12(B)"
+  },
+  {
+    "sr_no": 35,
+    "type": "Private",
+    "name": "LNCT University",
+    "website": "https://lnctu.ac.in/",
+    "address": "JK Town Sarvadharam C sector, Kolar Road, Bhopal",
+    "zip": "462024",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 36,
+    "type": "Private",
+    "name": "LNCT Vidhyapeeth University",
+    "website": "https://lnctvu.ac.in/",
+    "address": "LANCT Campus, Village-Kanadiya, Kanadiya Road, Indore",
+    "zip": "452016",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 37,
+    "type": "State",
+    "name": "M.P.Bhoj (open) University",
+    "website": "https://mpbou.edu.in/",
+    "address": "Kolar Road BhopalKolar Road,Bhopal",
+    "zip": "462016",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 38,
+    "type": "Deemed to be Universities",
+    "name": "Madhav Institute of Technology and Science",
+    "website": "https://web.mitsgwalior.in/",
+    "address": "Gola ka Mandir, Gwalior",
+    "zip": "474005",
+    "state": "Madhya Pradesh",
+    "status": "Section-III"
+  },
+  {
+    "sr_no": 39,
+    "type": "State",
+    "name": "Madhya Pradesh Medical Science University",
+    "website": "https://mpmsu.edu.in/",
+    "address": "NSCB Medical College Campus, Bhedaghat Road, Jabalpur",
+    "zip": "482003",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 40,
+    "type": "Private",
+    "name": "Madhyanchal Professional University",
+    "website": "https://mpu.ac.in/",
+    "address": "Patel Group of Institutions Campus, Ratibad,Bhopal",
+    "zip": "462044",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 41,
+    "type": "Private",
+    "name": "Mahakaushal University",
+    "website": "https://mku.ac.in/",
+    "address": "Anthakheda, Chargawan Road,Tilwara,Jabalpur",
+    "zip": "482003",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 42,
+    "type": "State",
+    "name": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "website": "https://mcbu.ac.in/",
+    "address": "Police Lines Road, Panna Road, Chhatarpur",
+    "zip": "471001",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 43,
+    "type": "Private",
+    "name": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+    "website": "https://www.mmyvv.com/",
+    "address": "Village-Karaundi, Post Office-Mahner, Tehsil-Dheemarkheda, City-Dheemarkheda, District-Katni",
+    "zip": "483332",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 44,
+    "type": "State",
+    "name": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "website": "https://mpsvv.ac.in/index.php/en/",
+    "address": "Dewas Road, Ujjain, Madhya Pradesh",
+    "zip": "456010",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 45,
+    "type": "State",
+    "name": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "website": "https://gramodayachitrakoot.ac.in/",
+    "address": "ChitrakootDistrict Satna",
+    "zip": "485334",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 46,
+    "type": "State",
+    "name": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "website": "https://www.mcu.ac.in/",
+    "address": "B-38, Vikas Bhavan, Press Complex, MP Nagar, Zone-1Bhopal",
+    "zip": "462011",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 47,
+    "type": "Private",
+    "name": "Malwanchal University",
+    "website": "https://malwanchaluniversity.in/",
+    "address": "Index City,NH-59A,Nemawar Road,Near Khundel, District-Indore",
+    "zip": "452016",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 48,
+    "type": "Private",
+    "name": "Mandsaur University",
+    "website": "https://meu.edu.in/",
+    "address": "Mahow Neemuch bypass , Rewas Devda, Road, MandsaurSh-31,Mandsaur",
+    "zip": "458001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 49,
+    "type": "Private",
+    "name": "Mangalayatan University",
+    "website": "https://www.mangalayatan.in/",
+    "address": "NH-30, Mandla Road,Near Shrda Devi Mandir,Richai-Barela, Jabalpur",
+    "zip": "483001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 50,
+    "type": "Private",
+    "name": "Mansarovar Global University",
+    "website": "https://www.mguindia.com/",
+    "address": "Village Gadia and Ratnakhedi,Block-BilkisganjSehore",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 51,
+    "type": "Private",
+    "name": "Medi-Caps University",
+    "website": "https://www.medicaps.ac.in/",
+    "address": "A B Road, Pigdamber, Rau, IndorePigdamber, RauIndore",
+    "zip": "453331",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 52,
+    "type": "State",
+    "name": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
+    "website": "https://www.ndvsu.org/",
+    "address": "Adhartal, Jabalpur-482004, Madhya PradeshJabalpur",
+    "zip": "482004",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 53,
+    "type": "Deemed to be Universities",
+    "name": "National Institute of Technical Teachers Training & Research (NITTTR)",
+    "website": "https://nitttrbpl.ac.in/",
+    "address": "Shamla Hills,Bhopal, Madhya Pradesh",
+    "zip": "462002",
+    "state": "Madhya Pradesh",
+    "status": "Section-III"
+  },
+  {
+    "sr_no": 54,
+    "type": "State",
+    "name": "National Law Institute University",
+    "website": "https://nliu.ac.in/",
+    "address": "Kerwa Dam Road, BhopalBarkeri KalanBhopal",
+    "zip": "462044",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 55,
+    "type": "Private",
+    "name": "Oriental University",
+    "website": "https://oui.edu.in/",
+    "address": "Opp. Rewati Range Gate No. 1, Post Shri Aurobindo, Jakhya, IndorePost Aurobindo, Sanwer Road, Jakhya, Indore",
+    "zip": "453555",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 56,
+    "type": "Private",
+    "name": "P.K. University",
+    "website": "https://pkuniversity.edu.in/",
+    "address": "Village - Thanra, Teh - Karera,NH-27,District - Shivpuri",
+    "zip": "473665",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 57,
+    "type": "State",
+    "name": "Pandit S N Shukla University",
+    "website": "https://ptsnsuniversity.ac.in/",
+    "address": "Nawalpur, Shahdol, M.P.",
+    "zip": "484001",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 58,
+    "type": "Private",
+    "name": "People's University",
+    "website": "https://www.peoplesuniversity.edu.in/",
+    "address": "People's Campus, Bhanpur, Bhopal(M.P)",
+    "zip": "462037",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 59,
+    "type": "Deemed to be Universities",
+    "name": "Prestige Institute of Management and Research (PIMR)",
+    "website": "https://pimrindore.ac.in/",
+    "address": "Indore",
+    "zip": "452010",
+    "state": "Madhya Pradesh",
+    "status": "Section-III"
+  },
+  {
+    "sr_no": 60,
+    "type": "Private",
+    "name": "Prestige University",
+    "website": "https://prestigeuniversity.edu.in/",
+    "address": "Gram Ringnodia, Indore-Ujjain, Indore",
+    "zip": "453551",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 61,
+    "type": "Private",
+    "name": "Rabindranath Tagore University (formerly known as AISECT University)",
+    "website": "https://rntu.ac.in/",
+    "address": "Chiklod Road, Near Bangrasia Chouraha Bhopal",
+    "zip": "462047",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 62,
+    "type": "State",
+    "name": "Raja Mansingh Tomar Music & Arts University",
+    "website": "https://rmtmusicandartsuniversity.com/",
+    "address": "Mahadaji Chowk, Achaleshwar Marg, Gwalior",
+    "zip": "474009",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 63,
+    "type": "State",
+    "name": "Raja Shankar Shah University, Chhindwara",
+    "website": "https://cuc.ac.in/",
+    "address": "Library building of Government Autonomous Post Graduate College,Chhindwara,",
+    "zip": "480001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 64,
+    "type": "State",
+    "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
+    "website": "https://www.rgpv.ac.in/",
+    "address": "Airport BypassGandhi NagarBhopal (M.P.)",
+    "zip": "462036",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 65,
+    "type": "State",
+    "name": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+    "website": "https://www.rvskvv.net/",
+    "address": "Opp. Mela GroundRace Course RoadGwalior,Madhya Pradesh",
+    "zip": "474002",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 66,
+    "type": "State",
+    "name": "Rani Awantibai Lodhi Vishwavidyalaya",
+    "website": "https://ralvv.mp.gov.in/",
+    "address": "Near Central School No-3, Rajghat Road, Sagar",
+    "zip": "470002",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 67,
+    "type": "State",
+    "name": "Rani Durgavati Vishwavidyalaya",
+    "website": "https://rdunijbpin.mponline.gov.in/1068/Home",
+    "address": "Jabalpur - 482 001. (M.P)",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 68,
+    "type": "Private",
+    "name": "Renaissance University",
+    "website": "https://renaissance.ac.in/",
+    "address": "Gram Revti, Behind Aurobindo Hospital, Sanwer-Road, Indore (MP)51/1/1 Gram Reoti, Sanwer Road,Behind Aurobindo Hospital, Indore",
+    "zip": "452015",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 69,
+    "type": "Private",
+    "name": "RKDF University",
+    "website": "https://erplive.rkdf.ac.in/",
+    "address": "Airport By Pass Road, Gandhi Nagar, Bhopal, Madhya PradeshGandhi NagarBhopal",
+    "zip": "462033",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 70,
+    "type": "Private",
+    "name": "Sage University",
+    "website": "https://sageuniversity.in/",
+    "address": "KAILOD KARTAL RAU BYPASS INDOREIndore-Dewas Bypass Road,Rau, Indore",
+    "zip": "452020",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 71,
+    "type": "Private",
+    "name": "SAM Global University",
+    "website": "https://www.samglobaluniversity.ac.in/",
+    "address": "Agariya Chopda,Bilkhiriya,Bhopal",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 72,
+    "type": "State",
+    "name": "Sanchi University of Buddhist-Indic Studies",
+    "website": "https://www.sanchiuniv.edu.in/newwebsite/",
+    "address": "2nd Floor, Institute of Good Governance & Policy AnalysisBhadbhada Square,Bhopal",
+    "zip": "462003",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 73,
+    "type": "Private",
+    "name": "Sanjeev Agrawal Global Educational University",
+    "website": "https://sageuniversity.edu.in/",
+    "address": "Katara Extension,Sahara Bypass Road,Bhopal",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 74,
+    "type": "Private",
+    "name": "Sardar Patel University",
+    "website": "https://spubgt.ac.in/",
+    "address": "SARDAR PATEL KNOWLEDGE CITY, DONGARIYA (WARASEONI ROAD), POST-CHILLOD, TAHSIL-LALBURRA, DISTRICT-BALAGHAT(M.P.)Waraseoni Road, DongariyaBalaghat",
+    "zip": "481331",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 75,
+    "type": "Private",
+    "name": "Sarvepalli Radhakrishnan University",
+    "website": "https://www.srku.edu.in/",
+    "address": "NH-12, Hoshangabad RoadJatkhedi,Bhopal",
+    "zip": null,
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 76,
+    "type": "Private",
+    "name": "Scope Global Skills University",
+    "website": "https://sgsuniversity.ac.in/",
+    "address": "Scope Campus, NH-12,Bhaironpur, Near Misrod, Hoshangabad Road, Bhopal",
+    "zip": "462026",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 77,
+    "type": "Private",
+    "name": "Shri Krishna University",
+    "website": "https://www.skuindia.ac.in/",
+    "address": "NH-86Villege Chauka Sagar Road Chhatarpur M.P.Village Chowka,Sagar Road, Chhatarpur",
+    "zip": "471001",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 78,
+    "type": "Private",
+    "name": "Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+    "website": "https://www.svvv.edu.in/",
+    "address": "Ujjain Road, Indore (MP)IndoreMadhya Pradesh",
+    "zip": "453111",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 79,
+    "type": "Private",
+    "name": "Shubham University",
+    "website": "https://www.shubhamuniversity.com/",
+    "address": "Semra Saiyad,Tehsil-HuzurDist.- Bhopal",
+    "zip": "462010",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 80,
+    "type": "Private",
+    "name": "Sri Aurobindo University",
+    "website": "https://www.sriaurobindouniversity.edu.in/",
+    "address": "SAIMS Campus,Indore-Ujjain State Highway,Near MR-10 Crossing, Sanwer Road, Indore",
+    "zip": "453555",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 81,
+    "type": "Private",
+    "name": "Sri Satya Sai University of Technology & Medical Sciences",
+    "website": "https://sssutms.co.in/cms/Website",
+    "address": "Bhopal-Indore Road, Opposite Pachama Oil Fed Plant, Pachama Sehore",
+    "zip": "466001",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 82,
+    "type": "Private",
+    "name": "Swami Vivekanand University",
+    "website": "https://www.svnuniversity.org/",
+    "address": "N.H.26, Narsingpur Road, SironjaSagar",
+    "zip": "470228",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 83,
+    "type": "Private",
+    "name": "Symbiosis University of Applied Sciences (SUAS)",
+    "website": "https://www.suas.ac.in/",
+    "address": "Symbiosis University of Applied Sciences, Bada Bangarda, Super Corridor, Near Airport, IndoreSuper Corridor,Indore",
+    "zip": "453112",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 84,
+    "type": "Private",
+    "name": "Techno Global University",
+    "website": "https://www.technoglobaluniversitysironjmp.com/",
+    "address": "Lateri RoadSirouj (Near Gosala)Distt. Vidisha",
+    "zip": "464228",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 85,
+    "type": "Central",
+    "name": "The Indira Gandhi National Tribal University",
+    "website": "https://www.igntu.ac.in/",
+    "address": "Makal Sadan,Amarkantak, Village-Lalpur,Dist-Anuppur",
+    "zip": "484887",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 86,
+    "type": "State",
+    "name": "Vikram University",
+    "website": "https://vikramuniv.ac.in/",
+    "address": "Ujjain,",
+    "zip": "456010",
+    "state": "Madhya Pradesh",
+    "status": "2(f) & 12(B)"
+  },
+  {
+    "sr_no": 87,
+    "type": "Private",
+    "name": "Vikrant University",
+    "website": "https://vikrantuniversity.ac.in/",
+    "address": "Village- Ratwai,Chitora RoadBada GaonMorar",
+    "zip": "474009",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  },
+  {
+    "sr_no": 88,
+    "type": "Private",
+    "name": "VIT Bhopal University",
+    "website": "https://vitbhopal.ac.in/",
+    "address": "Bhopal-Indore Highway, Kothrikalan, SehoreKothrikalan, Sehore,Bhopal",
+    "zip": "466114",
+    "state": "Madhya Pradesh",
+    "status": "2(f)"
+  }
+]

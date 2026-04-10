@@ -25,7 +25,9 @@ export function useDashboardFeeds() {
   const [syllabus, setSyllabus] = useState(/** @type {FeedItem[]} */ ([]))
   const [admitCards, setAdmitCards] = useState(/** @type {FeedItem[]} */ ([]))
   const [enrollments, setEnrollments] = useState(/** @type {FeedItem[]} */ ([]))
-  const [universityPortals, setUniversityPortals] = useState(/** @type {{ university: string; url: string }[]} */ ([]))
+  const [universityPortals, setUniversityPortals] = useState(
+    /** @type {{ university: string; name?: string; url: string; type?: string }[]} */ ([])
+  )
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(/** @type {string|null} */ (null))
 

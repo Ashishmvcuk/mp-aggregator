@@ -66,3 +66,36 @@ def test_fetch_html_retries_connection_error(mock_session):
         out = fetch_html("https://example.edu/")
     assert out == "<html>ok</html>"
     assert sess.get.call_count == 2
+
+
+def test_fetch_html_ssl_fallback_for_allowed_host(mock_session):
+    sess = MagicMock()
+    ok = MagicMock()
+    ok.text = "<html>ok</html>"
+    ok.raise_for_status = MagicMock()
+    sess.get.side_effect = [requests.exceptions.SSLError("cert"), ok]
+    mock_session.return_value = sess
+
+    with patch("utils.fetcher.time.sleep"), patch(
+        "utils.fetcher._insecure_tls_hosts", return_value={"www.dauniv.ac.in"}
+    ):
+        out = fetch_html("https://www.dauniv.ac.in/view-all/important-announcements")
+    assert out == "<html>ok</html>"
+    assert sess.get.call_count == 2
+    first_call = sess.get.call_args_list[0]
+    second_call = sess.get.call_args_list[1]
+    assert first_call.kwargs == {"timeout": 30}
+    assert second_call.kwargs == {"timeout": 30, "verify": False}
+
+
+def test_fetch_html_ssl_fallback_not_used_for_unlisted_host(mock_session):
+    sess = MagicMock()
+    sess.get.side_effect = requests.exceptions.SSLError("cert")
+    mock_session.return_value = sess
+
+    with patch("utils.fetcher.time.sleep"), patch(
+        "utils.fetcher._insecure_tls_hosts", return_value=set()
+    ):
+        out = fetch_html("https://www.dauniv.ac.in/")
+    assert out is None
+    assert sess.get.call_count == 4

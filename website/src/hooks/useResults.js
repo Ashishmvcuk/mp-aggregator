@@ -2,13 +2,36 @@ import { useEffect, useMemo, useState } from 'react'
 import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
 
+function normalizeUniversity(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+}
+
+function normalizeHost(urlValue) {
+  try {
+    const host = new URL(String(urlValue || '')).hostname.toLowerCase()
+    return host.startsWith('www.') ? host.slice(4) : host
+  } catch {
+    return ''
+  }
+}
+
 /**
- * Loads results once; optional filter by university or title, and by config `group` (when map provided).
+ * Loads results once; supports filtering by search query, selected university, and university type.
  * @param {string} searchQuery
- * @param {{ groupFilter?: string; universityToGroup?: Map<string, string> }} [options]
+ * @param {{
+ *  typeFilter?: string
+ *  selectedUniversity?: string
+ *  referenceRows?: Array<{ university?: string; name?: string; url?: string; type?: string }>
+ * }} [options]
  */
 export function useResults(searchQuery, options = {}) {
-  const { groupFilter = 'all', universityToGroup = new Map() } = options
+  const {
+    typeFilter = 'all',
+    selectedUniversity = 'all',
+    referenceRows = [],
+  } = options
   const [items, setItems] = useState([])
   const [scrapedAt, setScrapedAt] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -38,17 +61,47 @@ export function useResults(searchQuery, options = {}) {
   }, [])
 
   const q = searchQuery.trim().toLowerCase()
+
+  const refByNormalized = useMemo(() => {
+    const m = new Map()
+    for (const row of referenceRows) {
+      const uni = String(row?.university || row?.name || '').trim()
+      if (!uni) continue
+      const key = normalizeUniversity(uni)
+      m.set(key, {
+        type: String(row?.type || ''),
+        host: normalizeHost(String(row?.url || '')),
+      })
+    }
+    return m
+  }, [referenceRows])
+
   const filtered = useMemo(() => {
     let rows = items
-    if (groupFilter && groupFilter !== 'all' && universityToGroup.size > 0) {
-      rows = rows.filter((r) => universityToGroup.get(r.university) === groupFilter)
+
+    if (typeFilter && typeFilter !== 'all' && refByNormalized.size > 0) {
+      rows = rows.filter((r) => {
+        const ref = refByNormalized.get(normalizeUniversity(r.university))
+        return ref?.type === typeFilter
+      })
     }
-    if (!q) return rows
-    return rows.filter(
-      (r) =>
-        r.university.toLowerCase().includes(q) || r.title.toLowerCase().includes(q)
-    )
-  }, [items, q, groupFilter, universityToGroup])
+    if (selectedUniversity && selectedUniversity !== 'all') {
+      const selectedNorm = normalizeUniversity(selectedUniversity)
+      rows = rows.filter((r) => normalizeUniversity(r.university) === selectedNorm)
+    }
+    if (q) {
+      rows = rows.filter(
+        (r) =>
+          r.university.toLowerCase().includes(q) || r.title.toLowerCase().includes(q)
+      )
+    }
+    return rows.map((r) => {
+      const ref = refByNormalized.get(normalizeUniversity(r.university))
+      const resultHost = normalizeHost(r.result_url)
+      const officialReferenceMatch = Boolean(ref && ref.host && resultHost && ref.host === resultHost)
+      return { ...r, officialReferenceMatch }
+    })
+  }, [items, q, typeFilter, selectedUniversity, refByNormalized])
 
   const summary = useMemo(() => computeSummary(filtered, scrapedAt), [filtered, scrapedAt])
 

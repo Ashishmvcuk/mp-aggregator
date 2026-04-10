@@ -204,10 +204,14 @@ def sync_universities_directory_to_website() -> Path:
         url = str(row.get("url", "")).strip()
         if not uni or not url:
             continue
-        row_out: dict[str, str] = {"university": uni, "url": url}
-        grp = str(row.get("group", "")).strip()
-        if grp:
-            row_out["group"] = grp
+        row_out: dict[str, str] = {
+            "name": uni,
+            "university": uni,  # backward-compat key used by current UI
+            "url": url,
+        }
+        uni_type = str(row.get("type", "")).strip()
+        if uni_type:
+            row_out["type"] = uni_type
         out.append(row_out)
     out.sort(key=lambda x: x["university"].lower())
     dest = WEBSITE_DATA_DIR / "universities.json"
