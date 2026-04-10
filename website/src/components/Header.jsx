@@ -16,21 +16,21 @@ export function Header() {
             MP UNIVERSITY RESULTS <span className="sr-header__reg">®</span>
           </Link>
           <p className="sr-header__tagline">
-            MP University Result {new Date().getFullYear()} — Official style dashboard for Madhya Pradesh
-            university examination links
+            MP University Result {new Date().getFullYear()} — Dashboard for Madhya Pradesh university
+            examination links
           </p>
           <p className="sr-header__last-run" role="status">
             {loading ? (
-              <span className="sr-header__last-run-muted">Checking last scraper run…</span>
+              <span className="sr-header__last-run-muted">Checking last run…</span>
             ) : lastRunLabel ? (
               <>
-                Last scraper run:{' '}
+                Last run:{' '}
                 <time className="sr-header__last-run-time" dateTime={String(meta.scrapedAt)}>
                   {lastRunLabel}
                 </time>
               </>
             ) : (
-              <span className="sr-header__last-run-muted">Last scraper run: not available</span>
+              <span className="sr-header__last-run-muted">Last run: not available</span>
             )}
           </p>
         </div>

@@ -17,7 +17,7 @@ function dataUrl(path) {
  */
 export async function fetchJsonArray(path) {
   try {
-    const res = await fetch(dataUrl(path))
+    const res = await fetch(dataUrl(path), { cache: 'no-store' })
     if (!res.ok) return []
     const data = await res.json()
     return Array.isArray(data) ? data : []
