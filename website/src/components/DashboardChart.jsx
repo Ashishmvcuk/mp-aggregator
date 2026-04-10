@@ -7,6 +7,7 @@ import {
   Title,
   Tooltip,
 } from 'chart.js'
+import { useEffect, useState } from 'react'
 import { Bar } from 'react-chartjs-2'
 import './DashboardChart.css'
 
@@ -16,6 +17,19 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
  * @param {{ items: Array<{ university: string; title: string; result_url: string; date: string }> }} props
  */
 export function DashboardChart({ items }) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(max-width: 640px)').matches : false
+  )
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const onChange = (e) => setIsMobile(e.matches)
+    setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', onChange)
+    return () => mediaQuery.removeEventListener('change', onChange)
+  }, [])
+
   const counts = items.reduce((acc, r) => {
     acc[r.university] = (acc[r.university] || 0) + 1
     return acc
@@ -42,12 +56,16 @@ export function DashboardChart({ items }) {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    indexAxis: isMobile ? 'y' : 'x',
     plugins: {
       legend: { display: false },
       title: { display: false },
       tooltip: {
         callbacks: {
-          label: (ctx) => `${ctx.parsed.y} result${ctx.parsed.y === 1 ? '' : 's'}`,
+          label: (ctx) => {
+            const value = isMobile ? ctx.parsed.x : ctx.parsed.y
+            return `${value} result${value === 1 ? '' : 's'}`
+          },
         },
       },
     },
@@ -56,15 +74,24 @@ export function DashboardChart({ items }) {
         grid: { display: false },
         ticks: {
           color: '#333',
-          maxRotation: 50,
+          maxRotation: isMobile ? 0 : 50,
           minRotation: 0,
           autoSkip: true,
+          maxTicksLimit: isMobile ? 6 : 12,
           font: { size: 11, weight: '600' },
         },
       },
       y: {
         beginAtZero: true,
-        ticks: { stepSize: 1, color: '#333' },
+        ticks: {
+          stepSize: 1,
+          color: '#333',
+          callback: function callback(value) {
+            if (!isMobile) return value
+            const label = String(this.getLabelForValue(value))
+            return label.length > 26 ? `${label.slice(0, 23)}...` : label
+          },
+        },
         grid: { color: 'rgba(0, 0, 0, 0.08)' },
       },
     },
