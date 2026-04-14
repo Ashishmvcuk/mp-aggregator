@@ -20,7 +20,7 @@ flowchart TD
   loop --> fetch --> parse --> merge --> norm --> dedupe --> val -->   write --> copy
 ```
 
-Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`sync_to_website.py`** copies it to **`website/public/data/scrape_meta.json`** so the deployed UI can show when data last refreshed without a new frontend build.
+Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`main.py`** copies it to **`website/public/data/scrape_meta.json`** when website sync is enabled (same as **`sync_to_website.py`**) so the UI “Last run” timestamp stays current.
 
 **HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a shared `requests.Session`; retries transient failures (connection errors and HTTP 429 / 5xx) up to four attempts with exponential backoff and jitter.
 
@@ -75,6 +75,9 @@ Edit [`config/universities.json`](config/universities.json): array of objects wi
 | `parser` | yes | Registry key — `mp_portal` (default for MP sites), or `rgpv` / `davv` / `jiwaji` (see [`parsers/`](parsers/)) |
 | `enabled` | no (default `true`) | `false` skips the source |
 | `group` | no | Metadata only (`central`, `state_government`, `state_specialized`, `deemed`, `private`) — ignored by the runner |
+| `seed_urls` | no | Extra portal pages to fetch for the same university (merged with `url`); e.g. time table / results / news pages from the PDF inventory |
+
+**Seed URLs from `all_mp_university_details.json`:** From the repo root, run [`scripts/sync_universities_from_pdf_details.py`](../scripts/sync_universities_from_pdf_details.py) to merge PDF `time_table_url`, `results_url`, `news_url`, `admit_card_url`, `student_login_url`, `scheme_syllabus_url`, and `extra_urls` into `seed_urls` (deduped). The **`mp_portal`** parser classifies each fetched page; when a seed URL clearly maps to a category (e.g. timetable, results) it also emits the page itself as a record if the HTML did not already surface that URL as a link.
 
 The file includes a broad **Madhya Pradesh inventory** (central, state, specialized, deemed, and major private universities). Only sources with a **tested parser** should stay **`enabled: true`** today (RGPV, DAVV, Jiwaji). For others, set **`enabled: true`** only after you add a dedicated parser or confirm the generic **`rgpv`** link harvester does not emit unwanted **`[MOCK]`** rows on that site.
 

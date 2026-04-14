@@ -179,6 +179,30 @@ def write_scrape_meta(summary: dict[str, Any]) -> Path:
     return path
 
 
+def sync_scrape_meta_to_website() -> Path | None:
+    """
+    Copy scraper/output/scrape_meta.json to website/public/data/scrape_meta.json
+    so the UI “Last run” matches the latest scrape (same as sync_to_website.py).
+    """
+    src = OUTPUT_DIR / "scrape_meta.json"
+    if not src.is_file():
+        logger.warning("scrape_meta.json missing — skip copy to website")
+        return None
+    try:
+        with open(src, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        logger.error("scrape_meta.json invalid — skip website copy (%s)", e)
+        return None
+    if not isinstance(data, dict):
+        logger.error("scrape_meta.json must be an object — skip website copy")
+        return None
+    dest = WEBSITE_DATA_DIR / "scrape_meta.json"
+    safe_write_json(dest, data)
+    logger.info("Website scrape_meta.json: synced Last run timestamp")
+    return dest
+
+
 def website_relative_data_path(category: str) -> str:
     return f"public/data/{category}.json"
 

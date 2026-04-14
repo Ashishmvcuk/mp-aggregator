@@ -97,7 +97,10 @@
 .results-ticker__marquee {
   display: flex;
   width: max-content;
-  animation: results-ticker-scroll 1700s linear infinite;
+  /* duration set inline from measured track width (constant px/s) */
+  animation-name: results-ticker-scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .results-ticker:hover .results-ticker__marquee {

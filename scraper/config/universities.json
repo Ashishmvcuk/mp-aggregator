@@ -4,21 +4,30 @@
     "url": "https://www.aksuniversity.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.aksuniversity.ac.in/news-events"
+    ]
   },
   {
     "university": "Abhyuday University",
     "url": "https://abhyudayuniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://abhyudayuniversity.edu.in/?s=SYLLABUS"
+    ]
   },
   {
     "university": "Amaltas University",
     "url": "https://amaltasuniversity.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://ums.amaltasgroup.co.in/accsoft_aims/studentlogin.aspx"
+    ]
   },
   {
     "university": "Amity University",
@@ -32,7 +41,13 @@
     "url": "https://www.auindia.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.auindia.ac.in/PublicExamNotification/ViewAll",
+      "https://www.auindia.ac.in/Announcement/ExaminationAnnouncement",
+      "https://aiuniversity.edu.in/login-student.php",
+      "https://www.auindia.ac.in/course/Search-Course-Syllabus"
+    ]
   },
   {
     "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
@@ -77,14 +92,25 @@
     "url": "https://www.bhabhauniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.bhabhauniversity.edu.in/time-table/",
+      "https://bhabha.accsofterp.com/Accsoft/StudentLogin.aspx",
+      "https://www.bhabhauniversity.edu.in/syllabus/NH-12,"
+    ]
   },
   {
     "university": "Chirayu University",
     "url": "https://cmchbhopal.com/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://chirayuuniversity.ac.in/TimeTable",
+      "https://chirayuuniversity.ac.in/Result",
+      "https://chirayuuniversity.ac.in/#",
+      "https://chirayuuniversity.ac.in/Schemeand"
+    ]
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
@@ -111,14 +137,25 @@
     "url": "https://cvrump.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://cvru.ac.in/#",
+      "https://cvru.ac.in/results"
+    ]
   },
   {
     "university": "Dr. A.P.J Abdul Kalam University",
     "url": "https://www.aku.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.aku.ac.in/website/examination/exam-time-table.html",
+      "https://www.aku.ac.in/website/examination/result.html",
+      "https://www.aku.ac.in/website/home/newsandupdates?type=nau",
+      "https://www.aku.ac.in/newerp",
+      "https://www.aku.ac.in/website/academics/syllabus-scheme.html"
+    ]
   },
   {
     "university": "Dr. B. R. Ambedkar University of Social Sciences",
@@ -139,42 +176,67 @@
     "url": "https://www.drpreetiglobaluniversity.com/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://erp.dpguindia.com/student_panel/student_login.aspx"
+    ]
   },
   {
     "university": "Eklavya University",
     "url": "https://eklavyauniversity.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://eklavyauniversity.ac.in/student-login/Ojaswini"
+    ]
   },
   {
     "university": "G.H Raisoni University",
     "url": "https://www.ghru.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://ghru.edu.in/examination#tab9",
+      "https://ghru.edu.in/examination#tab8"
+    ]
   },
   {
     "university": "Gyanodaya University",
     "url": "https://gyanodayauniversity.ac.in/home",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://exam.gyanodayauniversity.ac.in/result.phpVillage-"
+    ]
   },
   {
     "university": "Gyanveer University",
     "url": "https://www.gyanveeruniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=172",
+      "https://accsoft.gyanveeruniversity.edu.in/Accsoft_GU/StudentLogin.aspx",
+      "https://www.gyanveeruniversity.edu.in/Pages/Syllabus"
+    ]
   },
   {
     "university": "I.E.S. University",
     "url": "https://www.gyanveeruniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.iesuniversity.ac.in/examination-schedule",
+      "https://www.iesuniversity.ac.in/examination-results",
+      "https://www.iesuniversity.ac.in/news1",
+      "https://accsoft.iesuniversity.ac.in/AccSoft/studentLogin.aspx",
+      "https://accsoft.iesuniversity.ac.in/AccSoft/studentLogin.aspxIES Campus Ratibad Main RoadBhopal"
+    ]
   },
   {
     "university": "Indian Institute of Forest Management (IIFM)",
@@ -188,14 +250,21 @@
     "url": "https://www.itmuniversity.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.itmuniversity.ac.in/newsevents"
+    ]
   },
   {
     "university": "J. N. C. T professional University",
     "url": "https://www.jnctpu.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://portal.jnctpu.edu.in/accsoft_jnctpu/StudentLogin.aspx",
+      "https://www.jnctpu.edu.in/scheme-and-syllabus/New"
+    ]
   },
   {
     "university": "Jagran Lakecity University",
@@ -216,7 +285,10 @@
     "url": "https://www.juet.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "http://juit.ac.in/juit-newsletter"
+    ]
   },
   {
     "university": "Jiwaji University",
@@ -258,7 +330,12 @@
     "url": "https://lnctvu.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://erp.lnctvu.ac.in/accsoft_lncti/studentlogin.aspx",
+      "https://lnct.ac.in/notices/",
+      "https://erp.lnctvu.ac.in/accsoft_lncti/studentlogin.aspxLANCT"
+    ]
   },
   {
     "university": "M.P.Bhoj (open) University",
@@ -286,14 +363,26 @@
     "url": "https://mpu.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://mpu.ac.in/time-table-1",
+      "https://mpu.ac.in/results",
+      "https://accsoft.mpu.ac.in/Accsoft/studentlogin.aspx",
+      "https://mpu.ac.in/syllabus"
+    ]
   },
   {
     "university": "Mahakaushal University",
     "url": "https://mku.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://mku.ac.in/result/",
+      "https://mku.ac.in/blog/",
+      "https://erp.mku.ac.in/?_gl=1*wvq0kk*_ga*MTA0NDY5MzA2Ni4xNzc1NzA0MjE1*_ga_X91H0WLQPQ*czE3NzYwNTIzMzgkbzIkZzEkdDE3NzYwNTIzNjckajMxJGwwJGgw",
+      "https://mku.ac.in/scheme-and-syllabus/Anthakheda,"
+    ]
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
@@ -307,7 +396,14 @@
     "url": "https://www.mmyvv.com/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://mmyvv.org/time-table",
+      "https://mmyvv.org/results",
+      "https://mmyvv.org/latest-notice",
+      "https://mmyvv.org/login",
+      "https://mmyvv.org/phd-syllabus"
+    ]
   },
   {
     "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
@@ -335,35 +431,58 @@
     "url": "https://malwanchaluniversity.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://malwanchaluniversity.in/examination/notifications-of-examination-time-tables/",
+      "https://malwanchaluniversity.in/examination/notifications-of-examination-time-tables/#",
+      "https://malwanchaluniversity.in/news-release/",
+      "https://malwanchaluniversity.in/erp-login/",
+      "https://malwanchaluniversity.in/erp-login/Index"
+    ]
   },
   {
     "university": "Mandsaur University",
     "url": "https://meu.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://meu.edu.in/examination-notification/Mahow"
+    ]
   },
   {
     "university": "Mangalayatan University",
     "url": "https://www.mangalayatan.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.mangalayatan.in/student/student_login.phpNH-30,"
+    ]
   },
   {
     "university": "Mansarovar Global University",
     "url": "https://www.mguindia.com/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "http://161.202.197.85:2000/smis/Village"
+    ]
   },
   {
     "university": "Medi-Caps University",
     "url": "https://www.medicaps.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.medicaps.ac.in/examinations#examination-table",
+      "https://www.medicaps.ac.in/examinations#result-dec",
+      "https://www.medicaps.ac.in/quick-links/important-notices",
+      "https://portal.medicaps.ac.in/accsoft2/Studentlogin.aspx",
+      "https://www.medicaps.ac.in/uploads/course_curriculum/1729493297_cd5d237969a0d8f413c3.pdfA B"
+    ]
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -391,14 +510,21 @@
     "url": "https://oui.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://admission.oui.edu.in/#"
+    ]
   },
   {
     "university": "P.K. University",
     "url": "https://pkuniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://pkuniversity.edu.in/index.php/examination/",
+      "https://pkuniversity.edu.in/index.php/examination/Village -"
+    ]
   },
   {
     "university": "Pandit S N Shukla University",
@@ -412,7 +538,13 @@
     "url": "https://www.peoplesuniversity.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.peoplesuniversity.edu.in/examination/time-table/",
+      "https://www.peoplesuniversity.edu.in/examination/results/",
+      "https://www.peoplesuniversity.edu.in/announcements/",
+      "https://www.peoplesuniversity.edu.in/scheme-and-syllabus/People's"
+    ]
   },
   {
     "university": "Prestige Institute of Management and Research (PIMR)",
@@ -433,7 +565,12 @@
     "url": "https://rntu.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://rntu.ac.in/exam",
+      "https://erp.rntu.ac.in/onlineexam/Login.aspx",
+      "https://rntu.ac.in/syllabus"
+    ]
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -498,21 +635,36 @@
     "url": "https://erplive.rkdf.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://erplive.rkdf.ac.in/Airport"
+    ]
   },
   {
     "university": "Sage University",
     "url": "https://sageuniversity.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://sageuniversity.edu.in/School/Semester-Examination/notices",
+      "https://portal.sageuniversity.edu.in/AccSoft/studentlogin.aspx?_gl=1*1w4xeyb*_gcl_au*ODA4ODcxMDk1LjE3NzU3MDUwMzkuMTAyMzA2MzY3My4xNzc2MDU2OTI3LjE3NzYwNTY5Mjc.",
+      "https://sageuniversity.edu.in/School/index.html/syllabusKAILOD KARTAL RAU BYPASS INDOREIndore-Dewas"
+    ]
   },
   {
     "university": "SAM Global University",
     "url": "https://www.samglobaluniversity.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.samglobaluniversity.ac.in/time-table/",
+      "https://accsoft.samglobaluniversity.ac.in/Accsoft/Login.aspx",
+      "https://www.samglobaluniversity.ac.in/latest-news/",
+      "https://accsoft.samglobaluniversity.ac.in/accsoft/studentlogin.aspx",
+      "https://www.samglobaluniversity.ac.in/?s=SYLLABUSAgariya"
+    ]
   },
   {
     "university": "Sanchi University of Buddhist-Indic Studies",
@@ -533,14 +685,24 @@
     "url": "https://spubgt.ac.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.universitymanagementsystem.in/spump",
+      "https://spubgt.ac.in/notices/",
+      "https://www.universitymanagementsystem.in/spumpSARDAR"
+    ]
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
     "url": "https://www.srku.edu.in/",
     "parser": "mp_portal",
     "enabled": true,
-    "type": "Private"
+    "type": "Private",
+    "seed_urls": [
+      "https://www.srku.edu.in/srk-university-exam-time-table-srk-university-2024/",
+      "https://erp.srku.edu.in/",
+      "https://www.srku.edu.in/#NH-12, Hoshangabad Road"
+    ]
   },
   {
     "university": "Scope Global Skills University",
@@ -579,7 +741,7 @@
   },
   {
     "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "url": "https://sssutms.co.in/cms/Website",
+    "url": "https://sssutms.co.in/cms/",
     "parser": "mp_portal",
     "enabled": true,
     "type": "Private"
