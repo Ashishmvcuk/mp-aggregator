@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadLandingFeeds, loadUniversityPortals } from '../services/dashboardDataService'
-import { isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
+import { hasAnnouncedDate, isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
 
 const NEWS_DAYS = 30
 const MAX_NEWS = 45
@@ -58,7 +58,10 @@ export function useDashboardFeeds() {
   }, [])
 
   const newsLast30Days = useMemo(() => {
-    const filtered = news.filter((item) => isWithinLastDays(item.date, NEWS_DAYS))
+    const filtered = news.filter((item) => {
+      const windowDate = item.date || item.scrape_index_date
+      return isWithinLastDays(windowDate, NEWS_DAYS)
+    })
     return sortByDateDesc(filtered).slice(0, MAX_NEWS)
   }, [news])
 
@@ -66,14 +69,20 @@ export function useDashboardFeeds() {
 
   const syllabusSorted = useMemo(() => sortByDateDesc(syllabus).slice(0, MAX_SYLLABUS), [syllabus])
 
-  const admitCardsSorted = useMemo(() => sortByDateDesc(admitCards), [admitCards])
+  const admitCardsSorted = useMemo(
+    () => sortByDateDesc(admitCards.filter(hasAnnouncedDate)),
+    [admitCards]
+  )
 
   const admitCardsHomePreview = useMemo(
     () => admitCardsSorted.slice(0, MAX_ADMIT_HOME),
     [admitCardsSorted]
   )
 
-  const blogsSorted = useMemo(() => sortByDateDesc(blogs).slice(0, MAX_BLOGS), [blogs])
+  const blogsSorted = useMemo(
+    () => sortByDateDesc(blogs.filter(hasAnnouncedDate)).slice(0, MAX_BLOGS),
+    [blogs]
+  )
 
   const enrollmentsSorted = useMemo(() => sortByDateDesc(enrollments), [enrollments])
 

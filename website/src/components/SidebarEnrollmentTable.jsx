@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { formatDateShort } from '../utils/formatDate'
+import { formatAnnouncedDate } from '../utils/formatDate'
 import './SidebarEnrollmentTable.css'
 
 /**
  * @param {{
- *   items: Array<{ university: string; title: string; url: string; date: string }>
+ *   items: Array<{ university: string; title: string; url: string; date?: string; scrape_index_date?: string }>
  *   totalCount?: number
  *   placement?: 'sidebar' | 'mobile'
  * }} props
@@ -24,9 +24,9 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
         <table className="sr-enroll__table">
           <tbody>
             {items.map((row, i) => (
-              <tr key={`${row.url}-${row.date}-${i}`}>
+              <tr key={`${row.url}-${row.date || row.scrape_index_date}-${i}`}>
                 <td className="sr-enroll__notice-cell">
-                  <span className="sr-enroll__date">{formatDateShort(row.date)}</span>
+                  <span className="sr-enroll__date">{formatAnnouncedDate(row)}</span>
                   <span className="sr-enroll__uni">{row.university}</span>
                   <a
                     href={row.url}
@@ -57,12 +57,12 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
     return (
       <aside
         className="sr-enroll sr-enroll--mobile"
-        id="enrollment-open"
+        id="admission-open"
         aria-label="Latest enrollment and admission notices"
       >
         <details className="sr-enroll__details">
           <summary className="sr-enroll__summary">
-            <span className="sr-enroll__summary-title">Enrollment & admissions open</span>
+            <span className="sr-enroll__summary-title">Admission open</span>
             <span className="sr-enroll__summary-meta">
               {total === 0
                 ? 'Tap to open — no links yet'
@@ -82,7 +82,7 @@ export function SidebarEnrollmentTable({ items, totalCount, placement = 'sidebar
 
   return (
     <aside className="sr-enroll" aria-label="Latest enrollment and admission notices">
-      <h2 className="sr-enroll__title">Enrollment & admissions open</h2>
+      <h2 className="sr-enroll__title">Admission open</h2>
       {tableOrEmpty}
       {viewMore}
     </aside>

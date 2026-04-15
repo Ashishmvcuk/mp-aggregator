@@ -2,17 +2,12 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 import re
-from datetime import date
 from typing import Any, Iterator
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, Tag
 
 from utils.normalizer import CATEGORY_ORDER, find_first_iso_date_in_string, parse_dd_mon_cell
-
-
-def default_today_iso() -> str:
-    return date.today().isoformat()
 
 
 def empty_categories() -> dict[str, list[dict[str, Any]]]:
@@ -30,7 +25,8 @@ def raw_item(
         "university": university,
         "title": title,
         "url": url,
-        "date": date if date is not None else default_today_iso(),
+        # None = unknown announcement date (filled in normalizer from title/URL when possible)
+        "date": date,
         "category": category,
     }
 
@@ -97,8 +93,15 @@ def _dates_from_table_row(row: Tag) -> str | None:
 def extract_date_near_anchor(anchor: Tag) -> str | None:
     """
     Best-effort real calendar date for results / news / jobs / admission links:
-    table row first, then list item, then nearby parent text.
+    link text and title attribute first, then table row, list item, then nearby parent text.
     """
+    visible = " ".join(anchor.get_text().split())
+    title_attr = " ".join((anchor.get("title") or "").split())
+    for blob in (visible, title_attr):
+        if blob:
+            d = find_first_iso_date_in_string(blob, blob)
+            if d:
+                return d
     row = anchor.find_parent("tr")
     if row:
         d = _dates_from_table_row(row)

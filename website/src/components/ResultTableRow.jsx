@@ -1,13 +1,14 @@
-import { formatDateShort } from '../utils/formatDate'
+import { formatAnnouncedDate } from '../utils/formatDate'
 
 /**
- * @param {{ result: { university: string; title: string; result_url: string; date: string; officialReferenceMatch?: boolean }; index: number }} props
+ * @param {{ result: { university: string; title: string; result_url: string; date?: string; scrape_index_date?: string; officialReferenceMatch?: boolean }; index: number }} props
  */
 export function ResultTableRow({ result, index }) {
+  const announced = formatAnnouncedDate(result)
   return (
     <tr className={index % 2 === 0 ? 'results-table__row results-table__row--even' : 'results-table__row'}>
-      <td className="results-table__cell results-table__cell--date" data-label="Date">
-        {formatDateShort(result.date)}
+      <td className="results-table__cell results-table__cell--date" data-label="Announced Date">
+        <div className="results-table__date-primary">{announced}</div>
       </td>
       <td className="results-table__cell results-table__cell--uni" data-label="University">
         <div className="results-table__cell-wrap">

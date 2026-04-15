@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { formatAnnouncedDate } from '../utils/formatDate'
 import './ResultsTicker.css'
 
 /** Max items in the strip (full list still on the results page). */
@@ -11,13 +12,16 @@ const MAX_SCROLL_DURATION_S = 7200
 /** Before first layout measure. */
 const DEFAULT_SCROLL_DURATION_S = 180
 
-function parseResultDate(iso) {
-  const t = Date.parse(String(iso || ''))
+function parseResultSortKey(r) {
+  const ann = r.date
+  const idx = r.scrape_index_date
+  const s = ann || idx || ''
+  const t = Date.parse(String(s))
   return Number.isNaN(t) ? 0 : t
 }
 
 /**
- * @param {{ results: Array<{ university: string; title: string; result_url: string; date: string }>; loading?: boolean }} props
+ * @param {{ results: Array<{ university: string; title: string; result_url: string; date?: string; scrape_index_date?: string }>; loading?: boolean }} props
  */
 export function ResultsTicker({ results, loading }) {
   const marqueeRef = useRef(null)
@@ -25,16 +29,14 @@ export function ResultsTicker({ results, loading }) {
 
   const segments = useMemo(() => {
     if (!results?.length) return []
-    const sorted = [...results].sort(
-      (a, b) => parseResultDate(b.date) - parseResultDate(a.date),
-    )
+    const sorted = [...results].sort((a, b) => parseResultSortKey(b) - parseResultSortKey(a))
     const capped = sorted.slice(0, MAX_TICKER_ITEMS)
     return capped.map((r, i) => ({
-      key: `${r.university}-${r.title}-${r.date}-${i}`,
+      key: `${r.university}-${r.title}-${r.date || r.scrape_index_date}-${i}`,
       university: r.university,
       title: r.title,
       url: r.result_url,
-      date: r.date,
+      dateLabel: formatAnnouncedDate(r),
     }))
   }, [results])
 
@@ -96,8 +98,12 @@ export function ResultsTicker({ results, loading }) {
           <span className="results-ticker__uni">{s.university}</span>
           <span className="results-ticker__sep">·</span>
           <span className="results-ticker__title">{s.title}</span>
-          <span className="results-ticker__sep">·</span>
-          <span className="results-ticker__date">{s.date}</span>
+          {s.dateLabel ? (
+            <>
+              <span className="results-ticker__sep">·</span>
+              <span className="results-ticker__date">{s.dateLabel}</span>
+            </>
+          ) : null}
         </a>
       ))}
     </div>

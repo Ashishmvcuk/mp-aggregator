@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 from utils.normalizer import ALLOWED_CATEGORIES
 
-REQUIRED_FIELDS = ("university", "title", "url", "date", "category")
+REQUIRED_FIELDS = ("university", "title", "url", "category")
 _DATE_ISO_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 SkipReason = Literal["ok", "empty", "has_errors", "unknown_category"]
@@ -24,8 +24,12 @@ class CategoryValidationOutcome:
 def _semantic_checks(category: str, item: dict[str, Any], index: int) -> list[str]:
     errs: list[str] = []
     date = item.get("date")
-    if not isinstance(date, str) or not _DATE_ISO_RE.match(date):
-        errs.append(f"Item {index}: date must be YYYY-MM-DD, got {date!r}")
+    if date is not None:
+        if not isinstance(date, str) or not _DATE_ISO_RE.match(date):
+            errs.append(f"Item {index}: date must be YYYY-MM-DD or null, got {date!r}")
+    idx = item.get("scrape_index_date")
+    if idx is not None and (not isinstance(idx, str) or not _DATE_ISO_RE.match(idx)):
+        errs.append(f"Item {index}: scrape_index_date must be YYYY-MM-DD or null, got {idx!r}")
     url = item.get("url")
     if not isinstance(url, str):
         errs.append(f"Item {index}: url must be string")

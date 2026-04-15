@@ -53,7 +53,7 @@ export function AdmitCardsPage() {
               id="admit-cards-list"
               title="All admit cards"
               items={filtered}
-              emptyMessage="No admit cards match your search, or none have been scraped yet."
+              emptyMessage="No admit cards with an announced date match your search, or none are on file yet."
             />
           )}
         </div>

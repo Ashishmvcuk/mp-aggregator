@@ -47,6 +47,19 @@ def test_mp_portal_table_row_ddmon_date() -> None:
     assert enr["https://igntu.ac.in/apply-pg"] == "2025-12-16"
 
 
+def test_mp_portal_extracts_date_from_link_text() -> None:
+    """Dates embedded in anchor text (common on portals)."""
+    html = """
+    <html><body>
+    <a href="/result.pdf">Semester result 25-03-2025</a>
+    </body></html>
+    """
+    p = MpPortalParser()
+    out = p.parse(html, "Test University", "https://univ.example.edu/")
+    assert len(out["results"]) >= 1
+    assert out["results"][0]["date"] == "2025-03-25"
+
+
 def test_mp_portal_skips_bus_feedback_urls() -> None:
     html = """
     <html><body>

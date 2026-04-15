@@ -73,14 +73,14 @@ def adapt_results_for_website(items: list[dict[str, Any]]) -> list[dict[str, Any
     """Map canonical `url` to `result_url` for the React app."""
     out = []
     for it in items:
-        out.append(
-            {
-                "university": it["university"],
-                "title": it["title"],
-                "result_url": it["url"],
-                "date": it["date"],
-            }
-        )
+        row: dict[str, Any] = {
+            "university": it["university"],
+            "title": it["title"],
+            "result_url": it["url"],
+            "date": it.get("date"),
+            "scrape_index_date": it.get("scrape_index_date"),
+        }
+        out.append(row)
     return out
 
 

@@ -13,7 +13,7 @@ export function Header() {
       <div className="sr-header__brand-band">
         <div className="sr-header__inner">
           <Link className="sr-header__logo" to="/">
-            MP UNIVERSITY RESULTS <span className="sr-header__reg">®</span>
+            All MP UNIVERSITY UPDATES <span className="sr-header__reg">®</span>
           </Link>
           <p className="sr-header__tagline">
             MP University Result {new Date().getFullYear()} — Dashboard for Madhya Pradesh university

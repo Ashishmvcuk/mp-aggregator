@@ -48,17 +48,13 @@ export function HomePage() {
                   Latest news
                 </SectionNavLink>
                 {' · '}
-                <SectionNavLink hashId="enrollment-open" className="home-page__intro-link">
-                  Enrollment open
-                </SectionNavLink>
+                <Link to="/enrollments" className="home-page__intro-link">
+                  Admission Open
+                </Link>
                 {' · '}
                 <SectionNavLink hashId="university-portals" className="home-page__intro-link">
                   University portals
                 </SectionNavLink>
-                {' · '}
-                <Link to="/enrollments" className="home-page__intro-link">
-                  All enrollments
-                </Link>
                 {' · '}
                 <SectionNavLink hashId="landing-jobs" className="home-page__intro-link">
                   Jobs
@@ -161,7 +157,10 @@ export function HomePage() {
               ) : (
                 <>
                   <SummaryCards summary={summary} />
-                  <ResultsList results={filtered} />
+                  <ResultsList
+                    results={filtered}
+                    emptyMessage="No results with an announced date match your search or filters."
+                  />
                 </>
               )}
 
@@ -174,15 +173,17 @@ export function HomePage() {
                   <FeedList
                     id="latest-news"
                     title="Latest news & notices"
-                    subtitle="From the last 30 days (scrape date). Official university links only."
+                    subtitle="From the last 30 days. Official university links only."
                     items={feeds.newsLast30Days}
                     emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
+                    showAnnouncedDate={false}
                   />
                   <FeedList
                     id="landing-jobs"
                     title="Latest jobs & recruitment"
                     items={feeds.jobsSorted}
                     emptyMessage="No job links in data yet — sync scraper output to website/public/data/jobs.json."
+                    showAnnouncedDate={false}
                   />
                 </>
               )}
@@ -198,7 +199,7 @@ export function HomePage() {
                         : undefined
                     }
                     items={feeds.admitCardsHomePreview}
-                    emptyMessage="No admit cards in data yet — they appear here after a successful scrape and sync."
+                    emptyMessage="No admit cards with an announced date on file yet — run the scraper and sync, or confirm dates on the source sites."
                     footer={
                       <Link to="/admit-cards">Open full admit cards page →</Link>
                     }
@@ -213,7 +214,7 @@ export function HomePage() {
                     id="blogs"
                     title="Blogs & articles"
                     items={feeds.blogsSorted}
-                    emptyMessage="No blog links scraped yet."
+                    emptyMessage="No blog links with an announced date on file yet — run the scraper and sync, or confirm dates on the source sites."
                   />
                 </>
               )}

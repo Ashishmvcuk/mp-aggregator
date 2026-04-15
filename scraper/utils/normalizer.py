@@ -206,8 +206,9 @@ def normalize_item_for_category(
 
     date_iso = parse_date_iso(item.get("date"))
     if not date_iso:
-        logger.debug("Dropped item: unparseable date (title=%r)", title)
-        return None
+        date_iso = find_first_iso_date_in_string(title, title)
+    if not date_iso:
+        date_iso = find_first_iso_date_in_string(str(item.get("url") or ""), "")
 
     return {
         "university": uni,

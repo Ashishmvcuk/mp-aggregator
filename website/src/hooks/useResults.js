@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
+import { hasAnnouncedDate } from '../utils/dateRange'
 
 function normalizeUniversity(value) {
   return String(value || '')
@@ -60,6 +61,11 @@ export function useResults(searchQuery, options = {}) {
     }
   }, [])
 
+  const itemsWithAnnouncedDate = useMemo(
+    () => items.filter(hasAnnouncedDate),
+    [items]
+  )
+
   const q = searchQuery.trim().toLowerCase()
 
   const refByNormalized = useMemo(() => {
@@ -77,7 +83,7 @@ export function useResults(searchQuery, options = {}) {
   }, [referenceRows])
 
   const filtered = useMemo(() => {
-    let rows = items
+    let rows = itemsWithAnnouncedDate
 
     if (typeFilter && typeFilter !== 'all' && refByNormalized.size > 0) {
       rows = rows.filter((r) => {
@@ -101,26 +107,34 @@ export function useResults(searchQuery, options = {}) {
       const officialReferenceMatch = Boolean(ref && ref.host && resultHost && ref.host === resultHost)
       return { ...r, officialReferenceMatch }
     })
-  }, [items, q, typeFilter, selectedUniversity, refByNormalized])
+  }, [itemsWithAnnouncedDate, q, typeFilter, selectedUniversity, refByNormalized])
 
   const summary = useMemo(() => computeSummary(filtered, scrapedAt), [filtered, scrapedAt])
 
   const universityNames = useMemo(() => {
-    const s = new Set(items.map((r) => r.university).filter(Boolean))
+    const s = new Set(itemsWithAnnouncedDate.map((r) => r.university).filter(Boolean))
     return [...s].sort((a, b) => a.localeCompare(b))
-  }, [items])
+  }, [itemsWithAnnouncedDate])
 
   const titleSuggestions = useMemo(() => {
     const s = new Set()
-    for (const r of items) {
+    for (const r of itemsWithAnnouncedDate) {
       const t = (r.title || '').trim()
       if (t.length >= 4) s.add(t)
       if (s.size >= 400) break
     }
     return [...s].sort((a, b) => a.localeCompare(b))
-  }, [items])
+  }, [itemsWithAnnouncedDate])
 
-  return { items, filtered, summary, loading, error, universityNames, titleSuggestions }
+  return {
+    items: itemsWithAnnouncedDate,
+    filtered,
+    summary,
+    loading,
+    error,
+    universityNames,
+    titleSuggestions,
+  }
 }
 
 function computeSummary(items, scrapedAtIso) {

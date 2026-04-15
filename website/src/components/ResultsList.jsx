@@ -6,7 +6,7 @@ import './MobileCollapsibleTable.css'
 const RESULTS_TITLE = 'Latest MP university results'
 
 /**
- * @param {{ results: Array<{ university: string; title: string; result_url: string; date: string }>; emptyMessage?: string }} props
+ * @param {{ results: Array<{ university: string; title: string; result_url: string; date?: string; scrape_index_date?: string }>; emptyMessage?: string }} props
  */
 export function ResultsList({ results, emptyMessage = 'No results match your search.' }) {
   const mobile = useIsMobileLayout()
@@ -29,7 +29,7 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
           <thead>
             <tr>
               <th scope="col" className="results-table__th results-table__th--date">
-                Date
+                Announced Date
               </th>
               <th scope="col" className="results-table__th results-table__th--uni">
                 University
@@ -44,7 +44,11 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
           </thead>
           <tbody>
             {results.map((r, i) => (
-              <ResultTableRow key={`${r.university}-${r.title}-${r.date}-${i}`} result={r} index={i} />
+              <ResultTableRow
+                key={`${r.university}-${r.title}-${r.date || r.scrape_index_date}-${i}`}
+                result={r}
+                index={i}
+              />
             ))}
           </tbody>
         </table>

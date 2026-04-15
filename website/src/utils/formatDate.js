@@ -25,3 +25,13 @@ export function formatDateShort(iso) {
     return iso
   }
 }
+
+/**
+ * Announcement date from the source (`date`) when present; otherwise empty (no scrape/index fallback in UI).
+ * @param {{ date?: string | null }} item
+ */
+export function formatAnnouncedDate(item) {
+  const ann = item?.date
+  if (!ann) return ''
+  return formatDateShort(ann)
+}

@@ -33,7 +33,16 @@ def main() -> int:
 
     args.csv_dir.mkdir(parents=True, exist_ok=True)
     exported_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    fields = ["university", "title", "url", "date", "date_time", "category", "exported_at"]
+    fields = [
+        "university",
+        "title",
+        "url",
+        "date",
+        "scrape_index_date",
+        "date_time",
+        "category",
+        "exported_at",
+    ]
 
     for cat in CATEGORY_ORDER:
         jpath = args.output_dir / f"{cat}.json"
@@ -52,12 +61,14 @@ def main() -> int:
             for row in rows:
                 if isinstance(row, dict):
                     d = row.get("date", "") or ""
+                    idx = row.get("scrape_index_date", "") or ""
                     w.writerow(
                         {
                             "university": row.get("university", ""),
                             "title": row.get("title", ""),
                             "url": row.get("url", ""),
                             "date": d,
+                            "scrape_index_date": idx,
                             "date_time": row_date_time_iso(str(d)),
                             "category": row.get("category", ""),
                             "exported_at": exported_at,

@@ -66,7 +66,7 @@
 
 /* Fixed layout + col widths; uni gets more space than examination/result */
 .results-table__col--date {
-  width: 6.5rem;
+  width: 7.75rem;
 }
 
 .results-table__col--uni {
@@ -193,11 +193,22 @@
 }
 
 .results-table__cell--date {
-  font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: #37474f;
-  white-space: nowrap;
+  white-space: normal;
   vertical-align: middle;
+}
+
+.results-table__date-primary {
+  font-weight: 700;
+}
+
+.results-table__date-secondary {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: #616161;
+  margin-top: 0.2rem;
+  line-height: 1.25;
 }
 
 .results-table__cell--uni {

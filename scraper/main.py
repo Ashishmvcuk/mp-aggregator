@@ -347,6 +347,7 @@ def run_once() -> dict[str, Any]:
             for item in bucket_items:
                 norm = normalize_item_for_category(item, primary_url, cat)
                 if norm:
+                    norm["scrape_index_date"] = run_ts[:10]
                     merged[cat].append(norm)
                     normalized_kept[cat] += 1
                 else:
@@ -446,6 +447,7 @@ def run_fixtures(config_path: Path | None = None) -> dict[str, Any]:
             for item in bucket_items:
                 norm = normalize_item_for_category(item, source_url, cat)
                 if norm:
+                    norm["scrape_index_date"] = run_ts[:10]
                     merged[cat].append(norm)
                     normalized_kept[cat] += 1
                 else:

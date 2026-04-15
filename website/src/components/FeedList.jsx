@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useIsMobileLayout } from '../hooks/useIsMobileLayout'
+import { formatAnnouncedDate } from '../utils/formatDate'
 import './FeedList.css'
 import './MobileCollapsibleTable.css'
 
@@ -8,13 +9,14 @@ import './MobileCollapsibleTable.css'
  *   title: string
  *   subtitle?: string
  *   id?: string
- *   items: Array<{ university: string; title: string; url: string; date: string }>
+ *   items: Array<{ university: string; title: string; url: string; date?: string; scrape_index_date?: string }>
  *   emptyMessage?: string
  *   footer?: import('react').ReactNode
  *   disableMobileCollapse?: boolean
  *   pageSize?: number
  *   loadMoreIncrement?: number
  *   tallScroll?: boolean
+ *   showAnnouncedDate?: boolean
  * }} props
  */
 export function FeedList({
@@ -28,6 +30,7 @@ export function FeedList({
   pageSize = 0,
   loadMoreIncrement = 20,
   tallScroll = false,
+  showAnnouncedDate = true,
 }) {
   const headingId = id ? `${id}-heading` : undefined
   const mobile = useIsMobileLayout()
@@ -62,12 +65,16 @@ export function FeedList({
       </p>
     ) : (
       <div className={scrollClassName}>
-        <table className="feed-table">
+        <table
+          className={`feed-table${showAnnouncedDate ? '' : ' feed-table--no-date'}`}
+        >
           <thead>
             <tr>
-              <th scope="col" className="feed-table__th feed-table__th--date">
-                Date
-              </th>
+              {showAnnouncedDate ? (
+                <th scope="col" className="feed-table__th feed-table__th--date">
+                  Announced Date
+                </th>
+              ) : null}
               <th scope="col" className="feed-table__th">
                 University
               </th>
@@ -81,10 +88,12 @@ export function FeedList({
           </thead>
           <tbody>
             {displayItems.map((r, i) => (
-              <tr key={`${r.university}-${r.title}-${r.date}-${i}`}>
-                <td className="feed-table__td feed-table__td--date" data-label="Date">
-                  {r.date}
-                </td>
+              <tr key={`${r.university}-${r.title}-${r.date || r.scrape_index_date}-${i}`}>
+                {showAnnouncedDate ? (
+                  <td className="feed-table__td feed-table__td--date" data-label="Announced Date">
+                    {formatAnnouncedDate(r)}
+                  </td>
+                ) : null}
                 <td className="feed-table__td" data-label="University">
                   {r.university}
                 </td>

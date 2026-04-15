@@ -14,7 +14,8 @@ const LOCAL_JSON_PATH = `${import.meta.env.BASE_URL}data/results.json`
  * @property {string} university
  * @property {string} title
  * @property {string} result_url
- * @property {string} date  ISO date string (YYYY-MM-DD)
+ * @property {string} [date]  ISO announcement date (YYYY-MM-DD) when parsed from the page
+ * @property {string} [scrape_index_date]  ISO date (YYYY-MM-DD) when this row was last scraped
  */
 
 /**

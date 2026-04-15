@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadAdmitCards } from '../services/dashboardDataService'
-import { sortByDateDesc } from '../utils/dateRange'
+import { hasAnnouncedDate, sortByDateDesc } from '../utils/dateRange'
 
 /**
  * @typedef {Object} FeedItem
@@ -21,7 +21,7 @@ export function useAdmitCards(searchQuery) {
     setError(null)
     loadAdmitCards()
       .then((data) => {
-        if (!cancelled) setItems(sortByDateDesc(data))
+        if (!cancelled) setItems(sortByDateDesc(data.filter(hasAnnouncedDate)))
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load admit cards')
