@@ -473,78 +473,6 @@
   },
   {
     "university": "Bhabha University",
-    "title": "Admission Enquiry & Check Eligibility",
-    "url": "https://www.bhabhauniversity.edu.in/enquiry/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Admission Process",
-    "url": "https://www.bhabhauniversity.edu.in/page/12/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Courses, Intake and Eligibility",
-    "url": "https://www.bhabhauniversity.edu.in/course/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Registration Form",
-    "url": "https://www.bhabhauniversity.edu.in/online-admission/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Admission Contact Number",
-    "url": "https://www.bhabhauniversity.edu.in/page/24/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Admissions open 2025-26",
-    "url": "https://www.bhabhauniversity.edu.in/announcements/25/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Counselling Schedule 2025",
-    "url": "https://www.bhabhauniversity.edu.in/announcements/32/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "M.P. Online Counselling",
-    "url": "https://dte.mponline.gov.in/portal/services/onlinecounselling/counshomepage/home.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Prospectus 2024-25",
-    "url": "https://drive.google.com/file/d/1jhIfUzZbjtOWSCnYu77C0MM5C8U5vumt/view",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
     "title": "AccSoft 2.0",
     "url": "https://bhabha.accsofterp.com/Accsoft/StudentLogin.aspx",
     "date": null,
@@ -1112,934 +1040,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Examination & Enrollment Fee",
-    "url": "https://www.aku.ac.in/website/examination/examination-and-enrollment-fee.html",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Admission Procedure",
-    "url": "https://www.aku.ac.in/website/admissions/admission-procedure.html",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counseling Schedule",
-    "url": "https://www.aku.ac.in/website/admissions/counseling-schedule.html",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Ph.D Program",
-    "url": "https://www.aku.ac.in/website/admissions/ph.d-m.phil-program.html",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Application Form",
-    "url": "https://www.aku.ac.in/website/uploads/application-form",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Women Grievance Redressal and Counselling Cell",
-    "url": "https://www.aku.ac.in/website/committees/women-grievance-redressal-and-counselling-cell",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule For Bsc Agriculture final Round",
-    "url": "https://www.aku.ac.in/website/uploads/30102024_034959_CamScanner 10-30-2024 10.17.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for MBA MCA ENGG AND DIPLOMA CLC IV PHASE",
-    "url": "https://www.aku.ac.in/website/uploads/11102024_111651_Counselling Schedule for MBA MCA ENGG AND DIPLOMA CLC IV PHASE.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "COUNSELLING SCHEDULE FOR PHARMACY ALL ROUND",
-    "url": "https://www.aku.ac.in/website/uploads/08102024_095512_COUNSELLING SCHEDULE FOR PHARMACY ALL ROUND.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "COUNSELLING SCHEDULE FOR B PHARMACY D PHARMACY B PHARMACY LATERAL ENTRY 2024-25 PHASE I",
-    "url": "https://www.aku.ac.in/website/uploads/06092024_043830_COUNSELLING SCHEDULE FOR PHARMACY.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "CLC IV PHASE Counselling Schedule for BA B Com B Sc BBA BCA PGDCA B Ed LLB BALLB MA M Com and M Sc 2",
-    "url": "https://www.aku.ac.in/website/uploads/29082024_035534_CLC III PHASE.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "CLC III PHASE Counselling Schedule for BA B Com B Sc BBA BCA PGDCA B Ed LLB BALLB MA M Com and M Sc",
-    "url": "https://www.aku.ac.in/website/uploads/05082024_112032_CLC III PHASE Counselling Schedule.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "CLC II PHASE Counselling Schedule for BA B Com B Sc BBA BCA PGDCA B Ed LLB BALLB MA M Com and M Sc 2",
-    "url": "https://www.aku.ac.in/website/uploads/25072024_104905_CLC II PHASE.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "COUNSELLING SCHEDULE FOR BE ALL BRANCHES 2024-25",
-    "url": "https://www.aku.ac.in/website/uploads/25072024_104631_COUNSELLING SCHEDULE FOR BE ALL BRANCHES 2024-25.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for Session 2024",
-    "url": "https://www.aku.ac.in/website/uploads/15052024_114641_Counselling Schedule for Session 2024.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "College Level Counselling",
-    "url": "https://www.aku.ac.in/website/uploads/26122023_043937_counselling.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for B Sc Agriculture First Round 8-11-2023",
-    "url": "https://www.aku.ac.in/website/uploads/08112023_041809_B SC AGRICULTURE COUNSELLING SCHEDULE.pdf",
-    "date": "2023-11-08",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for all technical and Professional Courses 2023-24 Last Round 17-10-2023",
-    "url": "https://www.aku.ac.in/website/uploads/17102023_120706_Counselling Schedule Last Round.pdf",
-    "date": "2023-10-17",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule Professional Courses 2023-24 Last Round",
-    "url": "https://www.aku.ac.in/website/uploads/05102023_095024_Counselling Schedule Professional Courses 2023-24 Last Round.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for all technical and Professional Courses 2023-24 Last Round",
-    "url": "https://www.aku.ac.in/website/uploads/03102023_044052_Counselling Schedule last round.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for Professional Courses 2023-24 III Round",
-    "url": "https://www.aku.ac.in/website/uploads/02092023_032021_Counselling Schedule for Professional Courses 2023-24 III Round.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for D Pharma, B Pharma, B Pharma Lateral, M Pharma 2022-23 III Round",
-    "url": "https://www.aku.ac.in/website/uploads/02092023_031921_Counselling Schedule PHARMACY 2023 III Round.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for D Pharma, B Pharma , B Pharma Lateral, M Pharma 2022-23 II Round",
-    "url": "https://www.aku.ac.in/website/uploads/17082023_042205_Pharmacy Second Round_till_31.08.2023.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule BE, BE Lateral, Poly, Poly PT, Poly Lateral, MTech, MBA, MCA 2022-23 II Round",
-    "url": "https://www.aku.ac.in/website/uploads/17082023_042024_Engg Second Round_till_15.09.23.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for Professional Courses 2023-24",
-    "url": "https://www.aku.ac.in/website/uploads/13072023_022955_CamScanner 07-13-2023 13.48.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for BE, BE Lateral, MTech, POLY, Poly Lateral, Poly Part Time, MBA, MCA 2023",
-    "url": "https://www.aku.ac.in/website/uploads/24062023_115110_IMG_9184.jpeg",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "B.Pharma, D.Pharma, M.Pharma Counseling Schedule 2023-24",
-    "url": "https://www.aku.ac.in/website/uploads/16062023_040149_Screenshot_20230616-182552_WPS Office.png",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "BEd Counseling Schedule 2023-24",
-    "url": "https://www.aku.ac.in/website/uploads/09062023_084040_Screenshot_20230609-225056_WPS Office.png",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for BE, BE Lateral, Poly, Poly PT, Poly Lateral, MTech, MBA, MCA 2022-23",
-    "url": "https://www.aku.ac.in/website/uploads/25112022_024421_2525.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Updated Counselling Schedule for D Pharma, B Pharma , B Pharma Lateral, M Pharma 2022-23",
-    "url": "https://www.aku.ac.in/website/uploads/09112022_015937_New Doc 2022-11-09 12.41.42.pdf",
-    "date": "2022-11-09",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Counselling Schedule for D Pharma, B Pharma , B Pharma Lateral, M Pharma 2022-23",
-    "url": "https://www.aku.ac.in/website/uploads/21102022_072022_Screenshot_20221021-190939_WPS Office.png",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Updated Counselling Schedule for Non Technical Course 2022-23",
-    "url": "https://www.aku.ac.in/website/uploads/16092022_045836_Admission Counseling Schdule (1) session - 2022-23.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Updated Counselling Schedule for Technical Course 2022-23",
-    "url": "https://www.aku.ac.in/website/uploads/16092022_045808_Admission Counseling Schdule (2) session - 2022-23.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Updated Counselling Schedule for Non Technical Course 2021-22",
-    "url": "https://www.aku.ac.in/website/uploads/27102021_035436_WhatsApp Image 2021-10-27 at 10.00.29 AM.jpeg",
-    "date": "2021-10-27",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Updated Counselling Schedule for Technical Course 2021-22",
-    "url": "https://www.aku.ac.in/website/uploads/27102021_034859_WhatsApp Image 2021-10-27 at 10.17.16 AM.jpeg",
-    "date": "2021-10-27",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Online Student Admission July-2025",
-    "url": "https://www.aku.ac.in/newerp/Home/OnlineStudent",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "ADMISSION 2025-26",
-    "url": "https://brauss.mponline.gov.in/Portal/Services/BRAUSS/BRAUSS_index.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission (content)",
-    "url": "https://brauss.mp.gov.in/content.aspx?page=admission-4&number=xWAbvwqaK5hwspLc5TKdVg==",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Provisional Admission list",
-    "url": "https://brauss.mp.gov.in/content.aspx?page=provisional-admission-list&number=AdGBiYQW4xd7b1VskvCyKg==",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notice For 7th Convocation Application forms Submission November 2025",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/10102025121052Notice For 7th Convocation Application forms Submission November 2025.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B COM -IIIrd Year (NEP)-REVISED RESULT JULY-2024 (ADMISSION SESSION-2021-22)",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/02092025062532B COM -IIIrd Year (NEP)-REVISED RESULT JULY-2024 (ADMISSION SESSION-2021-22).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "प्रवेश की अंतिम तिथि दिनांक 10.08.2025 तक बढ़ायी जाने संबंधी आदेश।",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/06082025055159Date Extend Notification for Admission 2025-26.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Office Order for Admission Helpdesk 2025-26",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/28072025115624Office Order for Admission Helpdesk 2025-26.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Date Extend Notification for Admission",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/18072025015134Date Extend Notification for Admission 2025-26.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Advt. 2025-26",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20052025042953Advisement 2025-26.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Cancellation Order Kuldeep Singh Baghel 2024-25",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/06032025113954Admission Cancellation Order Kuldeep Singh Baghel 2024-25_0001.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "LLM 1st Year 2nd Admission Notification",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/16012025110922LLM प्रथम वर्ष द्वितीय प्रवेश अधिसूचना.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MBA 1st Semester 3rd Admission Notification",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/16012025110642MBA प्रथम सेमेस्टर तृतीय प्रवेश अधिसूचना.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification for admission in vacant seats in UG and PG 749 dated 29.08.2024",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/30082024073652स्नातक एवं स्नातकोत्तर में रिक्त सिटों में प्रवेश की अधिसूचना 749 दिनांक 29-08-2024.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification for admission 720 dated 21-08-2024",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/22082024054843Notification for admission 720 dated 21-08-2024.pdf",
-    "date": "2024-08-21",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification regarding extension of date of admission in B.Sc.(Agri): Last date is July 29, 2024",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/22072024073420बी एससी (कृषि) में प्रवेश तिथि बढ़ाने संबंधी अधिसूचना 22-07-2024.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Revised Admission Notification Session 2024-25 Serial Number 399 Dated 26.06.2024",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/27062024052924संशोधित प्रवेश अधिसूचना सत्र 2024-25  क्रमांक 399 दिनांक 26-06-2024.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Notification 2024-25",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/06052024081258Admission Notification 2024-25.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "ENROLLMENT LIST NO -3 (SESSION-2023-24)",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/18042024112055ENROLLMENT LIST NO -3 (SESSION-2023-24).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Enrollment List-2 (Session-2023-24)",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01042024080342Enrollment List-2 (Session-2023-24).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification for Enrollment Number 2021-22 & 2022-23",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/15022024034617नामांकन संख्या 2021-22 एवं 2022-23 के लिए अधिसूचना.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Sc (Ag) Second Counselling 2023-2024 Notification",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/11122023073735B Sc (Ag) Second Counselling 2023-2024 Notification.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Application form for Degree Certification and Notification-NOVEMBER-2023",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/07112023015413Application form for Degree Certification and Notification-NOVEMBER-2023.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Sc (Hon's) AG Counselling 2023-24 Notification",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/16092023060216B Sc (Hon's) AG Counselling 2023-24 Notification.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Sc (Agri) - Notification for Admission 2023-24",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/29082023114450B Sc (Agri) - Notification for Admission 2023-24.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification 2023-24 Admission Date Extended",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/18082023041921अधिसूचना 2023-24 के लिए प्रवेश तिथि बढ़ाई गई.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Advertisement Notification 2023-24",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/07072023031806Admission Advertisement Notification 2023-24.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Cancellation Notification 2022-23",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/19052023112252प्रवेश निरस्त अधिसूचना २०२२-23.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Revised Admission Advertisement 2023 -24",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/22052023113041Final Revised Admission Advertisement 2023 -24.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Admission Advt Year 2023-24",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/09052023113217Admission Advt Year 2023-24.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Notification for B.Sc. (Ag.) and M.Sc. (Ag.) Re-counselling date of 09.11.2022",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/31102022052814Notification for B Sc & M Sc (Ag).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Application regarding admission in Ramabai Hostel",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/18102022015609रमाबाई छात्रावास में प्रवेश के संबंध में आवेदन.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in M Sc M A human development & family",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022125553List of Candidates for admission in M Sc M A human development & family.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in M Sc environmental Science",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022125445List of Candidates for admission in M Sc environmental Science.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in M sc (Yoga science)",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022125321List of Candidates for admission in M sc (Yoga science).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in M A public Administration",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022125157List of Candidates for admission in M A public Administration.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in M A home science (extention education & manage)",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022124809List of Candidates for admission in M A home science (extention education & manage).pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in Diploma in computer Application",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022124630List of Candidates for admission in Diploma in computer Application.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in B Sc environmental science",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022123232List of Candidates for admission in B Sc environmental science.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in B LIB",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03102022123028List of Candidates for admission in B LIB.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "List of Candidates for admission in PG Diploma Yogic Science",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/29092022045458List of Candidates for admission in PG Diploma Yogic Science.pdf",
-    "date": "2026-04-02",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission (n admissionprocedure)",
-    "url": "https://dhsgsu.edu.in/index.php/en/n-admissionprocedure",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission 2026-27",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2026-27",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission 2024-25",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2024-25",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission 2023-24",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2023-24",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission 2022-23",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-procedure",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Brochure (brochure)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/entrance/brochure",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Syllabus (syllabus)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/entrance/syllabus",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Fee Refund Policy",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/fee-refund-policy",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admission procedure and facilities provided to International Student",
-    "url": "https://dhsgsu.edu.in/index.php/en/international-students",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Guest House",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/guest-house",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Mental Health Counselling",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/mental-health-counselling",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Five Gems of the University (Museum)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/five-gems-of-the-university-museum",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Remedial Coaching Centre",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/remedial-coaching-centre",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Bank (bank)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/bank",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Post Office",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/post-office",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Indian Coffee House",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/indian-cafe-house",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Campus Residences",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/campus-residences",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "ICT Facilities",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/ict-facilities",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Botanical Garden",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/medicinal-plant-garden",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Medicinal Plant Garden",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/medicinal-plant-garden-2",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Swarna Jayanti Auditorium",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/swarna-jayanti-auditorium",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Kendriya Vidyalaya",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/kendriya-vidyalaya",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Mahila Club",
-    "url": "https://dhsgsu.edu.in/index.php/en/admission/mahila-club",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Psychological Counselling Centre",
-    "url": "https://docs.google.com/forms/d/15Buw0GhKyLFVwbz6LuKd4sWjTZ85uZ4v4-njksP0GgA",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding closure of admission in Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7632-notice-regarding-closure-of-admission-in-ph-d-2025-26",
-    "date": "2026-04-13",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "BPES (Bachelor of Physical Education and Sports) Admission- 2026 Admission Notification, Brochure & Additional Forms",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2026-27/7631-bpes-bachelor-of-physical-education-and-sports-admission-2026-admission-notification-brochure-additional-forms",
-    "date": "2026-04-13",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding admission cancellation after 3rd allotment list and allotment against cancellation list of Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7615-notice-regarding-admission-cancellation-after-3rd-allotment-list-and-allotment-against-cancellation-list-of-ph-d-2025-26",
-    "date": "2026-04-08",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding submission of admission fee in Ph.D. 2025-26 for Fine Arts (436) and Performing Arts (Theater Arts) (437)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7599-notice-regarding-submission-of-admission-fee-in-ph-d-2025-26-for-fine-arts-436-and-performing-arts-theater-arts-437",
-    "date": "2026-04-01",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding submission of admission fee in 3rd and last allotment for Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7598-notice-regarding-submission-of-admission-fee-in-3nd-and-last-allotment-for-ph-d-2025-26",
-    "date": "2026-04-01",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding admission cancellation after 2nd allotment list of Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7594-notice-regarding-admission-cancellation-after-2nd-allotment-list-of-ph-d-2025-26",
-    "date": "2026-04-01",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "BPES (Bachelor of Physical Education and Sports) Admission- 2026 Admission Notification, Brochure & Additional Forms",
-    "url": "https://www.dhsgsu.edu.in/index.php/en/admissions/admission-2026-27/7631-bpes-bachelor-of-physical-education-and-sports-admission-2026-admission-notification-brochure-additional-forms",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "(Admission Link)",
-    "url": "https://dhsgsuadm.samarth.edu.in/",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Ph.D. 2025-26: List of Registered Applicants, Result and Seat Allotment",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7443-ph-d-2025-26-list-of-registered-applicants-result-and-seat-allotment",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice - Regarding extension of last date for submission of admission fee for Ph.D. (Session 2025-26) 2nd round",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7588-notice-regarding-extension-of-last-date-for-submission-of-admission-fee-for-ph-d-session-2025-26-2nd-round",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding submission of admission fee in 2nd allotment for Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7583-notice-regarding-submission-of-admission-fee-in-2nd-allotment-for-ph-d-2025-26",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding admission cancellation after 1st allotment list of Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7581-notice-regarding-admission-cancellation-after-1st-allotment-list-of-ph-d-2025-26",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice - Regarding extension of last date for submission of admission fee for Ph.D. (Session 2025-26)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7580-notice-regarding-extension-of-last-date-for-submission-of-admission-fee-for-ph-d-session-2025-26",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice regarding submission of admission fee for Ph.D. (session 2025-26)",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7578-notice-regarding-submission-of-admission-fee-for-ph-d-session-2025-26",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notice-Regarding extension of last date for submission of admission fee for Ph.D. 2025-26",
-    "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26/7571-notice-regarding-extension-of-last-date-for-submission-of-admission-fee-for-ph-d-2025-27",
-    "date": "2026-01-04",
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Dr. Preeti Global University",
     "title": "Online Admission",
     "url": "https://www.drpreetiglobaluniversity.com/global/admission-online",
@@ -2288,22 +1288,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "Indian Institute of Forest Management (IIFM)",
-    "title": "WAT/PI Calls are out for MBA Admissions of 2026-2028 Batch",
-    "url": "https://iifm.ac.in/call-letter",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Indian Institute of Forest Management (IIFM)",
-    "title": "Admission Open for DPM 2026-2031 Batch",
-    "url": "https://erp.iifmbhopal.edu.in/iifmapp/web_login_fpm",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "ITM University",
     "title": "APPLY NOW (login)",
     "url": "https://admission.itmuniversity.ac.in/student/pupil/login.php?utm_source=itmwebsite&utm_medium=website&utm_campaign=website",
@@ -2353,48 +1337,8 @@
   },
   {
     "university": "J. N. C. T professional University",
-    "title": "Admission Online Process",
-    "url": "https://portal.jnctpu.edu.in/OAP_JNCTPU/Login.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Online Admission",
-    "url": "https://www.jnctpu.edu.in/new-online-registration/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Payment Online",
-    "url": "https://portal.jnctpu.edu.in/accsoft_jnctpu/admissionregpayment.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
     "title": "AccSoft 2.0",
     "url": "https://portal.jnctpu.edu.in/accsoft_jnctpu/StudentLogin.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Online Admission Process",
-    "url": "https://portal.jnctpu.edu.in/OAP_JNCTPU/Login.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Online Admission Payment",
-    "url": "https://portal.jnctpu.edu.in/accsoft_jnctpu/admissionregpayment.aspx",
     "date": null,
     "category": "enrollments",
     "scrape_index_date": "2026-04-15"
@@ -2803,62 +1747,6 @@
     "university": "LNCT University",
     "title": "admission@LNCTU.ac.in",
     "url": "https://lnctu.ac.in/school-of-medical-science/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "International Admissions",
-    "url": "https://lnctvu.ac.in/international-admissions/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "Counselling Offices",
-    "url": "https://lnctvu.ac.in/counselling-offices/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "Admission Procedure",
-    "url": "https://lnctvu.ac.in/admission-procedure/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "Online Admission Process (OAP)",
-    "url": "https://erp.lnctvu.ac.in/accsoft_lncti/OAP_LNCTI/Login.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "Online Payment",
-    "url": "https://erp.lnctvu.ac.in/accsoft_lncti/admissionregpayment.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "Download Prospectus",
-    "url": "https://lnctu.ac.in/wp-content/uploads/2025/03/LNCTCET-PROSPECTUS-2025.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "LNCT Vidhyapeeth University",
-    "title": "ADMISSIONS OPEN 2026-27",
-    "url": "https://lnctvu.ac.in/admission/",
     "date": null,
     "category": "enrollments",
     "scrape_index_date": "2026-04-15"
@@ -3443,14 +2331,6 @@
     "university": "Mahakaushal University",
     "title": "Register for Admission",
     "url": "https://erp.mku.ac.in/Student/Registration",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Mahakaushal University",
-    "title": "Online Student Admission July-2025",
-    "url": "https://erp.mku.ac.in/Home/OnlineStudent",
     "date": null,
     "category": "enrollments",
     "scrape_index_date": "2026-04-15"
@@ -4248,86 +3128,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "National Law Institute University",
-    "title": "Admission (b a ll b admissions)",
-    "url": "https://nliu.ac.in/b-a-ll-b-admissions/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission (b sc ll b hons cyber security admission)",
-    "url": "https://nliu.ac.in/b-sc-ll-b-hons-cyber-security-admission/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission (l l m admissions)",
-    "url": "https://nliu.ac.in/l-l-m-admissions/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission (mclis admissions)",
-    "url": "https://nliu.ac.in/mclis-admissions/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission (ph d admission)",
-    "url": "https://nliu.ac.in/ph-d-admission/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission-2026",
-    "url": "https://nliu.ac.in/admissions/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission Notification for MCLIS Programme 2026-28",
-    "url": "https://nliu.ac.in/wp-content/uploads/2026/03/MCLIS-Admission_2026-18-March-2026.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission Notification for Ph.D. in Various Specialisations",
-    "url": "https://nliu.ac.in/wp-content/uploads/2026/03/PhD-Admisssion-Notification-2026.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Online Application Form (MCLIS and Ph.D.)",
-    "url": "https://ums.nliu.ac.in/OAP_NLIU/Registration.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "Admission Notification 2026: MCLIS & Ph.D. Programmes",
-    "url": "https://nliu.ac.in/admissions-open-2026-28-mclis-ph-d-programs-apply-now-%f0%9f%9a%80/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Oriental University",
     "title": "Admission",
     "url": "https://admission.oui.edu.in/",
@@ -4912,6 +3712,70 @@
     "scrape_index_date": "2026-04-15"
   },
   {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "UTD Admission",
+    "url": "https://rdunijbpin.mponline.gov.in/site/information/GenericPDFListing.aspx?Doctype=aff33dbb-1156-42ae-9e22-a94faf56053e",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "UTD Admission Application Form (Offline)",
+    "url": "https://drive.google.com/file/d/1c1fMyzr3XrBPnNNIlIRwzP9XZJoFP6Hv/view?usp=sharing",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "UTD Hostel Admission Form",
+    "url": "https://rdunijbpin.mponline.gov.in/Site/Upload/Menu/1162_0_UTD-Hostel-Admission-Form_utd admission hostel form.pdf",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Hostel Admission Rules",
+    "url": "https://rdunijbpin.mponline.gov.in/Site/Upload/Menu/1162_0_Hostel-Admission-Rules_hostel-rules.pdf",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Career Guidance Counseling Training Placement Cell",
+    "url": "https://rdunijbpin.mponline.gov.in/1422/Career-Guidance-Counseling-Training--Placement-Cell",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "PG_Diploma_in_Guidance_Counselling_and_PGDCA-_I_Sem__Reg_Ex_ATKT_2025-26",
+    "url": "https://rdunijbpin.mponline.gov.in/Site/Upload/f49d5e21-7a0e-4eaa-bbde-b5a9cf29dec8.pdf",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "B.PHARMACY Admission through DTE 2025-26",
+    "url": "https://rdunijbpin.mponline.gov.in/Site/Upload/8309f2a8-d37f-4bd8-a196-0a4fc033b6be.pdf",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Exam_Center_List_PG_Diploma_in_Guidance_and_Counselling",
+    "url": "https://rdunijbpin.mponline.gov.in/Site/Upload/4f875981-5a20-43eb-a34e-e31ee16d63fc.pdf",
+    "date": null,
+    "category": "enrollments",
+    "scrape_index_date": "2026-04-15"
+  },
+  {
     "university": "RKDF University",
     "title": "Admission Enquiry Form For Session 2026-2027 NEW",
     "url": "https://erplive.rkdf.ac.in/Enquiry/Enquiry",
@@ -5177,14 +4041,6 @@
   },
   {
     "university": "Sardar Patel University",
-    "title": "Online Student Admission July-2025",
-    "url": "https://www.universitymanagementsystem.in/spump/Home/OnlineStudent",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sardar Patel University",
     "title": "Download (All Course Enrollment Notice Session 2025 26Revi)",
     "url": "https://spubgt.ac.in/wp-content/uploads/2025/12/All-Course-Enrollment-Notice-Session-2025-26Revised-IV.pdf",
     "date": null,
@@ -5379,46 +4235,6 @@
     "university": "Shubham University",
     "title": "Admission open 2023-2024",
     "url": "https://www.shubhamuniversity.com/notification/admission-open-2023-2024/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Admissions are open for Law Courses - 2026",
-    "url": "https://accsoft.sriaurobindouniversity.edu.in/OAP/Registration.aspx",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Documents Check List for Admission in D.M./M.Ch.",
-    "url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/check-list-for-website-dm-mch.pdf",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Admissions are open for Speech and Hearing Courses - 2026",
-    "url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Advert-speech-admission.jpeg",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Admission 2025",
-    "url": "https://sriaurobindouniversity.edu.in/contact-admission-cell",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Admission",
-    "url": "https://sriaurobindouniversity.edu.in/",
     "date": null,
     "category": "enrollments",
     "scrape_index_date": "2026-04-15"
@@ -5755,38 +4571,6 @@
     "university": "Vikrant University",
     "title": "Admission Enquiry",
     "url": "https://vikrantuniversity.ac.in/apply-now/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "VIT Bhopal University",
-    "title": "ADMISSIONS",
-    "url": "https://admission.vitbhopal.ac.in",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "VIT Bhopal University",
-    "title": "B-Arch Admissions 2026",
-    "url": "https://vitbhopal.ac.in/ticker_news/b-arch-admissions-2026-apply-nownew/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "VIT Bhopal University",
-    "title": "BBA Admissions 2026",
-    "url": "https://vitbhopal.ac.in/ticker_news/bba-admissions-2026-apply-nownew/",
-    "date": null,
-    "category": "enrollments",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "VIT Bhopal University",
-    "title": "MBA Admissions VITBEE 2026",
-    "url": "https://vitbhopal.ac.in/ticker_news/mba-admissions-vitbee-2026-apply-nownew/",
     "date": null,
     "category": "enrollments",
     "scrape_index_date": "2026-04-15"

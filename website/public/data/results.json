@@ -476,111 +476,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "Bhabha University",
-    "title": "Exam Time Table",
-    "result_url": "https://www.bhabhauniversity.edu.in/time-table/",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Results (StudentLogin)",
-    "result_url": "https://bhabha.accsofterp.com/Accsoft/StudentLogin.aspx",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "NIRF (nirf)",
-    "result_url": "https://www.bhabhauniversity.edu.in/time-table/nirf.php",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Finance Officer > Audit Report",
-    "result_url": "https://www.bhabhauniversity.edu.in/time-table/auditreport.php",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "UGC Proforma",
-    "result_url": "https://www.bhabhauniversity.edu.in/time-table/ugc-proforma.php",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "B.TECH (Reg./Ex) V TH Sem (EC/EE/EX/CE/ME/CSE) Examination DEC -2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/bd969f34c35064011cd531c3110c6223.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Diploma Engg. (REG./EX) 5th Sem (ME/EE/CE) EXAMINATION SESSION DEC. 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/58123b10fedca311280e8370f167b8ed.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "B.TECH (REG/EX) 7th SEM (CSE/IT/ME/CE/EE/EX/EC) Examination DEC -2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/97be161e332e9c565bc79df5a1c4e2e2.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "BALLB (REG/EX) 7th & 9th SEM Examination DEC– 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/7832ced608914352ff92e111fae3fcc3.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "B.PHARMA 7th SEM Examination DEC– 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/e79b51e5ba2aebbcff33e11a3c438487.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "MEd 4th SEM (EX) Examination DEC– 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/44d66cc20929fba1a90c8bb6eaf36fe1.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "BHMCT-5 th SEM (REG./EX) Examination DEC -2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/71a6d4db367271651d44451d26b489cd.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "B.Sc B.ED 8th SEM (EX) Examination DEC– 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/8eee11dc4779d617c09683b3f582a4f5.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "M.TECH (Reg/EX) - 3RD SEM (DC/VLSI/THERMAL/CTM/CS/PS) Examination DEC– 2025",
-    "result_url": "https://www.bhabhauniversity.edu.in/upload/timetable/cd5ee9445c04fdc12095ed8759857273.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "Bhabha IT Cell",
-    "result_url": "https://www.bhabhauniversity.edu.in/time-table/bhabhaitcell.html",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Chirayu University",
     "title": "UG/PG Results uploaded.",
     "result_url": "https://cmchbhopal.com/examination-result/",
@@ -781,349 +676,6 @@
     "title": "Result (results)",
     "result_url": "https://cvru.ac.in/results",
     "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Exam Time Table",
-    "result_url": "https://www.aku.ac.in/website/examination/exam-time-table.html",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. A.P.J Abdul Kalam University",
-    "title": "Result (result)",
-    "result_url": "https://www.aku.ac.in/website/examination/result.html",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Results (IFTM MarksReport)",
-    "result_url": "https://eiimspro.h3-technologies.com:451/IFTM_MarksReport.aspx?setstyle=abc",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Sc II-Semester Time Table",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/26032026083927B Sc II-Semester Time Table.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B.Sc. (Ag.)-Entrance Test Result-2025 Common Merit List",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/04092025034038B Sc (Ag)-Entrance Test Result--2025 Common Merit List.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BA,BBA,BCOM,B.Sc. (Env. Sc)-I,II,III,IV Year Examination Time-Table-MAY-2025",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01052025054906BA,BBA,BCOM,BSc (Env  Sc)-I,II,III,IV Year Examination Time-Table-MAY-2025.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BA LLB-I,III,Vth Revised Time Table MARCH-2025",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/25022025065551BA LLB-I,III,Vth Revised Time Table MARCH-2025.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "PG-I,III & BA LLB-I,III,V Semester & (BA,BCOM,BBA-SEMESTER ATKT)-TIME TABLE FEBRUARY-2025",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/24022025113136PG-I,III & BA LLB-I,III,V Semester & (BA,BCOM,BBA-SEMESTER ATKT)-TIME TABLE FEBRUARY-2025.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA (Buddhist Studies)-Ist Semester Time Table -FEBRUARY-2025",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/24022025113039MA (Buddhist Studies)-Ist Semester Time Table -FEBRUARY-2025.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "LLM-IVth Semester Result (Session-2022-23)-Feb-2025",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/14022025081935LLM-IVth Semester Result (Session-2022-23)-Feb-2025.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Time Table of IIIrd Year & PG ATKT October 2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/11102024050554Time Table of IIIrd Year & PG ATKT October 2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B.Sc(Environmental Science)IInd Year NEP October 2024 Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/11102024050525B Sc(Environmental Science)IInd Year NEP October 2024 Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BA(NEP) Ist Year Result 2023-24 October 2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/11102024050424BA(NEP) Ist Year Result 2023-24 October 2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "PG-IInd, LLB-II, BA LLB-IInd, MSW-IVth & DCA-I,II Semester ATKT EXAMINATION TIME-TABLE SEPTEMBER-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20092024023718PG-IInd, LLB-II, BA LLB-IInd, MSW-IVth & DCA-I,II Semester ATKT EXAMINATION TIME-TABLE SEPTEMBER-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BA, LLB, MBA, LLM-IInd Semester-REVISED-Time Table -SEPTEMBER-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20092024023535BA, LLB, MBA, LLM-IInd Semester-REVISED-Time Table -SEPTEMBER-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B SC (Agri) - Entrance Result 2024-25",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20092024015545B SC (Agri) - Entrance Result 2024-25.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BA (LLB)-IIIrd Semester Result (SESSION-2022-23) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024030314BA (LLB)-IIIrd Semester Result (SESSION-2022-23) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Sc (Ag) -VIIth Semester Results Center-BRAUSS, REHTI (SESSION-2020-21) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024030237B Sc (Ag) -VIIth Semester Results Center-BRAUSS, REHTI (SESSION-2020-21) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "LLM-IIIrd Semester Result (SESSION-2022-23) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024030205LLM-IIIrd Semester Result (SESSION-2022-23) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "M Sc (Ag- Eco, Ext. Edu, Veg Sc,)-IVth Semester Result (SESSION-2020-21) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024030133M Sc (Ag- Eco, Ext-Edu, Veg Sc)-IVth Semester Result (SESSION-2020-21) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BBA-Ist Year ATKT Result (SESSION-21-22) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024030006BBA-Ist Year ATKT Result (SESSION-21-22) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Com -Ist Year ATKT Result (SESSION-21-22) JUNE-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01072024025933B Com -Ist Year ATKT Result (SESSION-21-22) JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B.Sc.(Ag.)-Ist,IIIrd,Vth & M.Sc. (Ag.)-Ist, IInd (For ATKT Students), Diploma in Textile & Fashion Designing-Time…",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/10062024041729B Sc (Ag)-Ist, IIIrd, Vth & M Sc (Ag)-Ist, IInd (For ATKT Students), Diploma in Textile & Fashion Designing-Time Table -JUNE-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B A -I II III Year NEP EXAMINATION TIME TABLE-APRIL-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/18042024105850B A -I II III Year NEP EXAMINATION TIME TABLE-APRIL-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "DCA-Ist Semester (Session-2022-23) Result Notification APRIL-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13042024041915DCA-Ist Semester (Session-2022-23) Result Notification APRIL-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "B Com, BBA, B Sc (Env Sc )-I, II, III Year NEP Examination Time Table APRIL-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13042024041836B Com, BBA, B Sc (Env Sc )-I, II, III Year  NEP Examination Time Table APRIL-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "PGDCA-Ist Semester (Session-2022-23) Result Notification APRIL-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13042024041722PGDCA-Ist Semester (Session-2022-23) Result Notification APRIL-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "M.Sc. (Ag.)-IIIrd & IVth Semester Result Session-2021-22 MARCH-2024",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/01042024080931MSc (Ag)-IIIrd & IVth Semester Result Session-2021-22 MARCH-2024.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA -Ist Semester Time Table Revised-2 March-2024 (15 March 2024)",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/17032024050748MA -Ist Semester Time Table Revised-2 March-2024 (15 March 2024).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BBA-Ist Year (NEP) Result (Session-2022-23) December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023050202BBA-Ist Year (NEP) Result (Session-2022-23) December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "BSc (Ag) Centre-Brauss,Indore,Rehti (Session-2022-23) -Ist Semester Result December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023050057BSc (Ag) Centre-Brauss,Indore,Rehti (Session-2022-23) -Ist Semester Result December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA (Defense Studies)-IVth Semester Result (Session-2021-22) December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023045945MA (Defense Studies)-IVth Semester Result (Session-2021-22) December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA (Sociology)-IVth Semester Result (Session-2021-22) December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023045845MA (Sociology)-IVth Semester Result (Session-2021-22) December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MSW-IVth Semester Result (Session-2021-22) December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023045704MSW-IVth Semester Result (Session-2021-22) December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "M.Sc. (Ag.)-IIIrd Semester Result (Session-2021-22) December-2023",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/13122023045602M Sc (Ag)-IIIrd Semester Result (Session-2021-22) December-2023 (1).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA (Buddhist Studies, Philosophy, Psychology, History)-IVth Semester Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/24112023122232MA (Buddhist Studies, Philosophy, Psychology, History)-IVth Semester Result (2).pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA & M Sc (Human Development)-IVth Semester Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/21112023112308MA & M Sc (Human Development)-IVth Semester Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MA (Buddhist Studies, Philosophy, Psychology, History)-IVth Semester Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/21112023112224MA (Buddhist Studies, Philosophy, Psychology, History)-IVth Semester Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Jain Heritage Certificate Course Result Session-2023-24",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20102023060707Jain Heritage Certificate Course Result Session-2023-24.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MSW-IIIrd Semester-Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20102023060639MSW-IIIrd Semester-Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MBA-IIIrd Semester Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20102023060607MBA-IIIrd Semester Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "MSW -Ist Semester Result",
-    "result_url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/20102023060536MSW -Ist Semester Result.pdf",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Exam Notification",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/examinations-result",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Time Table",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/time-table",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Results (results)",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/results",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Result (6917 exam result 2024 25)",
-    "result_url": "https://www.dhsgsu.edu.in/index.php/en/student/university-examinations/results/6917-exam-result-2024-25",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Notification regarding Name and Gender Change “Exam section\" \"Disp.No.-/8805, Dt.",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/examinations-result/7606-notification-regarding-name-and-gender-change-exam-section-disp-no-8805-dt-02-06-04-2026",
-    "date": "2026-04-06",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "संशोधित अधिसूचना: स्‍नातक/स्‍नातकोत्‍तर II, IV, VI, VIII & X Sem सत्र २०२५-२६ सीबीसीएस/एनईपी के नियमि‍त/बैकलॉग…",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/examinations-result/7601-ii-iv-vi-viii-x-sem-2",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "University Result: 2025-2026 (Odd)",
-    "result_url": "https://dhsgsu.edu.in/index.php/en/notices-student/7415-university-result-2025-2026-odd-2",
-    "date": "2026-01-04",
     "scrape_index_date": "2026-04-15"
   },
   {
@@ -1551,27 +1103,6 @@
     "title": "Examination Results",
     "result_url": "https://www.iesuniversity.ac.in/examination-results",
     "date": "2024-05-03",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Time Table of D.Pharm - I,II Year Exam May-2026",
-    "result_url": "https://drive.google.com/file/d/1MvFTWkAcKkL1c6IN9bvAKxmC3w8wF6Gj/view",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "B.pharm,B.Tech, MCA III Sem. Revaluation notice",
-    "result_url": "https://drive.google.com/file/d/1JBWb79BsJk8jxm2_nYwx3ZM1OORbgNpT/view",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "J. N. C. T professional University",
-    "title": "Revised Time Table-B.Sc(Nursing) II Sem",
-    "result_url": "https://drive.google.com/file/d/19jIA4JyW1qpM-ih72Z5ij_5vd2_f6Heo/view",
-    "date": null,
     "scrape_index_date": "2026-04-15"
   },
   {
@@ -2090,27 +1621,6 @@
     "title": "Revised Time-Table Jul-Dec 2024 Examination 22.11.2024",
     "result_url": "https://web.mitsgwalior.in/exam/revised-time-table-jul-dec-2024-examination-22-11-2024",
     "date": "2024-11-22",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Madhya Pradesh Medical Science University",
-    "title": "समय सारणी (Timetable)",
-    "result_url": "https://mpmsu.edu.in/Timetable",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Madhya Pradesh Medical Science University",
-    "title": "पुराना टाइम टेबल",
-    "result_url": "https://mpmsu.edu.in/Timetableold",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Madhya Pradesh Medical Science University",
-    "title": "परिणाम (Result)",
-    "result_url": "https://mpmsu.edu.in/Result",
-    "date": null,
     "scrape_index_date": "2026-04-15"
   },
   {
@@ -2947,27 +2457,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "National Law Institute University",
-    "title": "Time Table",
-    "result_url": "https://nliu.ac.in/time-table/",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "2024 B.Sc.LL.B.(Hons.)(Cyber Security)_III_ Semester_End Term_Re-evaluation-Result",
-    "result_url": "https://nliu.ac.in/2024-b-sc-ll-b-hons-cyber-security_iii_-semester_end-term_re-evaluation-result/",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "National Law Institute University",
-    "title": "2024 B.A.LL.B.(Hons.)_III_ Semester_End Term_Result",
-    "result_url": "https://nliu.ac.in/2024-b-a-ll-b-hons-_iii_-semester_end-term_result/",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Oriental University",
     "title": "Exam Timetable",
     "result_url": "https://oui.edu.in/exam-timetable/",
@@ -3426,6 +2915,48 @@
     "university": "Rani Awantibai Lodhi Vishwavidyalaya",
     "title": "Time Table",
     "result_url": "https://www.ralvv.mp.gov.in/academics/time-table",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Time Table",
+    "result_url": "https://rdunijbpin.mponline.gov.in/1366/Time-Table",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "UTD-CBCS Timetable and Notices",
+    "result_url": "https://rdunijbpin.mponline.gov.in/1482/UTD-CBCS-Timetable-and-Notices?Doctype=7FFB8791-4BE1-43A5-92D4-49AA0A412D83",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Results (Result Links)",
+    "result_url": "https://rdunijbpin.mponline.gov.in/1436/Result-Links",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Result Links",
+    "result_url": "https://rdunijbpin.mponline.gov.in/1436/Result-Links?MenuID=1369",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "UTD-CBCS-Notices",
+    "result_url": "http://www.rdunijbpin.org/1482/UTD-CBCS-Timetable-and-Notices?Doctype=7FFB8791-4BE1-43A5-92D4-49AA0A412D83",
+    "date": null,
+    "scrape_index_date": "2026-04-15"
+  },
+  {
+    "university": "Rani Durgavati Vishwavidyalaya",
+    "title": "Time Table[+]",
+    "result_url": "https://rdunijbpin.mponline.gov.in/1084/Time-Table",
     "date": null,
     "scrape_index_date": "2026-04-15"
   },
@@ -3962,69 +3493,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "Sri Aurobindo University",
-    "title": "Examination Time Table for MBBS Third Prof. Part - I & D.M. - M.Ch. Final Year Supple. Exam",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Time-Table-MBBS-Third-Prof-Part-I-DM-MCh-Final-Year-Supple.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Examination Time Table for B.Sc. Nursing First, Fifth & Seventh Sem. Exam",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Time-Table-BSc-Nursing-First-Fifth-Seventh-Sem.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Examination Time Table for BDS First, Second, Third, Final Year & MDS Part - I Supple. Exam",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Time-Table-BDS-First-Second-Third-Final-Year-MDS-Part-I-Supple.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Examination Time Table for DMLT & Cath Lab First Year Supple. Exam",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Time-Table-DMLT-Cath-Lab-First-Year-Supple.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Result of Ph.D. Entrance Examination in various faculties - 2026",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/20260325191926.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Result of Fellowship Exit Exam Oncopathology February 2026",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Result-of-Fellowship-Exit-Exam-Oncopathology-February-2026.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Result of Fellowship Exit Exam Cardiac Anaesthesia January 2026",
-    "result_url": "https://sriaurobindouniversity.edu.in/assets/notice/march-26/Result-of-Fellowship-Exit-Exam-Cardiac-Anaesthesia-January-2026.pdf",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "University Exam Results",
-    "result_url": "https://sriaurobindouniversity.edu.in/university-results",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Aurobindo University",
-    "title": "Other Results",
-    "result_url": "https://sriaurobindouniversity.edu.in/results",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Sri Satya Sai University of Technology & Medical Sciences",
     "title": "Exam Schedule",
     "result_url": "https://sssutms.co.in/cms/Website/Examination/ExamSchedule",
@@ -4112,13 +3580,6 @@
     "university": "Vikrant University",
     "title": "🔗 Online Result",
     "result_url": "https://erp.vikrantuniversity.ac.in/hs/hshome/",
-    "date": null,
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "VIT Bhopal University",
-    "title": "VITREE 2026 (January Session) ResultsNew",
-    "result_url": "https://vitbhopal.ac.in/ticker_news/vitree-2026-january-session-resultsnew/",
     "date": null,
     "scrape_index_date": "2026-04-15"
   }

@@ -8,30 +8,6 @@
     "scrape_index_date": "2026-04-15"
   },
   {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Link for Admit Card of Entrance Test",
-    "url": "https://www.braussums.in/BraussOnlineRegis/DownloadAdmitCard.aspx",
-    "date": "2026-04-02",
-    "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. B. R. Ambedkar University of Social Sciences",
-    "title": "Download Admit Card",
-    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03112021051505Download Admit Card.pdf",
-    "date": "2026-04-02",
-    "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
-    "title": "Admit Card",
-    "url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/admit-card",
-    "date": null,
-    "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
     "title": "Admit cards",
     "url": "https://mcbu.mponline.gov.in/",
