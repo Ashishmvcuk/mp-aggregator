@@ -44,7 +44,7 @@
   {
     "name": "Awadesh Pratap Singh University",
     "university": "Awadesh Pratap Singh University",
-    "url": "https://apsurewa.ac.in/",
+    "url": "http://www.apsurewa.nic.in/",
     "type": "State"
   },
   {
@@ -378,8 +378,14 @@
     "type": "State"
   },
   {
-    "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
-    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
+    "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
+    "url": "https://www.rgpvdiploma.in/",
+    "type": "state"
+  },
+  {
+    "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (UG-PG)",
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (UG-PG)",
     "url": "https://www.rgpv.ac.in/",
     "type": "State"
   },
@@ -482,7 +488,7 @@
   {
     "name": "Sri Satya Sai University of Technology & Medical Sciences",
     "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "url": "https://sssutms.co.in/cms/",
+    "url": "https://sssutms.co.in/cms/Website",
     "type": "Private"
   },
   {

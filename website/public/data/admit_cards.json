@@ -5,7 +5,127 @@
     "url": "https://aiuniversity.edu.in/research-admit-card.php",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Admit Card",
+    "url": "https://apsu.mponline.gov.in/Portal/Services/APS/EXAM/orguser/admit_card_updated.aspx?app=hYbSpx3nW1b3W8eb%2BuPn4g%3D%3D",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Barkatullah Vishwavidyalaya,Bhopal",
+    "url": "https://bubhopal.mponline.gov.in/portal/Services/BARKATULLAH/utd/Exam/AdmitCard.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Download Admit Card UTD",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/UTD_APP/utdcomn/orguser/AdmitCardUTD_html_NEW.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Download Admit Card Yearly Only",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Affiliate/Applications/Exam/AdmitCardHtmlYearly.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Download Admit Card FOR Special ATKT /Supp",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Affiliate/Applications/Exam/AdmitCardHtmlSPLATKT.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Download Admit Card",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Affiliate/Applications/Exam/AdmitCardHtml.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Link for Admit Card of Entrance Test",
+    "url": "https://www.braussums.in/BraussOnlineRegis/DownloadAdmitCard.aspx",
+    "date": "2026-04-02",
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Download Admit Card",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/03112021051505Download Admit Card.pdf",
+    "date": "2026-04-02",
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "Admit Card",
+    "url": "https://dhsgsu.edu.in/index.php/en/student/university-examinations/admit-card",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "Admit Card",
+    "url": "https://www.dhsgsu.edu.in/index.php/en/student/university-examinations/admit-card",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Jiwaji University",
+    "title": "Jiwaji Admit Card",
+    "url": "https://jiwaji.mponline.gov.in/portal/Services/Jiwaji/exam/orguser/admit_card.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "ADMIT CARD for M.Ed Entrance Exam 2024 (LD)",
+    "url": "https://mpbou.edu.in/uploads/recognition/ld.pdf",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "ADMIT CARD for M.Ed Entrance Exam 2024 (HI)",
+    "url": "https://mpbou.edu.in/uploads/recognition/HI.pdf",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "ADMIT CARD for M.Ed Entrance Exam 2024 (VI)",
+    "url": "https://mpbou.edu.in/uploads/recognition/VI.pdf",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "ADMIT CARD for M.Ed Entrance Exam 2024 (ID/MR)",
+    "url": "https://mpbou.edu.in/uploads/recognition/ID-MR.pdf",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
@@ -13,7 +133,23 @@
     "url": "https://mcbu.mponline.gov.in/",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "title": "Admit Card - Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "url": "https://gramodayachitrakoot.ac.in/admit-card/",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "सूचना: परीक्षा सत्र मई-जून, 2025 से संबंधित प्रवेश-पत्र (Admit Card) उपलब्‍ध कराने के संबंध में (20/05/2025)",
+    "url": "https://www.mcu.ac.in/wp-content/uploads/2025/05/notice-admit-card-20052025.pdf",
+    "date": "2025-05-20",
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -21,7 +157,7 @@
     "url": "https://cuc.mponline.gov.in/Portal/Services/CU/Service.aspx",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -29,7 +165,7 @@
     "url": "https://cuc.mponline.gov.in/Portal/Services/CU/EXAM/Orguser/AdmitCardReport.aspx",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -37,7 +173,7 @@
     "url": "https://sageuniversity.in/blogs/gate-2026-registration-eligibility-syllabus-exam-dates-admit-card",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sanchi University of Buddhist-Indic Studies",
@@ -45,6 +181,14 @@
     "url": "https://exams.sanchiuniv.edu.in/site/admit_card",
     "date": null,
     "category": "admit_cards",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "Download Admit Card (Regular/Private)",
+    "url": "https://vikram.mponline.gov.in/Portal/Services/VIKRAM/Exam/AdmitCardHtml.aspx",
+    "date": null,
+    "category": "admit_cards",
+    "scrape_index_date": "2026-04-21"
   }
 ]

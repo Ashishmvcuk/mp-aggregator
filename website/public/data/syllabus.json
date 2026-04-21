@@ -5,7 +5,7 @@
     "url": "https://iqac.aksuniversity.ac.in/outcome-based-education-obe-curriculum/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -13,7 +13,7 @@
     "url": "https://abhyudayuniversity.edu.in/ru-det-syllabus-psychology/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -21,7 +21,7 @@
     "url": "https://abhyudayuniversity.edu.in/ru-det-syllabus-library-and-information-science/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -29,7 +29,7 @@
     "url": "https://abhyudayuniversity.edu.in/phd-law-det-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -37,7 +37,7 @@
     "url": "https://abhyudayuniversity.edu.in/phd-agricultural-science-det-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -45,7 +45,7 @@
     "url": "https://abhyudayuniversity.edu.in/ru-det-syllabus-management/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -53,7 +53,7 @@
     "url": "https://abhyudayuniversity.edu.in/ru-det-syllabus-fashion/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -61,7 +61,7 @@
     "url": "https://abhyudayuniversity.edu.in/page/2/?s=SYLLABUS",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Abhyuday University",
@@ -69,7 +69,7 @@
     "url": "https://abhyudayuniversity.edu.in/?s=SYLLABUS",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Aryavart University",
@@ -77,7 +77,7 @@
     "url": "https://www.auindia.ac.in/academics/exam-regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Aryavart University",
@@ -85,7 +85,7 @@
     "url": "https://www.auindia.ac.in/course/Search-Course-Syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Aryavart University",
@@ -93,7 +93,7 @@
     "url": "https://aiuniversity.edu.in/syllabus.php",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
@@ -101,7 +101,103 @@
     "url": "https://abvhv.edu.in/study-centre-course/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "संगणक अनुप्रयोग (पीजीडीसीए) स्नातकोतर पत्रोपाधि",
+    "url": "https://abvhv.edu.in/assets/pdf/syllabus/computer/PGDCA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "जर्नलिज़्म एण्ड मास कम्युनिकेशन स्नातकोतर पत्रोपाधि",
+    "url": "https://abvhv.edu.in/assets/pdf/syllabus/journalism/PG_DIPLOMA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "सायबर कानून स्नातकोतर पत्रोपाधि",
+    "url": "https://abvhv.edu.in/assets/pdf/syllabus/VIDHI/PG_DIPLOMA_SYBER_KANUN.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "पर्यावरण विधि स्नातकोतर पत्रोपाधि",
+    "url": "https://abvhv.edu.in/assets/pdf/syllabus/VIDHI/PRAYVARN_VIDHI_PG_DIPLOMA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "लोक संगीत पत्रोपाधि",
+    "url": "https://www.abvhv.edu.in/assets/pdf/syllabus/SANGEET/LOKSANGEET_DIPLOMA.PDF",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "संगणक अनुप्रयोग (डीसीए) पत्रोपाधि",
+    "url": "https://abvhv.edu.in/assets/pdf/syllabus/computer/DCA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Syllabus for UTD",
+    "url": "https://www.apsurewa.ac.in/en/student-zone/syllabus-adm/syllabus-for-utd",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Syllabus for Affiliated Colleges",
+    "url": "https://www.apsurewa.ac.in/en/student-zone/syllabus-adm/syllabus-for-affiliated-colleges",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Act",
+    "url": "https://www.apsurewa.ac.in/en/act-regulation/act",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Statutes (statutes)",
+    "url": "https://www.apsurewa.ac.in/en/act-regulation/statutes",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Ordinances",
+    "url": "https://www.apsurewa.ac.in/en/act-regulation/ordinances",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Regulation APSU",
+    "url": "https://www.apsurewa.ac.in/en/act-regulation/regulation-apsu",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -109,7 +205,7 @@
     "url": "https://apsurewa.ac.in/en/student-zone/syllabus-adm/syllabus-for-utd",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -117,7 +213,7 @@
     "url": "https://apsurewa.ac.in/en/student-zone/syllabus-adm/syllabus-for-affiliated-colleges",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -125,7 +221,7 @@
     "url": "https://apsurewa.ac.in/en/act-regulation/act",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -133,7 +229,7 @@
     "url": "https://apsurewa.ac.in/en/act-regulation/statutes",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -141,7 +237,7 @@
     "url": "https://apsurewa.ac.in/en/act-regulation/ordinances",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Awadesh Pratap Singh University",
@@ -149,7 +245,79 @@
     "url": "https://apsurewa.ac.in/en/act-regulation/regulation-apsu",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Syllabus (syllabus be)",
+    "url": "https://apsurewa.ac.in/en/syllabus-be",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/mabecbcs.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/bcomcbcs.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/mcomcbcs.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/B.A.LL.B.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/LLM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/phdeconomics.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/phdcommerce.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Download Syllabus",
+    "url": "https://apsurewa.ac.in/files/561/phdbe.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Barkatullaah University",
@@ -157,7 +325,7 @@
     "url": "https://sites.google.com/a/bubhopal.ac.in/academics/home",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Barkatullaah University",
@@ -165,7 +333,63 @@
     "url": "https://sites.google.com/bubhopal.ac.in/utd-syllabus-10jun2025?usp=sharing",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "New Education Policy Syllabus (NEP",
+    "url": "https://highereducation.mp.gov.in/?page=JUL9t1LHqftaDqryEIQFtg%3D%3D",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Scheme & Syllabus",
+    "url": "https://www.bhabhauniversity.edu.in/syllabus/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Topic:-Quality system regulation for Device Combination Products",
+    "url": "https://www.bhabhauniversity.edu.in/events/63/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "NIRF (nirf)",
+    "url": "https://www.bhabhauniversity.edu.in/syllabus/nirf.php",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Finance Officer > Audit Report",
+    "url": "https://www.bhabhauniversity.edu.in/syllabus/auditreport.php",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "UGC Proforma",
+    "url": "https://www.bhabhauniversity.edu.in/syllabus/ugc-proforma.php",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Bhabha IT Cell",
+    "url": "https://www.bhabhauniversity.edu.in/syllabus/bhabhaitcell.html",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Chirayu University",
@@ -173,7 +397,7 @@
     "url": "https://cmchbhopal.com/phase-I/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Chirayu University",
@@ -181,7 +405,63 @@
     "url": "https://chirayuuniversity.ac.in/SchemeandSyllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Scheme-Syllabus BBA",
+    "url": "https://chirayuuniversity.ac.in/pdf/Scheme-Syllabus BBA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Scheme-Syllabus MBA",
+    "url": "https://chirayuuniversity.ac.in/pdf/Scheme-Syllabus MBA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Scheme-Syllabus MHA",
+    "url": "https://chirayuuniversity.ac.in/pdf/Scheme-Syllabus MHA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "M.B.B.S UG Curriculum Volume-I",
+    "url": "https://chirayuuniversity.ac.in/pdf/M.B.B.S UG Curriculum Volume-I.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "M.B.B.S UG Curriculum Volume-II",
+    "url": "https://chirayuuniversity.ac.in/pdf/M.B.B.S UG Curriculum Volume-II.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "M.B.B.S UG Curriculum Volume-III",
+    "url": "https://chirayuuniversity.ac.in/pdf/M.B.B.S UG Curriculum Volume-III.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Paramedical All Courses",
+    "url": "https://chirayuuniversity.ac.in/ParamedicalSchemeandSyllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
@@ -189,7 +469,7 @@
     "url": "https://www.dauniv.ac.in/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
@@ -197,7 +477,319 @@
     "url": "https://www.dauniv.ac.in/frontassets/statute/regulation.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.A. I Semester 2025-26 New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/MA-I-Sem-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.A. II Semester 2025-26 New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/MA-II-Sem-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.A. III Semester 2025-26 New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/MA-III-Sem-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.A. IV Semester 2025-26 New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/MA-IV-Sem-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. (H.Sc.)Textile and Clothing 2025-26 (One Year PG Program) New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Textile-Chemistry-and-Textile-Testing-CC31.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. (H.Sc.)Textile and Clothing 2025-26 (Two Year PG Program) New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Indian-Traditional-Textiles-and-Global-Costume-CC11.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. Biochemistry 2025-26 (One Year PG Program) New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/M.Sc.-Biochemistry-1-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. Biochemistry 2025-26 (Two Year PG Program) New",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/M.Sc.-Biochemistry-2-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "BBA Hospital Administration I Year Syllabus",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BBA-Hospital-Administration-Syllabus.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "BBA Foreign Trade I Year Syllabus",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BBA-Foreign-Trade-Annual-Syllabus.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "PGDCA One Year PG Programme Effective From July 2025",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Detailed-Syllabus-of-PGDCA-One-Year-PG-Programme-Effective-From-July-2025.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.Sc. Life Science I Year",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/B.Sc.-Life.Science-I-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. Pharmaceutical Chemistry 2025-2026 (1-Year PG Programme)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/M.Sc.-Pharma.-Chemistry-PG-1-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc. Pharmaceutical Chemistry 2025-2026 (2-Year PG Programme)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/M.Sc.-Pharma.-Chemistry-PG-2-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Pharmaceutical Chemistry 2025-2026 (1-Year PG Diploma)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Pharma.-Chemistry-PG-Diploma-1-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "One Year P.G. Course Marathi Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/One-Year-PG-Marathi.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Two Year P.G. Course Marathi Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Two-Year-PG-Marathi.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "One Year P.G. Diploma Marathi Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/One-Year-PG-Diploma-Marathi.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Notification Regarding LL.B. 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/LLBAdhisuchana.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "LL.B. (Hons) (I to VI Semester) 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/LL.B.-Hons-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Revised: B.A. LL.B. 2025 26 (I to X Semester)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/B.A.LL.B.-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Revised: B.Com.LL.B. 2025-26 (I to X Semester)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Revised-B.Com.LL.B.-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Revised: B.B.A.LL.B. 2025-26 (I to X Semester)",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/Revised-B.B.A.LL.B.-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "In the notification Law Studies Board meeting, the syllabus implemented from the session 2021 LL.B. Honors B.",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/LLB-Three-Years-Course.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Updated: B.A.B.Ed. V Semester Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BA.BEd-V-Semester.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Updated: B.A.B.Ed. VI Semester Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BA.Bed-VI-Semester.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.A.B.Ed. VI Semester Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BA-Bed-VI-Sem.-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.A.B.Ed. V Semester Session 2025-26",
+    "url": "https://www.dauniv.ac.in/public/frontassets/syllabus/BA-Bed-V-Sem.-2025-26.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Drawing & Painting Theory Paper Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/Drawing&Painting-Theory-Paper.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Drawing & Painting IV Year Theory Paper I",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/Syllabus for Drawing & Painting Theory Paper I.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Drawing & Painting IV Year Practical Paper II Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/Drawing&Painting-Practical-Paper-II.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Drawing & Painting IV Year Practical Paper III Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/Drawing&Painting-Practical-Paper-III.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Drawing & Painting IV Year Practical Paper IV Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/Drawing&Painting-Practical-Paper-IV.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.A.B.Ed. IV Semester Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/B.A.B.Ed.-IV-Sem.2024-25.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.A (Dance) I, II, III & IV Semester Session 2025-26",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/MA-Dance- Syllabus-2024-25.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "M.Sc (Geology) I, II, III & IV Semester Session 2024-25",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/M.Sc-Geology-Semester-I-II-III-IV.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.B.A (Foreign Trade) Three/ Four Years Degree Program",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/BBA-Foreign-Trade-Three-Four-Years.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.B.A Hospital Administration IV Year Degree Program",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/BBA-Hospital-Administration-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "B.B.A Hotel Management IV Year Degree Program",
+    "url": "https://www.dauniv.ac.in/frontassets/syllabus/BBA-Hotel-Management-4th-Year.pdf",
+    "date": "2025-11-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Dharmashastra National Law University",
@@ -205,7 +797,7 @@
     "url": "https://www.mpdnlu.ac.in/act.php",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Dr C V Raman University",
@@ -213,7 +805,703 @@
     "url": "https://cvru.ac.in/education_data",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. A.P.J Abdul Kalam University",
+    "title": "Syllabus/ Scheme",
+    "url": "https://www.aku.ac.in/website/academics/syllabus-scheme.html",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Regulation",
+    "url": "https://brauss.mp.gov.in/content.aspx?page=regulation-3&number=I5ugmMqLgCzNP08uRuU3ig==",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus (content)",
+    "url": "https://brauss.mp.gov.in/content.aspx?page=syllabus-2&number=OfbpHsgGAuaCFJ8BDDbg1A==",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Rules And Regulation",
+    "url": "https://brauss.mp.gov.in/content.aspx?page=rules-and-regulation&number=IQ+Di6IqiBO5EgJcV5OzGA==",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Harshita Kushwaha BA Syllabus Subject Change Notice",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/16012025110807हर्षिता कुशवाह  बी ए पाठ्यक्रम विषय परिवर्तन सूचना।.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "syllabus change notification akansha netawat 2023",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/06072023112001पाठ्यक्रम परिवर्तन अधिसूचना आकांशा नेतावत 2023.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "National Webinar Proposed Changes in Course Curriculum of Political Science as per NEP 2020 on 11-11-2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/LatestNews/10112021062147National Webinar Proposed Changes in Course Curriculum of Political Science as per NEP 2020 on 11-11-2021.pdf",
+    "date": "2021-11-11",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Regulation",
+    "url": "https://brauss.mp.gov.in/content.aspx?page=regulation-2&number=O88E4Undphv/XCeL6JTGcw==",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Women studies",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/Syllabus Wome Studies.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus PG (M.A.M.Sc.) in yogic science",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus PG (M.A.M.Sc.) in yogic science.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus PG diploma in yoga",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus PG diploma in yoga.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus certificate in Yoga",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus certificate in Yoga.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "MSW Social Work",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/MSW Social Work.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "MA Sociology 2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/MA Sociology 2020-21.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BSW IST YEAR Social Work (1T & 2T) 2021-22",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BSW IST YEAR  Social Work (1T & 2T) 2021-22.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BSW IIND YEAR Social work Minor 2022-23",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BSW IIND YEAR Social work Minor 2022-23.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BSW IIND YEAR Social work Major 2022-23",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BSW IIND YEAR Social work Major 2022-23.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "B.A. IST YEAR Sociology (2T) Minor 2022-22",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BA IST YEAR  Sociology (2T) Minor 2022-22.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "B.A. IIND YEAR Sociology Minor 2022-23",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BA IIND YEAR Sociology Minor 2022-23.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BA IIND YEAR Sociology Major",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BA IIND YEAR Sociology Major.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BA 1ST YEAR Sociology Major Final",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus 2022-23/BA 1ST YEAR Sociology Major Final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Diploma in Child Phychology 2022-2023",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/Diploma in Child psychology 2022-23.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Geriatric Care CGC Syllabus",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/syllabus of geriatric.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Gardener Syllabus",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/syllabus gardener.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Art & Craft Syllabus Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/syllabus art and craft.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Personality development & Beauty Care Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/personality dev. beauty care.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Organic Farming Syllabus Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/organic farming syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "First Aid Syllabus Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/first aid syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Diploma Textile and Fashion Design Revised Syllabus",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/diploma textile and fashion design.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "MA MSc extension syllabus Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/syllabus MA MSc extension.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "M.A/ M.sc.Human Development & Family Studies",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/hdfs syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "M.A. psychology syllabus Revised",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Syllabus/MA psychology syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Courses offered by Bsc and MSc",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Courses_offer_BSC.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Agriculture Science-UG-Bsc (Ag.) Hons 26.3.2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Agronomy.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Agriculture Science-PG-Msc (Ag.) Horticulture (Fruit Science) 26.3.2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/M.Sc-Fruit-Science.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Agriculture Science-PG-M.Sc (Agr.) Horticulture (Vegetable Science) 26.3.2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/MScVegetableScience.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Agriculture science-PG-M.Sc (Agr.) Agricultural Economics 26.3.2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Msc-Agricultural-Economics_0001.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "School of Agriculture Science-PG-M.Sc.(Agr.) Agricultural Extension Education 26.3.2021",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/MSc_Extention_Education_0001.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus MA Sociology 2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/sco.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus MA Political Science 2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/poly.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus M.A. History 2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus_MA_History_2020-21.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus MA Geography_2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus_MA_Geography_2020-21.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "Syllabus M.A. Public Administration 2020-21",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/Syllabus_MAPublic_Administration_2020-21.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "BBA( Full Time ) 3 Yrs.",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/BBA_Full_Time_3Years_Syllabus_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. B. R. Ambedkar University of Social Sciences",
+    "title": "B.COM.( Hons. )",
+    "url": "https://brauss.mp.gov.in/Uploaded Document/Documents/Syllabus/BCOM_Hons_3Years_Syllabus_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "Syllabus NEP Session 2022-23",
+    "url": "https://dhsgsu.edu.in/index.php/en/academics/syllabus-student",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "Anti-Ragging Undertaking Registration Form",
+    "url": "https://www.dhsgsu.edu.in/index.php/en/notice-and-circulars/6770-strict-compliance-with-ugc-regulations-on-curbing-the-menace-of-ragging-proctor-office-disp-no-997-dt-12-06-2025",
+    "date": "2025-06-12",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "Syllabus NEP Session 2022-23",
+    "url": "https://www.dhsgsu.edu.in/index.php/en/academics/syllabus-student",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE LOCF Physical Education 1 compres)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Physical-Education/UNDER-GRADUATE--LOCF-Physical-Education-1_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE MPS compressed)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Physical-Education/POST-GRADUATE-MPS_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (1 UNDER GRADUATE Approved Syllabus for ECE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Institute-of-Engineering-and-Technology/1.-UNDER-GRADUATE-Approved-Syllabus-for-ECE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (2 Syllabus Structure for CSE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Institute-of-Engineering-and-Technology/2.-Syllabus-Structure-for-CSE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Ancient-Indian-History-Culture-and-Archaeology/UNDER-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Ancient-Indian-History-Culture-and-Archaeology/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Adult-Education/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Anthropology/UNDER-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE BSC)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Applied-Geology/UNDER-GRADUATE--BSC.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE M Tech)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Applied-Geology/POST-GRADUATE-M.Tech.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE M Tech Syllabus CBCS)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Applied-Geology/POST-GRADUATE--M.Tech._Syllabus_CBCS.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (Ph D Course Work)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Applied-Geology/Ph.D.-Course-Work.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Biotechnology/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Botany/UNDER-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Botany/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE DBM Syllabus BBA)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Business-Management/UNDER-GRADUATE-DBM_Syllabus_BBA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE DBM Syllabus MBA)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Business-Management/POST-GRADUATE-DBM_Syllabus_MBA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE DBM Syllabus Algo Trading)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Business-Management/POST-GRADUATE-DBM_Syllabus_Algo_Trading.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE DBM Syllabus Healthcare and Hospit)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Business-Management/POST-GRADUATE-DBM_Syllabus_Healthcare_and_Hospital_Mgt.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE DBM Syllabus Travel and Tourism Mg)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Business-Management/POST-GRADUATE-DBM_Syllabus_Travel_and_Tourism_Mgt.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (1 UNDER GRADUATE B Sc Chemistry I)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Chemistry/1.-UNDER-GRADUATE-B.Sc.-Chemistry-I.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (2 UNDER GRADUATE B Sc Chemistry II)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Chemistry/2.-UNDER-GRADUATE--B.Sc.-Chemistry-II.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (3 POST GRADUATE M Sc Chemistry I)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Chemistry/3.-POST-GRADUATE-M.Sc.-Chemistry-I.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (4 POST GRADUATE M Sc Chemistry II)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Chemistry/4.-POST-GRADUATE--M.Sc.-Chemistry-II.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Commerce/UNDER-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Commerce/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (Certificate Course on GST and Income Tax Facilit)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Commerce/Certificate-Course-on-GST--and-Income-Tax-Facilitator.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE BJ)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Communication-and-Journalism/UNDER-GRADUATE-BJ.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE NEP MJ)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Communication-and-Journalism/POST-GRADUATE-NEP-MJ.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE BCA I II Sem)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Computer-Science-and-Application/UNDER-GRADUATE-BCA-I---II-Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE BCA III to VI Sem)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Computer-Science-and-Application/UNDER-GRADUATE--BCA--III--to--VI-Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE MCA I to IV Sem)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Computer-Science-and-Application/POST-GRADUATE-MCA-I--to-IV--Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (Ph D Course Work)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Computer-Science-and-Application/Ph.D.-Course-Work.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE Crime F Sc BA)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Criminology-and-Forensic-Science/UNDER-GRADUATE-Crime---F.Sc.--BA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE Crime F Sc BSc)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Criminology-and-Forensic-Science/UNDER-GRADUATE-Crime---F.Sc-BSc.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE Crime F Sc MA)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Criminology-and-Forensic-Science/POST-GRADUATE-Crime--F.Sc.-MA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE Crime F Sc M Sc)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Criminology-and-Forensic-Science/POST-GRADUATE-Crime---F.Sc.-M.Sc.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (UNDER GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Economics/UNDER-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "title": "PDF (POST GRADUATE)",
+    "url": "https://www.dhsgsu.edu.in/images/DOAA/syllabus-NEP-2022/Economics/POST-GRADUATE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Gyanveer University",
@@ -221,7 +1509,7 @@
     "url": "https://www.gyanveeruniversity.edu.in/Pages/SyllabusSchemes.aspx",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Gyanveer University",
@@ -229,7 +1517,311 @@
     "url": "https://www.gyanveeruniversity.edu.in/Pages/Entrance-Syllabus.aspx",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Msc Agronomy 1st sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/PG/Msc Agronomy 1st sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "B.Sc. Agriculture 1 Sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/UG/B.Sc. Agriculture 1 Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Msc Agronomy 2nd sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/PG/Msc Agronomy 2nd sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "B.Sc. Agriculture 2 Sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/UG/B.Sc. Agriculture 2 Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Msc Plant pathology 1st sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/PG/Msc Plant pathology 1st sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Msc Plant pathology 2nd sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Agriculture/PG/Msc Plant pathology 2nd sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "M.COM 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Commerce/PG/M.COM 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BCOM 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Commerce/UG/BCOM 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MCOM 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Commerce/PG/MCOM 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BCOM 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Commerce/UG/BCOM 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Pgdca 1st sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/Diploma/Pgdca 1st sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MCA 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/PG/MCA 1ST SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BCA 1ST sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/UG/BCA 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Pgdca 2nd SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/Diploma/Pgdca 2nd sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MCA 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/PG/MCA 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BCA 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Computer Science and Application/UG/BCA 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "LLM 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/PG/LLM 1ST SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BALLB 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/UG/BALLB 1ST SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "LLM 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/PG/LLM 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BALLB 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/UG/BALLB 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Llb 1st sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/UG/Llb 1st sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "Llb 2nd sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Law And Legal Studies/UG/Llb 2nd sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "B. PHARM 1ST sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Pharmacy/UG/B. PHARM 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "B. PHARM 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Pharmacy/UG/B.PHARM 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA economics 1st",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA economics 1st.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "BA final Syllabus",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/UG/BA final Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA economics 2nd sem",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA economics 2nd sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA EDUCATION 1ST",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA EDUCATION 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA EDUCATION 2ND",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA EDUCATION 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA ENGLISH LIT 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA ENGLISH LIT 1ST SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA ENGLISSH LIT 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA ENGLISSH LIT 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA HINDI LIT 1ST SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA HINDI LIT 1ST SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA HINDI LIT 2ND SEM",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA HINDI LIT 2ND SEM.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA HISTORY 1ST",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA HISTORY 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA HISTORY 2ND",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA HISTORY 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA POLITICAL 1ST",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/MA POLITICAL 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA POLITICAL 2ND",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA POLITICAL 2ND.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Gyanveer University",
+    "title": "MA SOCIOLOGY 1ST",
+    "url": "https://www.gyanveeruniversity.edu.in/assets/pdf/Syllabus/School of Arts and Humanity/PG/MA SOCIOLOGY 1ST.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "I.E.S. University",
@@ -237,7 +1829,23 @@
     "url": "https://www.iesuniversity.ac.in/examination-schedule",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "J. N. C. T professional University",
+    "title": "Scheme And Syllabus",
+    "url": "https://www.jnctpu.edu.in/scheme-and-syllabus/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "J. N. C. T professional University",
+    "title": "Rules Regulations",
+    "url": "https://www.jnctpu.edu.in/rules-regulations/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
@@ -245,7 +1853,39 @@
     "url": "https://www.jnkvv.org/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "title": "1. Course Curriculum- B. Sc. (Hon)-Agriculture",
+    "url": "https://www.jnkvv.org/public/file/1772189901.Agriculture.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "title": "2. Course Curriculum- B.Tech.",
+    "url": "https://www.jnkvv.org/public/file/1764064317.COURSE CURRICULUM B.Tech..pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "title": "3. Course Curriculum- B. Sc. (Hon)-Horticulture",
+    "url": "https://www.jnkvv.org/public/file/1772098298.Horticulture.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+    "title": "4. Course Curriculum B.Sc. (Hon) Forestry",
+    "url": "https://www.jnkvv.org/public/file/1772191190.Forestry.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jaypee University of Engineering & Technology",
@@ -253,7 +1893,7 @@
     "url": "https://www.juet.ac.in/images/7771545_academic-integrity-Regulation2018.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jaypee University of Engineering & Technology",
@@ -261,7 +1901,7 @@
     "url": "https://www.juet.ac.in/jaypee/academic-programmes.php",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jaypee University of Engineering & Technology",
@@ -269,7 +1909,7 @@
     "url": "https://www.juit.ac.in/MtechSyllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jaypee University of Engineering & Technology",
@@ -277,7 +1917,7 @@
     "url": "https://www.juit.ac.in/PhdSyllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -285,7 +1925,7 @@
     "url": "https://jiwaji.edu/assets/images/BCA_2025-29-UPDATED.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -293,7 +1933,7 @@
     "url": "https://jiwaji.edu/latest-syllabus-as-per-nep/information-regarding-NEP-syllabus-as-per-ordinance-141-and-142",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -301,7 +1941,7 @@
     "url": "https://jiwaji.edu/latest-syllabus-as-per-nep/syllabus-nep-2025-27",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -309,7 +1949,7 @@
     "url": "https://jiwaji.edu/latest-syllabus-as-per-nep/syllabus-nep-bhopal-pg",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -317,7 +1957,7 @@
     "url": "https://jiwaji.edu/latest-syllabus-as-per-nep/syllabus-nep-bhopal-ug",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Jiwaji University",
@@ -325,7 +1965,7 @@
     "url": "https://jiwaji.edu/academics/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Krantisurya Tantya Bhil Vishwavidyalaya",
@@ -333,7 +1973,7 @@
     "url": "https://ktbuniv.ac.in/index.php/academics/syllabus-2",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Krantivir Tatya Tope Vishwavidyalaya",
@@ -341,7 +1981,15 @@
     "url": "https://kttv.edu.in/academics/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Krantivir Tatya Tope Vishwavidyalaya",
+    "title": "ALL COURSE SYLLABUS",
+    "url": "https://drive.google.com/drive/folders/1tqYgeaOVEpkfvkzstEZHRyrrUVhC2GOi?usp=sharing",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Lakshmibai National Institute of Physical Education",
@@ -349,7 +1997,7 @@
     "url": "https://www.lnipe.edu.in/assets/img/uploads/rules_and_regulations.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "LNCT University",
@@ -357,7 +2005,15 @@
     "url": "https://lnctu.ac.in/scheme-and-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "LNCT Vidhyapeeth University",
+    "title": "Rules and Regulations",
+    "url": "https://lnctvu.ac.in/rules-and-regulations/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "M.P.Bhoj (open) University",
@@ -365,7 +2021,199 @@
     "url": "https://mpbou.edu.in/download-syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (b a b sc b com b b a b c a b lib b j first year )",
+    "url": "https://mpbou.edu.in/b-a---b-sc---b-com--b-b-a---b-c-a-b-lib---b-j---first-year-nep-syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (b a b sc b com b b a b c a b lib b j second year)",
+    "url": "https://mpbou.edu.in/b-a---b-sc---b-com--b-b-a---b-c-a-b-lib---b-j---second-year-nep-syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (b a b sc b com b b a b c a final year nep syllab)",
+    "url": "https://mpbou.edu.in/b-a---b-sc---b-com--b-b-a---b-c-a-final-year-nep-syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (b a b sc b com b b a nbsp b c a fourth nbsp year)",
+    "url": "https://mpbou.edu.in/b-a---b-sc---b-com--b-b-a---nbsp-b-c-a-fourth-nbsp-year-nep-syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bca 2 slb 06 07)",
+    "url": "https://mpbou.edu.in/ss/syllabus/bca_2_slb_06-07.doc",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bca 3 slb 06 07)",
+    "url": "http://mpbou.edu.in/ss/syllabus/bca_3_slb_06-07.rtf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bba II syl)",
+    "url": "http://mpbou.edu.in/ss/syllabus/bba_II_syl.doc",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bba final syl)",
+    "url": "http://mpbou.edu.in/ss/syllabus/bba_final_syl.doc",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download",
+    "url": "http://mpbou.edu.in/ss/syllabus/2023/bj.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (UPDATED MBA MM SYLLABUS)",
+    "url": "https://mpbou.edu.in/uploads/files/UPDATED__MBA_MM_SYLLABUS.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (MBA Lateral entry new Syllabus updated)",
+    "url": "https://mpbou.edu.in/uploads/files/MBA_Lateral_entry_new_Syllabus_updated.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mba I)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mba_I.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mba II)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mba_II.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mba final finance)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mba_final_finance.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mba final marketing)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mba_final_marketing.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mba final hrm)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mba_final_hrm.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (mcom fin pre)",
+    "url": "http://mpbou.edu.in/ss/syllabus/pg/mcom_fin_pre.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (pg diploma in cyber security new syllabus and sc)",
+    "url": "https://mpbou.edu.in/uploads/files/pg_diploma_in_cyber_security_new_syllabus_and_scheem_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (AI and data sce new syllabus and scheem compress)",
+    "url": "https://mpbou.edu.in/uploads/files/AI_and_data_sce__new_syllabus_and_scheem_compressed.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download",
+    "url": "http://mpbou.edu.in/ss/syllabus/chr.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download",
+    "url": "https://mpbou.edu.in/ss/syllabus/ces.jpg",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (2024 B Ed SEDE Revise Syllabus)",
+    "url": "https://mpbou.edu.in/uploads/files/2024_B_Ed__SEDE_Revise_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bedded ent syllabus eng)",
+    "url": "https://mpbou.edu.in/ss/syllabus/bedded_ent_syllabus_eng.jpeg",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "M.P.Bhoj (open) University",
+    "title": "Download (bedded ent syllabus hindi)",
+    "url": "http://mpbou.edu.in/ss/syllabus/bedded_ent_syllabus_hindi.jpeg",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Madhav Institute of Technology and Science",
@@ -373,7 +2221,7 @@
     "url": "https://web.mitsgwalior.in/academics/nep-2020-implementation/flexible-curriculum",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Madhav Institute of Technology and Science",
@@ -381,7 +2229,7 @@
     "url": "https://web.mitsgwalior.in/index.php/academics/nep-2020-implementation/flexible-curriculum",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Madhyanchal Professional University",
@@ -389,7 +2237,7 @@
     "url": "https://mpu.ac.in/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mahakaushal University",
@@ -397,7 +2245,319 @@
     "url": "https://mku.ac.in/scheme-and-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Certificate Fire Man Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/154-Certificate-in-Fire-Man-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Download ({{{attachment url}}})",
+    "url": "https://mku.ac.in/scheme-and-syllabus/{{{attachment-url}}}",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "DCA Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/Diploma-in-Computer-Applications-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma in Health Safety & Environment Mgt. Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/158-Diploma-in-Health-safety-Environment-Management-2017-18-syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma Fire Safety & Hazard Mgt. Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/157-Diploma-in-fire-safety-Hazard-Management_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma in Disaster Management Scheme",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/DIPLOMA-IN-DISASTER-SYLLABUS-_Scheme.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma in Disaster Management Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/DIPLOMA-IN-DISASTER-SYLLABUS-_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma In Industrial Safety Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/160-Diploma-in-Industrial-Safety_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly Agriculture Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/3-years-diploma-in-agriculture-sylabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly Civil Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Diploma-Civil-Engg_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly EC Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Diploma-ECE_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly Electrical Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Diploma-Electrical-Engg_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly Mechanical Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Diploma-Mechnical-Engg_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Poly Mining Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Diploma-Mining-Engg_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "D. Pharma Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/D.Pharm-Syllabus-Updated.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma in Animal Husbandary Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/Syllabus_Animal-Husb.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Diploma In Veterinary Pharmacy Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/Syllabus_Veterinary-Pharmacy.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Biotechnology Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-biotechnology-yearly-Syllabus-final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Biochemistry Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Biochemistry-yearly-Syllabus-correctt.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Mathematics Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc_.-Maths-yearly-Syllabus-f-correct.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Botany Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-botany-yearly-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Physics Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Physics-yearly-Syllabus-correct.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Zoology Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Zoology-yearly-Syllabus-Final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Chemistry Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/chemistry-correct-yearly.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Microbiology Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Microbiology-yearly-Syllabus-Final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Forensic Science Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Bsc_Forensic-Science_Yearly_Syllabus-final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Geology Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Bsc_Geology_Yearly_Syllabus-Final.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Biotechnology (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Bsc-Biotechnology-NEP-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Botany (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Botany-NEP-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Geology (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/BSc-Geology-NEP-Syllabus-1.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Mathematics (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Mathematics-NEP-syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Microbiology (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-MicrobiologyNEPSyllabus-1.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Forensic Science (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc_Forensic-Science-_NEP_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Physics (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/Bsc-_Physics-NEP-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Zoology (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Zoology_NEP-syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Biochemistry (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-Biochemistry-NEP-syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc Chemistry (NEP) Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/03/B.Sc-ChemistryNEP-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Information Tech. Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/B.Sc-Information-Technology-syllabus-yearly.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "B.Sc. Cyber Security Syllabus",
+    "url": "https://mku.ac.in/wp-content/uploads/2026/02/BSCCYBER-SECURITY-SYLLABUS-YEARLY-.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
@@ -405,7 +2565,7 @@
     "url": "https://mcbu.ac.in/statutes-ordinances-regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
@@ -413,7 +2573,7 @@
     "url": "https://mcbu.ac.in/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
@@ -421,7 +2581,7 @@
     "url": "https://mpsvv.ac.in/index.php/en/about-us/regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
@@ -429,7 +2589,7 @@
     "url": "https://mpsvv.ac.in/index.php/en/ug-shastri-syllabus-outcome",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
@@ -437,7 +2597,327 @@
     "url": "https://mpsvv.ac.in/index.php/en/students/campus-rules-regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "Regulations",
+    "url": "https://www.mpsvv.ac.in/index.php/en/about-us/regulations",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "Syllabus & Outcome",
+    "url": "https://www.mpsvv.ac.in/index.php/en/ug-shastri-syllabus-outcome",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "Campus Rules & Regulations",
+    "url": "https://www.mpsvv.ac.in/index.php/en/students/campus-rules-regulations",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "Students rules and regulations Deekshyarambh program",
+    "url": "https://mpsvv.ac.in/index.php/en/academic/academic-council/academic-notices/new-students-rules-and-regulations-diksharambh-program",
+    "date": "2024-07-01",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "PG/Acharya Syllabus & Outcome",
+    "url": "https://mpsvv.ac.in/index.php/en/pg-acharya-syllabus-outcome",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "Ph.D. /Diploma/ Certificate Syllabus & Outcome",
+    "url": "https://mpsvv.ac.in/index.php/en/ph-d-diploma-certificate-syllabus-outcome",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Y ear (शु्क्लयजुर्वेद शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्य)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/shukla_yajurveda/शु्क्लयजुर्वेद_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (शुक्लयजुर्वेद शास्त्री द्वितीयवर्ष सम्पूर्ण पाठ्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/शुक्लयजुर्वेद_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (शुक्लयजुर्वेद शास्त्री तृतीयवर्ष सम्पूर्ण पाठ्यक)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/शुक्लयजुर्वेद_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (ShuklaJajurveda 4th Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/ShuklaJajurveda_4th_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Y ear (नव्यव्याकरण शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्यक्र)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/vyakarana/नव्यव्याकरण_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (नव्य व्याकरण शास्त्री द्वितीयवर्ष सम्पूर्ण पाठ्य)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/नव्य_व्याकरण_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (नव्यव्याकरण शास्त्री तृतीयवर्ष सम्पूर्ण पाठ्यक्र)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/नव्यव्याकरण_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Navyavyakarana 4th Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Navyavyakarana_4th_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Y ear (प्राचीन व्याकरण शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/प्राचीन_व्याकरण_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (प्राचीनव्याकरण शास्त्री द्वितीयवर्ष सम्पूर्ण पाठ)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/प्राचीनव्याकरण_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (संस्कृत साहित्य शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/संस्कृत_साहित्य_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (संस्कृत साहित्य शास्त्री द्वितीयवर्ष सम्पूर्ण पा)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/संस्कृत_साहित्य_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (साहित्य शास्त्री तृतीयवर्ष सम्पूर्ण पाठ्यक्रम)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/साहित्य_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Sahitya 4th Year Syllabus)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Sahitya_4th_Year_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (फलितज्योतिष शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्यक्र)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/फलितज्योतिष_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (फलित ज्योतिष शास्त्री द्वितीयवर्ष सम्पूर्ण पाठ्य)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/फलित_ज्योतिष_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (फलित ज्योतिष शास्त्री तृतीयवर्ष सम्पूर्ण पाठ्यक्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/फलित_ज्योतिष_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Falitajyotisha 4th Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Falitajyotisha_4th_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (सिद्धान्तज्योतिष शास्त्री प्रथमवर्ष सम्पूर्ण पाठ)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/सिद्धान्तज्योतिष_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (सिद्धान्त ज्योतिष शास्त्री द्वितीयवर्ष सम्पूर्ण )",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/सिद्धान्त_ज्योतिष_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (सिद्धान्तज्योतिष शास्त्री तृतीयवर्ष सम्पूर्ण पाठ)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/सिद्धान्तज्योतिष_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Siddhantajyotish 4th Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Siddhantajyotish_4th_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (न्यायशास्त्र शास्त्री प्रथमवर्ष सम्पूर्ण पाठ्यक्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/न्यायशास्त्र_शास्त्री_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (न्यायदर्शन शास्त्री द्वितीयवर्ष सम्पूर्ण पाठ्यक्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/न्यायदर्शन_शास्त्री_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (न्यायशास्त्र शास्त्री तृतीयवर्ष सम्पूर्ण पाठ्यक्)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug-3/न्यायशास्त्र_शास्त्री_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Nyayadarshana 4th Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Nyayadarshana_4th_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (B A Honours प्रथमवर्ष सम्पूर्ण पाठ्यक्रम)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/B.A._Honours_प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (B A Honours द्वितीयवर्ष सम्पूर्ण पाठ्यक्रम)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/B.A._Honours_द्वितीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (B A Honours तृतीयवर्ष सम्पूर्ण पाठ्यक्रम)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/B.A._Honours_तृतीयवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (Sanskrit 4th Year Syllabus)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_4/Sanskrit_4th_Year_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "1st Year (B A B Ed प्रथमवर्ष सम्पूर्ण पाठ्यक्रम)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/B.A._B.Ed._प्रथमवर्ष_सम्पूर्ण_पाठ्यक्रम.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "2nd Year (BA BED 2nd Year)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/ug_-2/BA_BED_2nd_Year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "3rd Year (BA BED 3rd Year पाठ्यक्रम CBCS Copy 1)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/BA_BED_3rd_Year_पाठ्यक्रम_CBCS_Copy_1.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+    "title": "4th Year (B AB Ed 4 Years Syllabus 2024 25 Batch Mpsvv)",
+    "url": "https://mpsvv.ac.in/images/files/ug_syllabus/B.AB.Ed_4_Years_Syllabus_2024-25_Batch_Mpsvv.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
@@ -445,7 +2925,7 @@
     "url": "https://gramodayachitrakoot.ac.in/student-corner/syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
@@ -453,7 +2933,7 @@
     "url": "https://gramodayachitrakoot.ac.in/student-corner/ug-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
@@ -461,7 +2941,7 @@
     "url": "https://gramodayachitrakoot.ac.in/wp-content/uploads/2021/04/Regulation.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -469,7 +2949,7 @@
     "url": "https://www.mcu.ac.in/regulations-saturate-ordinance/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -477,7 +2957,7 @@
     "url": "https://www.mcu.ac.in/syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -485,7 +2965,7 @@
     "url": "https://www.mcu.ac.in/curriculum-feedback/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -493,7 +2973,95 @@
     "url": "http://www.mcu.ac.in/ASI/Study_Institute_Regulations_2008.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "Suspension of clause 12.11 of Regulation 18/2008 Associated study Centres BCA Course",
+    "url": "https://www.mcu.ac.in/wp-content/uploads/2025/10/ASI_BCA_20Percent_Suspensionofclause12_11.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "National Education Policy (NEP) Based Under Graduate Level (Bachelor) Programmes Exam. Regulation No.",
+    "url": "https://www.mcu.ac.in/wp-content/uploads/2022/04/NEP-Regulation-26.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "Addendum: Addendum to the Choice Based Credit System (CBCS), Regulation No. 25",
+    "url": "http://www.mcu.ac.in/Notifications/CBCS_Addendum_11092017.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "Choice Based Credit System (CBCS), Regulation No. 25 (Under section 51) With Effect From the Session July-2017",
+    "url": "http://www.mcu.ac.in/Exam/Examnotice/CBCS_Regulation_04092017.pdf",
+    "date": "2026-04-02",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "अधिसूचना: विश्‍वविद्यालय के अकादमिक सत्र 2020-21 में संचालित CBCS आधारित पाठ्यक्रम बी.सी.ए.",
+    "url": "https://www.mcu.ac.in/wp-content/uploads/2024/03/notification-bca-sitxth-semester-syllabus-06032024.pdf",
+    "date": "2024-03-07",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "परिपत्र: रेग्‍यूलेशन-18/2008 के नियमों का कड़ाई से पालन करने संबंधी निर्देश (23/07/2021)",
+    "url": "https://www.mcu.ac.in/wp-content/uploads/2021/07/circular-regulation-18-2008-instructions-23072021.pdf",
+    "date": "2021-07-23",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "अधिसूचना: विश्‍वविद्यालय द्वारा संचालित बैचलर ऑफ कम्‍प्‍यूटर एप्‍लीकेशन (BCA) के नवीन सिलेबस को परिसर एवं…",
+    "url": "http://www.mcu.ac.in/wp-content/uploads/2020/12/notification-bca-syllabus-for-institute-10122020.pdf",
+    "date": "2020-12-10",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "आदेश: सत्र जुलाई 2018 से पीजीडीसीए एवं डीसीए के संशोधित पाठ्यक्रम बाबत्",
+    "url": "http://www.mcu.ac.in/Notifications/order_DCA_PGDCA_syllabus_07072018.pdf",
+    "date": "2019-06-06",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "अधिसूचना: विश्‍वविद्यालय के संबद्ध अध्‍ययन संस्‍थाओं में संचालित मीडिया पाठ्यक्रमों के लिए वर्तमान में…",
+    "url": "http://www.mcu.ac.in/Notifications/notification_asi_06012015.pdf",
+    "date": "2019-06-06",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "अधिसूचना: बी.बी.ए. (एडवरटाईजिंग एण्‍ड पब्लिक रिलेशन) एवं बी.बी.ए.",
+    "url": "http://www.mcu.ac.in/Notifications/notification_asi_22062012.pdf",
+    "date": "2019-06-06",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
+    "title": "Order: Anti-Ragging Squad Constituted in University as per UGC regulation 2009 dated 01.09.2014.",
+    "url": "http://www.mcu.ac.in/Notifications/AntiRaggingnew.pdf",
+    "date": "2019-06-06",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Malwanchal University",
@@ -501,7 +3069,7 @@
     "url": "https://malwanchaluniversity.com/indexpharmacy/syllabus.asp",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mandsaur University",
@@ -509,7 +3077,7 @@
     "url": "https://meu.edu.in/industrial-visit-a-part-of-the-curriculum-of-mechanical-electrical-engineering-students/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Mangalayatan University",
@@ -517,7 +3085,7 @@
     "url": "https://www.mangalayatan.in/Uploaded/PHD-2025/MU-PhD-Regulations-2023.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -525,7 +3093,7 @@
     "url": "https://www.medicaps.ac.in/about-mu/university-regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -533,7 +3101,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/english-syllabus-phd-entrance-eam-mu-indore.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -541,7 +3109,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/law-phd-entrance-syllabus.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -549,7 +3117,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-exam-syllabus-cs.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -557,7 +3125,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-syllabus-dec-2024-pharmacy.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -565,7 +3133,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-syllabus-management-studies.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -573,7 +3141,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-syllabus-ca.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -581,7 +3149,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-syllabus-cse.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -589,7 +3157,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/syllabus-for-phd-entrance-exam-in-mechanical-engineering.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -597,7 +3165,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/syllabus-for-phd-entrance-exam-for-faculty-of-agriculture-14-11-2025.pdf",
     "date": "2025-11-14",
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -605,7 +3173,7 @@
     "url": "https://www.medicaps.ac.in/uploads/images/syllabus-phd-chemistry.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Medi-Caps University",
@@ -613,7 +3181,15 @@
     "url": "https://www.medicaps.ac.in/public/frontend/pdf/examination-rules-and-regulation-2024.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Medi-Caps University",
+    "title": "https://www.medicaps.ac.in/uploads/course_curriculum/1729493297_cd5d237969a0d8f413c3.pdf",
+    "url": "https://www.medicaps.ac.in/uploads/course_curriculum/1729493297_cd5d237969a0d8f413c3.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -621,7 +3197,7 @@
     "url": "https://ndvsu.org/academics/academics-rules-and-regulations",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -629,7 +3205,7 @@
     "url": "https://ndvsu.org/assets/images/B.F.Sc.-Rules-and-Regulations.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "National Institute of Technical Teachers Training & Research (NITTTR)",
@@ -637,7 +3213,7 @@
     "url": "https://nitttrbpl.ac.in/department_cda.php",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "National Institute of Technical Teachers Training & Research (NITTTR)",
@@ -645,7 +3221,7 @@
     "url": "https://nitttrbpl.ac.in/curriculum-development.php",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "National Institute of Technical Teachers Training & Research (NITTTR)",
@@ -653,7 +3229,15 @@
     "url": "https://nitttrbpl.ac.in/Society_registration.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "National Law Institute University",
+    "title": "NLIU Act and Regulations",
+    "url": "https://nliu.ac.in/nliu-act-and-regulations-2/",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "P.K. University",
@@ -661,15 +3245,327 @@
     "url": "https://pkuniversity.edu.in/index.php/syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "People's University",
-    "title": "Scheme - People's University",
-    "url": "https://www.peoplesuniversity.edu.in/scheme-and-syllabus/People's",
+    "title": "B.Tech BT (III-VIII SEMESTER)",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/B.Tech%20BT%20(I-VIII%20SEMESTER).pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "M.Tech Transportation Engineering, (I-IV Semester)",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2023/05/M.Tech_SchemeSyllabus_Transportation-Engineering_0001.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Diploma EEE (III-VI Semester)",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/DE-EEE_III-VI_Sem(Scheme).pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "B. Tech. First Year (CSE, CE, EE, ECE, ME) syllabus",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/B.Tech-CBCS-First-Year-syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "B. Tech. First Year (Biotechnology) syllabus",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/B.%20Tech.%20First%20Year%20(Biotechnology)%20syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Civil Engineering",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/CE%20IIIrd%20To%20VIII%20Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Computer Science and Engineering",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/CSE%20IIIrd%20To%20VIII%20Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Electrical Engineering",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/EE%20IIIrd%20To%20VIII%20Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Electronics and Communication Engineering",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/ECE%20III%20To%20VIII%20Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Mechanical Engineering",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/ME%20IIIrd%20To%20VIII%20Sem.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "Biotechnology",
+    "url": "https://peoplesuniversity.edu.in/Engineering/uploads/B.Tech-CBCS-Syllabus-R21/Biotechnology%20III-IV%20sem%20syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-III-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "IV Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-IV-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "V Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-V-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VI Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-VI-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-VII-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VIII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/Syllabus-B-Tech-VIII-sem-session-19-20-onwards-converted.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-ECE-III-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "IV Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-ECE-IV-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "V Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-ECE-V-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VI Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-ECE-VI-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-ECE-VII-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VIII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech_.-ECE-VIII-Sem-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-III-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "IV Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-IV-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "V Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-V-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VI Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-VI-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-VII-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "VIII Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/B.Tech-VIII-SEM-Syllabus-ME.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "I Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-I-SEM-Syllabus-TE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "II Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-II-SEM-Syllabus-TE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-III-SEM-Syllabus-TE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "IV Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-IV-SEM-Syllabus-TE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "I Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-DC-I-Sem-Syllabus-2019-20.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "II Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-DC-II-Sem-Syllabus-2019-20.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-DC-III-Sem-Syllabus-2019-20.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "IV Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2020/07/M.Tech-DC-IV-Sem-Syllabus-2019-20.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "I Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2023/06/I-Sem-Syllabus_Transportation-Engineering.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "II Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2023/06/II-sem-Syllabus_Transportation-Engineering.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "People's University",
+    "title": "III Semester",
+    "url": "https://www.peoplesuniversity.edu.in/engineering-college-bhopal/wp-content/uploads/2023/06/III-sem-Syllabus_Transportation-Engineering.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rabindranath Tagore University (formerly known as AISECT University)",
@@ -677,7 +3573,7 @@
     "url": "https://rntu.ac.in/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -685,7 +3581,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/Regulations.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -693,7 +3589,79 @@
     "url": "https://rmtmusicandartsuniversity.com/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "New Syllabus 2018",
+    "url": "https://rmtmusicandartsuniversity.com/New-Syllabus-2018",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Old Syllabus 2019",
+    "url": "https://rmtmusicandartsuniversity.com/Old-Syllabus-2019",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2020",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2020",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2021-22",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2021-22",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2022-23",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2022-23",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2023-24",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2023-24",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2024-25",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2024-25",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Syllabus 2025-26",
+    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2025-26",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (UG-PG)",
+    "title": "Syllabus (frm ViewScheme)",
+    "url": "https://www.rgpv.ac.in/Uni/frm_ViewScheme.aspx",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -701,7 +3669,7 @@
     "url": "https://cuc.ac.in/phd-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -709,7 +3677,7 @@
     "url": "https://cuc.ac.in/pg-syllabus-semester-system/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -717,7 +3685,7 @@
     "url": "https://cuc.ac.in/ug-syllabus-year-system/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -725,7 +3693,7 @@
     "url": "https://cuc.ac.in/faculty-of-education/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -733,7 +3701,7 @@
     "url": "https://cuc.ac.in/law-of-faculty/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -741,7 +3709,7 @@
     "url": "https://cuc.ac.in/prevate-fineal-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Raja Shankar Shah University, Chhindwara",
@@ -749,31 +3717,31 @@
     "url": "https://cuc.ac.in/new-education-policy-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
-    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya",
-    "title": "Syllabus (frm ViewScheme)",
-    "url": "https://www.rgpv.ac.in/Uni/frm_ViewScheme.aspx",
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
+    "title": "Curriculum",
+    "url": "https://www.rgpvdiploma.in/Academics/Curriculum.aspx",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
-    "university": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
+    "title": "AICTE Based OCBC 2023 curriculum",
+    "url": "https://www.rgpvdiploma.in/Academics/AICTEBased.aspx",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
     "title": "Scheme/Syllabus",
-    "url": "https://www.rvskvv.net/index.php/student-life/scheme-syllabus",
+    "url": "https://www.rgpvdiploma.in/UploadContent/frm_ViewScheme.aspx?id=@@$$",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
-    "title": "Notification_Registrar_BSMA_Modified Syllabus_29.12.2025",
-    "url": "https://www.rvskvv.net/index.php/e-governance-cell-at-rvskvv/662-notification-registrar-bsma-modified-syllabus-29-12-2025",
-    "date": "2025-12-29",
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Awantibai Lodhi Vishwavidyalaya",
@@ -781,7 +3749,7 @@
     "url": "https://www.ralvv.mp.gov.in/academics/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Awantibai Lodhi Vishwavidyalaya",
@@ -789,7 +3757,23 @@
     "url": "https://www.ralvv.mp.gov.in/academics/syllabus/agriculture",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+    "title": "Scheme/Syllabus",
+    "url": "https://www.rvskvv.net/index.php/student-life/scheme-syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+    "title": "Notification_Registrar_BSMA_Modified Syllabus_29.12.2025",
+    "url": "https://www.rvskvv.net/index.php/e-governance-cell-at-rvskvv/662-notification-registrar-bsma-modified-syllabus-29-12-2025",
+    "date": "2025-12-29",
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Durgavati Vishwavidyalaya",
@@ -797,7 +3781,7 @@
     "url": "http://rdunijbpin.org/site/information/GenericPDFListing.aspx?Doctype=9E9F09C8-0987-4EB7-AC82-CB000219A29F",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Durgavati Vishwavidyalaya",
@@ -805,7 +3789,7 @@
     "url": "http://rdunijbpin.org/site/information/GenericPDFListing.aspx?Doctype=e6ccf08a-f359-45c2-b777-b80e105ed1e8",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Durgavati Vishwavidyalaya",
@@ -813,7 +3797,7 @@
     "url": "http://rdunijbpin.org/Site/Information/ViewSyllabus.aspx",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Durgavati Vishwavidyalaya",
@@ -821,7 +3805,7 @@
     "url": "https://highereducation.mp.gov.in",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Rani Durgavati Vishwavidyalaya",
@@ -829,7 +3813,7 @@
     "url": "http://highereducation.mp.gov.in/?page=JUL9t1LHqftaDqryEIQFtg%3D%3D",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -837,7 +3821,7 @@
     "url": "https://sageuniversity.in/assets/phd/Syllabus-PhD-Entrance-Exam.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -845,7 +3829,7 @@
     "url": "https://sageuniversity.in/assets/pdf/PhD/PhDCourseworkSyllabus.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -853,7 +3837,7 @@
     "url": "https://sageuniversity.in/blogs/clat-2026-exam-date-registration-syllabus-eligibility-preparation",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -861,7 +3845,7 @@
     "url": "https://sageuniversity.in/blogs/cat-exam-eligibility-syllabus-pattern-preparation-tips",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -869,7 +3853,7 @@
     "url": "https://sageuniversity.edu.in/assets/pdf/exam/Exam-Regulations-SAGE-University-Bhopal.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -877,7 +3861,7 @@
     "url": "https://sageuniversity.edu.in/assets/pdf/PhD/PhD-Regulations.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -885,7 +3869,7 @@
     "url": "https://sageuniversity.edu.in/assets/phd/syllabus/PhD-Entrance-Exam-Syllabus2025-26.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -893,7 +3877,7 @@
     "url": "https://sageuniversity.edu.in/assets/pdf/PhD/PhD-Course-Work-Syllabus-2023.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -901,7 +3885,7 @@
     "url": "https://sageuniversity.edu.in/assets/phd/PhD-Entrance-Exam-Syllabus2025-26.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
@@ -909,15 +3893,15 @@
     "url": "https://sageuniversity.edu.in/School/Semester-Examination/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sage University",
-    "title": "404 - Document Not Found",
-    "url": "https://sageuniversity.edu.in/School/index.html/syllabusKAILOD KARTAL RAU BYPASS INDOREIndore-Dewas",
+    "title": "Syllabus (syllabus)",
+    "url": "https://sageuniversity.edu.in/School/index.html/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "SAM Global University",
@@ -925,15 +3909,23 @@
     "url": "https://www.samglobaluniversity.ac.in/general-rules-and-regulations/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "SAM Global University",
-    "title": "You searched for SYLLABUSAgariya - Main",
-    "url": "https://www.samglobaluniversity.ac.in/?s=SYLLABUSAgariya",
+    "title": "Genius Scholarship Exam 2026: Eligibility, Registration, Syllabus, Exam Date, Scholarship, Reward & Benefits",
+    "url": "https://www.samglobaluniversity.ac.in/genius-scholarship-exam-2026/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "SAM Global University",
+    "title": "You searched for SYLLABUS - Sam Global University",
+    "url": "https://www.samglobaluniversity.ac.in/?s=SYLLABUS",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sardar Patel University",
@@ -941,7 +3933,7 @@
     "url": "https://spubgt.ac.in/scheme-and-syllabus/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -949,7 +3941,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-ba-llb/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -957,7 +3949,7 @@
     "url": "https://www.srku.edu.in/rkdf-ist/images/pdf/Srk-University-BJMC-syllabus-scheme.pdf",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -965,7 +3957,7 @@
     "url": "https://srku.edu.in/srk-university-syllabus-b-pharmacy-and-d-pharmacy/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -973,7 +3965,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-m-pharma/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -981,7 +3973,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-diploma-in-engineering/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -989,7 +3981,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-agriculture-courses/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -997,7 +3989,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-paramedical/",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -1005,7 +3997,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-mba",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Sarvepalli Radhakrishnan University",
@@ -1013,7 +4005,7 @@
     "url": "https://www.srku.edu.in/srk-university-syllabus-mca",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Shri Krishna University",
@@ -1021,7 +4013,7 @@
     "url": "https://www.skuindia.ac.in/exam-guidelines",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Shri Krishna University",
@@ -1029,7 +4021,7 @@
     "url": "https://www.skuindia.ac.in/Search-Course-Syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Shri Krishna University",
@@ -1037,7 +4029,7 @@
     "url": "https://www.skuindia.ac.in/Registration/RegistrationForm",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Shri Krishna University",
@@ -1045,7 +4037,7 @@
     "url": "https://www.skuindia.ac.in/Course/Syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Shri Krishna University",
@@ -1053,223 +4045,7 @@
     "url": "https://www.skuindia.ac.in/blog/cbse-class-12th-board-exam-2025-date-sheet-syllabus-and-question-papers",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Engineering",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Engineering",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Pharmacy (Pharma)",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Pharma",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Education (Education)",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Education",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Physical Education",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Physical_Education",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Management",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Management",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Computer Application",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Computer_Application",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "BHMCT (BHMCT)",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/BHMCT",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Science (Science)",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Science",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Life Science",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Life_Science",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Arts And Humanities",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Arts_And_Humanities",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Commerce (Commerce)",
-    "url": "https://sssutms.co.in/cms/Website/Download/OutcomeBasedCurriculum/Commerce",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "B.E.",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BE",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "pharmacy (Pharmacy)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/Pharmacy",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "M.Tech (MTech)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/MTech",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Education (Education)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/Education",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "B.H.M.C.T.",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BHMCT",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "MBA",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/MBA",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "MCA",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/MCA",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Physical Education",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/PhysicalEducation",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "B.Sc.(Hons.) (Ag)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BScHonsAG",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "BHMS (BHMS)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BHMS",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "UTD",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/UTD",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Paramedical",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/Paramedical",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Polytechnic (Engineering)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/Polytechnic_Engineering",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "B.Lib.I.Sc.",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BLibISc",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "Bachelor Of Laws (LL.B.)",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/Bacheloroflaws_Llb",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
-  },
-  {
-    "university": "Sri Satya Sai University of Technology & Medical Sciences",
-    "title": "B.Sc. [HMCS]",
-    "url": "https://sssutms.co.in/cms/Website/Download/Syllabus/BScHMCS",
-    "date": null,
-    "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "The Indira Gandhi National Tribal University",
@@ -1277,7 +4053,335 @@
     "url": "https://www.igntu.ac.in/programmes.aspx",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Syllabus (programmes)",
+    "url": "https://igntu.ac.in/programmes.aspx",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Syllabus (syllabus)",
+    "url": "https://new.igntu.ac.in/syllabus",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA - AIHC (BA AIHC syllabus)",
+    "url": "https://www.igntu.ac.in/syllabus/BA_AIHC_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA - Political Science",
+    "url": "https://www.igntu.ac.in/syllabus/ba_political_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA - Economics",
+    "url": "https://www.igntu.ac.in/syllabus.aspx",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA - English",
+    "url": "https://www.igntu.ac.in/syllabus/BA_ENG_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA/B.Sc. - Geography",
+    "url": "https://www.igntu.ac.in/syllabus/Geography_BA&BSc.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BA - Sociology",
+    "url": "https://www.igntu.ac.in/syllabus/ba_sociology_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BBA (bba syllabus)",
+    "url": "https://www.igntu.ac.in/syllabus/bba_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Com (BCom Syllabus 1819)",
+    "url": "https://www.igntu.ac.in/syllabus/BCom_Syllabus_1819.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BJMC (BJMC Syllabus)",
+    "url": "https://www.igntu.ac.in/syllabus/BJMC_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Ed. (BEd IGNTU Syllabus1819)",
+    "url": "https://www.igntu.ac.in/syllabus/BEd_IGNTU_Syllabus1819.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc. - Botany",
+    "url": "https://www.igntu.ac.in/syllabus/bsc_botany_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc. - Bio-Technology",
+    "url": "https://www.igntu.ac.in/syllabus/bsc_biotech_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc. - Chemistry",
+    "url": "https://www.igntu.ac.in/syllabus/bsc_chemistrys_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc. - Environmental Science",
+    "url": "https://www.igntu.ac.in/syllabus/bsc_evss_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc. - Zoology",
+    "url": "https://www.igntu.ac.in/syllabus/BSc_Zoology.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "BCA (bcas syllabus)",
+    "url": "https://www.igntu.ac.in/syllabus/bcas_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "B.Sc.-Yoga",
+    "url": "https://www.igntu.ac.in/syllabus/Yoga-BSc-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MA - Sociology",
+    "url": "https://www.igntu.ac.in/syllabus/ma_sociology_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Bio-Technology(w.e.f July 2016)",
+    "url": "https://www.igntu.ac.in/syllabus/MSc_BioTech_syllabus_new.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Bio-Technology( 2015-16 batch only)",
+    "url": "https://www.igntu.ac.in/syllabus/MSc_Biotech_Syllabus_cur.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Geology",
+    "url": "https://www.igntu.ac.in/syllabus/Geology_M.Sc..pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MA/M.Sc. - Geography",
+    "url": "https://www.igntu.ac.in/syllabus/Geography_MA&MSc.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Statistics 2017",
+    "url": "https://www.igntu.ac.in/syllabus/M%20Sc%20Statistics%202017.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MA - English",
+    "url": "https://www.igntu.ac.in/syllabus/MA_ENG_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Statistics 2016-18",
+    "url": "https://www.igntu.ac.in/syllabus/M%20Sc%20Statistics%202016%20-18.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MA - AIHC (MA AIHC syllabus)",
+    "url": "https://www.igntu.ac.in/syllabus/MA_AIHC_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Statistics GE",
+    "url": "https://www.igntu.ac.in/syllabus/Statistics%20GE.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Botany",
+    "url": "https://www.igntu.ac.in/syllabus/MSc_Botany_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Zoology",
+    "url": "https://www.igntu.ac.in/syllabus/MSc_Zoology.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Com. (MCom Syllabus 1819)",
+    "url": "https://www.igntu.ac.in/syllabus/MCom_Syllabus_1819.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MBA (TTM) (MBA Tourism)",
+    "url": "https://www.igntu.ac.in/syllabus/MBA_Tourism.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "MA Education",
+    "url": "https://www.igntu.ac.in/syllabus/MA_Education.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Physics",
+    "url": "https://www.igntu.ac.in/syllabus/MSc_Phy_IGNTU_17-19.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "M.Sc. - Yoga",
+    "url": "https://www.igntu.ac.in/syllabus/Yoga-MSc-Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "PhD Course Work - Geology",
+    "url": "https://www.igntu.ac.in/syllabus/Geology_PhDCW.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Ph.D. (Botany) Course Work",
+    "url": "https://www.igntu.ac.in/syllabus/Botany_PhD.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Ph.D. (Geography) Course Work",
+    "url": "https://www.igntu.ac.in/syllabus/Geography_PhDCW.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Ph.D. (Statistics) Course Work",
+    "url": "https://www.igntu.ac.in/syllabus/PhD%20Statistics.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "Ph.D. (Tourism Management) Course Work",
+    "url": "https://www.igntu.ac.in/syllabus/PhD_tourism_management_syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   },
   {
     "university": "Vikram University",
@@ -1285,6 +4389,318 @@
     "url": "https://vikramuniv.ac.in/page/syllabus",
     "date": null,
     "category": "syllabus",
-    "scrape_index_date": "2026-04-15"
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (B Ed Syllabus 2025 26)",
+    "url": "https://vikramuniv.ac.in/uploads/gallery/B.Ed.%20Syllabus%202025-26.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (Integreated MBA syllabus Final approved)",
+    "url": "https://www.vikramuniv.ac.in/uploads/syllabus/Integreated_MBA_syllabus_Final_approved.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (MA Sanskrit)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/MA_Sanskrit.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (MA MSC MILITARY SCIENCE SYLLABUS 2024 25)",
+    "url": "https://www.vikramuniv.ac.in/uploads/syllabus/MA_MSC_MILITARY_SCIENCE_SYLLABUS_2024-25.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (B A LL B Hons 2023 24 Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/B.A.LL.B._Hons.__2023-24_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (MA History Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/MA_History_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (Ph D Course Work Syllabus Business Management 20)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/Ph.D._Course_Work_Syllabus__Business_Management__2023-24.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (MA EDUCATION SYLLABUS)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus//Syllabus_22-23/MA_EDUCATION_SYLLABUS.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "MBA (2025-27)",
+    "url": "https://vikramuniv.ac.in/uploads/gallery/media/1758117562-163135760768cabeba2a490!MBA_Syllabus_2025-27_compressed.pdf?1758117564",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (B A Hons Jyotirvigyan Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/B.A.Hons_Jyotirvigyan_Syllabus.",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M A Vaidik Adhyayan Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.A._Vaidik_Adhyayan_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M A Jyotirvigyan Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.A.Jyotirvigyan_Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (Exam Scheme 1 st year)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/Exam.Scheme_1_st_year.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (1 New Format NEP BA)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/1._New_Format_NEP_BA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (2 New Format NEP BSc)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/2._New_Format_NEP_BSc.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (3 New Format NEP BScHome Sc 1)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/3._New_Format_NEP_BScHome_Sc_1.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (4 New Format NEP BCom)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/4._New_Format_NEP_BCom.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (6 New Format NEP BCA)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/6._New_Format_NEP_BCA.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (Correction in B Ed Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/Correction_in_B.Ed._Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M Ed Syllabus)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.Ed.Syllabus.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/B.C.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (B Sc Hons Computer Science)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/B.Sc._Hons._Computer_Science.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M Sc Computer Science with Data Science)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.Sc._Computer_Science_with_Data_Science.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M Sc Computer Science with Information Security)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.Sc._Computer_Science_with_Information_Security.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M Sc Information Technology)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.Sc._Information_Technology.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (MSc Computer Science with AI and ML)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/MSc._Computer_Science_with_AI_and_ML.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (PGDCSA AI and Machine Learning)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/PGDCSA_AI_and_Machine_Learning.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (PGDCSA Data Science)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/PGDCSA_Data_Science.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (PGDCSAWeb Development and Software Testing)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/PGDCSAWeb_Development_and_Software_Testing.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (LIBRARY AND INFORMATION SCIENCE SYLLABUS)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/LIBRARY_AND_INFORMATION_SCIENCE_SYLLABUS.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (YOGA Syllabus 1)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/YOGA_Syllabus_1.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (Philosophy Syllabus II)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/Philosophy_Syllabus_II.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (PGD ADVANCED MYCOLOGY)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/PGD-ADVANCED_MYCOLOGY.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (CERTI IN FOOD PROCESSING)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/CERTI-IN-FOOD-PROCESSING.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (CERTI IN FOOD ADULTERATION)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/CERTI-IN-FOOD-ADULTERATION.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (CERTI IN MILK ADULTERATION)",
+    "url": "http://vikramuniv.ac.in/uploads/syllabus/CERTI-IN-MILK-ADULTERATION.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (B sc hons For)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/B.sc_hons_For.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M Sc Food Technology For UTD)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.Sc.Food_Technology__For_UTD_.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
+  },
+  {
+    "university": "Vikram University",
+    "title": "View PDF (M sc For)",
+    "url": "https://vikramuniv.ac.in/uploads/syllabus/M.sc__For.pdf",
+    "date": null,
+    "category": "syllabus",
+    "scrape_index_date": "2026-04-21"
   }
 ]
