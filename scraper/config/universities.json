@@ -202,7 +202,7 @@
     ]
   },
   {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya",
+    "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "url": "https://dhsgsu.edu.in/index.php/en/",
     "enabled": true,
     "type": "Central",
@@ -389,7 +389,7 @@
     "parser": "mp_portal"
   },
   {
-    "university": "LNCT University",
+    "university": "LNCT UNIVERSITY BHOPAL",
     "url": "https://lnctu.ac.in/",
     "enabled": true,
     "type": "Private",
@@ -733,13 +733,20 @@
     "url": "https://cuc.ac.in/",
     "enabled": true,
     "type": "State",
-    "parser": "mp_portal"
+    "parser": "mp_portal",
+    "seed_urls": [
+      "https://cuc.ac.in/time-table/",
+      "http://rssuniversity.emdoar.com/",
+      "https://cuc.ac.in/important-news/",
+      "https://cuc.mponline.gov.in/Portal/Services/CU/Service.aspx",
+      "https://cuc.ac.in/phd-syllabus/#"
+    ]
   },
   {
     "university": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
     "url": "https://www.rgpvdiploma.in/",
     "enabled": true,
-    "type": "state",
+    "type": "State",
     "parsers": [
       "mp_portal",
       "rgpv"
@@ -895,7 +902,10 @@
     "url": "https://www.shubhamuniversity.com/",
     "enabled": true,
     "type": "Private",
-    "parser": "mp_portal"
+    "parser": "mp_portal",
+    "seed_urls": [
+      "http://sm.shubhamuniversity.net/"
+    ]
   },
   {
     "university": "Sri Aurobindo University",

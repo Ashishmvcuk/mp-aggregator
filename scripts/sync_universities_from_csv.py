@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild scraper config (and intermediate JSON) from ALL MP UNIVERSITY DETAILS.csv.
+"""Rebuild scraper + UI config JSON from ALL MP UNIVERSITY DETAILS.csv.
 
 The CSV is the canonical source of university URLs. Running this script will:
 
@@ -9,6 +9,9 @@ The CSV is the canonical source of university URLs. Running this script will:
    ``WEBSITES`` column as each entry's primary ``url`` and the remaining URL
    columns (TIME TABLE, RESULTS, NEWS & NOTIFICATIONS, ADMIT CARD, STUDENT
    LOGIN, Scheme/Syllabus) as deduped ``seed_urls``.
+3. Regenerate ``website/public/data/universities.json`` (the file the UI's
+   "University type" / "University" dropdowns read), sorted alphabetically
+   and with ``type`` values normalized to canonical casing.
 
 Special parser overrides (davv, rgpv) are preserved based on university name.
 """
@@ -24,9 +27,41 @@ from typing import Any
 from urllib.parse import urlparse
 
 REPO = Path(__file__).resolve().parents[1]
-DEFAULT_CSV = REPO / "ALL MP UNIVERSITY DETAILS.csv"
 DEFAULT_DETAILS = REPO / "all_mp_university_details.json"
 DEFAULT_CONFIG = REPO / "scraper" / "config" / "universities.json"
+DEFAULT_WEBSITE_UNIVERSITIES = REPO / "website" / "public" / "data" / "universities.json"
+
+
+def _default_csv() -> Path:
+    """Pick the most recently modified ``ALL MP UNIVERSITY DETAILS*.csv`` in the repo root.
+
+    Falls back to the plain ``ALL MP UNIVERSITY DETAILS.csv`` if no dated
+    variants exist. This lets the user drop a new dated CSV (e.g.
+    ``ALL MP UNIVERSITY DETAILS-CSV- 22 APRIL.csv``) and re-run without
+    touching command-line flags.
+    """
+    candidates = sorted(
+        REPO.glob("ALL MP UNIVERSITY DETAILS*.csv"),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    )
+    return candidates[0] if candidates else REPO / "ALL MP UNIVERSITY DETAILS.csv"
+
+
+DEFAULT_CSV = _default_csv()
+
+# Canonical spellings used by the UI dropdown. Any CSV value whose normalized
+# form matches an entry here is rewritten to the canonical casing (e.g.
+# ``"state"`` -> ``"State"``) so the dropdown does not show duplicates.
+TYPE_CANONICAL = {
+    "private": "Private",
+    "state": "State",
+    "central": "Central",
+    "deemed to be universities": "Deemed to be Universities",
+    "deemed to be university": "Deemed to be Universities",
+    "deemed university": "Deemed to be Universities",
+    "deemed": "Deemed to be Universities",
+}
 
 CSV_URL_COLUMNS = (
     ("time_table_url", "TIME TABLE"),
@@ -46,6 +81,14 @@ NAME_FALLBACKS_BY_WEBSITE: dict[str, str] = {
 
 def _norm_name(s: str | None) -> str:
     return re.sub(r"\s+", " ", (s or "").lower().strip())
+
+
+def _canonical_type(raw: str) -> str:
+    """Normalize a CSV ``Type`` value to canonical casing for the UI dropdown."""
+    key = re.sub(r"\s+", " ", (raw or "").strip().lower())
+    if not key:
+        return ""
+    return TYPE_CANONICAL.get(key, (raw or "").strip())
 
 
 def _parsers_for(name: str) -> list[str] | None:
@@ -125,7 +168,7 @@ def parse_csv(csv_path: Path) -> list[dict[str, Any]]:
             continue
         entry: dict[str, Any] = {
             "sr_no": int(r["Sr.No"].strip()),
-            "type": (r.get("Type") or "").strip(),
+            "type": _canonical_type(r.get("Type") or ""),
             "name": name,
             "website": website,
         }
@@ -138,6 +181,28 @@ def parse_csv(csv_path: Path) -> list[dict[str, Any]]:
         entry["status"] = (r.get("Status") or "").strip()
         details.append(entry)
     return details
+
+
+def build_website_universities(details: list[dict[str, Any]]) -> list[dict[str, str]]:
+    """Minimal shape consumed by ``useDashboardFeeds`` / UI dropdowns.
+
+    Fields: ``name``, ``university`` (backward-compat alias), ``url``, ``type``.
+    Sorted alphabetically by university name (case-insensitive), matching
+    ``scraper.utils.file_ops.sync_universities_directory_to_website``.
+    """
+    out: list[dict[str, str]] = []
+    for d in details:
+        uni = (d.get("name") or "").strip()
+        url = (d.get("website") or "").strip()
+        if not uni or not url:
+            continue
+        row: dict[str, str] = {"name": uni, "university": uni, "url": url}
+        t = (d.get("type") or "").strip()
+        if t:
+            row["type"] = t
+        out.append(row)
+    out.sort(key=lambda x: x["university"].lower())
+    return out
 
 
 def build_config(details: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -184,7 +249,13 @@ def _validate_http_urls(config: list[dict[str, Any]]) -> list[str]:
     return issues
 
 
-def run(csv_path: Path, details_path: Path, config_path: Path, dry_run: bool) -> int:
+def run(
+    csv_path: Path,
+    details_path: Path,
+    config_path: Path,
+    website_path: Path,
+    dry_run: bool,
+) -> int:
     if not csv_path.is_file():
         raise SystemExit(f"CSV not found: {csv_path}")
 
@@ -193,6 +264,7 @@ def run(csv_path: Path, details_path: Path, config_path: Path, dry_run: bool) ->
         raise SystemExit("No university rows parsed from CSV")
 
     config = build_config(details)
+    website = build_website_universities(details)
     issues = _validate_http_urls(config)
     if issues:
         print(f"Found {len(issues)} URL issue(s):")
@@ -204,6 +276,13 @@ def run(csv_path: Path, details_path: Path, config_path: Path, dry_run: bool) ->
     print(f"Parsed {len(details)} universities from {csv_path.name}")
     total_seeds = sum(len(e.get("seed_urls") or []) for e in config)
     print(f"Generated config: {len(config)} entries, {total_seeds} total seed URL(s)")
+
+    type_counts: dict[str, int] = {}
+    for e in website:
+        type_counts[e.get("type", "") or "(blank)"] = type_counts.get(e.get("type", "") or "(blank)", 0) + 1
+    print(f"Website universities.json: {len(website)} entries, types:")
+    for t, n in sorted(type_counts.items(), key=lambda kv: (-kv[1], kv[0])):
+        print(f"  - {t}: {n}")
 
     if dry_run:
         print("Dry run — not writing")
@@ -218,6 +297,12 @@ def run(csv_path: Path, details_path: Path, config_path: Path, dry_run: bool) ->
         json.dump(config, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print(f"Wrote {config_path}")
+
+    website_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(website_path, "w", encoding="utf-8") as f:
+        json.dump(website, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"Wrote {website_path}")
     return 0
 
 
@@ -226,9 +311,10 @@ def main() -> None:
     ap.add_argument("--csv", type=Path, default=DEFAULT_CSV)
     ap.add_argument("--details", type=Path, default=DEFAULT_DETAILS)
     ap.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    ap.add_argument("--website", type=Path, default=DEFAULT_WEBSITE_UNIVERSITIES)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    raise SystemExit(run(args.csv, args.details, args.config, args.dry_run))
+    raise SystemExit(run(args.csv, args.details, args.config, args.website, args.dry_run))
 
 
 if __name__ == "__main__":
