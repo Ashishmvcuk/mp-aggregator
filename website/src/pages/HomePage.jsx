@@ -4,6 +4,7 @@ import { DashboardChart } from '../components/DashboardChart'
 import { FeedList } from '../components/FeedList'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
+import { JoinChannelsBanner } from '../components/JoinChannelsBanner'
 import { ResultsList } from '../components/ResultsList'
 import { ResultsTicker } from '../components/ResultsTicker'
 import { SearchBar } from '../components/SearchBar'
@@ -38,6 +39,7 @@ export function HomePage() {
     <div className="home-page">
       <Header />
       <ResultsTicker results={items} loading={loading} />
+      <JoinChannelsBanner />
       <main className="home-page__main">
         <div className="home-page__container">
           <div className="home-page__layout">

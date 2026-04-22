@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useScrapeMeta } from '../context/ScrapeMetaContext'
 import { formatScrapedAtUtc } from '../utils/scrapeMetaFormat'
 import { SectionNavLink } from './SectionNavLink'
+import { SocialChannels } from './SocialChannels'
 import './Header.css'
 
 export function Header() {
@@ -23,6 +24,9 @@ export function Header() {
               decoding="async"
             />
           </Link>
+          <div className="sr-header__socials">
+            <SocialChannels size="md" />
+          </div>
           <Link className="sr-header__logo" to="/">
             All MP UNIVERSITY UPDATES <span className="sr-header__reg">®</span>
           </Link>

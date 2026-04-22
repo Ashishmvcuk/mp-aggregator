@@ -14,7 +14,7 @@
   margin: 0 auto;
   position: relative;
   padding-left: clamp(92px, 16vw, 144px);
-  min-height: clamp(86px, 15vw, 132px);
+  padding-right: clamp(92px, 16vw, 144px);
 }
 
 .sr-header__brand-mark {
@@ -27,6 +27,24 @@
   justify-content: center;
   line-height: 0;
   z-index: 2;
+}
+
+.sr-header__socials {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .sr-header__socials {
+    top: 0.4rem;
+    right: 0.35rem;
+    transform: none;
+  }
 }
 
 .sr-header__brand-img {
@@ -45,6 +63,7 @@
 
   .sr-header__inner {
     padding-left: 86px;
+    padding-right: 86px;
     min-height: 84px;
   }
 
@@ -117,6 +136,9 @@
 
 .sr-header__nav-inner {
   padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 0;
 }
 
 .sr-header__menu {
