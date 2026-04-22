@@ -71,6 +71,18 @@ export function HomePage() {
                 <Link to="/admit-cards" className="home-page__intro-link">
                   Full admit list
                 </Link>
+                {' · '}
+                <Link to="/news" className="home-page__intro-link">
+                  Full news
+                </Link>
+                {' · '}
+                <Link to="/results" className="home-page__intro-link">
+                  Full results
+                </Link>
+                {' · '}
+                <Link to="/syllabus" className="home-page__intro-link">
+                  Full syllabus
+                </Link>
               </p>
 
               {!feeds.loading && (typeOptions.length > 0 || universityOptions.length > 0) && (
@@ -156,6 +168,7 @@ export function HomePage() {
                   <ResultsList
                     results={filtered}
                     emptyMessage="No results with an announced date match your search or filters."
+                    footer={<Link to="/results">Open full MP university results page →</Link>}
                   />
                 </>
               )}
@@ -168,10 +181,10 @@ export function HomePage() {
                 <FeedList
                   id="latest-news"
                   title="Latest news & notices"
-                  subtitle="From the last 30 days. Official university links only."
                   items={feeds.newsLast30Days}
                   emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
                   showAnnouncedDate={false}
+                  footer={<Link to="/news">Open full news & notices page →</Link>}
                 />
               )}
 
@@ -196,6 +209,7 @@ export function HomePage() {
                     title="Syllabus & schemes"
                     items={feeds.syllabusSorted}
                     emptyMessage="No syllabus links in data yet — sync scraper output to website/public/data/syllabus.json."
+                    footer={<Link to="/syllabus">Open full syllabus & schemes page →</Link>}
                   />
                   <FeedList
                     id="blogs"

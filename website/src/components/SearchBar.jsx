@@ -65,6 +65,26 @@ export function SearchBar({
             aria-controls={`${id}-suggestions`}
             aria-autocomplete="list"
           />
+          {universityNames.length > 0 && (
+            <select
+              id={`${id}-university`}
+              className="sr-search__select"
+              aria-label="Filter by university"
+              value={universityNames.includes(value) ? value : ''}
+              onChange={(e) => {
+                setOpen(false)
+                onChange(e.target.value)
+              }}
+              disabled={disabled}
+            >
+              <option value="">All universities ({universityNames.length})</option>
+              {universityNames.map((u) => (
+                <option key={u} value={u}>
+                  {u}
+                </option>
+              ))}
+            </select>
+          )}
           <span className="sr-search__hint">Live filter · suggestions</span>
         </div>
         {showPanel && (

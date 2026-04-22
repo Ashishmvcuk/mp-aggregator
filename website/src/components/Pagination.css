@@ -1,0 +1,90 @@
+.sr-pager {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid #eee;
+}
+
+.sr-pager__range {
+  font-size: 0.82rem;
+  color: #444;
+}
+
+.sr-pager__range strong {
+  color: #5c0606;
+  font-weight: 800;
+}
+
+.sr-pager__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.sr-pager__btn {
+  min-width: 2.1rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #3a0303;
+  background: #fff;
+  border: 1px solid #c8b9b9;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.sr-pager__btn:hover:not(:disabled),
+.sr-pager__btn:focus-visible:not(:disabled) {
+  background: #fff1f1;
+  border-color: #8e1518;
+  outline: 2px solid transparent;
+}
+
+.sr-pager__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sr-pager__btn--active {
+  color: #fff;
+  background: linear-gradient(180deg, #8e1518 0%, #5c0606 100%);
+  border-color: #4a0505;
+  box-shadow: 0 2px 6px rgba(92, 6, 6, 0.28);
+}
+
+.sr-pager__btn--active:hover,
+.sr-pager__btn--active:focus-visible {
+  background: linear-gradient(180deg, #a31a1d 0%, #6f0707 100%);
+  color: #fff;
+}
+
+.sr-pager__btn--step {
+  font-weight: 700;
+}
+
+.sr-pager__gap {
+  padding: 0 0.25rem;
+  color: #888;
+  font-weight: 700;
+  user-select: none;
+  align-self: center;
+}
+
+@media (max-width: 520px) {
+  .sr-pager {
+    justify-content: center;
+  }
+
+  .sr-pager__range {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}

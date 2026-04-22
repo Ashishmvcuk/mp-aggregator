@@ -1,0 +1,115 @@
+.listing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e8;
+}
+
+.listing-page__main {
+  flex: 1;
+  padding: 0.75rem 0.65rem 1.25rem;
+}
+
+.listing-page__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.listing-page__crumb {
+  font-size: 0.82rem;
+  margin-bottom: 0.5rem;
+}
+
+.listing-page__crumb a {
+  font-weight: 800;
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+.listing-page__h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1a1a1a;
+}
+
+.listing-page__lead {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+.listing-page__banner {
+  padding: 0.65rem 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 2px solid;
+}
+
+.listing-page__banner--error {
+  background: #ffebee;
+  border-color: #c62828;
+  color: #b71c1c;
+}
+
+.listing-page__loading {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5c0606;
+  background: #fff;
+  border: 2px dashed #999;
+}
+
+/* Full-page listings: let the page scroll instead of trapping the table
+   inside a short inner scrollbox. */
+.listing-page .feed-board__scroll,
+.listing-page .results-board__scroll {
+  max-height: none;
+  overflow: visible;
+}
+
+.listing-page .feed-table thead .feed-table__th,
+.listing-page .results-table thead .results-table__th {
+  position: static;
+  box-shadow: none;
+}
+
+/* Compact typography inside full-page listing tables. */
+.listing-page .feed-table,
+.listing-page .results-table {
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.listing-page .feed-table__th,
+.listing-page .results-table__th {
+  font-size: 0.64rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.listing-page .feed-table__td,
+.listing-page .results-table__cell {
+  padding: 0.45rem 0.5rem;
+}
+
+.listing-page .feed-table__link,
+.listing-page .results-table__link {
+  font-size: 0.62rem;
+  min-height: 1.85rem;
+  padding: 0.3rem 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .listing-page .feed-table,
+  .listing-page .results-table {
+    font-size: 0.76rem;
+  }
+}

@@ -4,12 +4,12 @@ import { FeedList } from '../components/FeedList'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { SearchBar } from '../components/SearchBar'
-import { useEnrollments } from '../hooks/useEnrollments'
+import { useNews } from '../hooks/useNews'
 import './ListingPage.css'
 
-export function EnrollmentsPage() {
+export function NewsPage() {
   const [query, setQuery] = useState('')
-  const { filtered, loading, error, universityNames, titleSuggestions } = useEnrollments(query)
+  const { filtered, loading, error, universityNames, titleSuggestions } = useNews(query)
 
   return (
     <div className="listing-page">
@@ -19,14 +19,17 @@ export function EnrollmentsPage() {
           <nav className="listing-page__crumb" aria-label="Breadcrumb">
             <Link to="/">Dashboard</Link>
             <span aria-hidden> / </span>
-            <span>Enrollments & admissions</span>
+            <span>News & notices</span>
           </nav>
 
-          <h1 className="listing-page__h1">Enrollment & admissions</h1>
+          <h1 className="listing-page__h1">Latest news & notices</h1>
+          <p className="listing-page__lead">
+            Aggregated notices from configured MP university portals. Always confirm details on the official site.
+          </p>
 
           <SearchBar
-            id="enrollments-search"
-            label="Search by university or title"
+            id="news-search"
+            label="Search news by university or title"
             value={query}
             onChange={setQuery}
             placeholder="Search by university or title…"
@@ -43,15 +46,15 @@ export function EnrollmentsPage() {
 
           {loading ? (
             <p className="listing-page__loading" role="status">
-              Loading enrollments…
+              Loading news…
             </p>
           ) : (
             <FeedList
-              id="enrollments-list"
-              title="All enrollment & admission links"
+              id="news-list"
+              title="All news & notices"
               items={filtered}
-              emptyMessage="No enrollments match your search, or none have been scraped yet — run the scraper and sync enrollments.json."
-              disableMobileCollapse
+              emptyMessage="No news matches your search, or none are on file yet."
+              showAnnouncedDate={false}
               pageSize={20}
               paginated
             />

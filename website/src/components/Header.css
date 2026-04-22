@@ -12,6 +12,50 @@
 .sr-header__inner {
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  padding-left: clamp(92px, 16vw, 144px);
+  min-height: clamp(86px, 15vw, 132px);
+}
+
+.sr-header__brand-mark {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  z-index: 2;
+}
+
+.sr-header__brand-img {
+  width: clamp(84px, 15vw, 132px);
+  height: clamp(84px, 15vw, 132px);
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
+}
+
+@media (max-width: 640px) {
+  .sr-header__brand-band {
+    padding: 0.55rem 0.6rem 0.7rem;
+  }
+
+  .sr-header__inner {
+    padding-left: 86px;
+    min-height: 84px;
+  }
+
+  .sr-header__brand-mark {
+    left: 0.2rem;
+  }
+
+  .sr-header__brand-img {
+    width: 84px;
+    height: 84px;
+  }
 }
 
 .sr-header__logo {

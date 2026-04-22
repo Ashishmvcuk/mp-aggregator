@@ -12,6 +12,17 @@ export function Header() {
     <header className="sr-header">
       <div className="sr-header__brand-band">
         <div className="sr-header__inner">
+          <Link className="sr-header__brand-mark" to="/" aria-label="All MP University Updates home">
+            <img
+              src="/logo.png?v=3"
+              alt="All MP University Updates logo"
+              className="sr-header__brand-img"
+              width="132"
+              height="132"
+              loading="eager"
+              decoding="async"
+            />
+          </Link>
           <Link className="sr-header__logo" to="/">
             All MP UNIVERSITY UPDATES <span className="sr-header__reg">®</span>
           </Link>

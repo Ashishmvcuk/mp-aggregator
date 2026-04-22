@@ -1,5 +1,11 @@
 .results-board {
+  margin-top: 1rem;
   margin-bottom: 1.25rem;
+  padding: 0.85rem 0.85rem 1rem;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  box-shadow: 0 6px 28px rgba(45, 20, 20, 0.07);
 }
 
 .results-board__title {
@@ -22,6 +28,24 @@
   color: #555;
   line-height: 1.5;
   padding: 0 0.15rem;
+}
+
+.results-board__footer {
+  margin-top: 0.75rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #eee;
+  font-size: 0.88rem;
+}
+
+.results-board__footer a {
+  font-weight: 800;
+  color: #1565c0;
+  text-decoration: none;
+}
+
+.results-board__footer a:hover {
+  color: #5c0606;
+  text-decoration: underline;
 }
 
 .results-board__empty {

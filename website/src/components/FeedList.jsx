@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useIsMobileLayout } from '../hooks/useIsMobileLayout'
 import { formatAnnouncedDate } from '../utils/formatDate'
+import { Pagination } from './Pagination'
 import './FeedList.css'
 import './MobileCollapsibleTable.css'
 
@@ -17,6 +18,7 @@ import './MobileCollapsibleTable.css'
  *   loadMoreIncrement?: number
  *   tallScroll?: boolean
  *   showAnnouncedDate?: boolean
+ *   paginated?: boolean
  * }} props
  */
 export function FeedList({
@@ -31,6 +33,7 @@ export function FeedList({
   loadMoreIncrement = 20,
   tallScroll = false,
   showAnnouncedDate = true,
+  paginated = false,
 }) {
   const headingId = id ? `${id}-heading` : undefined
   const mobile = useIsMobileLayout()
@@ -39,18 +42,37 @@ export function FeedList({
 
   /** How many times user clicked "Load more" after the first page. */
   const [extraLoadBatches, setExtraLoadBatches] = useState(0)
+  /** Current 1-based page when paginated. */
+  const [page, setPage] = useState(1)
 
   useEffect(() => {
     setExtraLoadBatches(0)
+    setPage(1)
   }, [items])
 
-  const visibleCap =
-    pageSize > 0
-      ? Math.min(items.length, pageSize + extraLoadBatches * loadMoreIncrement)
-      : items.length
-  const displayItems = pageSize > 0 ? items.slice(0, visibleCap) : items
-  const canLoadMore = pageSize > 0 && visibleCap < items.length
-  const remaining = pageSize > 0 ? Math.max(0, items.length - visibleCap) : 0
+  const usePaginator = paginated && pageSize > 0
+  const pageCount = usePaginator ? Math.max(1, Math.ceil(items.length / pageSize)) : 1
+  const safePage = Math.min(page, pageCount)
+
+  let displayItems
+  let visibleCap
+  let canLoadMore = false
+  let remaining = 0
+
+  if (usePaginator) {
+    const start = (safePage - 1) * pageSize
+    const end = Math.min(items.length, start + pageSize)
+    displayItems = items.slice(start, end)
+    visibleCap = end
+  } else if (pageSize > 0) {
+    visibleCap = Math.min(items.length, pageSize + extraLoadBatches * loadMoreIncrement)
+    displayItems = items.slice(0, visibleCap)
+    canLoadMore = visibleCap < items.length
+    remaining = Math.max(0, items.length - visibleCap)
+  } else {
+    displayItems = items
+    visibleCap = items.length
+  }
 
   const loadMore = () => {
     setExtraLoadBatches((b) => b + 1)
@@ -128,8 +150,19 @@ export function FeedList({
       </div>
     ) : null
 
+  const paginationNode = usePaginator && hasItems ? (
+    <Pagination
+      page={safePage}
+      pageCount={pageCount}
+      onChange={setPage}
+      totalItems={items.length}
+      pageSize={pageSize}
+      label={`${title} pagination`}
+    />
+  ) : null
+
   const countNote =
-    pageSize > 0 && hasItems ? (
+    pageSize > 0 && hasItems && !usePaginator ? (
       <p className="feed-board__count" role="status">
         Showing {displayItems.length} of {items.length}
       </p>
@@ -157,6 +190,7 @@ export function FeedList({
             {countNote}
             {tableBlock}
             {loadMoreNode}
+            {paginationNode}
             {footerNode}
           </div>
         </details>
@@ -173,6 +207,7 @@ export function FeedList({
       {countNote}
       {tableBlock}
       {loadMoreNode}
+      {paginationNode}
       {footerNode}
     </section>
   )

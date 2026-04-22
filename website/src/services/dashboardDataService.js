@@ -85,6 +85,22 @@ export async function loadAdmitCards() {
   return mergeWithManual(manual, staticItems, 'url')
 }
 
+export async function loadNews() {
+  const [staticItems, manual] = await Promise.all([
+    fetchJsonArray('data/news.json'),
+    loadAllManualGroupedCached().then((m) => m.news || []),
+  ])
+  return mergeWithManual(manual, staticItems, 'url')
+}
+
+export async function loadSyllabus() {
+  const [staticItems, manual] = await Promise.all([
+    fetchJsonArray('data/syllabus.json'),
+    loadAllManualGroupedCached().then((m) => m.syllabus || []),
+  ])
+  return mergeWithManual(manual, staticItems, 'url')
+}
+
 export async function loadEnrollments() {
   const [staticItems, manual] = await Promise.all([
     fetchJsonArray('data/enrollments.json'),

@@ -6,11 +6,12 @@ import './MobileCollapsibleTable.css'
 const RESULTS_TITLE = 'Latest MP university results'
 
 /**
- * @param {{ results: Array<{ university: string; title: string; result_url: string; date?: string; scrape_index_date?: string }>; emptyMessage?: string }} props
+ * @param {{ results: Array<{ university: string; title: string; result_url: string; date?: string; scrape_index_date?: string }>; emptyMessage?: string; footer?: import('react').ReactNode }} props
  */
-export function ResultsList({ results, emptyMessage = 'No results match your search.' }) {
+export function ResultsList({ results, emptyMessage = 'No results match your search.', footer = null }) {
   const mobile = useIsMobileLayout()
   const hasItems = results.length > 0
+  const footerNode = footer ? <div className="results-board__footer">{footer}</div> : null
 
   const tableBlock =
     results.length === 0 ? (
@@ -74,6 +75,7 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
           </summary>
           <div className="table-collapse__inner">
             {tableBlock}
+            {footerNode}
           </div>
         </details>
       </section>
@@ -86,6 +88,7 @@ export function ResultsList({ results, emptyMessage = 'No results match your sea
         {RESULTS_TITLE}
       </h2>
       {tableBlock}
+      {footerNode}
     </section>
   )
 }

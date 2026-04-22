@@ -5,25 +5,25 @@ import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { SearchBar } from '../components/SearchBar'
 import { useAdmitCards } from '../hooks/useAdmitCards'
-import './AdmitCardsPage.css'
+import './ListingPage.css'
 
 export function AdmitCardsPage() {
   const [query, setQuery] = useState('')
   const { filtered, loading, error, universityNames, titleSuggestions } = useAdmitCards(query)
 
   return (
-    <div className="admit-page">
+    <div className="listing-page">
       <Header />
-      <main className="admit-page__main">
-        <div className="admit-page__container">
-          <nav className="admit-page__crumb" aria-label="Breadcrumb">
+      <main className="listing-page__main">
+        <div className="listing-page__container">
+          <nav className="listing-page__crumb" aria-label="Breadcrumb">
             <Link to="/">Dashboard</Link>
             <span aria-hidden> / </span>
             <span>Admit cards</span>
           </nav>
 
-          <h1 className="admit-page__h1">Admit cards & hall tickets</h1>
-          <p className="admit-page__lead">
+          <h1 className="listing-page__h1">Admit cards & hall tickets</h1>
+          <p className="listing-page__lead">
             Aggregated links from configured MP university portals. Always confirm details on the official site.
           </p>
 
@@ -39,13 +39,13 @@ export function AdmitCardsPage() {
           />
 
           {error && (
-            <div className="admit-page__banner admit-page__banner--error" role="alert">
+            <div className="listing-page__banner listing-page__banner--error" role="alert">
               {error}
             </div>
           )}
 
           {loading ? (
-            <p className="admit-page__loading" role="status">
+            <p className="listing-page__loading" role="status">
               Loading admit cards…
             </p>
           ) : (
@@ -54,6 +54,8 @@ export function AdmitCardsPage() {
               title="All admit cards"
               items={filtered}
               emptyMessage="No admit cards with an announced date match your search, or none are on file yet."
+              pageSize={20}
+              paginated
             />
           )}
         </div>
