@@ -55,11 +55,6 @@ export function Header() {
               </SectionNavLink>
             </li>
             <li>
-              <SectionNavLink hashId="landing-jobs" className="sr-header__nav-link">
-                Jobs
-              </SectionNavLink>
-            </li>
-            <li>
               <SectionNavLink hashId="landing-admit" className="sr-header__nav-link">
                 Admit cards
               </SectionNavLink>

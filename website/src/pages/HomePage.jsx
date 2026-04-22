@@ -56,10 +56,6 @@ export function HomePage() {
                   University portals
                 </SectionNavLink>
                 {' · '}
-                <SectionNavLink hashId="landing-jobs" className="home-page__intro-link">
-                  Jobs
-                </SectionNavLink>
-                {' · '}
                 <SectionNavLink hashId="latest-results" className="home-page__intro-link">
                   Results
                 </SectionNavLink>
@@ -166,26 +162,17 @@ export function HomePage() {
 
               {feeds.loading ? (
                 <p className="home-page__loading home-page__loading--secondary" role="status">
-                  Loading news, enrollments, jobs, syllabus, and admit cards…
+                  Loading news, enrollments, syllabus, and admit cards…
                 </p>
               ) : (
-                <>
-                  <FeedList
-                    id="latest-news"
-                    title="Latest news & notices"
-                    subtitle="From the last 30 days. Official university links only."
-                    items={feeds.newsLast30Days}
-                    emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
-                    showAnnouncedDate={false}
-                  />
-                  <FeedList
-                    id="landing-jobs"
-                    title="Latest jobs & recruitment"
-                    items={feeds.jobsSorted}
-                    emptyMessage="No job links in data yet — sync scraper output to website/public/data/jobs.json."
-                    showAnnouncedDate={false}
-                  />
-                </>
+                <FeedList
+                  id="latest-news"
+                  title="Latest news & notices"
+                  subtitle="From the last 30 days. Official university links only."
+                  items={feeds.newsLast30Days}
+                  emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
+                  showAnnouncedDate={false}
+                />
               )}
 
               {!feeds.loading && (

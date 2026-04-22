@@ -1,10 +1,12 @@
 import './SidebarQuickLinks.css'
 
 const LINKS = [
-  { label: 'RGPV', term: 'RGPV' },
-  { label: 'DAVV', term: 'DAVV' },
-  { label: 'Jiwaji University', term: 'Jiwaji' },
   { label: 'Barkatullah University', term: 'Barkatullah' },
+  { label: 'RGPV', term: 'RGPV' },
+  { label: 'Raja Shankar Shah University, Chhindwara', term: 'Raja Shankar Shah' },
+  { label: 'DAVV', term: 'DAVV' },
+  { label: 'Rani Durgavati Vishwavidyalaya', term: 'Rani Durgavati' },
+  { label: 'Jiwaji University', term: 'Jiwaji' },
   { label: 'APSU', term: 'APSU' },
   { label: 'Vikram University', term: 'Vikram' },
 ]
