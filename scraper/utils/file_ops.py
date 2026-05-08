@@ -258,9 +258,15 @@ def read_site_package_version() -> str:
 
 
 def write_scrape_meta(summary: dict[str, Any]) -> Path:
-    """Last-run metadata for the website UI (synced to public/data/scrape_meta.json)."""
+    """Last-run metadata for the website UI (synced to public/data/scrape_meta.json).
+
+    ``scrapedAt`` is when this meta file was written (run completion / data ready), not process start.
+    ``runStartedAt`` preserves the pipeline start timestamp from ``run_summary``.
+    """
+    finished = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     payload: dict[str, Any] = {
-        "scrapedAt": summary["run_timestamp"],
+        "scrapedAt": finished,
+        "runStartedAt": summary["run_timestamp"],
         "runId": summary["run_id"],
         "scraperVersion": read_scraper_version_file(),
         "siteReleaseVersion": read_site_package_version(),

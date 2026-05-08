@@ -582,86 +582,23 @@
   },
   {
     "university": "Gyanveer University",
-    "title": "Exam time table 3rd sem M.Sc (Botany, Che, CS, Mathematics, Zoology, Microbiology, Physics) for the examination…",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=163",
-    "date": "2026-12-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table 3rd sem MA(Eco, Edu, Eng, Hindi, His, Socio, Poli Sci) for the examination session D",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=164",
-    "date": "2026-12-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table for 3rd sem MBA, MCom, MSW, MCA for the examination session Dec-2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=165",
-    "date": "2026-12-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "MSC Agriculture first sem exam time table for the examination session Dec-2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=174",
-    "date": "2026-08-03",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "DCA PGDCA first sem exam time table for the examination session Dec-2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=175",
-    "date": "2026-08-03",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "UG all courses first sem exam time table for the examination session Dec-2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=176",
-    "date": "2026-08-03",
+    "title": "Gyanveer University PG first sem all courses examination timetable for the examination session dec-2025",
+    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=177",
+    "date": "2026-03-17",
     "scrape_index_date": "2026-05-08"
   },
   {
     "university": "Gyanveer University",
     "title": "Exam time table for BPES MPES LLM 3rd sem exam for the session Dec-2025",
     "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=178",
-    "date": "2026-06-05",
+    "date": "2026-05-06",
     "scrape_index_date": "2026-05-08"
   },
   {
     "university": "Gyanveer University",
     "title": "ATKT Exam timetable for all courses (UG & PG) for the examination session Dec-2025",
     "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=179",
-    "date": "2026-06-05",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table 3rd sem B Sc Agriculture, BPharma, BALLB, LLB for the examination session Dec 2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=157",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table 3rd sem BBA, BCom, BSc, BA, BTech, BCA for the examination session Dec 2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=158",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table 5th sem B Sc Agriculture, BPharma, BALLB, LLB for the examination session Dec 2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=159",
-    "date": "2026-04-02",
-    "scrape_index_date": "2026-05-08"
-  },
-  {
-    "university": "Gyanveer University",
-    "title": "Exam time table 5th sem BCom, BBA, BSc, BA, BCA for the examination session Dec 2025",
-    "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=160",
-    "date": "2026-04-02",
+    "date": "2026-05-06",
     "scrape_index_date": "2026-05-08"
   },
   {
@@ -760,6 +697,27 @@
     "title": "क्लिक करें",
     "result_url": "https://kttv.edu.in/assets/images/notice_board/Result_Decl_06-05-2026.pdf",
     "date": "2026-05-06",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education",
+    "title": "ATKT Examination Time Table, May-2026",
+    "result_url": "https://www.lnipe.edu.in/uploads/p15/1_15_1_1_126.pdf",
+    "date": "2026-04-08",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education",
+    "title": "EXAMINATION TIME TABLE - MAY'2026 dated 08-Apr-2026",
+    "result_url": "https://www.lnipe.edu.in/uploads/p15/1_15_1_1_125.pdf",
+    "date": "2026-04-08",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education",
+    "title": "April-2026 Special Examination Time Table",
+    "result_url": "https://www.lnipe.edu.in/uploads/p15/1_15_1_1_58.pdf",
+    "date": "2026-04-08",
     "scrape_index_date": "2026-05-08"
   },
   {
@@ -921,6 +879,13 @@
     "title": "D.Pharma Examination Date Sheet –March 2026",
     "result_url": "https://pkuniversity.edu.in/wp-content/uploads/2026/03/D.Pharm_.-Date-Sheet-2025-26.pdf",
     "date": "2026-03-10",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
+    "university": "Pandit S N Shukla University",
+    "title": "B.A./B.Sc./B.Com Fourth year exam APRIL-2026 admitcard is live on UiMS login. Download exam Time Table",
+    "result_url": "https://ptsnsuniversity.ac.in/notifications/student",
+    "date": "2026-04-19",
     "scrape_index_date": "2026-05-08"
   },
   {

@@ -480,10 +480,26 @@
     "scrape_index_date": "2026-05-08"
   },
   {
+    "university": "National Law Institute University",
+    "title": "The deadline for Submission of Application form for MCLIS & Ph.D 2025-26 is extended upto 03 May 2026.",
+    "url": "https://nliu.ac.in/the-deadline-for-submission-of-application-form-for-mclis-ph-d-2025-26-is-extended-upto-03-may-2026/",
+    "date": "2026-05-03",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
     "university": "P.K. University",
     "title": "Notification for Ph.D. Admission for the Session (2026-27).Last date of application submission 15/5/26",
     "url": "https://pkuniversity.edu.in/index.php/ph-d-admissions/",
     "date": "2026-04-06",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-08"
+  },
+  {
+    "university": "Pandit S N Shukla University",
+    "title": "Ph.D. Student can apply for enrollment form using their UiMS login dashboard.",
+    "url": "https://drive.google.com/file/d/1_1LbV3rAkpjvkY67zveM7CitaBHxACA5/view",
+    "date": "2026-03-23",
     "category": "enrollments",
     "scrape_index_date": "2026-05-08"
   },
