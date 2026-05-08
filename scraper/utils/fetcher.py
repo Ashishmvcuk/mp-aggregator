@@ -3,6 +3,7 @@ from __future__ import annotations
 import logging
 import os
 import random
+import threading
 import time
 from urllib.parse import urlparse
 from typing import Optional
@@ -22,6 +23,31 @@ _RETRYABLE_STATUS = frozenset({429, 500, 502, 503, 504})
 _DEFAULT_MAX_ATTEMPTS = 3
 
 
+def _resolved_timeout(explicit: Optional[int]) -> int:
+    """Per-request override, else SCRAPER_FETCH_TIMEOUT (seconds), clamped 5–120."""
+    if explicit is not None:
+        return max(5, min(int(explicit), 120))
+    raw = os.environ.get("SCRAPER_FETCH_TIMEOUT", "").strip()
+    if not raw:
+        return DEFAULT_TIMEOUT
+    try:
+        return max(5, min(int(raw), 120))
+    except ValueError:
+        return DEFAULT_TIMEOUT
+
+
+def _fast_fail_unreachable() -> bool:
+    """
+    When true, do not retry ConnectTimeout / ConnectionError (dead DNS, refused, hung TLS).
+    Saves ~2× connect wait on CI runners where many university hosts never respond.
+    """
+    return os.environ.get("SCRAPER_FETCH_FAST_FAIL_CONNECT", "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+
+
 def _max_fetch_attempts() -> int:
     """Upper bound on GET attempts per URL (no infinite retries). Default 3; override via SCRAPER_FETCH_MAX_ATTEMPTS."""
     raw = os.environ.get("SCRAPER_FETCH_MAX_ATTEMPTS", str(_DEFAULT_MAX_ATTEMPTS)).strip()
@@ -30,6 +56,8 @@ def _max_fetch_attempts() -> int:
     except ValueError:
         n = _DEFAULT_MAX_ATTEMPTS
     return max(1, min(n, 10))
+
+
 _DEFAULT_INSECURE_TLS_HOSTS = frozenset(
     {
         "www.dauniv.ac.in",
@@ -41,16 +69,17 @@ _DEFAULT_INSECURE_TLS_HOSTS = frozenset(
     }
 )
 
-_SESSION: requests.Session | None = None
+_tls = threading.local()
 
 
 def _get_session() -> requests.Session:
-    global _SESSION
-    if _SESSION is None:
-        s = requests.Session()
-        s.headers.update({"User-Agent": USER_AGENT})
-        _SESSION = s
-    return _SESSION
+    """Thread-local Session — safe for SCRAPER_FETCH_WORKERS > 1 (requests.Session is not thread-safe)."""
+    sess: requests.Session | None = getattr(_tls, "session", None)
+    if sess is None:
+        sess = requests.Session()
+        sess.headers.update({"User-Agent": USER_AGENT})
+        _tls.session = sess
+    return sess
 
 
 def _backoff_sleep(attempt: int) -> None:
@@ -78,19 +107,21 @@ def _hostname(url: str) -> str:
 
 
 def fetch_html_detailed(
-    url: str, timeout: int = DEFAULT_TIMEOUT
+    url: str, timeout: Optional[int] = None
 ) -> tuple[Optional[str], Optional[str]]:
     """
     GET a URL and return (response text, None) on success, or (None, error_summary).
     Retries transient failures up to SCRAPER_FETCH_MAX_ATTEMPTS (default 3), then stops.
+    Timeout: optional per-call seconds, else SCRAPER_FETCH_TIMEOUT env (default 30).
     """
     session = _get_session()
     max_attempts = _max_fetch_attempts()
     last_err: Optional[str] = None
+    tmo = _resolved_timeout(timeout)
 
     for attempt in range(1, max_attempts + 1):
         try:
-            resp = session.get(url, timeout=timeout)
+            resp = session.get(url, timeout=tmo)
             resp.raise_for_status()
             return resp.text, None
         except requests.HTTPError as e:
@@ -117,7 +148,7 @@ def fetch_html_detailed(
                         url,
                         host,
                     )
-                    resp = session.get(url, timeout=timeout, verify=False)
+                    resp = session.get(url, timeout=tmo, verify=False)
                     resp.raise_for_status()
                     return resp.text, None
                 except requests.RequestException as e2:
@@ -125,6 +156,19 @@ def fetch_html_detailed(
                     logger.warning("Fetch failed for %s after TLS fallback: %s", url, e2)
                     return None, msg
             last_err = f"{type(e).__name__}: {e}"
+            if _fast_fail_unreachable() and isinstance(
+                e,
+                (
+                    requests.exceptions.ConnectTimeout,
+                    requests.exceptions.ConnectionError,
+                ),
+            ):
+                logger.warning(
+                    "Fetch failed for %s (fast-fail connect, no retry): %s",
+                    url,
+                    e,
+                )
+                return None, last_err
             if attempt < max_attempts:
                 logger.warning(
                     "Fetch error for %s (attempt %d/%d): %s — retrying after backoff",
@@ -140,7 +184,7 @@ def fetch_html_detailed(
     return None, last_err or "fetch failed"
 
 
-def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
+def fetch_html(url: str, timeout: Optional[int] = None) -> Optional[str]:
     """
     GET a URL and return response text. Same retry policy as fetch_html_detailed.
     """

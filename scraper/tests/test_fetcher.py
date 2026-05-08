@@ -54,6 +54,31 @@ def test_fetch_html_no_retry_on_404(mock_session):
     sess.get.assert_called_once()
 
 
+def test_fetch_html_fast_fail_connect_skips_retries(monkeypatch, mock_session):
+    monkeypatch.setenv("SCRAPER_FETCH_FAST_FAIL_CONNECT", "1")
+    sess = MagicMock()
+    sess.get.side_effect = requests.exceptions.ConnectTimeout("ct")
+    mock_session.return_value = sess
+
+    body, err = fetch_html_detailed("https://example.edu/")
+    assert body is None
+    assert err is not None
+    assert sess.get.call_count == 1
+
+
+def test_fetch_timeout_from_env(monkeypatch, mock_session):
+    monkeypatch.setenv("SCRAPER_FETCH_TIMEOUT", "12")
+    sess = MagicMock()
+    resp = MagicMock()
+    resp.text = "<html>x</html>"
+    resp.raise_for_status = MagicMock()
+    sess.get.return_value = resp
+    mock_session.return_value = sess
+
+    assert fetch_html("https://example.edu/") == "<html>x</html>"
+    sess.get.assert_called_once_with("https://example.edu/", timeout=12)
+
+
 def test_fetch_html_retries_connection_error(mock_session):
     sess = MagicMock()
     ok = MagicMock()

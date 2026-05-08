@@ -24,7 +24,7 @@ Live **`main.py`** runs apply a **recency filter** **after** parsing into normal
 
 Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`main.py`** copies it to **`website/public/data/scrape_meta.json`** when website sync is enabled (same as **`sync_to_website.py`**) so the UI “Last run” timestamp stays current.
 
-**HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a shared `requests.Session`; retries transient failures (connection errors and HTTP 429 / 5xx) up to **`SCRAPER_FETCH_MAX_ATTEMPTS`** times (default **3**) with exponential backoff and jitter, then moves on to the next URL. Each live run writes fetch audits under **`logs/success/`** (e.g. **`fetch_urls_latest.jsonl`**) and **`logs/failure/`** (e.g. **`fetch_urls_latest.jsonl`**, **`processing_exceptions_latest.jsonl`**); see **`fetch_audit`** in **`output/run_summary.json`**.
+**HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a **thread-local** `requests.Session` (safe when **`SCRAPER_FETCH_WORKERS`** is greater than **1**). Retries transient failures (HTTP 429 / 5xx) up to **`SCRAPER_FETCH_MAX_ATTEMPTS`** times (default **3**) with exponential backoff and jitter. **`main.py`** batches every configured URL and can fetch them in parallel with **`ThreadPoolExecutor`** (see **`SCRAPER_FETCH_WORKERS`**). Each live run writes fetch audits under **`logs/success/`** (e.g. **`fetch_urls_latest.jsonl`**) and **`logs/failure/`** (e.g. **`fetch_urls_latest.jsonl`**, **`processing_exceptions_latest.jsonl`**); see **`fetch_audit`** in **`output/run_summary.json`** (`fetch_workers`, **`fetch_pool_size`**).
 
 **Config** ([`config/universities.json`](config/universities.json)):
 
@@ -236,6 +236,9 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 
 - `SCRAPER_SKIP_WEBSITE_SYNC=1` — `main.py` / `run_fixtures` write `scraper/output/` but do **not** update `website/public/data/` (useful in CI before `sync_to_website.py`).
 - `SCRAPER_FETCH_MAX_ATTEMPTS` — max HTTP GET attempts **per URL** before moving on (default **3**, clamped **1–10**).
+- `SCRAPER_FETCH_TIMEOUT` — connect/read timeout in seconds for each GET attempt (default **30**, clamped **5–120**). GitHub Actions scrape workflow sets **18** to shorten runs when many hosts time out.
+- `SCRAPER_FETCH_FAST_FAIL_CONNECT` — when **`1`** / **`true`**, **do not retry** **`ConnectTimeout`** or **`ConnectionError`** (DNS/connect hangs rarely recover within backoff). Enabled in **`scrape.yml`** so each dead URL costs ~one timeout instead of ~three.
+- `SCRAPER_FETCH_WORKERS` — number of **parallel threads** for HTTP GETs across all universities’ URLs (default **1**, max **32**). GitHub Actions sets **8**. Parsing and normalization stay single-threaded after downloads finish.
 - `SCRAPER_RECENCY_DAYS` — rolling UTC window for **`main.py`** only on **normalized scraped rows** (default **60**). Items without a parseable **`date`**, or older than the cutoff, are omitted from output. Set **`0`** to disable recency filtering.
 - `SCRAPER_ITEM_LOG=1` — enable JSONL item audit logs under **`scraper/logs/`** (see [Run](#run)).
 

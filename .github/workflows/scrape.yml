@@ -27,11 +27,15 @@ concurrency:
 
 env:
   SCRAPER_SKIP_WEBSITE_SYNC: "1"
+  # Dead/unreachable hosts cost ~3× connect timeout each; fast-fail + shorter timeout keeps CI under budget.
+  SCRAPER_FETCH_FAST_FAIL_CONNECT: "1"
+  SCRAPER_FETCH_TIMEOUT: "18"
+  SCRAPER_FETCH_WORKERS: "8"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

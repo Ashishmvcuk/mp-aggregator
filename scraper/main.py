@@ -3,9 +3,10 @@ from __future__ import annotations
 import json
 import logging
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from parsers.base_parser import ensure_category_keys
 from parsers.registry import PARSER_REGISTRY
@@ -48,6 +49,15 @@ def load_universities() -> list[dict[str, Any]]:
     if not isinstance(data, list):
         raise ValueError("universities.json must be a JSON array")
     return data
+
+
+def _fetch_worker_count() -> int:
+    """Parallel HTTP threads for live scrape (SCRAPER_FETCH_WORKERS). Default 1; clamped 1–32."""
+    raw = os.environ.get("SCRAPER_FETCH_WORKERS", "1").strip()
+    try:
+        return max(1, min(int(raw), 32))
+    except ValueError:
+        return 1
 
 
 def _entry_urls(entry: dict[str, Any]) -> list[str]:
@@ -105,6 +115,8 @@ def _neutral_fetch_audit_summary() -> dict[str, Any]:
         "success_count": 0,
         "failure_count": 0,
         "processing_exceptions_count": 0,
+        "fetch_workers": 1,
+        "fetch_pool_size": 1,
         "logs": {
             "success_dir": "logs/success/",
             "failure_dir": "logs/failure/",
@@ -373,6 +385,9 @@ def run_once() -> dict[str, Any]:
         else:
             logger.info("[%s] Recency filter off (SCRAPER_RECENCY_DAYS<=0 disables)", run_id)
 
+        logger.info("[%s] SCRAPER_FETCH_WORKERS=%d", run_id, _fetch_worker_count())
+
+        works: list[dict[str, Any]] = []
         for entry in enabled:
             uni = str(entry.get("university", "")).strip()
             primary_url = str(entry.get("url", "")).strip()
@@ -400,16 +415,69 @@ def run_once() -> dict[str, Any]:
                 failures.append({"university": uni, "stage": "config", "message": "No fetch URLs"})
                 continue
 
+            works.append(
+                {
+                    "university": uni,
+                    "primary_url": primary_url,
+                    "parser_names": parser_names,
+                    "fetch_urls": fetch_urls,
+                }
+            )
+
+        fetch_workers = _fetch_worker_count()
+        flat_jobs: list[tuple[int, int, str]] = []
+        for wi, w in enumerate(works):
+            for ui, url in enumerate(w["fetch_urls"]):
+                flat_jobs.append((wi, ui, url))
+
+        fetch_results: dict[tuple[int, int], tuple[Optional[str], Optional[str]]] = {}
+
+        def _fetch_job(url: str) -> tuple[Optional[str], Optional[str]]:
+            try:
+                return fetch_html_detailed(url)
+            except Exception as fe:
+                return None, f"{type(fe).__name__}: {fe}"
+
+        if fetch_workers <= 1 or len(flat_jobs) <= 1:
+            for wi, ui, url in flat_jobs:
+                uni = works[wi]["university"]
+                logger.info("[%s] Fetch: %s (%s)", run_id, uni, url)
+                try:
+                    html, fetch_err = fetch_html_detailed(url)
+                except Exception as fe:
+                    fetch_err = f"{type(fe).__name__}: {fe}"
+                    html = None
+                    logger.warning("[%s] Fetch raised for %s (%s): %s", run_id, uni, url, fetch_err)
+                fetch_results[(wi, ui)] = (html, fetch_err)
+        else:
+            pool = min(fetch_workers, len(flat_jobs))
+            logger.info(
+                "[%s] Parallel fetch: %d URL(s), %d universities, %d worker thread(s)",
+                run_id,
+                len(flat_jobs),
+                len(works),
+                pool,
+            )
+            with ThreadPoolExecutor(max_workers=pool) as ex:
+                future_map = {ex.submit(_fetch_job, url): (wi, ui, url) for wi, ui, url in flat_jobs}
+                for fut in as_completed(future_map):
+                    wi, ui, url = future_map[fut]
+                    try:
+                        html, fetch_err = fut.result()
+                    except Exception as fe:
+                        html, fetch_err = None, f"{type(fe).__name__}: {fe}"
+                    fetch_results[(wi, ui)] = (html, fetch_err)
+
+        for wi, work in enumerate(works):
+            uni = work["university"]
+            primary_url = work["primary_url"]
+            parser_names = work["parser_names"]
+            fetch_urls = work["fetch_urls"]
+
             try:
                 html_parts: list[tuple[str, str]] = []
-                for fetch_url in fetch_urls:
-                    logger.info("[%s] Fetch: %s (%s)", run_id, uni, fetch_url)
-                    try:
-                        html, fetch_err = fetch_html_detailed(fetch_url)
-                    except Exception as fe:
-                        fetch_err = f"{type(fe).__name__}: {fe}"
-                        html = None
-                        logger.warning("[%s] Fetch raised for %s (%s): %s", run_id, uni, fetch_url, fetch_err)
+                for ui, fetch_url in enumerate(fetch_urls):
+                    html, fetch_err = fetch_results[(wi, ui)]
                     if html is not None:
                         fetch_success_rows.append(
                             {
@@ -523,6 +591,8 @@ def run_once() -> dict[str, Any]:
             "success_count": len(fetch_success_rows),
             "failure_count": len(fetch_failure_rows),
             "processing_exceptions_count": len(processing_exception_rows),
+            "fetch_workers": fetch_workers,
+            "fetch_pool_size": min(fetch_workers, len(flat_jobs)) if flat_jobs else 1,
             "logs": {
                 "success_dir": "logs/success/",
                 "failure_dir": "logs/failure/",
