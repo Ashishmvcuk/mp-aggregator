@@ -1,4 +1,10 @@
-import { TELEGRAM_CHANNEL_URL, WHATSAPP_CHANNEL_URL } from './SocialChannels'
+import {
+  INSTAGRAM_PROFILE_URL,
+  TELEGRAM_CHANNEL_URL,
+  WHATSAPP_CHANNEL_URL,
+  X_PROFILE_URL,
+} from './SocialChannels'
+import { InstagramIcon } from './icons/InstagramIcon'
 import './JoinChannelsBanner.css'
 
 function WhatsAppGlyph() {
@@ -30,6 +36,23 @@ function TelegramGlyph() {
       <path
         fill="#fff"
         d="M22.5 10.2 20.1 22c-.18.8-.66 1-1.33.62l-3.67-2.7-1.77 1.7c-.2.2-.37.37-.74.37l.26-3.7 6.74-6.1c.3-.26-.07-.4-.46-.15l-8.33 5.24-3.6-1.12c-.78-.24-.8-.78.16-1.15l14.08-5.44c.65-.23 1.22.15 1.07 1.13z"
+      />
+    </svg>
+  )
+}
+
+function XGlyph() {
+  return (
+    <svg
+      className="join-strip__glyph join-strip__glyph--x"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        fill="#fff"
+        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
       />
     </svg>
   )
@@ -69,6 +92,28 @@ export function JoinChannelsBanner() {
               <TelegramGlyph />
             </span>
             <span className="join-strip__btn-name">Join Telegram</span>
+          </a>
+          <a
+            className="join-strip__btn join-strip__btn--x"
+            href={X_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="join-strip__badge join-strip__badge--x">
+              <XGlyph />
+            </span>
+            <span className="join-strip__btn-name">Follow on X</span>
+          </a>
+          <a
+            className="join-strip__btn join-strip__btn--instagram"
+            href={INSTAGRAM_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="join-strip__badge join-strip__badge--instagram">
+              <InstagramIcon className="join-strip__glyph join-strip__glyph--instagram" />
+            </span>
+            <span className="join-strip__btn-name">Instagram</span>
           </a>
         </div>
       </div>

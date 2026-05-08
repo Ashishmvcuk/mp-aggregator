@@ -20,9 +20,11 @@ flowchart TD
   loop --> fetch --> parse --> merge --> norm --> dedupe --> val -->   write --> copy
 ```
 
+Live **`main.py`** runs apply a **recency filter** **after** parsing into normalized rows (every category): only scraped rows with a parseable announcement **`date` ≥ cutoff** are kept; **undated rows are dropped**. Portals are still fetched every run — filtering applies to **extracted link rows**, not to skipping URLs upfront. Default window: **60** UTC calendar days. Set **`SCRAPER_RECENCY_DAYS=0`** to disable. **`run_fixtures`** does **not** apply this filter.
+
 Each run also writes **`output/scrape_meta.json`** (timestamps, run id, versions). **`main.py`** copies it to **`website/public/data/scrape_meta.json`** when website sync is enabled (same as **`sync_to_website.py`**) so the UI “Last run” timestamp stays current.
 
-**HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a shared `requests.Session`; retries transient failures (connection errors and HTTP 429 / 5xx) up to four attempts with exponential backoff and jitter.
+**HTTP fetch** ([`utils/fetcher.py`](utils/fetcher.py)): uses a shared `requests.Session`; retries transient failures (connection errors and HTTP 429 / 5xx) up to **`SCRAPER_FETCH_MAX_ATTEMPTS`** times (default **3**) with exponential backoff and jitter, then moves on to the next URL. Each live run writes fetch audits under **`logs/success/`** (e.g. **`fetch_urls_latest.jsonl`**) and **`logs/failure/`** (e.g. **`fetch_urls_latest.jsonl`**, **`processing_exceptions_latest.jsonl`**); see **`fetch_audit`** in **`output/run_summary.json`**.
 
 **Config** ([`config/universities.json`](config/universities.json)):
 
@@ -107,7 +109,7 @@ python scheduler.py
 
 Settings live in [`scheduler_config.py`](scheduler_config.py); the scheduler logs the effective interval and whether it came from the environment or the default.
 
-Logs: console plus rotating `scraper/logs/scraper.log`. Use **DEBUG** on the `utils.normalizer` / `utils.dedupe` loggers to see per-item drops and dedupe skips.
+Logs: console plus rotating `scraper/logs/scraper.log`. Each **`main.py`** / **`run_fixtures`** run also creates **`scraper/logs/runs/scraper_<run_id>.log`** (UTC date and time in `run_id`, e.g. `20260508T023045Z`). The path is repeated as **`run_log_file`** in **`output/run_summary.json`**. Live runs write **`scraper/logs/success/`** (fetch + optional scraped-item JSONL) and **`scraper/logs/failure/`** (failed fetch URLs and unexpected per-university processing errors). With **`SCRAPER_ITEM_LOG=1`**, scraped rows go under **`logs/success/`**. Use **DEBUG** on the `utils.normalizer` / `utils.dedupe` loggers to see per-item drops and dedupe skips.
 
 ## Test enrollments locally
 
@@ -150,7 +152,10 @@ If `parsed` is **0**, no source homepage produced matching links. If `parsed` is
 | `scraper/output/<category>.json` | Latest validated items per category (may be empty arrays). |
 | `website/public/data/universities.json` | Enabled universities from `config/universities.json` (name + official URL); written whenever **`sync_to_website.py`** runs or **`main.py`** syncs to the site. |
 | `scraper/output/history/<UTC>_<category>.json` | Per-run snapshot. |
-| `scraper/output/run_summary.json` | Per-run rollup: `run_id`, `run_timestamp`, university counts, `raw_counts` (items parsed into each bucket before normalization), `unique_counts` (after dedupe), `categories` (per-category pipeline stats), `copy_status`, `failures`. |
+| `scraper/output/run_summary.json` | Per-run rollup: `run_id`, `run_timestamp`, **`run_log_file`** (dated per-run log under `logs/runs/`), university counts, `raw_counts`, `unique_counts`, `categories`, **`recency`**, **`fetch_audit`**, `copy_status`, `failures`. |
+| `scraper/logs/success/*.jsonl` | Live **`main.py`**: successful fetches (`fetch_urls_*.jsonl`) and optional scraped items (`scraped_items_*.jsonl`). |
+| `scraper/logs/failure/*.jsonl` | Failed fetch URLs (`error` field) and **`processing_exceptions_*.jsonl`** for unexpected errors (run still completes). |
+| `scraper/logs/success/scraped_items_<run_id>.jsonl` | Optional when **`SCRAPER_ITEM_LOG=1`**; **`scraped_items_latest.jsonl`** in the same folder. |
 
 ### `run_summary.json` — `categories` fields
 
@@ -158,6 +163,7 @@ Each category key includes:
 
 - `parsed_from_sources` — rows emitted by parsers into that bucket
 - `normalized_kept` / `normalized_dropped` — kept vs dropped by the normalizer
+- `recency_dropped` — dropped by the live-run date window (fixtures: always **0**)
 - `after_dedupe` / `dedupe_removed` — list size after dedupe and how many were skipped as duplicates
 - `validation_error_count` / `valid_for_output` — validator results
 - `copy_status` / `copy_reason` — website sync outcome
@@ -198,7 +204,8 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 - **URLs and enable flags:** `config/universities.json`
 - **Selectors and heuristics:** `parsers/*_parser.py`
 - **Date formats / locale:** `utils/normalizer.py`
-- **SSL / flaky sites:** failures are logged per source; the run continues. For strict certificate issues on some hosts you may need OS trust store updates or a custom session (not enabled by default).
+- **Recency window / strict dated-only policy:** `utils/recency.py` (live scrape); tune via **`SCRAPER_RECENCY_DAYS`**
+- **SSL / flaky sites:** failures are logged per source; the run continues after **`SCRAPER_FETCH_MAX_ATTEMPTS`** tries per URL. For strict certificate issues on some hosts you may need OS trust store updates or a custom session (not enabled by default).
 
 ## CI
 
@@ -228,6 +235,9 @@ Implemented in [`utils/dedupe.py`](utils/dedupe.py):
 **Environment:**
 
 - `SCRAPER_SKIP_WEBSITE_SYNC=1` — `main.py` / `run_fixtures` write `scraper/output/` but do **not** update `website/public/data/` (useful in CI before `sync_to_website.py`).
+- `SCRAPER_FETCH_MAX_ATTEMPTS` — max HTTP GET attempts **per URL** before moving on (default **3**, clamped **1–10**).
+- `SCRAPER_RECENCY_DAYS` — rolling UTC window for **`main.py`** only on **normalized scraped rows** (default **60**). Items without a parseable **`date`**, or older than the cutoff, are omitted from output. Set **`0`** to disable recency filtering.
+- `SCRAPER_ITEM_LOG=1` — enable JSONL item audit logs under **`scraper/logs/`** (see [Run](#run)).
 
 **Pytest:** `pip install -r requirements-dev.txt` then `python -m pytest tests/ -q`.
 

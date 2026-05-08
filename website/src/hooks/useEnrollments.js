@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadEnrollments } from '../services/dashboardDataService'
-import { sortByDateDesc } from '../utils/dateRange'
+import { filterAndSortByAnnouncedDateDesc } from '../utils/dateRange'
 
 /**
  * @typedef {Object} FeedItem
@@ -21,7 +21,7 @@ export function useEnrollments(searchQuery) {
     setError(null)
     loadEnrollments()
       .then((data) => {
-        if (!cancelled) setItems(sortByDateDesc(data))
+        if (!cancelled) setItems(filterAndSortByAnnouncedDateDesc(data))
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load enrollments')

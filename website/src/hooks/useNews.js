@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadNews } from '../services/dashboardDataService'
-import { sortByDateDesc } from '../utils/dateRange'
+import { filterAndSortByAnnouncedDateDesc } from '../utils/dateRange'
 
 /**
  * @typedef {Object} FeedItem
@@ -22,7 +22,7 @@ export function useNews(searchQuery) {
     setError(null)
     loadNews()
       .then((data) => {
-        if (!cancelled) setItems(sortByDateDesc(data))
+        if (!cancelled) setItems(filterAndSortByAnnouncedDateDesc(data))
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load news')

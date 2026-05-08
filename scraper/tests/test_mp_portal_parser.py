@@ -60,6 +60,51 @@ def test_mp_portal_extracts_date_from_link_text() -> None:
     assert out["results"][0]["date"] == "2025-03-25"
 
 
+def test_mp_portal_gyanveer_row_div_us_mdy_date() -> None:
+    """Homepage notices use M/D/Y in a row div before the link (not India D/M/Y)."""
+    html = """
+    <html><body><li class="list-group-item">
+      <div class="row"><div><b>2/12/2026</b></div></div>
+      <div><a href="/Pages/NewsLetter.aspx?Type=2&amp;id=163">
+        Exam time table 3rd sem M.Sc for the examination session Dec-2025
+      </a></div>
+    </li></body></html>
+    """
+    p = MpPortalParser()
+    out = p.parse(html, "Gyanveer University", "https://www.gyanveeruniversity.edu.in/")
+    urls = {item["url"]: item["date"] for item in out["results"]}
+    assert urls["https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=163"] == "2026-02-12"
+
+
+def test_mp_portal_gyanveer_li_leading_us_mdy_date() -> None:
+    """Leading M/D/Y on the list item line (marquee / list) before anchor text."""
+    html = """
+    <html><body><li class="list-group-item">2/12/2026
+      <div><a href="/Pages/NewsLetter.aspx?Type=2&amp;id=164">
+        Exam time table 3rd sem MA for the examination session Dec-2025
+      </a></div>
+    </li></body></html>
+    """
+    p = MpPortalParser()
+    out = p.parse(html, "Gyanveer University", "https://www.gyanveeruniversity.edu.in/")
+    urls = {item["url"]: item["date"] for item in out["results"]}
+    assert urls["https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=164"] == "2026-02-12"
+
+
+def test_mp_portal_notice_cell_dd_mon_yyyy() -> None:
+    """Detail-style table: Create dates use 12-Feb-2026 (parse before numeric fragments)."""
+    html = """
+    <html><body><table><tr>
+      <td>12-Feb-2026 12:00 AM Till Date: 31-May-2026 12:00 AM</td>
+      <td><a href="/Pages/NewsLetter.aspx?Type=2&amp;id=200">Exam time table PDF</a></td>
+    </tr></table></body></html>
+    """
+    p = MpPortalParser()
+    out = p.parse(html, "GU", "https://www.gyanveeruniversity.edu.in/")
+    urls = {item["url"]: item["date"] for item in out["results"]}
+    assert urls["https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=200"] == "2026-02-12"
+
+
 def test_mp_portal_skips_bus_feedback_urls() -> None:
     html = """
     <html><body>

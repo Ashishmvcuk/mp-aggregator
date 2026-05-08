@@ -7,7 +7,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup, Tag
 
-from utils.normalizer import CATEGORY_ORDER, find_first_iso_date_in_string, parse_dd_mon_cell
+from utils.normalizer import (
+    CATEGORY_ORDER,
+    find_first_iso_date_in_string,
+    parse_dd_mon_cell,
+    parse_us_month_day_slashed_date,
+)
 
 
 def empty_categories() -> dict[str, list[dict[str, Any]]]:
@@ -90,6 +95,32 @@ def _dates_from_table_row(row: Tag) -> str | None:
     return None
 
 
+def _extract_us_date_from_row_div_before_anchor(anchor: Tag) -> str | None:
+    """
+    Gyanveer-style layout: <div class='row'><div><b>M/D/YYYY</b></div></div> immediately before
+    the div that wraps the notice link.
+    """
+    parent = anchor.parent
+    if parent is None or getattr(parent, "name", None) != "div":
+        return None
+    sib = parent.previous_sibling
+    while sib is not None and not isinstance(sib, Tag):
+        sib = sib.previous_sibling
+    if sib is None or getattr(sib, "name", None) != "div":
+        return None
+    for tag_name in ("b", "strong"):
+        for hit in sib.find_all(tag_name, limit=8):
+            cand = " ".join(hit.get_text().split())
+            if re.fullmatch(r"\d{1,2}/\d{1,2}/\d{4}", cand):
+                iso = parse_us_month_day_slashed_date(cand)
+                if iso:
+                    return iso
+    entire = " ".join(sib.get_text().split())
+    if re.fullmatch(r"\d{1,2}/\d{1,2}/\d{4}", entire):
+        return parse_us_month_day_slashed_date(entire)
+    return None
+
+
 def extract_date_near_anchor(anchor: Tag) -> str | None:
     """
     Best-effort real calendar date for results / news / jobs / admission links:
@@ -102,6 +133,9 @@ def extract_date_near_anchor(anchor: Tag) -> str | None:
             d = find_first_iso_date_in_string(blob, blob)
             if d:
                 return d
+    d = _extract_us_date_from_row_div_before_anchor(anchor)
+    if d:
+        return d
     row = anchor.find_parent("tr")
     if row:
         d = _dates_from_table_row(row)
@@ -110,6 +144,11 @@ def extract_date_near_anchor(anchor: Tag) -> str | None:
     li = anchor.find_parent("li")
     if li:
         ctx = li.get_text(" ", strip=True)
+        m_lead = re.match(r"^(\d{1,2}/\d{1,2}/\d{4})\s", ctx)
+        if m_lead:
+            iso = parse_us_month_day_slashed_date(m_lead.group(1))
+            if iso:
+                return iso
         d = find_first_iso_date_in_string(ctx, ctx)
         if d:
             return d

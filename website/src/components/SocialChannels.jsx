@@ -1,8 +1,12 @@
+import { InstagramIcon } from './icons/InstagramIcon'
 import './SocialChannels.css'
 
 export const WHATSAPP_CHANNEL_URL =
   'https://whatsapp.com/channel/0029VbCraGP84OmG2NVJJl3M'
 export const TELEGRAM_CHANNEL_URL = 'https://t.me/ALLMPUNIVERSITY'
+export const X_PROFILE_URL = 'https://x.com/AllmpUNIVERSITY'
+export const INSTAGRAM_PROFILE_URL =
+  'https://www.instagram.com/allmpuniversity/?hl=en'
 
 function WhatsAppIcon({ className }) {
   return (
@@ -43,6 +47,24 @@ function TelegramIcon({ className }) {
   )
 }
 
+function XIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect width="24" height="24" rx="5" fill="#000" />
+      <path
+        fill="#fff"
+        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+      />
+    </svg>
+  )
+}
+
 /**
  * @param {{ size?: 'sm' | 'md' | 'lg', showLabels?: boolean, orientation?: 'row' | 'col' }} props
  */
@@ -51,7 +73,7 @@ export function SocialChannels({ size = 'md', showLabels = false, orientation = 
     <div
       className={`sr-social sr-social--${size} sr-social--${orientation}`}
       role="group"
-      aria-label="Join us on WhatsApp and Telegram"
+      aria-label="Follow us on WhatsApp, Telegram, X, and Instagram"
     >
       <a
         className="sr-social__link sr-social__link--whatsapp"
@@ -72,6 +94,26 @@ export function SocialChannels({ size = 'md', showLabels = false, orientation = 
       >
         <TelegramIcon className="sr-social__icon" />
         {showLabels && <span className="sr-social__label">Telegram</span>}
+      </a>
+      <a
+        className="sr-social__link sr-social__link--x"
+        href={X_PROFILE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on X (Twitter)"
+      >
+        <XIcon className="sr-social__icon" />
+        {showLabels && <span className="sr-social__label">X</span>}
+      </a>
+      <a
+        className="sr-social__link sr-social__link--instagram"
+        href={INSTAGRAM_PROFILE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on Instagram"
+      >
+        <InstagramIcon className="sr-social__icon" />
+        {showLabels && <span className="sr-social__label">Instagram</span>}
       </a>
     </div>
   )

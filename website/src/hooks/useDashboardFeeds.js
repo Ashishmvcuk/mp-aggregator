@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadLandingFeeds, loadUniversityPortals } from '../services/dashboardDataService'
-import { hasAnnouncedDate, isWithinLastDays, sortByDateDesc } from '../utils/dateRange'
+import {
+  filterAndSortByAnnouncedDateDesc,
+  hasAnnouncedDate,
+  isWithinLastDays,
+  sortByAnnouncedDateDesc,
+} from '../utils/dateRange'
 
 const NEWS_DAYS = 30
 const MAX_NEWS = 45
@@ -59,18 +64,24 @@ export function useDashboardFeeds() {
 
   const newsLast30Days = useMemo(() => {
     const filtered = news.filter((item) => {
-      const windowDate = item.date || item.scrape_index_date
-      return isWithinLastDays(windowDate, NEWS_DAYS)
+      if (!hasAnnouncedDate(item)) return false
+      return isWithinLastDays(item.date, NEWS_DAYS)
     })
-    return sortByDateDesc(filtered).slice(0, MAX_NEWS)
+    return sortByAnnouncedDateDesc(filtered).slice(0, MAX_NEWS)
   }, [news])
 
-  const jobsSorted = useMemo(() => sortByDateDesc(jobs).slice(0, MAX_JOBS), [jobs])
+  const jobsSorted = useMemo(
+    () => filterAndSortByAnnouncedDateDesc(jobs).slice(0, MAX_JOBS),
+    [jobs]
+  )
 
-  const syllabusSorted = useMemo(() => sortByDateDesc(syllabus).slice(0, MAX_SYLLABUS), [syllabus])
+  const syllabusSorted = useMemo(
+    () => filterAndSortByAnnouncedDateDesc(syllabus).slice(0, MAX_SYLLABUS),
+    [syllabus]
+  )
 
   const admitCardsSorted = useMemo(
-    () => sortByDateDesc(admitCards.filter(hasAnnouncedDate)),
+    () => filterAndSortByAnnouncedDateDesc(admitCards),
     [admitCards]
   )
 
@@ -80,11 +91,14 @@ export function useDashboardFeeds() {
   )
 
   const blogsSorted = useMemo(
-    () => sortByDateDesc(blogs.filter(hasAnnouncedDate)).slice(0, MAX_BLOGS),
+    () => filterAndSortByAnnouncedDateDesc(blogs).slice(0, MAX_BLOGS),
     [blogs]
   )
 
-  const enrollmentsSorted = useMemo(() => sortByDateDesc(enrollments), [enrollments])
+  const enrollmentsSorted = useMemo(
+    () => filterAndSortByAnnouncedDateDesc(enrollments),
+    [enrollments]
+  )
 
   const enrollmentsPreview = useMemo(
     () => enrollmentsSorted.slice(0, MAX_ENROLLMENT_SIDEBAR),

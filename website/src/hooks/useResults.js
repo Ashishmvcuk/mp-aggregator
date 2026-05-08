@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
-import { hasAnnouncedDate } from '../utils/dateRange'
+import { filterAndSortByAnnouncedDateDesc } from '../utils/dateRange'
 
 function normalizeUniversity(value) {
   return String(value || '')
@@ -62,7 +62,7 @@ export function useResults(searchQuery, options = {}) {
   }, [])
 
   const itemsWithAnnouncedDate = useMemo(
-    () => items.filter(hasAnnouncedDate),
+    () => filterAndSortByAnnouncedDateDesc(items),
     [items]
   )
 

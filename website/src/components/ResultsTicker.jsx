@@ -12,11 +12,9 @@ const MAX_SCROLL_DURATION_S = 7200
 /** Before first layout measure. */
 const DEFAULT_SCROLL_DURATION_S = 180
 
-function parseResultSortKey(r) {
-  const ann = r.date
-  const idx = r.scrape_index_date
-  const s = ann || idx || ''
-  const t = Date.parse(String(s))
+function parseAnnouncedDateTs(r) {
+  const s = typeof r.date === 'string' ? r.date.trim().slice(0, 10) : ''
+  const t = Date.parse(`${s}T12:00:00Z`)
   return Number.isNaN(t) ? 0 : t
 }
 
@@ -29,7 +27,7 @@ export function ResultsTicker({ results, loading }) {
 
   const segments = useMemo(() => {
     if (!results?.length) return []
-    const sorted = [...results].sort((a, b) => parseResultSortKey(b) - parseResultSortKey(a))
+    const sorted = [...results].sort((a, b) => parseAnnouncedDateTs(b) - parseAnnouncedDateTs(a))
     const capped = sorted.slice(0, MAX_TICKER_ITEMS)
     return capped.map((r, i) => ({
       key: `${r.university}-${r.title}-${r.date || r.scrape_index_date}-${i}`,

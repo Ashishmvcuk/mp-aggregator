@@ -12,6 +12,11 @@ logger = logging.getLogger(__name__)
 
 SCRAPER_ROOT = Path(__file__).resolve().parent.parent
 REPO_ROOT = SCRAPER_ROOT.parent
+SCRAPER_LOG_DIR = SCRAPER_ROOT / "logs"
+# Website-facing scrape audits (fetch outcomes + scraped rows): success vs failure splits.
+SCRAPER_LOG_SUCCESS_DIR = SCRAPER_LOG_DIR / "success"
+SCRAPER_LOG_FAILURE_DIR = SCRAPER_LOG_DIR / "failure"
+SCRAPER_LOG_RUNS_DIR = SCRAPER_LOG_DIR / "runs"
 UNIVERSITIES_CONFIG_PATH = SCRAPER_ROOT / "config" / "universities.json"
 OUTPUT_DIR = SCRAPER_ROOT / "output"
 OUTPUT_CSV_DIR = OUTPUT_DIR / "csv"
@@ -24,6 +29,10 @@ def ensure_directories() -> None:
     OUTPUT_CSV_DIR.mkdir(parents=True, exist_ok=True)
     HISTORY_DIR.mkdir(parents=True, exist_ok=True)
     WEBSITE_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    SCRAPER_LOG_DIR.mkdir(parents=True, exist_ok=True)
+    SCRAPER_LOG_SUCCESS_DIR.mkdir(parents=True, exist_ok=True)
+    SCRAPER_LOG_FAILURE_DIR.mkdir(parents=True, exist_ok=True)
+    SCRAPER_LOG_RUNS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def _atomic_write(path: Path, data: str) -> None:
@@ -107,6 +116,94 @@ def write_history_snapshot(category: str, items: list[dict[str, Any]]) -> None:
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     path = HISTORY_DIR / f"{ts}_{category}.json"
     write_json(path, items)
+
+
+def write_scrape_item_jsonl(
+    run_id: str,
+    merged: dict[str, list[dict[str, Any]]],
+    category_order: tuple[str, ...],
+) -> tuple[Path, Path]:
+    """
+    Audit log of items kept after recency (same payload as pre-dedupe merge buckets).
+    Writes under logs/success/: per-run file and scraped_items_latest.jsonl (overwrite).
+    """
+    SCRAPER_LOG_SUCCESS_DIR.mkdir(parents=True, exist_ok=True)
+    path_run = SCRAPER_LOG_SUCCESS_DIR / f"scraped_items_{run_id}.jsonl"
+    path_latest = SCRAPER_LOG_SUCCESS_DIR / "scraped_items_latest.jsonl"
+
+    def _lines() -> list[str]:
+        out: list[str] = []
+        for cat in category_order:
+            for it in merged.get(cat, []):
+                row = {
+                    "run_id": run_id,
+                    "category": cat,
+                    "university": it.get("university"),
+                    "title": it.get("title"),
+                    "url": it.get("url"),
+                    "date": it.get("date"),
+                    "scrape_index_date": it.get("scrape_index_date"),
+                }
+                out.append(json.dumps(row, ensure_ascii=False) + "\n")
+        return out
+
+    text = "".join(_lines())
+    _atomic_write(path_run, text)
+    _atomic_write(path_latest, text)
+    logger.info(
+        "Item scrape log: wrote success/%s and success/%s",
+        path_run.name,
+        path_latest.name,
+    )
+    return path_run, path_latest
+
+
+def write_fetch_url_audit_logs(
+    run_id: str,
+    success_rows: list[dict[str, Any]],
+    failure_rows: list[dict[str, Any]],
+) -> tuple[Path, Path, Path, Path]:
+    """
+    Per-run JSONL audit of HTTP fetches under logs/success/ vs logs/failure/.
+    """
+    SCRAPER_LOG_SUCCESS_DIR.mkdir(parents=True, exist_ok=True)
+    SCRAPER_LOG_FAILURE_DIR.mkdir(parents=True, exist_ok=True)
+    path_ok_run = SCRAPER_LOG_SUCCESS_DIR / f"fetch_urls_{run_id}.jsonl"
+    path_ok_latest = SCRAPER_LOG_SUCCESS_DIR / "fetch_urls_latest.jsonl"
+    path_fail_run = SCRAPER_LOG_FAILURE_DIR / f"fetch_urls_{run_id}.jsonl"
+    path_fail_latest = SCRAPER_LOG_FAILURE_DIR / "fetch_urls_latest.jsonl"
+
+    ok_text = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in success_rows)
+    fail_text = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in failure_rows)
+    _atomic_write(path_ok_run, ok_text)
+    _atomic_write(path_ok_latest, ok_text)
+    _atomic_write(path_fail_run, fail_text)
+    _atomic_write(path_fail_latest, fail_text)
+    logger.info(
+        "Fetch URL audit: %d success → success/%s; %d failure → failure/%s",
+        len(success_rows),
+        path_ok_latest.name,
+        len(failure_rows),
+        path_fail_latest.name,
+    )
+    return path_ok_run, path_ok_latest, path_fail_run, path_fail_latest
+
+
+def write_processing_exception_logs(run_id: str, rows: list[dict[str, Any]]) -> tuple[Path, Path]:
+    """Unexpected per-university errors under logs/failure/ so runs still finish."""
+    SCRAPER_LOG_FAILURE_DIR.mkdir(parents=True, exist_ok=True)
+    path_run = SCRAPER_LOG_FAILURE_DIR / f"processing_exceptions_{run_id}.jsonl"
+    path_latest = SCRAPER_LOG_FAILURE_DIR / "processing_exceptions_latest.jsonl"
+    text = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
+    _atomic_write(path_run, text)
+    _atomic_write(path_latest, text)
+    if rows:
+        logger.info(
+            "Wrote %d processing exception(s) to failure/%s",
+            len(rows),
+            path_latest.name,
+        )
+    return path_run, path_latest
 
 
 def sync_category_to_website(category: str, items: list[dict[str, Any]]) -> Path:

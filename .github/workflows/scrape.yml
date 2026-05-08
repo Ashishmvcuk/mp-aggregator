@@ -165,6 +165,9 @@ jobs:
             scraper/output/run_summary.json
             scraper/output/scrape_meta.json
             scraper/logs/*.log
+            scraper/logs/success/
+            scraper/logs/failure/
+            scraper/logs/runs/
 
       - name: "Notify: optional webhook (run_summary)"
         if: always()

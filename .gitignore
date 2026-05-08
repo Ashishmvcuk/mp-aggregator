@@ -27,6 +27,8 @@ dist-ssr
 
 # Scraper (generated / local)
 scraper/logs/*.log
+scraper/logs/**/*.jsonl
+scraper/logs/runs/*.log
 scraper/output/history/
 scraper/output/*.json
 scraper/output/csv/

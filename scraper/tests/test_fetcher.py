@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 import pytest
 import requests
 
-from utils.fetcher import fetch_html
+from utils.fetcher import fetch_html, fetch_html_detailed
 
 
 @pytest.fixture
@@ -98,4 +98,19 @@ def test_fetch_html_ssl_fallback_not_used_for_unlisted_host(mock_session):
     ):
         out = fetch_html("https://www.dauniv.ac.in/")
     assert out is None
-    assert sess.get.call_count == 4
+    assert sess.get.call_count == 3
+
+
+def test_fetch_html_gives_up_after_max_attempts_503(mock_session):
+    sess = MagicMock()
+    fail = MagicMock()
+    fail.raise_for_status.side_effect = requests.HTTPError(response=fail)
+    fail.status_code = 503
+    sess.get.return_value = fail
+    mock_session.return_value = sess
+
+    with patch("utils.fetcher.time.sleep"):
+        body, err = fetch_html_detailed("https://example.edu/")
+    assert body is None
+    assert err == "HTTP 503"
+    assert sess.get.call_count == 3

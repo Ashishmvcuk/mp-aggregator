@@ -19,8 +19,17 @@ USER_AGENT = (
 
 # Transient HTTP responses worth retrying (rate limit + server errors).
 _RETRYABLE_STATUS = frozenset({429, 500, 502, 503, 504})
-# Initial attempt + retries (matches backlog: backoff + jitter on transient failures).
-_MAX_ATTEMPTS = 4
+_DEFAULT_MAX_ATTEMPTS = 3
+
+
+def _max_fetch_attempts() -> int:
+    """Upper bound on GET attempts per URL (no infinite retries). Default 3; override via SCRAPER_FETCH_MAX_ATTEMPTS."""
+    raw = os.environ.get("SCRAPER_FETCH_MAX_ATTEMPTS", str(_DEFAULT_MAX_ATTEMPTS)).strip()
+    try:
+        n = int(raw)
+    except ValueError:
+        n = _DEFAULT_MAX_ATTEMPTS
+    return max(1, min(n, 10))
 _DEFAULT_INSECURE_TLS_HOSTS = frozenset(
     {
         "www.dauniv.ac.in",
@@ -68,37 +77,40 @@ def _hostname(url: str) -> str:
         return ""
 
 
-def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
+def fetch_html_detailed(
+    url: str, timeout: int = DEFAULT_TIMEOUT
+) -> tuple[Optional[str], Optional[str]]:
     """
-    GET a URL and return response text. Retries on connection errors and
-    retryable HTTP status codes with exponential backoff and jitter.
+    GET a URL and return (response text, None) on success, or (None, error_summary).
+    Retries transient failures up to SCRAPER_FETCH_MAX_ATTEMPTS (default 3), then stops.
     """
     session = _get_session()
-    for attempt in range(1, _MAX_ATTEMPTS + 1):
+    max_attempts = _max_fetch_attempts()
+    last_err: Optional[str] = None
+
+    for attempt in range(1, max_attempts + 1):
         try:
             resp = session.get(url, timeout=timeout)
             resp.raise_for_status()
-            return resp.text
+            return resp.text, None
         except requests.HTTPError as e:
             code = e.response.status_code if e.response is not None else 0
-            if attempt < _MAX_ATTEMPTS and code in _RETRYABLE_STATUS:
+            last_err = f"HTTP {code}"
+            if attempt < max_attempts and code in _RETRYABLE_STATUS:
                 logger.warning(
                     "Fetch HTTP %s for %s (attempt %d/%d), retrying after backoff",
                     code,
                     url,
                     attempt,
-                    _MAX_ATTEMPTS,
+                    max_attempts,
                 )
                 _backoff_sleep(attempt)
                 continue
             logger.warning("Fetch failed for %s: %s", url, e)
-            return None
+            return None, last_err
         except requests.RequestException as e:
             host = _hostname(url)
-            if (
-                isinstance(e, requests.exceptions.SSLError)
-                and host in _insecure_tls_hosts()
-            ):
+            if isinstance(e, requests.exceptions.SSLError) and host in _insecure_tls_hosts():
                 try:
                     logger.warning(
                         "TLS verify failed for %s; retrying once with verify=False for host %s",
@@ -107,20 +119,30 @@ def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
                     )
                     resp = session.get(url, timeout=timeout, verify=False)
                     resp.raise_for_status()
-                    return resp.text
+                    return resp.text, None
                 except requests.RequestException as e2:
+                    msg = f"TLS fallback failed: {type(e2).__name__}: {e2}"
                     logger.warning("Fetch failed for %s after TLS fallback: %s", url, e2)
-                    return None
-            if attempt < _MAX_ATTEMPTS:
+                    return None, msg
+            last_err = f"{type(e).__name__}: {e}"
+            if attempt < max_attempts:
                 logger.warning(
                     "Fetch error for %s (attempt %d/%d): %s — retrying after backoff",
                     url,
                     attempt,
-                    _MAX_ATTEMPTS,
+                    max_attempts,
                     e,
                 )
                 _backoff_sleep(attempt)
                 continue
             logger.warning("Fetch failed for %s: %s", url, e)
-            return None
-    return None
+            return None, last_err
+    return None, last_err or "fetch failed"
+
+
+def fetch_html(url: str, timeout: int = DEFAULT_TIMEOUT) -> Optional[str]:
+    """
+    GET a URL and return response text. Same retry policy as fetch_html_detailed.
+    """
+    body, _ = fetch_html_detailed(url, timeout=timeout)
+    return body

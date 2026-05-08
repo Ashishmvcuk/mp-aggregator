@@ -92,6 +92,14 @@
   background: #1b7fb8;
 }
 
+.join-strip__btn--x {
+  background: #000;
+}
+
+.join-strip__btn--instagram {
+  background: linear-gradient(135deg, #833ab4 0%, #e1306c 45%, #fd1d1d 72%, #fcb045 100%);
+}
+
 .join-strip__badge {
   display: inline-flex;
   align-items: center;
@@ -111,10 +119,30 @@
   background: #229ed9;
 }
 
+.join-strip__badge--x {
+  background: #121212;
+}
+
+.join-strip__badge--instagram {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
 .join-strip__glyph {
   width: 16px;
   height: 16px;
   display: block;
+}
+
+.join-strip__glyph--x {
+  width: 14px;
+  height: 14px;
+}
+
+.join-strip__glyph--instagram {
+  width: 18px;
+  height: 18px;
 }
 
 .join-strip__btn-name {

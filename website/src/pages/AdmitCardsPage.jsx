@@ -22,7 +22,7 @@ export function AdmitCardsPage() {
             <span>Admit cards</span>
           </nav>
 
-          <h1 className="listing-page__h1">Admit cards & hall tickets</h1>
+          <h1 className="listing-page__h1">Admit cards & Time Table</h1>
           <p className="listing-page__lead">
             Aggregated links from configured MP university portals. Always confirm details on the official site.
           </p>

@@ -194,7 +194,7 @@ export function HomePage() {
                 <>
                   <FeedList
                     id="landing-admit"
-                    title="Admit cards & hall tickets"
+                    title="Admit cards & Time Table"
                     subtitle={
                       feeds.admitCardsTotal > feeds.admitCardsHomePreview.length
                         ? `Showing ${feeds.admitCardsHomePreview.length} of ${feeds.admitCardsTotal} on file.`

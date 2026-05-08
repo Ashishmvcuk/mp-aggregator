@@ -26,3 +26,24 @@ export function feedSortKey(item) {
 export function sortByDateDesc(items) {
   return [...items].sort((a, b) => feedSortKey(b).localeCompare(feedSortKey(a)))
 }
+
+/**
+ * Sort by announcement `date` only (YYYY-MM-DD), descending. Rows missing `date` sort last.
+ * Prefer {@link filterAndSortByAnnouncedDateDesc} when the list should exclude undated rows.
+ * @param {Array<{ date?: string }>} items
+ */
+export function sortByAnnouncedDateDesc(items) {
+  return [...items].sort((a, b) => {
+    const da = typeof a?.date === 'string' ? a.date.trim().slice(0, 10) : ''
+    const db = typeof b?.date === 'string' ? b.date.trim().slice(0, 10) : ''
+    return db.localeCompare(da)
+  })
+}
+
+/**
+ * Keep rows with a non-empty announcement date; sort newest announcement first.
+ * @param {Array<{ date?: string }>} items
+ */
+export function filterAndSortByAnnouncedDateDesc(items) {
+  return sortByAnnouncedDateDesc(items.filter(hasAnnouncedDate))
+}

@@ -72,6 +72,22 @@ def infer_notice_calendar_year(row_text: str, month: int) -> int:
     return y_min
 
 
+def parse_us_month_day_slashed_date(value: str) -> Optional[str]:
+    """
+    Parse M/D/YYYY used on some portals (e.g. Gyanveer homepage notices) when the date
+    appears alone or leads a line: \"2/12/2026\" means 12 Feb, not 2 Dec under D/M/Y.
+    """
+    m = re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{4})", (value or "").strip())
+    if not m:
+        return None
+    month_s, day_s, year_s = m.group(1), m.group(2), m.group(3)
+    month, day, year = int(month_s), int(day_s), int(year_s)
+    try:
+        return date(year, month, day).isoformat()
+    except ValueError:
+        return None
+
+
 def parse_dd_mon_cell(text: str, row_context: str) -> Optional[str]:
     """
     Parse compact dates like '05Jan', '16 Dec' from admission table cells (e.g. IGNTU).
@@ -98,6 +114,12 @@ def parse_date_iso(value: Any) -> Optional[str]:
     s = str(value).strip()
     if not s:
         return None
+    first_tok = s.split()[0]
+    if re.match(r"^\d{1,2}-[A-Za-z]{3}-\d{4}$", first_tok):
+        try:
+            return datetime.strptime(first_tok, "%d-%b-%Y").date().isoformat()
+        except ValueError:
+            pass
     head = s.split()[0][:10]
     m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", head)
     if m:
@@ -120,7 +142,9 @@ def parse_date_iso(value: Any) -> Optional[str]:
 
 # Scan free text for embedded numeric dates (notices, PDF titles, table cells).
 _DATE_FRAGMENT = re.compile(
-    r"\b(\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{4}[./-]\d{1,2}[./-]\d{1,2})\b"
+    r"\b(\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|"
+    r"\d{4}[./-]\d{1,2}[./-]\d{1,2}|"
+    r"\d{1,2}-[A-Za-z]{3}-\d{4})\b"
 )
 
 
