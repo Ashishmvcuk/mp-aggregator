@@ -1,6 +1,8 @@
 # MP University Results as
 
-Dashboard for **Madhya Pradesh university examination results** (and related links). The **React + Vite** frontend lives in [`website/`](website/); a **Python scraper** in [`scraper/`](scraper/) refreshes static JSON under `website/public/data/` for GitHub Pages.
+Dashboard for **Madhya Pradesh university examination results** (and related links). The **React + Vite** frontend lives in [`website/`](website/); a **Python scraper** in [`scraper/`](scraper/) refreshes static JSON under `website/public/data/` for GitHub Pages
+
+
 
 ## Repository layout
 
