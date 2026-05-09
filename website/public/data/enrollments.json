@@ -8,6 +8,22 @@
     "scrape_index_date": "2026-05-09"
   },
   {
+    "university": "Bhabha University",
+    "title": "Admissions open 2026-27",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/25/",
+    "date": "2026-04-22",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-09"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Counselling Schedule",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/32/",
+    "date": "2026-04-22",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-09"
+  },
+  {
     "university": "Lakshmibai National Institute of Physical Education",
     "title": "Register Now",
     "url": "https://www.lnipe.in/lnipeadmission/index",
@@ -228,6 +244,14 @@
     "title": "\"सत्र 2025-26 में नवीन प्रवेश हेतु एम.पी. ऑनलाइन के माध्यम से पंजीयन लिंक खोलने के संबंध में।\"",
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/2025_ADMISSION.pdf",
     "date": "2026-04-30",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-09"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "Prospectus",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/uploads/01-12-2026-01-44-41-prosperous.pdf",
+    "date": "2026-12-01",
     "category": "enrollments",
     "scrape_index_date": "2026-05-09"
   },
