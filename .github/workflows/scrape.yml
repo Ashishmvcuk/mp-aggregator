@@ -11,9 +11,9 @@ on:
         type: boolean
         default: false
   schedule:
-    # TODO(testing): revert to daily after test — was: "30 2 * * *" (02:30 UTC daily).
-    # Every 15 minutes (UTC) for short-term testing only; high frequency uses Actions minutes.
-    - cron: "*/15 * * * *"
+    # TODO: revert to daily when done testing — e.g. "30 2 * * *" (02:30 UTC once per day).
+    # Every 2 hours at :00 UTC (GitHub Actions cron uses UTC).
+    - cron: "0 */2 * * *"
   push:
     branches: [main]
     paths:
