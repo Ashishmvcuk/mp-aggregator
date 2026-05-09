@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useScrapeMeta } from '../context/ScrapeMetaContext'
-import { formatScrapedAtUtc } from '../utils/scrapeMetaFormat'
+import { effectiveLastRunIso, formatScrapedAtUtc } from '../utils/scrapeMetaFormat'
 import { SectionNavLink } from './SectionNavLink'
 import { SocialChannels } from './SocialChannels'
 import './Header.css'
 
 export function Header() {
   const { meta, loading } = useScrapeMeta()
-  const lastRunLabel = meta?.scrapedAt ? formatScrapedAtUtc(meta.scrapedAt) : null
+  const lastRunIso = effectiveLastRunIso(meta)
+  const lastRunLabel = lastRunIso ? formatScrapedAtUtc(lastRunIso) : null
 
   return (
     <header className="sr-header">
@@ -40,7 +41,7 @@ export function Header() {
             ) : lastRunLabel ? (
               <>
                 Last run:{' '}
-                <time className="sr-header__last-run-time" dateTime={String(meta.scrapedAt)}>
+                <time className="sr-header__last-run-time" dateTime={String(lastRunIso)}>
                   {lastRunLabel}
                 </time>
               </>

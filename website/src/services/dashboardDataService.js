@@ -32,7 +32,10 @@ export async function fetchJsonArray(path) {
  */
 export async function fetchScrapeMeta() {
   try {
-    const res = await fetch(dataUrl('data/scrape_meta.json'), { cache: 'no-store' })
+    const base = dataUrl('data/scrape_meta.json')
+    const sep = base.includes('?') ? '&' : '?'
+    const url = `${base}${sep}_=${Date.now()}`
+    const res = await fetch(url, { cache: 'no-store' })
     if (!res.ok) return null
     const data = await res.json()
     if (!data || typeof data !== 'object' || Array.isArray(data)) return null

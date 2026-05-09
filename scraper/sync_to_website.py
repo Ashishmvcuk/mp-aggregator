@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+from datetime import datetime, timezone
 from pathlib import Path
 
 from utils.file_ops import (
@@ -35,6 +36,8 @@ def sync_scrape_meta(output_dir: Path) -> bool:
     if not isinstance(data, dict):
         logger.error("scrape_meta.json: root must be a JSON object")
         return False
+    # Always refresh so CI/git sees a change even when category JSON is byte-identical.
+    data["websiteSyncAt"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     try:
         safe_write_json(WEBSITE_DATA_DIR / "scrape_meta.json", data)
     except Exception:

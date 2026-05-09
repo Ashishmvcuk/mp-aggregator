@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { fetchScrapeMeta } from '../services/dashboardDataService'
 import { fetchResults } from '../services/resultsService'
 import { filterAndSortByAnnouncedDateDesc } from '../utils/dateRange'
+import { effectiveLastRunIso } from '../utils/scrapeMetaFormat'
 
 function normalizeUniversity(value) {
   return String(value || '')
@@ -46,7 +47,7 @@ export function useResults(searchQuery, options = {}) {
       .then(([data, meta]) => {
         if (!cancelled) {
           setItems(data)
-          const raw = meta && typeof meta.scrapedAt === 'string' ? meta.scrapedAt : null
+          const raw = effectiveLastRunIso(meta)
           setScrapedAt(raw)
         }
       })
