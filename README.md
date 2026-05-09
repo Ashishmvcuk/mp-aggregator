@@ -12,7 +12,7 @@ Dashboard for **Madhya Pradesh university examination results** (and related lin
 | [`website/public/data/`](website/public/data/) | Category JSON consumed by the app (`results.json`, etc.) — updated by the scraper when validation passes |
 | [`scraper/`](scraper/) | Fetch → normalize → dedupe → validate → `sync_to_website.py` |
 | [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) | Build `website/` and publish to **`gh-pages`** (runs on pushes to `main` that touch `website/**` or this workflow) |
-| [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | Scraper: test → scrape → validate → sync → verify JSON → **production build** → optional commit to `main` (non-schedule, if diff) → **always publish** `website/public/data/*.json` to **`gh-pages`** under **`data/`** (live feeds + **Last run** / `scrape_meta.json`) |
+| [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | Scraper: test → scrape → validate → sync → verify JSON → **production build** → **`ci_commit_website_data.sh`** when JSON differs (**includes scheduled runs**) → push triggers **Deploy** → **`gh-pages`** matches **`main`** |
 | [`scraper/scripts/ci_commit_website_data.sh`](scraper/scripts/ci_commit_website_data.sh) | Stages only `website/public/data/*.json`, prints diff, commits if needed |
 | [`scraper/scripts/ci_validate_website_public_json.py`](scraper/scripts/ci_validate_website_public_json.py) | CI check: category JSON parses as arrays; `scrape_meta.json` and `manual_additions.json` are validated objects |
 
@@ -36,11 +36,11 @@ flowchart LR
 4. **`sync_to_website.py`** copies only categories that are **valid and non-empty** (existing repo files are not overwritten with empty/invalid payloads), then copies **`scrape_meta.json`** (run id, scrape time, versions) so the live UI can show **when data last refreshed** without rebuilding the app.
 5. **`ci_validate_website_public_json.py`** ensures category files parse as **JSON arrays** and validates **`scrape_meta.json`** plus **`manual_additions.json`** object shapes.
 6. **`npm ci` and `npm run build`** in **`website/`** must succeed, or the job stops **before** any git commit — so broken data cannot reach `main` via this workflow.
-7. **`ci_commit_website_data.sh`** (skipped on **schedule** only) stages **only** `website/public/data/*.json`. If there is no diff, it **does not commit**. If there is a diff, it commits with **`chore: update scraped website data`** and **pushes**.
-8. That push changes **`website/**`**, which triggers **[`deploy.yml`](.github/workflows/deploy.yml)** (path filter). Deploy builds and publishes **`gh-pages`** via [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages).
-9. **Every successful scrape** also publishes fresh JSON (including **`scrape_meta.json`** for the **Last run** line in the UI) to **`gh-pages`** branch **`data/`** via the same workflow — so **manual runs** and **scheduled runs** refresh live feeds without relying on a git diff or a full site rebuild.
+7. **`ci_commit_website_data.sh`** runs on **every** trigger (**schedule**, manual, push). It stages **only** `website/public/data/*.json`. If there is no diff, it **does not commit**. If there is a diff, it commits with **`chore: update scraped website data`** and **pushes** — including **`scrape_meta.json`** (**Last run** in the UI).
+8. That push changes **`website/**`**, which triggers **[`deploy.yml`](.github/workflows/deploy.yml)** (path filter). Deploy builds **`website/dist`** from **`main`** and publishes **`gh-pages`** with **`force_orphan`** — so live **`data/*.json`** matches **`main`** (no stale JSON overwritten by a separate partial publish).
+9. **Custom domain / Pages:** Ensure repo **Settings → Pages** serve **`gh-pages`**. After deploy completes, **`…/data/scrape_meta.json`** on your domain reflects the committed scrape metadata.
 
-**Why a failed scraper run does not break the live site:** A failing job stops **before** updating **`main`** and **before** the **`gh-pages`** JSON publish step finishes — so the previous successful scrape output stays live. Download the **`scraper-diagnostics-*`** artifact from the failed job for `run_summary.json` and logs.
+**Why a failed scraper run does not break the live site:** A failing job stops **before** committing to **`main`**, so **Deploy** does not receive new JSON from that run — the previous successful **`main`** + **`gh-pages`** stay live. Download the **`scraper-diagnostics-*`** artifact from the failed job for `run_summary.json` and logs.
 
 **Optional CI integrations** (see [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml)): repository **variables** `SCRAPER_MAX_UNIVERSITY_FAILURES` and/or `SCRAPER_MAX_FAILURE_RATIO` feed [`scraper/scripts/ci_scrape_healthcheck.py`](scraper/scripts/ci_scrape_healthcheck.py) and can fail the job when too many universities fail in one run. Secret **`SCRAPER_WEBHOOK_URL`** receives a JSON POST of `run_summary` and `scrape_meta` after each run (`always()`). The workflow also runs on a **weekday schedule** (Mon–Fri 06:30 UTC) in addition to weekly Sunday.
 
@@ -52,7 +52,7 @@ flowchart LR
 3. **Run workflow** → branch **`main`** → (optional) **export_csv** → **Run workflow**.  
 4. Open the new run; expand collapsed **::group::** sections in the log for a readable trace.  
 5. Green + commit step logs **`Committed and pushed updated website data.`** → **Deploy** should start on `main` shortly (full site rebuild).  
-6. Green + **`No changes to website/public/data/*.json — skipping commit`** → **`main`** unchanged; **Deploy** may not run — but **`Publish: runtime JSON to gh-pages`** still updates live **`data/*.json`** (feeds + **Last run**) after every successful run.
+6. Green + **`No changes to website/public/data/*.json — skipping commit`** → **`main`** unchanged (scraped data matched repo exactly); **Deploy** does not run. Live site unchanged until a future scrape produces a diff or you deploy after editing **`website/`**.
 
 **Change how often the scraper runs**  
 1. Edit [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml).  

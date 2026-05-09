@@ -1,6 +1,6 @@
-# Scraper → validate → sync → verify JSON + production build → commit (non-schedule, if diff) →
-# always publish JSON to gh-pages/data so feeds + Last run update every successful run.
-# If any step fails before publish: main may be unchanged; gh-pages data from this run is not applied.
+# Scraper → validate → sync → verify JSON + production build → commit website/public/data/*.json if changed (all triggers).
+# Scheduled runs commit too so main stays in sync; Deploy then rebuilds gh-pages from main (avoids stale JSON under force_orphan).
+# If any step fails before commit: main is unchanged and Deploy does not run for this scrape.
 name: Scraper
 
 on:
@@ -11,7 +11,7 @@ on:
         type: boolean
         default: false
   schedule:
-    # Daily run (UTC) to refresh runtime JSON without full site rebuild.
+    # Daily run (UTC): refresh JSON on main when changed → triggers Deploy so gh-pages matches scrape.
     - cron: "30 2 * * *"
   push:
     branches: [main]
@@ -144,23 +144,7 @@ jobs:
           if-no-files-found: warn
 
       - name: "Commit: website/public/data/*.json if changed"
-        if: github.event_name != 'schedule'
         run: bash scraper/scripts/ci_commit_website_data.sh
-
-      - name: "Prepare: runtime data payload for gh-pages"
-        run: |
-          rm -rf pages-data
-          mkdir -p pages-data/data
-          cp website/public/data/*.json pages-data/data/
-
-      - name: "Publish: runtime JSON to gh-pages/data (no rebuild)"
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: pages-data
-          destination_dir: data
-          keep_files: true
 
       - name: "Artifact: scraper diagnostics"
         if: always()
@@ -185,5 +169,5 @@ jobs:
       - name: "On failure: recovery hints"
         if: failure()
         run: |
-          echo "::notice::This run did not finish successfully — main may be unchanged and gh-pages data/*.json was not updated by this run."
+          echo "::notice::This run did not finish successfully — main may be unchanged and Deploy will not publish fresh site data from this scrape."
           echo "::notice::Open the job summary above, download artifact scraper-diagnostics-* if present, and check run_summary.json / logs."

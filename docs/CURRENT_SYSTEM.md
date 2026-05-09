@@ -76,8 +76,8 @@ flowchart LR
 
 ## Workflows (automation)
 
-1. **`.github/workflows/scrape.yml`** (schedule weekly UTC, `workflow_dispatch`, or push to `main` touching `scraper/**`): pytest → `python main.py` → `validate_output.py --strict-run` → `sync_to_website.py` → `ci_validate_website_public_json.py` → `npm ci && npm run build` (with Supabase secrets if present) → commit **only** `website/public/data/*.json` if changed → upload diagnostics artifact.
-2. **`.github/workflows/deploy.yml`** (push to `main` changing `website/**` or the workflow): build with `VITE_APP_VERSION`, `VITE_SCRAPER_VERSION`, `VITE_BUILD_TIME`, optional Supabase env → **peaceiris/actions-gh-pages** to `gh-pages`.
+1. **`.github/workflows/scrape.yml`** (scheduled cron UTC, `workflow_dispatch`, or push to `main` touching `scraper/**`): pytest → `python main.py` → `validate_output.py --strict-run` → `sync_to_website.py` → `ci_validate_website_public_json.py` → `npm ci && npm run build` (with Supabase secrets if present) → **`ci_commit_website_data.sh`** commits **only** `website/public/data/*.json` if changed (**including scheduled runs**) → upload diagnostics artifact.
+2. **`.github/workflows/deploy.yml`** (push to `main` changing `website/**` or the workflow): build with `VITE_APP_VERSION`, `VITE_SCRAPER_VERSION`, `VITE_BUILD_TIME`, optional Supabase env → **peaceiris/actions-gh-pages** to `gh-pages` (`force_orphan`), so live **`dist/data/*.json`** matches **`main`** after each successful scrape commit + deploy.
 
 ## Summary table (strictly from code)
 
