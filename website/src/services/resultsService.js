@@ -23,7 +23,7 @@ const LOCAL_JSON_PATH = `${import.meta.env.BASE_URL}data/results.json`
  * @returns {Promise<UniversityResult[]>}
  */
 export async function fetchLocalResults() {
-  const res = await fetch(LOCAL_JSON_PATH)
+  const res = await fetch(LOCAL_JSON_PATH, { cache: 'no-store' })
   if (!res.ok) {
     throw new Error(`Failed to load results: ${res.status}`)
   }

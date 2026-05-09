@@ -1,5 +1,6 @@
-# Scraper → validate → sync → verify JSON + production build → commit only if data changed.
-# If any step fails, nothing is pushed: the live site on GitHub (main + gh-pages) is unchanged by this run.
+# Scraper → validate → sync → verify JSON + production build → commit (non-schedule, if diff) →
+# always publish JSON to gh-pages/data so feeds + Last run update every successful run.
+# If any step fails before publish: main may be unchanged; gh-pages data from this run is not applied.
 name: Scraper
 
 on:
@@ -147,14 +148,12 @@ jobs:
         run: bash scraper/scripts/ci_commit_website_data.sh
 
       - name: "Prepare: runtime data payload for gh-pages"
-        if: github.event_name == 'schedule'
         run: |
           rm -rf pages-data
           mkdir -p pages-data/data
           cp website/public/data/*.json pages-data/data/
 
       - name: "Publish: runtime JSON to gh-pages/data (no rebuild)"
-        if: github.event_name == 'schedule'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -186,5 +185,5 @@ jobs:
       - name: "On failure: recovery hints"
         if: failure()
         run: |
-          echo "::notice::This run did not update main. Your published site is whatever the last successful Deploy built."
+          echo "::notice::This run did not finish successfully — main may be unchanged and gh-pages data/*.json was not updated by this run."
           echo "::notice::Open the job summary above, download artifact scraper-diagnostics-* if present, and check run_summary.json / logs."
