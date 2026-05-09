@@ -5,7 +5,7 @@
     "url": "https://www.apsurewa.ac.in/en/exam/ug-pg-ncte-dte-enrollment-revised-notification-6",
     "date": "2026-03-11",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Bhabha University",
@@ -13,7 +13,7 @@
     "url": "https://www.bhabhauniversity.edu.in/announcements/25/",
     "date": "2026-04-22",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Bhabha University",
@@ -21,7 +21,15 @@
     "url": "https://www.bhabhauniversity.edu.in/announcements/32/",
     "date": "2026-04-22",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education",
+    "title": "Register Now",
+    "url": "https://www.lnipe.in/lnipeadmission/index",
+    "date": "2026-05-10",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -29,7 +37,7 @@
     "url": "https://www.mcu.ac.in/admission-notice-2026-27",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -37,7 +45,7 @@
     "url": "https://www.mcu.ac.in/2026/01/17/ph-d-admission-2026-27/",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -45,7 +53,7 @@
     "url": "https://www.mcu.ac.in/2026/04/25/admission-notice-2026-27/",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -53,7 +61,7 @@
     "url": "https://www.mcu.ac.in/wp-content/uploads/2026/03/Adhisuchna-Enrollment.pdf",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -61,7 +69,7 @@
     "url": "https://www.mcu.ac.in/wp-content/uploads/2026/01/13_January-2026-Notification-_enrollment.pdf",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -69,7 +77,7 @@
     "url": "https://www.mcu.ac.in/wp-content/uploads/2026/01/Enrollment-Notification-Jan-2026.pdf",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -77,7 +85,7 @@
     "url": "https://www.mcu.ac.in/wp-content/uploads/2025/05/Enrollment-cancellation-list-Jan-2024.pdf",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
@@ -85,7 +93,7 @@
     "url": "https://www.mcu.ac.in/wp-content/uploads/2025/05/Enrollment-cancellation-list-July-2023.pdf",
     "date": "2026-05-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -93,7 +101,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Seat_Matrix_MVSc._Free_Seats_2026",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -101,7 +109,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/3rd_spot_counseling_university_seats_PG_PhD_2026.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -109,7 +117,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Spot_Counseling_PG_Diploma_2025-26.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -117,7 +125,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Admission_order_PG_University_Seats_2026_after_2nd_Counseling_Rewa.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -125,7 +133,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Prospectus-Post-Graduate-Diploma.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -133,7 +141,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Deatils_of_Vacant_Seats_MVSc_PhD_for_2nd_Counseling_on_29th_April_2026_compressed.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -141,7 +149,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Revised_Prospectus_PG_PhD_2026.JPG",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -149,7 +157,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/NEET_UG_2026.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -157,7 +165,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Revised_Prospectus_PG_PhD_University_seats_2026_compressed_compressed.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -165,7 +173,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/NRI_2026_Admission_Notice_and_Prospectus.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -173,7 +181,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/Admission-Notice-2025-26-MVSc-PhD.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
@@ -181,7 +189,7 @@
     "url": "https://ndvsu.org/assets/images/important_alerts/3rd_spot_counseling_university_seats_PG_PhD_2026.pdf",
     "date": "2026-04-29",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "P.K. University",
@@ -189,7 +197,7 @@
     "url": "https://pkuniversity.edu.in/index.php/ph-d-admissions/",
     "date": "2026-04-06",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Pandit S N Shukla University",
@@ -197,7 +205,7 @@
     "url": "https://drive.google.com/file/d/1_1LbV3rAkpjvkY67zveM7CitaBHxACA5/view",
     "date": "2026-03-23",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -205,7 +213,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/28-08-2024_Admission_Letter.pdf",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -213,7 +221,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Candidate_Selected_For_Provisional_Admission_in_PhD_Course_Work_2023-24.pdf",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -221,7 +229,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Admission_Notification_2025-26.pdf",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -229,7 +237,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Admission_Notification.jpeg",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
@@ -237,7 +245,7 @@
     "url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/2025_ADMISSION.pdf",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Sanchi University of Buddhist-Indic Studies",
@@ -245,7 +253,7 @@
     "url": "https://www.sanchiuniv.edu.in/newwebsite/uploads/01-12-2026-01-44-41-prosperous.pdf",
     "date": "2026-12-01",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   },
   {
     "university": "Vikram University",
@@ -253,6 +261,6 @@
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1777599582-172612011269f4045e83dc3!%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A5%87%E0%A4%B6%20%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%82%E0%A4%A7%E0%A5%80%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A4%A8%E0%A4%BE%202026-27.pdf?1777618115",
     "date": "2026-04-30",
     "category": "enrollments",
-    "scrape_index_date": "2026-05-08"
+    "scrape_index_date": "2026-05-09"
   }
 ]
