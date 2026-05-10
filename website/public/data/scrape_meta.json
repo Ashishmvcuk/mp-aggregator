@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-05-10T10:53:58.821230Z",
-  "runStartedAt": "2026-05-10T10:51:10.791742Z",
-  "runId": "20260510T105110Z",
+  "scrapedAt": "2026-05-10T12:48:32.719088Z",
+  "runStartedAt": "2026-05-10T12:45:31.453661Z",
+  "runId": "20260510T124531Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
   "universitiesSuccess": 84,
@@ -15,6 +15,6 @@
     "blogs": 1,
     "jobs": 30
   },
-  "ciRunId": "25626795349",
-  "websiteSyncAt": "2026-05-10T10:53:59.133716Z"
+  "ciRunId": "25629079824",
+  "websiteSyncAt": "2026-05-10T12:48:33.085754Z"
 }
