@@ -1,20 +1,20 @@
 {
-  "scrapedAt": "2026-05-10T09:21:56.623388Z",
-  "runStartedAt": "2026-05-10T09:18:36.849638Z",
-  "runId": "20260510T091836Z",
+  "scrapedAt": "2026-05-10T10:53:58.821230Z",
+  "runStartedAt": "2026-05-10T10:51:10.791742Z",
+  "runId": "20260510T105110Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
-  "universitiesSuccess": 82,
-  "universitiesFailed": 7,
+  "universitiesSuccess": 84,
+  "universitiesFailed": 5,
   "categoryCounts": {
     "results": 92,
-    "news": 92,
+    "news": 98,
     "syllabus": 4,
     "admit_cards": 0,
-    "enrollments": 30,
+    "enrollments": 33,
     "blogs": 1,
     "jobs": 30
   },
-  "ciRunId": "25625018001",
-  "websiteSyncAt": "2026-05-10T09:21:56.846259Z"
+  "ciRunId": "25626795349",
+  "websiteSyncAt": "2026-05-10T10:53:59.133716Z"
 }
