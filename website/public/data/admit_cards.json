@@ -77,55 +77,6 @@
     "category": "admit_cards"
   },
   {
-    "university": "Barkatullaah University",
-    "title": "NIRF 2025",
-    "url": "https://bubhopal.ac.in/Site/Upload/Menu/1600_1647_NIRF-2025_Ranking framework.pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Barkatullaah University",
-    "title": "Ph D 2025 26 RAC Time Table Notification Part 1",
-    "url": "https://bubhopal.ac.in/Site/Upload/9f402bb0-41e9-4456-8192-5390da885f93..pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Barkatullaah University",
-    "title": "Ph D 2025 26 RAC Time Table Student list Part 2",
-    "url": "https://bubhopal.ac.in/Site/Upload/56f34ac9-88d0-4741-b562-5f61c3a71655..pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Barkatullaah University",
-    "title": "Ph D 2025 26 RAC Time Table Ordinace Part 3",
-    "url": "https://bubhopal.ac.in/Site/Upload/cec7a281-d7ab-4f8a-aefe-9899817696cb..pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Chirayu University",
-    "title": "Conference - 15th Jan, 2025",
-    "url": "https://chirayuuniversity.ac.in/pdf/Brochure Aging through the lens of Physiology unlocking longevity(4).pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Chirayu University",
-    "title": "Ordinances 7th March 2025",
-    "url": "https://chirayuuniversity.ac.in/pdf/Chirayu Ordinances 7th March-2025.pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
-    "university": "Chirayu University",
-    "title": "TIMETABLE BSC NURSING 1ST SEMESTER BATCH 2025-26",
-    "url": "https://chirayuuniversity.ac.in/pdf/Nursing_Time_Table_1stSem.pdf",
-    "date": "2026-05-11",
-    "category": "admit_cards"
-  },
-  {
     "university": "Bhabha University",
     "title": "B.TECH (Reg./Ex) V TH Sem (EC/EE/EX/CE/ME/CSE) Examination DEC -2025",
     "url": "https://www.bhabhauniversity.edu.in/upload/timetable/bd969f34c35064011cd531c3110c6223.pdf",
@@ -185,6 +136,48 @@
     "university": "Bhabha University",
     "title": "M.TECH (Reg/EX) - 3RD SEM (DC/VLSI/THERMAL/CTM/CS/PS) Examination DEC– 2025",
     "url": "https://www.bhabhauniversity.edu.in/upload/timetable/cd5ee9445c04fdc12095ed8759857273.pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Conference - 15th Jan, 2025",
+    "url": "https://chirayuuniversity.ac.in/pdf/Brochure Aging through the lens of Physiology unlocking longevity(4).pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "Ordinances 7th March 2025",
+    "url": "https://chirayuuniversity.ac.in/pdf/Chirayu Ordinances 7th March-2025.pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Chirayu University",
+    "title": "TIMETABLE BSC NURSING 1ST SEMESTER BATCH 2025-26",
+    "url": "https://chirayuuniversity.ac.in/pdf/Nursing_Time_Table_1stSem.pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Ph D 2025 26 RAC Time Table Notification Part 1",
+    "url": "https://bubhopal.ac.in/Site/Upload/9f402bb0-41e9-4456-8192-5390da885f93..pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Ph D 2025 26 RAC Time Table Student list Part 2",
+    "url": "https://bubhopal.ac.in/Site/Upload/56f34ac9-88d0-4741-b562-5f61c3a71655..pdf",
+    "date": "2026-05-11",
+    "category": "admit_cards"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Ph D 2025 26 RAC Time Table Ordinace Part 3",
+    "url": "https://bubhopal.ac.in/Site/Upload/cec7a281-d7ab-4f8a-aefe-9899817696cb..pdf",
     "date": "2026-05-11",
     "category": "admit_cards"
   }

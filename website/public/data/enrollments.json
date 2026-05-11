@@ -1,6 +1,13 @@
 [
   {
     "university": "Aryavart University",
+    "title": "Admission-2026",
+    "url": "https://aiuniversity.edu.in/admission-form.php",
+    "date": "2026-05-11",
+    "category": "enrollments"
+  },
+  {
+    "university": "Aryavart University",
     "title": "Registration 2026-27ENQUIRY NOW",
     "url": "https://admission.auindia.ac.in/enquiry",
     "date": "2026-05-11",
@@ -10,13 +17,6 @@
     "university": "Aryavart University",
     "title": "Admission 2026-27APPLY NOW",
     "url": "https://admission.auindia.ac.in/",
-    "date": "2026-05-11",
-    "category": "enrollments"
-  },
-  {
-    "university": "Aryavart University",
-    "title": "Admission-2026",
-    "url": "https://aiuniversity.edu.in/admission-form.php",
     "date": "2026-05-11",
     "category": "enrollments"
   },
@@ -42,10 +42,24 @@
     "category": "enrollments"
   },
   {
-    "university": "Chirayu University",
-    "title": "UG/PG Batch 2021-22 Admission list uploaded.",
-    "url": "https://cmchbhopal.com/student-info/ug-pg-students-admission-information/",
+    "university": "Bhabha University",
+    "title": "PHD ENTRANCE EXAMINATION NOTIFICATION DEC-2025",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/30/",
     "date": "2026-05-11",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "EXAM FORM FILLLING NOTIFICATION Nov-Dec 2025",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/33/",
+    "date": "2026-05-11",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "M.TECH/M.PHARM (Dissertation viva) EXAM FORM FILLING NOTIFICATION APRIL 2026 (Date 22/4/2026)",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/35/",
+    "date": "2026-04-22",
     "category": "enrollments"
   },
   {
@@ -74,27 +88,6 @@
     "title": "Pay-Unpaid/View Receipt for Ph.D.Registration Application Form-JUN-2026",
     "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Entrance/UTD-Entrance/Entrance/MPHIL_PHD_PayUnpaidForm_EX.aspx",
     "date": "2026-05-11",
-    "category": "enrollments"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "PHD ENTRANCE EXAMINATION NOTIFICATION DEC-2025",
-    "url": "https://www.bhabhauniversity.edu.in/announcements/30/",
-    "date": "2026-05-11",
-    "category": "enrollments"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "EXAM FORM FILLLING NOTIFICATION Nov-Dec 2025",
-    "url": "https://www.bhabhauniversity.edu.in/announcements/33/",
-    "date": "2026-05-11",
-    "category": "enrollments"
-  },
-  {
-    "university": "Bhabha University",
-    "title": "M.TECH/M.PHARM (Dissertation viva) EXAM FORM FILLING NOTIFICATION APRIL 2026 (Date 22/4/2026)",
-    "url": "https://www.bhabhauniversity.edu.in/announcements/35/",
-    "date": "2026-04-22",
     "category": "enrollments"
   }
 ]
