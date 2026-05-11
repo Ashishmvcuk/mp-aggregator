@@ -12,7 +12,6 @@ import { SectionNavLink } from '../components/SectionNavLink'
 import { SidebarEnrollmentTable } from '../components/SidebarEnrollmentTable'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
 import { SidebarUniversitiesDirectory } from '../components/SidebarUniversitiesDirectory'
-import { SummaryCards } from '../components/SummaryCards'
 import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
 import { useResults } from '../hooks/useResults'
 import './HomePage.css'
@@ -30,7 +29,7 @@ export function HomePage() {
     () => [...feeds.universityPortals].map((p) => p.university).sort((a, b) => a.localeCompare(b)),
     [feeds.universityPortals]
   )
-  const { items, filtered, summary, loading, error, titleSuggestions } = useResults(
+  const { items, filtered, loading, error, titleSuggestions } = useResults(
     query,
     { typeFilter, selectedUniversity, referenceRows: feeds.universityPortals }
   )
@@ -165,7 +164,6 @@ export function HomePage() {
                 </p>
               ) : (
                 <>
-                  <SummaryCards summary={summary} />
                   <ResultsList
                     results={filtered}
                     emptyMessage="No results with an announced date match your search or filters."
