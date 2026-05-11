@@ -190,7 +190,7 @@
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
-    "title": "M.SC.(H.SC.)SEM-4FOOD AND NUTRITION (MARK LIST)",
+    "title": "M.SC.FINAL MILITARY SCIENCE SEM. 4 (MARK LIST)",
     "result_url": "https://davv.mponline.gov.in/Portal/Services/DAVV/OrgUser/result.aspx",
     "date": "2026-05-11",
     "scrape_index_date": "2026-05-11"
@@ -214,6 +214,13 @@
     "title": "ATKT Exam timetable for all courses (UG & PG) for the examination session Dec-2025",
     "result_url": "https://www.gyanveeruniversity.edu.in/Pages/NewsLetter.aspx?Type=2&id=179",
     "date": "2026-05-06",
+    "scrape_index_date": "2026-05-11"
+  },
+  {
+    "university": "Krantisurya Tantya Bhil Vishwavidyalaya",
+    "title": "LL.B ( Hons.) first semester (Regular,ATKT,Ex.) examination may -2026 - TIME TABLE",
+    "result_url": "https://ktbuniv.ac.in/index.php/academics/time-table-new/time-table-ll-b-hons-first-semester-regular-atkt-ex-examination-may-2026",
+    "date": "2026-05-11",
     "scrape_index_date": "2026-05-11"
   },
   {
@@ -280,10 +287,10 @@
     "scrape_index_date": "2026-05-11"
   },
   {
-    "university": "Krantisurya Tantya Bhil Vishwavidyalaya",
-    "title": "LL. M. III SEM. TIME TABLE",
-    "result_url": "https://ktbuniv.ac.in/index.php/academics/time-table-new/m-ed-i-sem-time-table-6",
-    "date": "2026-05-04",
+    "university": "Krantivir Tatya Tope Vishwavidyalaya",
+    "title": "क्लिक करें",
+    "result_url": "https://kttv.edu.in/assets/images/notice_board/Result_Decl_11-05-2026.pdf",
+    "date": "2026-05-11",
     "scrape_index_date": "2026-05-11"
   },
   {
@@ -304,13 +311,6 @@
     "university": "Krantivir Tatya Tope Vishwavidyalaya",
     "title": "क्लिक करें",
     "result_url": "https://kttv.edu.in/assets/images/notice_board/Retotaling_Result_08-05-2026.pdf",
-    "date": "2026-05-08",
-    "scrape_index_date": "2026-05-11"
-  },
-  {
-    "university": "Krantivir Tatya Tope Vishwavidyalaya",
-    "title": "क्लिक करें",
-    "result_url": "https://kttv.edu.in/assets/images/notice_board/Answer_Book_Open_Result.pdf",
     "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
@@ -514,63 +514,63 @@
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "Private Entrance Exam Result 2025-26",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Private_Entrance_Result.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"Time Table Of Semester Exam December 2024 Session\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/SKM_266i24120615050_0001.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"Ph.d. Course Work Exam Result (ATKT) - Held On 18 November 2024\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/SKM_266i24112918181.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"PhD Course Work Exam Result- Held On 24,25,26 & 28 September 2024\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/SKM_266i24110714360.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"Time Table Of BA (NEP) Annual Exam April 2024 Session\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Time_Table_Of_BA_(NEP)_Annual_Exam_April_2024_Session.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "Time Table Of Semester Exam June 2024 Session\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Time_Table_Of_Semester_Exam_June_2024_Session.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"RESCHEDULE TIME TABLE FOR CLASHING PAPER APRIL 2023-24 SESSION\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/Time_Table.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"Time Table April 2023-24 Session\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/SKM_266i24050919050_0001.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
     "university": "Raja Mansingh Tomar Music & Arts University",
     "title": "\"Time Table Of Semester Exam June 2025 Session\"",
     "result_url": "https://rmtmusicandartsuniversity.com/assets/images/latest_news/SKM_266i25061017520_0001.pdf",
-    "date": "2026-04-30",
+    "date": "2026-05-08",
     "scrape_index_date": "2026-05-11"
   },
   {
