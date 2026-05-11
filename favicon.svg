@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="mp-favicon-bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c62828" />
+      <stop offset="55%" stop-color="#b71c1c" />
+      <stop offset="100%" stop-color="#7f0000" />
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#mp-favicon-bg)" />
+  <!-- List / results rows — reads at 16–32px tab size -->
+  <path
+    fill="none"
+    stroke="#f9fdf7"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M9 10.5h14M9 16h14M9 21.5h10"
+  />
+</svg>
