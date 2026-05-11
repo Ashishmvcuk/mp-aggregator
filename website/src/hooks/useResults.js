@@ -112,11 +112,6 @@ export function useResults(searchQuery, options = {}) {
 
   const summary = useMemo(() => computeSummary(filtered, scrapedAt), [filtered, scrapedAt])
 
-  const universityNames = useMemo(() => {
-    const s = new Set(itemsWithAnnouncedDate.map((r) => r.university).filter(Boolean))
-    return [...s].sort((a, b) => a.localeCompare(b))
-  }, [itemsWithAnnouncedDate])
-
   const titleSuggestions = useMemo(() => {
     const s = new Set()
     for (const r of itemsWithAnnouncedDate) {
@@ -133,7 +128,6 @@ export function useResults(searchQuery, options = {}) {
     summary,
     loading,
     error,
-    universityNames,
     titleSuggestions,
   }
 }

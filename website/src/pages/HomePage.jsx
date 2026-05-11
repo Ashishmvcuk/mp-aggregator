@@ -30,7 +30,7 @@ export function HomePage() {
     () => [...feeds.universityPortals].map((p) => p.university).sort((a, b) => a.localeCompare(b)),
     [feeds.universityPortals]
   )
-  const { items, filtered, summary, loading, error, universityNames, titleSuggestions } = useResults(
+  const { items, filtered, summary, loading, error, titleSuggestions } = useResults(
     query,
     { typeFilter, selectedUniversity, referenceRows: feeds.universityPortals }
   )
@@ -128,7 +128,6 @@ export function HomePage() {
                 value={query}
                 onChange={setQuery}
                 disabled={loading || !!error}
-                universityNames={universityNames}
                 titleSuggestions={titleSuggestions}
               />
 

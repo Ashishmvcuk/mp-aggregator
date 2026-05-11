@@ -9,7 +9,7 @@ import './ListingPage.css'
 
 export function SyllabusPage() {
   const [query, setQuery] = useState('')
-  const { filtered, loading, error, universityNames, titleSuggestions } = useSyllabus(query)
+  const { filtered, loading, error, titleSuggestions } = useSyllabus(query)
 
   return (
     <div className="listing-page">
@@ -34,7 +34,6 @@ export function SyllabusPage() {
             onChange={setQuery}
             placeholder="Search by university or title…"
             disabled={loading || !!error}
-            universityNames={universityNames}
             titleSuggestions={titleSuggestions}
           />
 

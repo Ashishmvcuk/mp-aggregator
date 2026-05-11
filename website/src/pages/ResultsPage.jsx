@@ -13,7 +13,7 @@ const PAGE_SIZE = 20
 export function ResultsPage() {
   const [query, setQuery] = useState('')
   const [page, setPage] = useState(1)
-  const { filtered, loading, error, universityNames, titleSuggestions } = useResults(query)
+  const { filtered, loading, error, titleSuggestions } = useResults(query)
 
   useEffect(() => {
     setPage(1)
@@ -49,7 +49,6 @@ export function ResultsPage() {
             onChange={setQuery}
             placeholder="Search by university or title…"
             disabled={loading || !!error}
-            universityNames={universityNames}
             titleSuggestions={titleSuggestions}
           />
 

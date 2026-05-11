@@ -45,11 +45,6 @@ export function useNews(searchQuery) {
     )
   }, [items, q])
 
-  const universityNames = useMemo(() => {
-    const s = new Set(items.map((r) => r.university).filter(Boolean))
-    return [...s].sort((a, b) => a.localeCompare(b))
-  }, [items])
-
   const titleSuggestions = useMemo(() => {
     const s = new Set()
     for (const r of items) {
@@ -60,5 +55,5 @@ export function useNews(searchQuery) {
     return [...s].sort((a, b) => a.localeCompare(b))
   }, [items])
 
-  return { items, filtered, loading, error, universityNames, titleSuggestions }
+  return { items, filtered, loading, error, titleSuggestions }
 }

@@ -9,7 +9,7 @@ import './ListingPage.css'
 
 export function NewsPage() {
   const [query, setQuery] = useState('')
-  const { filtered, loading, error, universityNames, titleSuggestions } = useNews(query)
+  const { filtered, loading, error, titleSuggestions } = useNews(query)
 
   return (
     <div className="listing-page">
@@ -34,7 +34,6 @@ export function NewsPage() {
             onChange={setQuery}
             placeholder="Search by university or title…"
             disabled={loading || !!error}
-            universityNames={universityNames}
             titleSuggestions={titleSuggestions}
           />
 

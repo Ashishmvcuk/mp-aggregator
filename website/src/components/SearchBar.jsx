@@ -1,5 +1,9 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { MP_UNIVERSITY_NAMES } from '../constants/mpUniversityNames.js'
 import './SearchBar.css'
+
+const MAX_UNI_SUGGESTIONS_TYPED = 25
+const LISTBOX_ID_SUFFIX = '-suggestions'
 
 /**
  * @param {{
@@ -9,7 +13,6 @@ import './SearchBar.css'
  *   id?: string
  *   label?: string
  *   placeholder?: string
- *   universityNames?: string[]
  *   titleSuggestions?: string[]
  * }} props
  */
@@ -19,28 +22,40 @@ export function SearchBar({
   disabled,
   id = 'results-search',
   label = 'Search by university name or result title',
-  placeholder = 'Type to filter results and match universities…',
-  universityNames = [],
+  placeholder = 'Type to search, or open the list to browse all MP universities…',
   titleSuggestions = [],
 }) {
   const [open, setOpen] = useState(false)
   const q = value.trim().toLowerCase()
 
   const { uniMatches, titleMatches } = useMemo(() => {
+    const allUni = [...MP_UNIVERSITY_NAMES]
     if (!q) {
-      return { uniMatches: [], titleMatches: [] }
+      return { uniMatches: allUni, titleMatches: [] }
     }
-    const uni = universityNames.filter((u) => u.toLowerCase().includes(q)).slice(0, 8)
-    const titles = titleSuggestions.filter((t) => t.toLowerCase().includes(q)).slice(0, 8)
+    const uni = allUni.filter((u) => u.toLowerCase().includes(q)).slice(0, MAX_UNI_SUGGESTIONS_TYPED)
+    const titles = titleSuggestions.filter((t) => t.toLowerCase().includes(q)).slice(0, 12)
     return { uniMatches: uni, titleMatches: titles }
-  }, [q, universityNames, titleSuggestions])
+  }, [q, titleSuggestions])
 
-  const showPanel = open && !disabled && q.length >= 1 && (uniMatches.length > 0 || titleMatches.length > 0)
+  const showPanel =
+    open &&
+    !disabled &&
+    (uniMatches.length > 0 || titleMatches.length > 0)
 
   const pick = (v) => {
     onChange(v)
     setOpen(false)
   }
+
+  useEffect(() => {
+    if (!open) return undefined
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
 
   return (
     <div className="sr-search">
@@ -58,45 +73,30 @@ export function SearchBar({
             onChange={(e) => onChange(e.target.value)}
             onFocus={() => setOpen(true)}
             onBlur={() => setTimeout(() => setOpen(false), 180)}
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowDown' && !open) setOpen(true)
+            }}
             disabled={disabled}
             autoComplete="off"
             role="combobox"
             aria-expanded={showPanel}
-            aria-controls={`${id}-suggestions`}
+            aria-controls={`${id}${LISTBOX_ID_SUFFIX}`}
             aria-autocomplete="list"
           />
-          {universityNames.length > 0 && (
-            <select
-              id={`${id}-university`}
-              className="sr-search__select"
-              aria-label="Filter by university"
-              value={universityNames.includes(value) ? value : ''}
-              onChange={(e) => {
-                setOpen(false)
-                onChange(e.target.value)
-              }}
-              disabled={disabled}
-            >
-              <option value="">All universities ({universityNames.length})</option>
-              {universityNames.map((u) => (
-                <option key={u} value={u}>
-                  {u}
-                </option>
-              ))}
-            </select>
-          )}
-          <span className="sr-search__hint">Live filter · suggestions</span>
+          <span className="sr-search__hint">
+            {MP_UNIVERSITY_NAMES.length} universities · live filter
+          </span>
         </div>
         {showPanel && (
           <ul
-            id={`${id}-suggestions`}
+            id={`${id}${LISTBOX_ID_SUFFIX}`}
             className="sr-search__suggestions"
             role="listbox"
             aria-label="Search suggestions"
           >
             {uniMatches.length > 0 && (
               <li className="sr-search__suggestions-heading" role="presentation">
-                Universities
+                {q ? 'Universities (matching)' : 'Universities'}
               </li>
             )}
             {uniMatches.map((u) => (
