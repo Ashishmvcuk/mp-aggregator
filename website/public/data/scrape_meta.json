@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-05-11T12:35:59.962386Z",
-  "runStartedAt": "2026-05-11T12:33:09.197501Z",
-  "runId": "20260511T123309Z",
+  "scrapedAt": "2026-05-11T16:25:48.278433Z",
+  "runStartedAt": "2026-05-11T16:22:51.305064Z",
+  "runId": "20260511T162251Z",
   "scraperVersion": "1.0.0",
   "siteReleaseVersion": "1.1.0",
-  "universitiesSuccess": 84,
-  "universitiesFailed": 5,
+  "universitiesSuccess": 81,
+  "universitiesFailed": 8,
   "categoryCounts": {
     "results": 85,
     "news": 95,
@@ -15,6 +15,6 @@
     "blogs": 1,
     "jobs": 30
   },
-  "ciRunId": "25670332262",
-  "websiteSyncAt": "2026-05-11T12:36:00.203861Z"
+  "ciRunId": "25682751589",
+  "websiteSyncAt": "2026-05-11T16:25:48.559959Z"
 }

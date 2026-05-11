@@ -64,6 +64,13 @@
   },
   {
     "university": "Barkatullaah University",
+    "title": "LLM PLAIN SEMESTER III 11 May 2026",
+    "result_url": "https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx",
+    "date": "2026-05-07",
+    "scrape_index_date": "2026-05-11"
+  },
+  {
+    "university": "Barkatullaah University",
     "title": "MBA IV Sem Result sheet 07-05-2026",
     "result_url": "https://bubhopal.ac.in/Site/Upload//e95338bc-a1fb-4566-b37b-89181ca4353d..pdf",
     "date": "2026-05-07",
@@ -73,13 +80,6 @@
     "university": "Barkatullaah University",
     "title": "MBA II Sem RV Result sheet 07-05-2026",
     "result_url": "https://bubhopal.ac.in/Site/Upload//e9f408ee-d34b-46f9-9b86-24b5dbd2a594..pdf",
-    "date": "2026-05-07",
-    "scrape_index_date": "2026-05-11"
-  },
-  {
-    "university": "Barkatullaah University",
-    "title": "BLIB Year 1 FEBRUARY 2026 07-05-2026",
-    "result_url": "https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx",
     "date": "2026-05-07",
     "scrape_index_date": "2026-05-11"
   },
@@ -190,7 +190,7 @@
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
-    "title": "M.SC.FINAL MILITARY SCIENCE SEM. 4 (MARK LIST)",
+    "title": "M.A. FINAL MUSIC (INST.) SEM. 4 (MARK LIST)",
     "result_url": "https://davv.mponline.gov.in/Portal/Services/DAVV/OrgUser/result.aspx",
     "date": "2026-05-11",
     "scrape_index_date": "2026-05-11"
