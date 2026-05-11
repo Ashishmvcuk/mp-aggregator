@@ -183,7 +183,7 @@ export function HomePage() {
                   id="latest-news"
                   title="Latest news & notices"
                   items={feeds.newsLast30Days}
-                  emptyMessage="No news loaded — run the scraper and sync to website/public/data/ (see README)."
+                  emptyMessage="No news loaded — run scrapper_new and sync to website/public/data/ (see README)."
                   showAnnouncedDate={false}
                   footer={<Link to="/news">Open full news & notices page →</Link>}
                 />
@@ -209,7 +209,7 @@ export function HomePage() {
                     id="landing-syllabus"
                     title="Syllabus & schemes"
                     items={feeds.syllabusSorted}
-                    emptyMessage="No syllabus links in data yet — sync scraper output to website/public/data/syllabus.json."
+                    emptyMessage="No syllabus links in data yet — sync scrapper_new output to website/public/data/syllabus.json."
                     footer={<Link to="/syllabus">Open full syllabus & schemes page →</Link>}
                   />
                   <FeedList

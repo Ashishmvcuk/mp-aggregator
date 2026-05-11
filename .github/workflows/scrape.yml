@@ -1,4 +1,5 @@
-# Scraper → validate → sync → verify JSON + production build → commit website/public/data/*.json if changed (all triggers).
+# Scraper → sync → scrapper_new (input_10) → sync feeds → validate → build → commit website/public/data/*.json if changed.
+# workflow_dispatch runs legacy scraper then scrapper_new so the site picks up latest input_data feeds + scrape_meta in one commit.
 # Scheduled runs commit too so main stays in sync; Deploy then rebuilds gh-pages from main (avoids stale JSON under force_orphan).
 # If any step fails before commit: main is unchanged and Deploy does not run for this scrape.
 name: Scraper
@@ -56,12 +57,16 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-          cache-dependency-path: scraper/requirements.txt
+          cache-dependency-path: |
+            scraper/requirements.txt
+            scrapper_new/requirements.txt
 
       - name: "Install: Python dependencies"
         run: |
           pip install -r scraper/requirements.txt
           pip install -r scraper/requirements-dev.txt
+          pip install -r scrapper_new/requirements.txt
+          pip install -r scrapper_new/requirements-dev.txt
 
       # Workflow env sets shorter timeout + fast-fail connect for the live scrape; tests assume defaults.
       - name: "Test: pytest"
@@ -70,6 +75,9 @@ jobs:
           SCRAPER_FETCH_TIMEOUT: "30"
           SCRAPER_FETCH_FAST_FAIL_CONNECT: "0"
         run: python -m pytest tests/ -q
+
+      - name: "Test: scrapper_new (pytest)"
+        run: pytest scrapper_new/tests -q
 
       - name: "Scrape: fetch and write scraper/output"
         working-directory: scraper
@@ -102,6 +110,19 @@ jobs:
         run: |
           echo "::group::sync_to_website.py"
           python sync_to_website.py
+          echo "::endgroup::"
+
+      - name: "Scrapper new: input_10 scrape + sync feeds into website/public/data"
+        env:
+          SCRAPPER_NEW_OUTPUT_DIR: ${{ github.workspace }}/output_data
+          SCRAPPER_NEW_CI_RUN_ID: ${{ github.run_id }}
+          SCRAPPER_NEW_WORKERS: "8"
+          SCRAPPER_NEW_TIMEOUT: "22"
+          SCRAPPER_NEW_FAST_FAIL_CONNECT: "1"
+        run: |
+          echo "::group::scrapper_new (overwrites feed JSON + scrape_meta from input_data)"
+          python3 -m scrapper_new --emit-website-buckets
+          python3 scrapper_new/scripts/sync_website_public_data.py
           echo "::endgroup::"
 
       - name: "Validate: website/public/data JSON (parse + array root)"
@@ -160,6 +181,8 @@ jobs:
             scraper/logs/success/
             scraper/logs/failure/
             scraper/logs/runs/
+            output_data/
+            scrapper_new/logs/
 
       - name: "Notify: optional webhook (run_summary)"
         if: always()

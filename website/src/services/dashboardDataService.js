@@ -1,9 +1,12 @@
 /**
  * Static JSON under `public/data/` (synced by scraper), merged with manual entries.
+ * Category feeds load from `public/data/*.json` (scrapper_new sync copies bucket files here).
  */
 
 import { loadAllManualGroupedCached } from './manualEntriesService'
 import { mergeWithManual } from '../utils/mergeFeedData'
+
+const FEED_PREFIX = 'data'
 
 function dataUrl(path) {
   const base = import.meta.env.BASE_URL || '/'
@@ -47,9 +50,9 @@ export async function fetchScrapeMeta() {
 
 export async function loadDashboardFeeds() {
   const [news, blogs, jobs, manual] = await Promise.all([
-    fetchJsonArray('data/news.json'),
-    fetchJsonArray('data/blogs.json'),
-    fetchJsonArray('data/jobs.json'),
+    fetchJsonArray(`${FEED_PREFIX}/news.json`),
+    fetchJsonArray(`${FEED_PREFIX}/blogs.json`),
+    fetchJsonArray(`${FEED_PREFIX}/jobs.json`),
     loadAllManualGroupedCached(),
   ])
   return {
@@ -62,12 +65,12 @@ export async function loadDashboardFeeds() {
 /** All category feeds used on the landing page (except results — loaded separately). */
 export async function loadLandingFeeds() {
   const [news, jobs, syllabus, admit_cards, enrollments, blogs, manual] = await Promise.all([
-    fetchJsonArray('data/news.json'),
-    fetchJsonArray('data/jobs.json'),
-    fetchJsonArray('data/syllabus.json'),
-    fetchJsonArray('data/admit_cards.json'),
-    fetchJsonArray('data/enrollments.json'),
-    fetchJsonArray('data/blogs.json'),
+    fetchJsonArray(`${FEED_PREFIX}/news.json`),
+    fetchJsonArray(`${FEED_PREFIX}/jobs.json`),
+    fetchJsonArray(`${FEED_PREFIX}/syllabus.json`),
+    fetchJsonArray(`${FEED_PREFIX}/admit_cards.json`),
+    fetchJsonArray(`${FEED_PREFIX}/enrollments.json`),
+    fetchJsonArray(`${FEED_PREFIX}/blogs.json`),
     loadAllManualGroupedCached(),
   ])
   return {
@@ -82,7 +85,7 @@ export async function loadLandingFeeds() {
 
 export async function loadAdmitCards() {
   const [staticItems, manual] = await Promise.all([
-    fetchJsonArray('data/admit_cards.json'),
+    fetchJsonArray(`${FEED_PREFIX}/admit_cards.json`),
     loadAllManualGroupedCached().then((m) => m.admit_cards || []),
   ])
   return mergeWithManual(manual, staticItems, 'url')
@@ -90,7 +93,7 @@ export async function loadAdmitCards() {
 
 export async function loadNews() {
   const [staticItems, manual] = await Promise.all([
-    fetchJsonArray('data/news.json'),
+    fetchJsonArray(`${FEED_PREFIX}/news.json`),
     loadAllManualGroupedCached().then((m) => m.news || []),
   ])
   return mergeWithManual(manual, staticItems, 'url')
@@ -98,7 +101,7 @@ export async function loadNews() {
 
 export async function loadSyllabus() {
   const [staticItems, manual] = await Promise.all([
-    fetchJsonArray('data/syllabus.json'),
+    fetchJsonArray(`${FEED_PREFIX}/syllabus.json`),
     loadAllManualGroupedCached().then((m) => m.syllabus || []),
   ])
   return mergeWithManual(manual, staticItems, 'url')
@@ -106,7 +109,7 @@ export async function loadSyllabus() {
 
 export async function loadEnrollments() {
   const [staticItems, manual] = await Promise.all([
-    fetchJsonArray('data/enrollments.json'),
+    fetchJsonArray(`${FEED_PREFIX}/enrollments.json`),
     loadAllManualGroupedCached().then((m) => m.enrollments || []),
   ])
   return mergeWithManual(manual, staticItems, 'url')

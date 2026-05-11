@@ -105,6 +105,7 @@ def main() -> int:
         elif not isinstance(data, list):
             print(f"::error::{p.relative_to(REPO_ROOT)}: root must be a JSON array")
             failed = True
+
     return 1 if failed else 0
 
 

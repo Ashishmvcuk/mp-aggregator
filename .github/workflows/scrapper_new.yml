@@ -1,0 +1,99 @@
+# Standalone scrapper_new → sync → validate → build → commit (optional).
+# **Primary path:** run **Scraper** (scrape.yml) on Actions — it runs legacy scraper then scrapper_new in one job.
+name: Scrapper new
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrapper-new-${{ github.repository }}
+  cancel-in-progress: false
+
+env:
+  SCRAPPER_NEW_WORKERS: "8"
+  SCRAPPER_NEW_TIMEOUT: "22"
+  SCRAPPER_NEW_FAST_FAIL_CONNECT: "1"
+  SCRAPPER_NEW_CI_RUN_ID: ${{ github.run_id }}
+  SCRAPPER_NEW_OUTPUT_DIR: ${{ github.workspace }}/output_data
+
+jobs:
+  scrapper_new_sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align to latest remote branch tip
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}"
+          git reset --hard "origin/${GITHUB_REF_NAME}"
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scrapper_new/requirements.txt
+
+      - name: Install scrapper_new dependencies
+        run: |
+          pip install -r scrapper_new/requirements.txt
+          pip install -r scrapper_new/requirements-dev.txt
+
+      - name: Test scrapper_new (pytest)
+        run: pytest scrapper_new/tests -q
+
+      - name: Run scrapper_new (fetch + extract + emit buckets)
+        run: |
+          echo "::group::scrapper_new scrape"
+          python3 -m scrapper_new --emit-website-buckets
+          echo "::endgroup::"
+
+      - name: Sync feed JSON into website/public/data
+        run: |
+          echo "::group::sync_website_public_data.py"
+          python3 scrapper_new/scripts/sync_website_public_data.py
+          echo "::endgroup::"
+
+      - name: Validate website/public/data JSON
+        run: python3 scraper/scripts/ci_validate_website_public_json.py
+
+      - name: Verify production build
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - name: npm ci && npm run build
+        working-directory: website
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_ADMIN_USERNAME: ${{ secrets.VITE_ADMIN_USERNAME }}
+          VITE_ADMIN_PASSWORD: ${{ secrets.VITE_ADMIN_PASSWORD }}
+          VITE_ADMIN_ALLOW_DEMO: ${{ vars.VITE_ADMIN_ALLOW_DEMO }}
+        run: |
+          echo "::group::Website production build"
+          npm ci
+          npm run build
+          echo "::endgroup::"
+
+      - name: Commit feed JSON in website/public/data if changed
+        run: bash scrapper_new/scripts/ci_commit_website_buckets.sh
+
+      - name: Artifact scrapper_new output (diagnostics)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrapper-new-output-${{ github.run_id }}
+          if-no-files-found: ignore
+          path: |
+            output_data/
+            scrapper_new/logs/

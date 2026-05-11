@@ -1,6 +1,6 @@
 /**
  * Data access for university results.
- * Static file path matches scraper output: `website/public/data/results.json`.
+ * Static file: `website/public/data/results.json` (scrapper_new sync / scraper output).
  * Merges `manual_additions.json` + optional Supabase `manual_entries` (see manualEntriesService).
  */
 
@@ -31,7 +31,10 @@ export async function fetchLocalResults() {
   if (!Array.isArray(data)) {
     throw new Error('Invalid results payload: expected an array')
   }
-  return data
+  return data.map((row) => ({
+    ...row,
+    result_url: row.result_url || row.url,
+  }))
 }
 
 /**

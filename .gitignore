@@ -25,6 +25,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Local scratch (alternate scrapper_new output path)
+/output_data/
+
 # Scraper (generated / local)
 scraper/logs/*.log
 scraper/logs/**/*.jsonl
