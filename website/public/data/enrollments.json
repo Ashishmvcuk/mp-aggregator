@@ -1,5 +1,21 @@
 [
   {
+    "university": "Bhabha University",
+    "title": "Admissions open 2026-27",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/25/",
+    "date": "2026-04-22",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-11"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Counselling Schedule",
+    "url": "https://www.bhabhauniversity.edu.in/announcements/32/",
+    "date": "2026-04-22",
+    "category": "enrollments",
+    "scrape_index_date": "2026-05-11"
+  },
+  {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
     "title": "Admission Notice: Online Applications are invited for Admission Session 2026-27 in various programmes at University’s Campuses |",
     "url": "https://www.mcu.ac.in/admission-notice-2026-27",
