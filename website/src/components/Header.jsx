@@ -80,9 +80,9 @@ export function Header() {
               </SectionNavLink>
             </li>
             <li>
-              <Link to="/admit-cards" className="sr-header__nav-link">
-                All admits
-              </Link>
+              <SectionNavLink hashId="admissions-open" className="sr-header__nav-link">
+                Admissions Open
+              </SectionNavLink>
             </li>
             <li>
               <SectionNavLink hashId="universities" className="sr-header__nav-link">
