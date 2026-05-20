@@ -12,7 +12,7 @@ Dashboard for **Madhya Pradesh university examination results** (and related lin
 | [`website/public/data/`](website/public/data/) | Category JSON consumed by the app (`results.json`, etc.) — updated by the scraper when validation passes |
 | [`scraper/`](scraper/) | Fetch → normalize → dedupe → validate → `sync_to_website.py` |
 | [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) | Build `website/` and publish to **`gh-pages`** (runs on pushes to `main` that touch `website/**` or this workflow) |
-| [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | **Scraper** (Actions → Scraper): test → legacy scrape → sync → **`scrapper_new`** + sync **input_10** feeds into `website/public/data/` → verify JSON → **production build** → **`ci_commit_website_data.sh`** when JSON differs → push triggers **Deploy** |
+| [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) | **Scraper** (Actions → Scraper): test → legacy scrape → sync → **`scrapper_new`** on **`input_data/total_list.json`** + sync feeds into `website/public/data/` → verify JSON → **production build** → **`ci_commit_website_data.sh`** when JSON differs → push triggers **Deploy** |
 | [`scraper/scripts/ci_commit_website_data.sh`](scraper/scripts/ci_commit_website_data.sh) | Stages only `website/public/data/*.json`, prints diff, commits if needed |
 | [`scraper/scripts/ci_validate_website_public_json.py`](scraper/scripts/ci_validate_website_public_json.py) | CI check: category JSON parses as arrays; `scrape_meta.json` and `manual_additions.json` are validated objects |
 

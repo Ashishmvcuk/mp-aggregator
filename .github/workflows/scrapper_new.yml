@@ -22,7 +22,7 @@ env:
 jobs:
   scrapper_new_sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -51,8 +51,8 @@ jobs:
 
       - name: Run scrapper_new (fetch + extract + emit buckets)
         run: |
-          echo "::group::scrapper_new scrape"
-          python3 -m scrapper_new --emit-website-buckets
+          echo "::group::scrapper_new scrape (input_data/total_list.json)"
+          python3 -m scrapper_new --input input_data/total_list.json --emit-website-buckets
           echo "::endgroup::"
 
       - name: Sync feed JSON into website/public/data

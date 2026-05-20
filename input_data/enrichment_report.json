@@ -1,0 +1,6101 @@
+{
+  "generated_at": "2026-05-20T22:05:41Z",
+  "input": "input_data/total_list.json",
+  "output": "input_data/total_list.json",
+  "rows": 89,
+  "empty_before": {
+    "website": 0,
+    "time_table_url": 32,
+    "results_url": 32,
+    "news_url": 29,
+    "admit_card_url": 39,
+    "student_login_url": 38,
+    "scheme_syllabus_url": 37
+  },
+  "empty_after": {
+    "website": 0,
+    "time_table_url": 23,
+    "results_url": 20,
+    "news_url": 6,
+    "admit_card_url": 39,
+    "student_login_url": 14,
+    "scheme_syllabus_url": 24
+  },
+  "rows_missing_any_role_url": 42,
+  "universities": [
+    {
+      "name": "A.K.S. University",
+      "sr_no": 1,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.aksuniversity.ac.in/student-council",
+          "error": null
+        },
+        {
+          "url": "https://www.aksuniversity.ac.in/student-club",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Abhyuday University",
+      "sr_no": 2,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://abhyudayuniversity.edu.in/controller-of-examination-1/",
+          "error": null
+        },
+        {
+          "url": "http://abhyudayuniversity.edu.in/wp-content/uploads/2025/05/Academic-Council.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Amaltas University",
+      "sr_no": 3,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://amaltasuniversity.in/entrance-examination-for-ph-d-program/",
+          "error": null
+        },
+        {
+          "url": "https://amaltasuniversity.in/examination/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Amity University",
+      "sr_no": 4,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.amity.edu/beyond-academics.aspx",
+          "error": null
+        },
+        {
+          "url": "https://www.amity.edu/student-life.aspx",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.amity.edu', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.amity.edu', port=443): Max retries exceeded with url: /news.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='portal.amity.edu', port=443): Max retries exceeded with url: /login.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Aryavart University",
+      "sr_no": 5,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "input_10"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "3.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "8.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+      "sr_no": 6,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Avantika University",
+      "sr_no": 7,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.avantikauniversity.edu.in/academic-phd-program.php",
+          "error": null
+        },
+        {
+          "url": "https://www.avantikauniversity.edu.in/collaboration.php?c=academic",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Awadesh Pratap Singh University",
+      "sr_no": 8,
+      "fetch_error": "ConnectionError: HTTPConnectionPool(host='www.apsurewa.nic.in', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7b7a8ebc1150>: Failed to establish a new connection: [Errno -2] Name or service not known'))",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "ConnectionError: HTTPConnectionPool(host='www.apsurewa.nic.in', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7b7a756b0a90>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='result.apsurewa.ac.in', port=443): Max retries exceeded with url: /result/Programselect (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Azim Premji University",
+      "sr_no": 9,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://azimpremjiuniversity.edu.in/student-research",
+          "error": null
+        },
+        {
+          "url": "https://azimpremjiuniversity.edu.in/events/2026/student-project-conclave-2026-bhopal-campus",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Barkatullaah University",
+      "sr_no": 10,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "TooManyRedirects: Exceeded 30 redirects."
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "TooManyRedirects: Exceeded 30 redirects."
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "TooManyRedirects: Exceeded 30 redirects."
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Bhabha University",
+      "sr_no": 11,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "input_10"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Chirayu University",
+      "sr_no": 12,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "input_10"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "ReadTimeout: HTTPSConnectionPool(host='zwinmail02.securehostdns.com', port=443): Read timed out. (read timeout=12)"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Devi Ahilya Vishwavidyalaya",
+      "sr_no": 13,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.dauniv.ac.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.dauniv.ac.in', port=443): Max retries exceeded with url: /ug-time-table (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "results_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.dauniv.ac.in', port=443): Max retries exceeded with url: /nep-revaluation-results (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.dauniv.ac.in', port=443): Max retries exceeded with url: /view-all/important-announcements (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.mponline.gov.in', port=443): Max retries exceeded with url: /portal/ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.dauniv.ac.in', port=443): Max retries exceeded with url: /syllabus (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Dharmashastra National Law University",
+      "sr_no": 14,
+      "fetch_error": "HTTP 403",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "news_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Dr C V Raman University",
+      "sr_no": 15,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://cvrump.ac.in/exam",
+          "error": null
+        },
+        {
+          "url": "https://cvrump.ac.in/result",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='erp.cvrump.ac.in', port=443): Max retries exceeded with url: /onlineexam/Login.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Dr. A.P.J Abdul Kalam University",
+      "sr_no": 16,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Dr. B. R. Ambedkar University of Social Sciences",
+      "sr_no": 17,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "9.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "scraped",
+          "score": "10.5"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
+      "sr_no": 18,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "7.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "16.5"
+        },
+        "admit_card_url": {
+          "source": "scraped",
+          "score": "4.5"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "4.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Dr. Preeti Global University",
+      "sr_no": 19,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.drpreetiglobaluniversity.com/public/frontend/assets/pdf/Exam-Form-Notice.pdf",
+          "error": null
+        },
+        {
+          "url": "https://www.drpreetiglobaluniversity.com/global/academics",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Eklavya University",
+      "sr_no": 20,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://eklavyauniversity.ac.in/academic-2/",
+          "error": null
+        },
+        {
+          "url": "https://eklavyauniversity.ac.in/academic-council/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "5.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "G.H Raisoni University",
+      "sr_no": 21,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.ghru.edu.in/examination",
+          "error": null
+        },
+        {
+          "url": "https://www.ghru.edu.in/academic-centers",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Gyanodaya University",
+      "sr_no": 22,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://gyanodayauniversity.ac.in/home/controller_examination",
+          "error": null
+        },
+        {
+          "url": "https://gyanodayauniversity.ac.in/home/academicCollaboration",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Gyanveer University",
+      "sr_no": 23,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "I.E.S. University",
+      "sr_no": 24,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Indian Institute of Forest Management (IIFM)",
+      "sr_no": 25,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://iifm.ac.in/student-bodies",
+          "error": null
+        },
+        {
+          "url": "https://iifm.ac.in/student-clubs",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": 503,
+          "error": "HTTP 503"
+        },
+        "news_url": {
+          "ok": false,
+          "status": 503,
+          "error": "HTTP 503"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "ITM University",
+      "sr_no": 26,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.itmuniversity.ac.in/academics/infrastructure",
+          "error": null
+        },
+        {
+          "url": "https://www.itmuniversity.ac.in/academics/itm-hospital",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "J. N. C. T professional University",
+      "sr_no": 27,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "6.0"
+        },
+        "results_url": {
+          "source": "input_10"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Jagran Lakecity University",
+      "sr_no": 28,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://jlu.edu.in/why-jlu/student-approach",
+          "error": null
+        },
+        {
+          "url": "https://jlu.edu.in/news-events",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Jawaharlal Nehru Krishi Vishwavidyalaya",
+      "sr_no": 29,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Jaypee University of Engineering & Technology",
+      "sr_no": 30,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.juet.ac.in/jaypee/academic-programmes.php",
+          "error": null
+        },
+        {
+          "url": "https://www.juet.ac.in/images/7771545_academic-integrity-Regulation2018.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Jiwaji University",
+      "sr_no": 31,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Krantisurya Tantya Bhil Vishwavidyalaya",
+      "sr_no": 32,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "4.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP 401"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 401,
+          "error": "HTTP 401"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Krantivir Tatya Tope Vishwavidyalaya",
+      "sr_no": 33,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Lakshmibai National Institute of Physical Education",
+      "sr_no": 34,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.lnipe.edu.in/sdp_student_exchange_program.php",
+          "error": null
+        },
+        {
+          "url": "https://www.lnipe.edu.in/sp_student_notice.php",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "6.0"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "LNCT UNIVERSITY BHOPAL",
+      "sr_no": 35,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [
+        "news_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "LNCT Vidhyapeeth University",
+      "sr_no": 36,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://lnctvu.ac.in/dean-academics/",
+          "error": null
+        },
+        {
+          "url": "https://lnctvu.ac.in/academic-council/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "M.P.Bhoj (open) University",
+      "sr_no": 37,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Madhav Institute of Technology and Science",
+      "sr_no": 38,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Madhya Pradesh Medical Science University",
+      "sr_no": 39,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "input_10"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mpmsu.edu.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mpmsu.edu.in', port=443): Max retries exceeded with url: /Timetable (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "results_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mpmsu.edu.in', port=443): Max retries exceeded with url: /Result (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mpmsu.edu.in', port=443): Max retries exceeded with url: /news-details/nid/eVRvaU1iY1FvQ0QzVWJHRTZMdHVUUT09 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mpmsu.edu.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Madhyanchal Professional University",
+      "sr_no": 40,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Mahakaushal University",
+      "sr_no": 41,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+      "sr_no": 42,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "input_10"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Maharishi Mahesh Yogi Vedic Vishwavidyalaya",
+      "sr_no": 43,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mmyvv.org', port=443): Max retries exceeded with url: /login (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='mmyvv.org', port=443): Max retries exceeded with url: /phd-syllabus (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Maharshi Panini Sanskrit Evam Vedic Vishwavidyalaya",
+      "sr_no": 44,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "input_10"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "7.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "4.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+      "sr_no": 45,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "input_10"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Makhanlal Chaturvedi National University of Journalism & Communication",
+      "sr_no": 46,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Malwanchal University",
+      "sr_no": 47,
+      "fetch_error": "HTTP 403",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Mandsaur University",
+      "sr_no": 48,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://meu.edu.in/ph-d-entrance-exam/",
+          "error": null
+        },
+        {
+          "url": "https://meu.edu.in/wp-content/uploads/2024/06/Students-Resource-Book.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url",
+        "student_login_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Mangalayatan University",
+      "sr_no": 49,
+      "fetch_error": "HTTP 403",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Mansarovar Global University",
+      "sr_no": 50,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Medi-Caps University",
+      "sr_no": 51,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.medicaps.ac.in/quick-links/important-notices",
+          "error": null
+        },
+        {
+          "url": "https://www.medicaps.ac.in/examinations",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": 500,
+          "error": "HTTP 500"
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
+      "sr_no": 52,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "National Institute of Technical Teachers Training & Research (NITTTR)",
+      "sr_no": 53,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "results_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "National Law Institute University",
+      "sr_no": 54,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Oriental University",
+      "sr_no": 55,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "student_login_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "P.K. University",
+      "sr_no": 56,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "4.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Pandit S N Shukla University",
+      "sr_no": 57,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "People's University",
+      "sr_no": 58,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.peoplesuniversity.edu.in/examination/",
+          "error": null
+        },
+        {
+          "url": "https://www.peoplesuniversity.edu.in/peoples-genius-2026-result/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "student_login_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Prestige Institute of Management and Research (PIMR)",
+      "sr_no": 59,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://pimrindore.ac.in/programs/",
+          "error": null
+        },
+        {
+          "url": "https://pimrindore.ac.in/wp-content/uploads/2024/07/ACADEMIC-CALENDAR-2024.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "student_login_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Prestige University",
+      "sr_no": 60,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Rabindranath Tagore University (formerly known as AISECT University)",
+      "sr_no": 61,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://rntu.ac.in/exam",
+          "error": null
+        },
+        {
+          "url": "https://rntu.ac.in/academics/faculty-of-agriculture",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='erp.rntu.ac.in', port=443): Max retries exceeded with url: /onlineexam/Login.aspx (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1007)')))"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Raja Mansingh Tomar Music & Arts University",
+      "sr_no": 62,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (UG-PG)",
+      "sr_no": 62,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "input_10"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Raja Shankar Shah University, Chhindwara",
+      "sr_no": 63,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Rajiv Gandhi Prodoyogiki Vishwavidyalaya (DIPLOMA WINGS)",
+      "sr_no": 63,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.rgpvdiploma.in/StudentLife/StudentLogin.aspx",
+          "error": null
+        },
+        {
+          "url": "https://www.rgpvdiploma.in/Academics/Acadmic_calander.aspx",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "input_10"
+        },
+        "time_table_url": {
+          "source": "input_10"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "input_10"
+        },
+        "admit_card_url": {
+          "source": "input_10"
+        },
+        "student_login_url": {
+          "source": "input_10"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Rani Awantibai Lodhi Vishwavidyalaya",
+      "sr_no": 64,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "student_login_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='ralvv.mp.gov.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.ralvv.mp.gov.in', port=443): Max retries exceeded with url: /academics/time-table (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        },
+        "results_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.ralvv.mp.gov.in', port=443): Max retries exceeded with url: /assets/notification/Resultnotification.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.ralvv.mp.gov.in', port=443): Max retries exceeded with url: /assets/notification/Resultnotice.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.ralvv.mp.gov.in', port=443): Max retries exceeded with url: /academics/syllabus (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Rajmata Vijayaraje Scindia Krishi Vishwa Vidyalaya",
+      "sr_no": 65,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "10.0"
+        }
+      },
+      "unfilled_role_fields": [
+        "results_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Rani Durgavati Vishwavidyalaya",
+      "sr_no": 65,
+      "fetch_error": "TLS fallback failed: SSLError: HTTPSConnectionPool(host='rdunijbpin.mponline.gov.in', port=443): Max retries exceeded with url: /1068/Home (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='rdunijbpin.mponline.gov.in', port=443): Max retries exceeded with url: /1068/Home (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='rdunijbpin.org', port=443): Max retries exceeded with url: /1084/Time-Table (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        },
+        "results_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='rdunijbpin.org', port=443): Max retries exceeded with url: /1436/Result-Links?MenuID=1369 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='rdunijbpin.org', port=443): Max retries exceeded with url: /1067/News (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='rdunijbpin.org', port=443): Max retries exceeded with url: /Site/Information/ViewSyllabus.aspx (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Renaissance University",
+      "sr_no": 66,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "news_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "RKDF University",
+      "sr_no": 67,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://erplive.rkdf.ac.in/Home/OnlineStudent",
+          "error": null
+        },
+        {
+          "url": "https://erplive.rkdf.ac.in/student/CreateAbcid",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "news_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sage University",
+      "sr_no": 68,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "6.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "scraped",
+          "score": "3.5"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "SAM Global University",
+      "sr_no": 69,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sanchi University of Buddhist-Indic Studies",
+      "sr_no": 70,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.sanchiuniv.edu.in/newwebsite/site/student_corner",
+          "error": null
+        },
+        {
+          "url": "https://www.sanchiuniv.edu.in/newwebsite/site/administration_message?page=Controller+of+Examination",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 500,
+          "error": "HTTP 500"
+        }
+      }
+    },
+    {
+      "name": "Sanjeev Agrawal Global Educational University",
+      "sr_no": 71,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "3.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "9.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sardar Patel University",
+      "sr_no": 72,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://spubgt.ac.in/notices/",
+          "error": null
+        },
+        {
+          "url": "https://spubgt.ac.in/examination-committee/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sarvepalli Radhakrishnan University",
+      "sr_no": 73,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.srku.edu.in/srk-university-exam-time-table-srk-university-2024/",
+          "error": null
+        },
+        {
+          "url": "https://www.srku.edu.in/wp-content/uploads/2025/allCommittee/Student_Grievance_Committee.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "11.0"
+        }
+      },
+      "unfilled_role_fields": [
+        "results_url",
+        "news_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 500,
+          "error": "HTTP 500"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Scope Global Skills University",
+      "sr_no": 74,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "csv"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Shri Krishna University",
+      "sr_no": 75,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "8.0"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Shri Vaishnav Vidyapeeth Vishwavidyalaya",
+      "sr_no": 76,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.svvv.edu.in/assets/pdf/uploaded_files/Notice - Bus Facility for Academic Session 2026â27.pdf",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://www.svvv.edu.in/assets/pdf/uploaded_files/SVVV Fee Submission notice (July-Dec 2026) all  Sem_18 May 2026.pdf",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        }
+      }
+    },
+    {
+      "name": "Shubham University",
+      "sr_no": 77,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.shubhamuniversity.com/circulars-and-notices",
+          "error": null
+        },
+        {
+          "url": "https://www.shubhamuniversity.com/academics",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "csv"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "csv"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sri Aurobindo University",
+      "sr_no": 78,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "8.0"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "6.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Sri Satya Sai University of Technology & Medical Sciences",
+      "sr_no": 79,
+      "fetch_error": "ReadTimeout: HTTPSConnectionPool(host='sssutms.co.in', port=443): Read timed out. (read timeout=22)",
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "empty"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "news_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "ReadTimeout: HTTPSConnectionPool(host='sssutms.co.in', port=443): Read timed out. (read timeout=12)"
+        }
+      }
+    },
+    {
+      "name": "Swami Vivekanand University",
+      "sr_no": 80,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.svnuniversity.org/result.html",
+          "error": null
+        },
+        {
+          "url": "https://www.svnuniversity.org/academics.html",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        }
+      }
+    },
+    {
+      "name": "Symbiosis University of Applied Sciences (SUAS)",
+      "sr_no": 81,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "3.5"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "results_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.suas.ac.in', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "time_table_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.suas.ac.in', port=443): Max retries exceeded with url: /wp-content/uploads/2025/11/Time-Table_AY2025-26_Odd-Sem.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "news_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.suas.ac.in', port=443): Max retries exceeded with url: /Campaign/mba_admissions_2026/?L_mx_Group=MBA&utm_source=Notification+Website&utm_medium=Website+Notification+Bar&utm_campaign=Skill+Cat+Notification+Bar+Website&utm_id=MBA+Skill+Cat+2026 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='www.suas.ac.in', port=443): Max retries exceeded with url: /national-service-scheme-nss/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Techno Global University",
+      "sr_no": 82,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.technoglobaluniversitysironjmp.com/grievance/student-grievance",
+          "error": null
+        },
+        {
+          "url": "https://www.technoglobaluniversitysironjmp.com/index.php/academics",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "empty"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "empty"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "results_url",
+        "admit_card_url",
+        "student_login_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "The Indira Gandhi National Tribal University",
+      "sr_no": 83,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://www.igntu.ac.in/exam.aspx",
+          "error": null
+        },
+        {
+          "url": "https://www.igntu.ac.in/result.aspx",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "csv"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "csv"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": false,
+          "status": null,
+          "error": "SSLError: HTTPSConnectionPool(host='new.igntu.ac.in', port=443): Max retries exceeded with url: /syllabus (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1007)')))"
+        }
+      }
+    },
+    {
+      "name": "Vikram University",
+      "sr_no": 84,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "7.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "csv"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "time_table_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "admit_card_url": {
+          "ok": false,
+          "status": 404,
+          "error": "HTTP 404"
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "Vikrant University",
+      "sr_no": 85,
+      "fetch_error": null,
+      "secondary_fetches": [
+        {
+          "url": "https://vikrantuniversity.ac.in/student-corner/",
+          "error": null
+        },
+        {
+          "url": "https://vikrantuniversity.ac.in/notices/",
+          "error": null
+        }
+      ],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "11.0"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "empty"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url",
+        "scheme_syllabus_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    },
+    {
+      "name": "VIT Bhopal University",
+      "sr_no": 86,
+      "fetch_error": null,
+      "secondary_fetches": [],
+      "field_sources": {
+        "website": {
+          "source": "csv"
+        },
+        "time_table_url": {
+          "source": "empty"
+        },
+        "results_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "news_url": {
+          "source": "scraped",
+          "score": "5.5"
+        },
+        "admit_card_url": {
+          "source": "empty"
+        },
+        "student_login_url": {
+          "source": "scraped",
+          "score": "4.0"
+        },
+        "scheme_syllabus_url": {
+          "source": "scraped",
+          "score": "5.5"
+        }
+      },
+      "unfilled_role_fields": [
+        "time_table_url",
+        "admit_card_url"
+      ],
+      "url_checks": {
+        "website": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "results_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "news_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        },
+        "student_login_url": {
+          "ok": false,
+          "status": null,
+          "error": "ConnectionError: HTTPSConnectionPool(host='vtopv2.vitbhopal.ac.in', port=443): Max retries exceeded with url: /vtop/login (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7b7a75fef0a0>: Failed to establish a new connection: [Errno -2] Name or service not known'))"
+        },
+        "scheme_syllabus_url": {
+          "ok": true,
+          "status": 200,
+          "error": null
+        }
+      }
+    }
+  ]
+}

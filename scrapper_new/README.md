@@ -14,7 +14,7 @@ Without the env var, the two commands still default to `scrapper_new/output/`. T
 
 ### GitHub Actions
 
-**Recommended:** run the **[`Scraper`](../.github/workflows/scrape.yml)** workflow (**Actions → Scraper → Run workflow**). It runs the legacy MP scraper, `sync_to_website.py`, then **`scrapper_new`** + **`sync_website_public_data.py`**, so **`website/public/data/`** gets the latest **`input_data/input_10.json`** feeds and **`scrape_meta.json`** in **one** job and **one** commit.
+**Recommended:** run the **[`Scraper`](../.github/workflows/scrape.yml)** workflow (**Actions → Scraper → Run workflow**). It runs the legacy MP scraper, `sync_to_website.py`, then **`scrapper_new`** on **`input_data/total_list.json`** + **`sync_website_public_data.py`**, so **`website/public/data/`** gets feeds and **`scrape_meta.json`** in **one** job and **one** commit.
 
 Optional standalone workflow: [`.github/workflows/scrapper_new.yml`](../.github/workflows/scrapper_new.yml) (**Actions → Scrapper new**) — same env (`SCRAPPER_NEW_OUTPUT_DIR` → `output_data`), but only scrapper_new + its commit script (no legacy scrape). **`output_data/`** stays gitignored.
 
