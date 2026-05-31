@@ -5,6 +5,7 @@ import { AdminPage } from './pages/AdminPage'
 import { AdmitCardsPage } from './pages/AdmitCardsPage'
 import { EnrollmentsPage } from './pages/EnrollmentsPage'
 import { HomePage } from './pages/HomePage'
+import { ImportantLinksPage } from './pages/ImportantLinksPage'
 import { NewsPage } from './pages/NewsPage'
 import { ResultsPage } from './pages/ResultsPage'
 import { SyllabusPage } from './pages/SyllabusPage'
@@ -21,6 +22,7 @@ function App() {
           <Route path="/results" element={<ResultsPage />} />
           <Route path="/syllabus" element={<SyllabusPage />} />
           <Route path="/enrollments" element={<EnrollmentsPage />} />
+          <Route path="/important-links" element={<ImportantLinksPage />} />
           <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </ScrapeMetaProvider>

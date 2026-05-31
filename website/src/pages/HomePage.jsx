@@ -11,6 +11,7 @@ import { SearchBar } from '../components/SearchBar'
 import { SectionNavLink } from '../components/SectionNavLink'
 import { SidebarEnrollmentTable } from '../components/SidebarEnrollmentTable'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
+import { SidebarImportantSections } from '../components/SidebarImportantSections'
 import { SidebarUniversitiesDirectory } from '../components/SidebarUniversitiesDirectory'
 import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
 import { useResults } from '../hooks/useResults'
@@ -55,6 +56,10 @@ export function HomePage() {
                 {' · '}
                 <SectionNavLink hashId="university-portals" className="home-page__intro-link">
                   University portals
+                </SectionNavLink>
+                {' · '}
+                <SectionNavLink hashId="important-sections" className="home-page__intro-link">
+                  Important sections
                 </SectionNavLink>
                 {' · '}
                 <SectionNavLink hashId="latest-results" className="home-page__intro-link">
@@ -155,6 +160,11 @@ export function HomePage() {
                     selectedUniversity={selectedUniversity}
                     typeFilter={typeFilter}
                   />
+                  <SidebarImportantSections
+                    items={feeds.importantLinksPreview}
+                    totalCount={feeds.importantLinksTotal}
+                    placement="mobile"
+                  />
                 </div>
               )}
 
@@ -235,6 +245,11 @@ export function HomePage() {
                     filterQuery={query}
                     selectedUniversity={selectedUniversity}
                     typeFilter={typeFilter}
+                  />
+                  <SidebarImportantSections
+                    items={feeds.importantLinksPreview}
+                    totalCount={feeds.importantLinksTotal}
+                    placement="sidebar"
                   />
                 </div>
               )}

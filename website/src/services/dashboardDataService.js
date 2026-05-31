@@ -128,3 +128,38 @@ export async function loadUniversityPortals() {
     }))
     .filter((r) => r.university && r.url)
 }
+
+/** Per-university portal section links (Time Table, Results, etc.). */
+export async function loadUniversitySections() {
+  const rows = await fetchJsonArray('data/university_sections.json')
+  return rows
+    .filter((r) => r && typeof r === 'object')
+    .map((r) => ({
+      university: String(r.university || r.name || '').trim(),
+      type: String(r.type || '').trim(),
+      sections: Array.isArray(r.sections)
+        ? r.sections
+            .filter((s) => s && typeof s === 'object')
+            .map((s) => ({
+              label: String(s.label || '').trim(),
+              url: String(s.url || '').trim(),
+            }))
+            .filter((s) => s.label && s.url)
+        : [],
+    }))
+    .filter((r) => r.university && r.sections.length > 0)
+}
+
+/** National important links (`public/data/important_links.json`). */
+export async function loadImportantLinks() {
+  const rows = await fetchJsonArray('data/important_links.json')
+  return rows
+    .filter((r) => r && typeof r === 'object')
+    .map((r) => ({
+      category: String(r.category || '').trim(),
+      organization: String(r.organization || '').trim(),
+      websitelink: String(r.websitelink || r.url || '').trim(),
+      logo: String(r.logo || '').trim(),
+    }))
+    .filter((r) => r.organization && r.websitelink)
+}

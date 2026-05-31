@@ -1,0 +1,108 @@
+.imp-links__empty {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: #666;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.imp-links__scroll {
+  overflow: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+.imp-links__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.imp-links__table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #0d47a1;
+  border-bottom: 1px solid #0a3d91;
+}
+
+.imp-links__cat {
+  width: 28%;
+  padding: 0.45rem 0.55rem;
+  vertical-align: top;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #ebebeb;
+  word-break: break-word;
+}
+
+.imp-links__org {
+  padding: 0.45rem 0.55rem;
+  vertical-align: top;
+  border-bottom: 1px solid #ebebeb;
+  word-break: break-word;
+}
+
+.imp-links__logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+  border-radius: 3px;
+  object-fit: contain;
+}
+
+.imp-links__link {
+  font-weight: 700;
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+.imp-links__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.imp-links__table tbody tr:nth-child(even) .imp-links__cat,
+.imp-links__table tbody tr:nth-child(even) .imp-links__org {
+  background: #f5f9ff;
+}
+
+.imp-links--compact .imp-links__table {
+  font-size: 0.65rem;
+}
+
+.imp-links--compact .imp-links__cell {
+  padding: 0.4rem 0.35rem;
+  border-bottom: 1px solid #ebebeb;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.imp-links--compact .imp-links__cat {
+  display: block;
+  width: auto;
+  padding: 0 0 0.1rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #666;
+  border-bottom: none;
+}
+
+.imp-links--compact .imp-links__scroll {
+  max-height: min(40vh, 16rem);
+}
+
+.imp-links--compact .imp-links__table tbody tr:nth-child(even) .imp-links__cell {
+  background: #f5f9ff;
+}

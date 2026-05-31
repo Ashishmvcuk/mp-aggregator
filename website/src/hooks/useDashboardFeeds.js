@@ -1,5 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
-import { loadLandingFeeds, loadUniversityPortals } from '../services/dashboardDataService'
+import {
+  loadImportantLinks,
+  loadLandingFeeds,
+  loadUniversityPortals,
+} from '../services/dashboardDataService'
 import {
   filterAndSortByAnnouncedDateDesc,
   hasAnnouncedDate,
@@ -10,6 +14,7 @@ import {
 const NEWS_DAYS = 30
 const MAX_NEWS = 45
 const MAX_ENROLLMENT_SIDEBAR = 10
+const MAX_IMPORTANT_LINKS_SIDEBAR = 10
 const MAX_JOBS = 40
 const MAX_SYLLABUS = 30
 const MAX_ADMIT_HOME = 15
@@ -33,6 +38,9 @@ export function useDashboardFeeds() {
   const [universityPortals, setUniversityPortals] = useState(
     /** @type {{ university: string; name?: string; url: string; type?: string }[]} */ ([])
   )
+  const [importantLinks, setImportantLinks] = useState(
+    /** @type {{ category: string; organization: string; websitelink: string; logo?: string }[]} */ ([])
+  )
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(/** @type {string|null} */ (null))
 
@@ -40,8 +48,13 @@ export function useDashboardFeeds() {
     let cancelled = false
     setLoading(true)
     setError(null)
-    Promise.all([loadLandingFeeds(), loadUniversityPortals()])
-      .then(([{ news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a, enrollments: e }, portals]) => {
+    Promise.all([loadLandingFeeds(), loadUniversityPortals(), loadImportantLinks()])
+      .then(
+        ([
+          { news: n, blogs: b, jobs: j, syllabus: s, admit_cards: a, enrollments: e },
+          portals,
+          important,
+        ]) => {
         if (cancelled) return
         setNews(n)
         setBlogs(b)
@@ -50,7 +63,9 @@ export function useDashboardFeeds() {
         setAdmitCards(a)
         setEnrollments(e)
         setUniversityPortals(portals)
-      })
+        setImportantLinks(important)
+      }
+      )
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load feeds')
       })
@@ -107,9 +122,18 @@ export function useDashboardFeeds() {
 
   const enrollmentsTotal = enrollmentsSorted.length
 
+  const importantLinksPreview = useMemo(
+    () => importantLinks.slice(0, MAX_IMPORTANT_LINKS_SIDEBAR),
+    [importantLinks]
+  )
+
+  const importantLinksTotal = importantLinks.length
+
   return {
     enrollmentsPreview,
     enrollmentsTotal,
+    importantLinksPreview,
+    importantLinksTotal,
     universityPortals,
     newsLast30Days,
     jobsSorted,
