@@ -17,7 +17,7 @@ export function ResultsPage() {
 
   useEffect(() => {
     setPage(1)
-  }, [filtered])
+  }, [query])
 
   const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
   const safePage = Math.min(page, pageCount)

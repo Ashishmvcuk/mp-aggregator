@@ -19,6 +19,8 @@ function normalizeHost(urlValue) {
   }
 }
 
+const EMPTY_REFERENCE_ROWS = []
+
 /**
  * Loads results once; supports filtering by search query, selected university, and university type.
  * @param {string} searchQuery
@@ -32,7 +34,7 @@ export function useResults(searchQuery, options = {}) {
   const {
     typeFilter = 'all',
     selectedUniversity = 'all',
-    referenceRows = [],
+    referenceRows = EMPTY_REFERENCE_ROWS,
   } = options
   const [items, setItems] = useState([])
   const [scrapedAt, setScrapedAt] = useState(null)
