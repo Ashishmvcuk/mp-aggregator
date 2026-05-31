@@ -81,8 +81,8 @@ export function Header() {
               </SectionNavLink>
             </li>
             <li>
-              <Link to="/admit-cards" className="sr-header__nav-link">
-                All admits
+              <Link to="/enrollments" className="sr-header__nav-link">
+                Admission Open
               </Link>
             </li>
             <li>
