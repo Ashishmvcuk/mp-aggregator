@@ -64,26 +64,6 @@
   }
 }
 
-.home-page__intro {
-  margin: 0 0 0.65rem;
-  padding: 0.55rem 0.65rem;
-  font-size: 0.84rem;
-  line-height: 1.5;
-  color: #222;
-  background: #f8f8f8;
-  border: 1px solid #ccc;
-}
-
-.home-page__intro-link {
-  font-weight: 800;
-  color: #0d47a1;
-  text-decoration: underline;
-}
-
-.home-page__intro-link:hover {
-  color: #5c0606;
-}
-
 .home-page__section-link {
   margin: 0.5rem 0 1rem;
   text-align: right;

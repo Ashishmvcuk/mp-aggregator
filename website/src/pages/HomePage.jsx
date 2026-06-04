@@ -8,7 +8,6 @@ import { JoinChannelsBanner } from '../components/JoinChannelsBanner'
 import { ResultsList } from '../components/ResultsList'
 import { ResultsTicker } from '../components/ResultsTicker'
 import { SearchBar } from '../components/SearchBar'
-import { SectionNavLink } from '../components/SectionNavLink'
 import { SidebarEnrollmentTable } from '../components/SidebarEnrollmentTable'
 import { SidebarQuickLinks } from '../components/SidebarQuickLinks'
 import { SidebarImportantSections } from '../components/SidebarImportantSections'
@@ -44,53 +43,6 @@ export function HomePage() {
         <div className="home-page__container">
           <div className="home-page__layout">
             <div className="home-page__primary">
-              <p className="home-page__intro">
-                Quick jump:{' '}
-                <SectionNavLink hashId="latest-news" className="home-page__intro-link">
-                  Latest news
-                </SectionNavLink>
-                {' · '}
-                <Link to="/enrollments" className="home-page__intro-link">
-                  Admission Open
-                </Link>
-                {' · '}
-                <SectionNavLink hashId="university-portals" className="home-page__intro-link">
-                  University portals
-                </SectionNavLink>
-                {' · '}
-                <SectionNavLink hashId="important-sections" className="home-page__intro-link">
-                  Important sections
-                </SectionNavLink>
-                {' · '}
-                <SectionNavLink hashId="latest-results" className="home-page__intro-link">
-                  Results
-                </SectionNavLink>
-                {' · '}
-                <SectionNavLink hashId="landing-admit" className="home-page__intro-link">
-                  Admit cards
-                </SectionNavLink>
-                {' · '}
-                <SectionNavLink hashId="landing-syllabus" className="home-page__intro-link">
-                  Syllabus
-                </SectionNavLink>
-                {' · '}
-                <Link to="/admit-cards" className="home-page__intro-link">
-                  Full admit list
-                </Link>
-                {' · '}
-                <Link to="/news" className="home-page__intro-link">
-                  Full news
-                </Link>
-                {' · '}
-                <Link to="/results" className="home-page__intro-link">
-                  Full results
-                </Link>
-                {' · '}
-                <Link to="/syllabus" className="home-page__intro-link">
-                  Full syllabus
-                </Link>
-              </p>
-
               {!feeds.loading && (typeOptions.length > 0 || universityOptions.length > 0) && (
                 <div className="home-page__group-filter">
                   <label htmlFor="home-type-filter" className="home-page__group-filter-label">
