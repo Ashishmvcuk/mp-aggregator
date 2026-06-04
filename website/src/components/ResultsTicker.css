@@ -140,6 +140,27 @@
   animation: results-ticker-item-glow 10s ease-in-out infinite;
 }
 
+.results-ticker__item--logo {
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.65rem;
+}
+
+.results-ticker__title--after-logo {
+  font-weight: 700;
+  color: #f5f5f5;
+  max-width: 14rem;
+}
+
+.results-ticker__logo {
+  display: block;
+  height: 1.75rem;
+  width: auto;
+  max-width: 6.5rem;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
 .results-ticker__item:hover {
   color: #fff;
   background: rgba(183, 28, 28, 0.55);

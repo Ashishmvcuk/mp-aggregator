@@ -37,8 +37,8 @@ export function SidebarUniversitiesDirectory({
     <div className="sr-uni__scroll">
       <table className="sr-uni__table">
         <tbody>
-          {filtered.map((row) => (
-            <tr key={row.url}>
+          {filtered.map((row, index) => (
+            <tr key={`${row.url}-${row.university}-${index}`}>
               <td className="sr-uni__td">
                 <a
                   href={row.url}

@@ -14,6 +14,7 @@ import { SidebarImportantSections } from '../components/SidebarImportantSections
 import { SidebarUniversitiesDirectory } from '../components/SidebarUniversitiesDirectory'
 import { useDashboardFeeds } from '../hooks/useDashboardFeeds'
 import { useResults } from '../hooks/useResults'
+import { useScrollLatest } from '../hooks/useScrollLatest'
 import './HomePage.css'
 
 export function HomePage() {
@@ -33,11 +34,12 @@ export function HomePage() {
     query,
     { typeFilter, selectedUniversity, referenceRows: feeds.universityPortals }
   )
+  const scrollLatest = useScrollLatest()
 
   return (
     <div className="home-page">
       <Header />
-      <ResultsTicker results={items} loading={loading} />
+      <ResultsTicker results={scrollLatest.items} loading={scrollLatest.loading} />
       <JoinChannelsBanner />
       <main className="home-page__main">
         <div className="home-page__container">
