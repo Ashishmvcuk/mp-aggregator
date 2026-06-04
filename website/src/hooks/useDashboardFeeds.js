@@ -91,7 +91,7 @@ export function useDashboardFeeds() {
   )
 
   const syllabusSorted = useMemo(
-    () => filterAndSortByAnnouncedDateDesc(syllabus).slice(0, MAX_SYLLABUS),
+    () => sortByAnnouncedDateDesc(syllabus).slice(0, MAX_SYLLABUS),
     [syllabus]
   )
 

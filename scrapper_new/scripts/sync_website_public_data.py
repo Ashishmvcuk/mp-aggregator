@@ -27,6 +27,9 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_SOURCE = REPO_ROOT / "scrapper_new" / "output" / "website_buckets"
 DEFAULT_DEST = REPO_ROOT / "website" / "public" / "data"
 
+# Never overwrite manually maintained public data files when syncing scraper buckets.
+PROTECTED_DEST_NAMES = frozenset({"syllabus_input.json"})
+
 
 def _output_dir_from_env(repo_root: Path) -> Path | None:
     """``SCRAPPER_NEW_OUTPUT_DIR``: absolute path, or path relative to repo root."""
@@ -211,6 +214,9 @@ def main() -> int:
         if not isinstance(data, list):
             print(f"::error::{path.name}: root must be a JSON array", file=sys.stderr)
             return 1
+        if path.name in PROTECTED_DEST_NAMES:
+            print(f"skip protected manual file: {path.name}")
+            continue
         target = dest / path.name
         shutil.copy2(path, target)
         copied += 1

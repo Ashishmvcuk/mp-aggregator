@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadSyllabus } from '../services/dashboardDataService'
-import { filterAndSortByAnnouncedDateDesc } from '../utils/dateRange'
+import { sortByAnnouncedDateDesc } from '../utils/dateRange'
 
 /**
  * @typedef {Object} FeedItem
@@ -22,7 +22,7 @@ export function useSyllabus(searchQuery) {
     setError(null)
     loadSyllabus()
       .then((data) => {
-        if (!cancelled) setItems(filterAndSortByAnnouncedDateDesc(data))
+        if (!cancelled) setItems(sortByAnnouncedDateDesc(data))
       })
       .catch((e) => {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load syllabus')

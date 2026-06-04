@@ -217,7 +217,8 @@ export function HomePage() {
                     id="landing-syllabus"
                     title="Syllabus & schemes"
                     items={feeds.syllabusSorted}
-                    emptyMessage="No syllabus links in data yet — sync scrapper_new output to website/public/data/syllabus.json."
+                    emptyMessage="No syllabus links yet — add entries to website/public/data/syllabus_input.json."
+                    showAnnouncedDate={false}
                     footer={<Link to="/syllabus">Open full syllabus & schemes page →</Link>}
                   />
                   <FeedList

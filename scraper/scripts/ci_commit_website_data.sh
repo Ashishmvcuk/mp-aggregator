@@ -10,7 +10,27 @@ git config user.name "github-actions[bot]"
 git config user.email "github-actions[bot]@users.noreply.github.com"
 
 shopt -s nullglob
-files=(website/public/data/*.json)
+# Manually curated — never commit via scraper workflow
+MANUAL_ONLY_JSON=(
+  syllabus_input.json
+  manual_additions.json
+  important_links.json
+  university_sections.json
+)
+files=()
+for p in website/public/data/*.json; do
+  base="$(basename "$p")"
+  skip=0
+  for m in "${MANUAL_ONLY_JSON[@]}"; do
+    if [ "$base" = "$m" ]; then
+      skip=1
+      break
+    fi
+  done
+  if [ "$skip" -eq 0 ]; then
+    files+=("$p")
+  fi
+done
 
 if [ "${#files[@]}" -eq 0 ]; then
   echo "No JSON files under website/public/data — skipping commit"

@@ -24,7 +24,7 @@ export function SyllabusPage() {
 
           <h1 className="listing-page__h1">Syllabus & schemes</h1>
           <p className="listing-page__lead">
-            Aggregated syllabus and scheme links from configured MP university portals. Always confirm details on the official site.
+            Curated syllabus and scheme links from <code>website/public/data/syllabus_input.json</code> (edited manually, not by the scraper). Always confirm details on the official site.
           </p>
 
           <SearchBar
@@ -53,6 +53,7 @@ export function SyllabusPage() {
               title="All syllabus & schemes"
               items={filtered}
               emptyMessage="No syllabus entries match your search, or none are on file yet."
+              showAnnouncedDate={false}
               pageSize={20}
               paginated
             />

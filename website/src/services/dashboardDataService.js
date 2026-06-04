@@ -5,8 +5,11 @@
 
 import { loadAllManualGroupedCached } from './manualEntriesService'
 import { mergeWithManual } from '../utils/mergeFeedData'
+import syllabusInputBundled from '../../public/data/syllabus_input.json'
 
 const FEED_PREFIX = 'data'
+/** Manually curated syllabus (`website/public/data/syllabus_input.json` — not updated by scrapers). */
+const INPUT_SYLLABUS_PATH = `${FEED_PREFIX}/syllabus_input.json`
 
 function dataUrl(path) {
   const base = import.meta.env.BASE_URL || '/'
@@ -67,7 +70,7 @@ export async function loadLandingFeeds() {
   const [news, jobs, syllabus, admit_cards, enrollments, blogs, manual] = await Promise.all([
     fetchJsonArray(`${FEED_PREFIX}/news.json`),
     fetchJsonArray(`${FEED_PREFIX}/jobs.json`),
-    fetchJsonArray(`${FEED_PREFIX}/syllabus.json`),
+    loadInputSyllabus(),
     fetchJsonArray(`${FEED_PREFIX}/admit_cards.json`),
     fetchJsonArray(`${FEED_PREFIX}/enrollments.json`),
     fetchJsonArray(`${FEED_PREFIX}/blogs.json`),
@@ -99,12 +102,37 @@ export async function loadNews() {
   return mergeWithManual(manual, staticItems, 'url')
 }
 
+/**
+ * @param {unknown[]} rows
+ */
+function normalizeInputSyllabusRows(rows) {
+  return rows
+    .filter((r) => r && typeof r === 'object')
+    .map((r) => ({
+      university: String(r.university || '').trim(),
+      title: String(r.title || '').trim(),
+      url: String(r.url || '').trim(),
+      date: typeof r.date === 'string' ? r.date.trim() : '',
+      category: 'syllabus',
+    }))
+    .filter((r) => r.university && r.title && r.url)
+}
+
+/** Curated scheme/syllabus links from ``syllabus_input.json`` (bundled at build/dev compile time). */
+export async function loadInputSyllabus() {
+  const bundled = Array.isArray(syllabusInputBundled) ? syllabusInputBundled : []
+  const fromBundle = normalizeInputSyllabusRows(bundled)
+  if (fromBundle.length > 0) return fromBundle
+  const fetched = await fetchJsonArray(INPUT_SYLLABUS_PATH)
+  return normalizeInputSyllabusRows(fetched)
+}
+
 export async function loadSyllabus() {
-  const [staticItems, manual] = await Promise.all([
-    fetchJsonArray(`${FEED_PREFIX}/syllabus.json`),
+  const [inputItems, manual] = await Promise.all([
+    loadInputSyllabus(),
     loadAllManualGroupedCached().then((m) => m.syllabus || []),
   ])
-  return mergeWithManual(manual, staticItems, 'url')
+  return mergeWithManual(manual, inputItems, 'url')
 }
 
 export async function loadEnrollments() {

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "sync:syllabus": "python3 ../scripts/sync_input_syllabus.py",
     "preview": "vite preview",
     "lint": "eslint ."
   },
