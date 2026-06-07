@@ -6,45 +6,435 @@
     "logo": "cbse.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "afmc.nic",
+    "url": "www.afmc.nic.in",
+    "title": "afmc.nic",
+    "logo": "afmc.nic.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "ayush.gov",
+    "url": "www.ayush.gov.in",
+    "title": "ayush.gov",
+    "logo": "ayush.gov.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "cbcindia.gov",
+    "url": "www.cbcindia.gov.in",
+    "title": "cbcindia.gov",
+    "logo": "cbcindia.gov.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "cifnet.gov",
+    "url": "www.cifnet.gov.in",
+    "title": "cifnet.gov",
+    "logo": "cifnet.gov.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "cmfri.org",
+    "url": "www.cmfri.org.in",
+    "title": "cmfri.org",
+    "logo": "cmfri.org.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
+    "tooltip-title": "csirnet.nta",
+    "url": "www.csirnet.nta.net.in",
+    "title": "csirnet.nta",
+    "logo": "csirnet.nta.svg"
   },
   {
-    "tooltip-title": "CBSE",
-    "url": "www.cbse.gov.in",
-    "title": "CBSE",
-    "logo": "cbse.svg"
-  }
+    "tooltip-title": "iima.ac",
+    "url": "www.iima.ac.in",
+    "title": "iima.ac",
+    "logo": "iima.ac.svg"
+  },
+   {
+    "tooltip-title": "iimc.gov",
+    "url": "www.iimc.gov.in",
+    "title": "iimc.gov",
+    "logo": "iimc.gov.svg"
+  },
+  {
+    "tooltip-title": "iimc.gov",
+    "url": "www.iimc.gov.in",
+    "title": "iimc.gov",
+    "logo": "iimc.gov.svg"
+  },
+  {
+    "tooltip-title": "iimcal.ac",
+    "url": "www.iimcal.ac.in",
+    "title": "iimcal.ac",
+    "logo": "iimcal.ac.svg"
+  },
+  {
+    "tooltip-title": "iimidr.ac",
+    "url": "www.iimidr.ac.in",
+    "title": "iimidr.ac",
+    "logo": "iimidr.ac.svg"
+  },
+  {
+    "tooltip-title": "iimk.ac",
+    "url": "www.iimk.ac.in",
+    "title": "iimk.ac",
+    "logo": "iimk.ac.svg"
+  },
+  {
+    "tooltip-title": "iiml.ac",
+    "url": "www.iiml.ac.in",
+    "title": "iiml.ac",
+    "logo": "iiml.ac.svg"
+  },
+  {
+    "tooltip-title": "iiswbm",
+    "url": "www.iiswbm.edu",
+    "title": "iiswbm",
+    "logo": "iiswbm.svg"
+  },
+  {
+    "tooltip-title": "indianrailways.gov",
+    "url": "www.indianrailways.gov.in",
+    "title": "indianrailways.gov",
+    "logo": "indianrailways.gov.svg"
+  },
+  {
+    "tooltip-title": "ipindia.gov",
+    "url": "www.ipindia.gov.in",
+    "title": "ipindia.gov",
+    "logo": "ipindia.gov.svg"
+  },
+  {
+    "tooltip-title": "ircon.org",
+    "url": "http://www.ircon.org/",
+    "title": "ircon.org",
+    "logo": "ircon.org"
+  },
+  {
+    "tooltip-title": "irctc.co",
+    "url": "www.irctc.co.in",
+    "title": "irctc.co",
+    "logo": "irctc.co.svg"
+  },
+  {
+    "tooltip-title": "jamiahamdard",
+    "url": "www.jamiahamdard.edu",
+    "title": "jamiahamdard",
+    "logo": "jamiahamdard.svg"
+  },
+  {
+    "tooltip-title": "jntuh.ac",
+    "url": "www.jntuh.ac.in",
+    "title": "jntuh.ac",
+    "logo": "jntuh.ac.svg"
+  },
+  {
+    "tooltip-title": "ilabour.gov",
+    "url": "www.labour.gov.in",
+    "title": "ilabour.gov",
+    "logo": "ilabour.gov.svg"
+  },
+  {
+    "tooltip-title": "main.icme.nic",
+    "url": "www.icmr.gov.in",
+    "title": "main.icme.nic",
+    "logo": "main.icme.nic.svg"
+  },
+  {
+    "tooltip-title": "mohfw.gov",
+    "url": "www.mohfw.gov.in",
+    "title": "mohfw.gov",
+    "logo": "mohfw.gov.svg"
+  },
+  {
+    "tooltip-title": "niper.gov",
+    "url": "www.niper.gov.in",
+    "title": "niper.gov",
+    "logo": "niper.gov.svg"
+  },
+  {
+    "tooltip-title": "nludelhi.ac",
+    "url": "www.nludelhi.ac.in",
+    "title": "nludelhi.ac",
+    "logo": "nludelhi.ac.svg"
+  },
+  {
+    "tooltip-title": "parivahan.gov",
+    "url": "www.parivahan.gov.in",
+    "title": "parivahan.gov",
+    "logo": "parivahan.gov.svg"
+  },
+  {
+    "tooltip-title": "pib.gov",
+    "url": "www.pib.gov.in",
+    "title": "pib.gov",
+    "logo": "pib.gov.svg"
+  },
+  {
+    "tooltip-title": "pci.nic",
+    "url": "www.pci.nic.in",
+    "title": "pci.nic",
+    "logo": "pci.nic.svg"
+  },
+  {
+    "tooltip-title": "rbi.org",
+    "url": "www.rbi.org.in",
+    "title": "rbi.org",
+    "logo": "rbi.org.svg"
+  },
+  {
+    "tooltip-title": "prasarbharti.gov",
+    "url": "https://prasarbharati.nic.in/",
+    "title": "prasarbharti.gov",
+    "logo": "prasarbharti.gov.svg"
+  },
+  {
+    "tooltip-title": "publicationsdivision.nic",
+    "url": "www.publicationsdivision.nic.in",
+    "title": "publicationsdivision.nic",
+    "logo": "publicationsdivision.nic.svg"
+  },
+  {
+    "tooltip-title": "sbi.co",
+    "url": "https://sbi.bank.in/",
+    "title": "sbi.co",
+    "logo": "sbi.co.svg"
+  },
+  {
+    "tooltip-title": "startupindia.gov",
+    "url": "https://startupindia.gov.in/",
+    "title": "startupindia.gov",
+    "logo": "startupindia.gov.svg"
+  },
+  {
+    "tooltip-title": "abc.gov",
+    "url": "https://abc.gov.in/",
+    "title": "abc.gov",
+    "logo": "abc.gov.svg"
+  },
+  {
+    "tooltip-title": "aicte-india.org",
+    "url": "https://aicte-india.org/",
+    "title": "aicte-india.org",
+    "logo": "aicte-india.org.svg"
+  },
+  {
+    "tooltip-title": "beeindia.gov",
+    "url": "https://beeindia.gov.in/",
+    "title": "beeindia.gov",
+    "logo": "beeindia.gov.svg"
+  },
+  {
+    "tooltip-title": "bseindia",
+    "url": "https://bseindia.com/",
+    "title": "bseindia",
+    "logo": "bseindia.svg"
+  },
+  {
+    "tooltip-title": "cdac",
+    "url": "https://cdac.in/",
+    "title": "cdac",
+    "logo": "cdac.svg"
+  },
+  {
+    "tooltip-title": "cgat.gov",
+    "url": "https://cgat.gov.in/",
+    "title": "cgat.gov",
+    "logo": "cgat.gov.svg"
+  },
+  {
+    "tooltip-title": "civilaviation.gov",
+    "url": "https://civilaviation.gov.in/",
+    "title": "civilaviation.gov",
+    "logo": "civilaviation.gov.svg"
+  },
+  {
+    "tooltip-title": "dgca.gov",
+    "url": "https://dgca.gov.in/",
+    "title": "dgca.gov",
+    "logo": "dgca.gov.svg"
+  },
+  {
+    "tooltip-title": "dopt.gov",
+    "url": "https://dopt.gov.in/",
+    "title": "dopt.gov",
+    "logo": "dopt.gov.svg"
+  },
+  {
+    "tooltip-title": "du.ac",
+    "url": "https://du.ac.in/",
+    "title": "du.ac",
+    "logo": "du.ac.svg"
+  },
+  {
+    "tooltip-title": "education.gov",
+    "url": "https://education.gov.in/",
+    "title": "education.gov",
+    "logo": "education.gov.svg"
+  },
+  {
+    "tooltip-title": "iata.org",
+    "url": "https://iata.org/",
+    "title": "iata.org",
+    "logo": "iata.org.svg"
+  },
+  {
+    "tooltip-title": "icai.org",
+    "url": "https://icai.org/",
+    "title": "icai.org",
+    "logo": "icai.org.svg"
+  },
+  {
+    "tooltip-title": "icsi.edu",
+    "url": "https://icsi.edu/",
+    "title": "icsi.edu",
+    "logo": "icsi.edu.svg"
+  },
+  {
+    "tooltip-title": "ieindia.org",
+    "url": "https://ieindia.org/",
+    "title": "ieindia.org",
+    "logo": "ieindia.org.svg"
+  },
+  {
+    "tooltip-title": "igrua.gov",
+    "url": "https://igrua.gov.in/",
+    "title": "igrua.gov",
+    "logo": "igrua.gov.svg"
+  },
+  {
+    "tooltip-title": "iif.edu",
+    "url": "https://www.iif.edu/",
+    "title": "iif.edu",
+    "logo": "iif.edu.svg"
+  },
+  {
+    "tooltip-title": "iitkgp.ac.in",
+    "url": "https://www.iitkgp.ac.in/",
+    "title": "iitkgp.ac.in",
+    "logo": "iitkgp.ac.svg"
+  },
+  {
+    "tooltip-title": "iitm.ac.in",
+    "url": "https://www.iitm.ac.in/",
+    "title": "iitm.ac.in",
+    "logo": "iitm.ac.svg"
+  },
+  {
+   "tooltip-title": "incredibleindia",
+      "url": "https://www.incredibleindia.org/",
+      "title": "incredibleindia",
+      "logo": "incredibleindia.svg"
+    },
+    {
+      "tooltip-title": "indianairforce.nic",
+      "url": "https://www.indianairforce.nic.in/",
+      "title": "indianairforce.nic",
+      "logo": "indianairforce.nic.svg"
+    },
+    {
+      "tooltip-title": "indianarmy.nic",
+      "url": "https://joinindianarmy.nic.in/Authentication.aspx/",
+      "title": "indianarmy.nic",
+      "logo": "indianarmy.nic.svg"
+    },
+    {
+      "tooltip-title": "indiannavy.nic",
+      "url": "https://www.indiannavy.nic.in/",
+      "title": "indiannavy.nic",
+      "logo": "indiannavy.nic.svg"
+    },
+    {
+      "tooltip-title": "epfindia.gov",
+      "url": "https://www.epfindia.gov.in//",
+      "title": "epfindia.gov",
+      "logo": "ipfindia.gov.svg"
+    },
+    {
+      "tooltip-title": "isical.ac",
+      "url": "https://www.isical.ac.in/",
+      "title": "isical.ac",
+      "logo": "isical.ac.svg"
+    },
+    {
+      "tooltip-title": "jnu.ac",
+      "url": "https://www.jnu.ac.in/",
+      "title": "jnu.ac",
+      "logo": "jnu.ac.svg"
+    },
+    {
+      "tooltip-title": "joinindianarmy.nic",
+      "url": "https://joinindianarmy.nic.in/Authentication.aspx/",
+      "title": "joinindianarmy.nic",
+      "logo": "joinindianarmy.nic.svg"
+    },
+    {
+      "tooltip-title": "lawmin.gov",
+      "url": "https://lawmin.gov.in/",
+      "title": "lawmin.gov",
+      "logo": "lawmin.gov.svg"
+    },
+   {
+      "tooltip-title": "main.sci",
+      "url": "https://www.sci.gov.in/",
+      "title": "main.sci",
+      "logo": "main.sci.svg"
+    },
+    {
+      "tooltip-title": "meity.gov",
+      "url": "https://www.meity.gov.in/",
+      "title": "meity.gov",
+      "logo": "meity.gov.svg"
+    },
+    {
+      "tooltip-title": "nabard.org",
+      "url": "https://www.nabard.org/",
+      "title": "nabard.org",
+      "logo": "nabard.org.svg"
+    },
+    {
+      "tooltip-title": "nasscom",
+      "url": "https://www.nasscom.in/",
+      "title": "nasscom",
+      "logo": "nasscom.svg"
+    },
+    {
+      "tooltip-title": "ncert.nic",
+      "url": "https://ncert.nic.in/",
+      "title": "ncert.nic",
+      "logo": "ncert.nic.svg"
+    },
+    {
+      "tooltip-title": "ncte.gov",
+      "url": "https://www.ncte.gov.in/",
+      "title": "ncte.gov",
+      "logo": "ncte.gov.svg"
+    },
+    {
+      "tooltip-title": "ncw.nic",
+      "url": "https://ncw.nic.in/",
+      "title": "ncw.nic",
+      "logo": "ncw.nic.svg"
+    },
+     {
+      "tooltip-title": "nda.nic",
+      "url": "https://www.nda.nic.in/",
+      "title": "nda.nic",
+      "logo": "nda.nic.svg"
+    },
+     {
+      "tooltip-title": "nielit.gov",
+      "url": "https://www.nielit.gov.in/",
+      "title": "nielit.gov",
+      "logo": "nielit.gov.svg"
+    },
+     {
+      "tooltip-title": "nseindia",
+      "url": "https://www.nseindia.com/",
+      "title": "nseindia",
+      "logo": "nseindia.svg"
+    },
+     {
+      "tooltip-title": "ugc",
+      "url": 	"https://www.ugc.ac.in/",
+     	"title": 	"UGC",
+      	"logo": 	"ugc.svg"
+    }
 ]
