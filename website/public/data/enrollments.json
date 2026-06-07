@@ -1,5 +1,19 @@
 [
   {
+    "university": "Amaltas University",
+    "title": "Admission Open for 2026-27",
+    "url": "https://amaltasuniversity.in/admission-fees/",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amaltas University",
+    "title": "Admission 2026-27",
+    "url": "https://amaltasuniversity.in/wp-content/uploads/2026/05/Admission-2026-27.pdf",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
     "university": "A.K.S. University",
     "title": "Online Admission",
     "url": "https://admission.aksuniversity.ac.in/#/Online_Admission",
@@ -11,20 +25,6 @@
     "title": "Admission Process",
     "url": "https://www.aksuniversity.ac.in/admission-Process",
     "date": "2026-06-06",
-    "category": "enrollments"
-  },
-  {
-    "university": "Amaltas University",
-    "title": "Admission 2026-27",
-    "url": "https://amaltasuniversity.in/wp-content/uploads/2026/05/Admission-2026-27.pdf",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Amaltas University",
-    "title": "Admission Open for 2026-27",
-    "url": "https://amaltasuniversity.in/admission-fees/",
-    "date": "2026-06-07",
     "category": "enrollments"
   },
   {
@@ -58,27 +58,6 @@
   {
     "university": "Awadesh Pratap Singh University",
     "title": "Admission Process",
-    "url": "https://apsurewa.ac.in/en/admission/admission-process",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Awadesh Pratap Singh University",
-    "title": "Admission Notices",
-    "url": "https://apsurewa.ac.in/en/admission/admission-notices",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Awadesh Pratap Singh University",
-    "title": "Academic Calendar",
-    "url": "https://apsurewa.ac.in/en/admission/academic-calendar",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Awadesh Pratap Singh University",
-    "title": "Admission Process",
     "url": "https://www.apsurewa.ac.in/en/admission/admission-process",
     "date": "2026-06-07",
     "category": "enrollments"
@@ -101,7 +80,7 @@
     "university": "Awadesh Pratap Singh University",
     "title": "bed med exam form notification exam 2026",
     "url": "https://www.apsurewa.ac.in/en/exam/bed-med-exam-form-notification-exam-2026",
-    "date": "2026-06-07",
+    "date": "2026-06-05",
     "category": "enrollments"
   },
   {
@@ -109,6 +88,27 @@
     "title": "Admission Notice 2026-27",
     "url": "https://www.apsurewa.ac.in/en/academic/admission-notice-2026-27",
     "date": "2026-05-18",
+    "category": "enrollments"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Admission Process",
+    "url": "https://apsurewa.ac.in/en/admission/admission-process",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Admission Notices",
+    "url": "https://apsurewa.ac.in/en/admission/admission-notices",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Awadesh Pratap Singh University",
+    "title": "Academic Calendar",
+    "url": "https://apsurewa.ac.in/en/admission/academic-calendar",
+    "date": "2026-06-07",
     "category": "enrollments"
   },
   {
@@ -137,20 +137,6 @@
     "title": "UG/PG Batch 2021-22 Admission list uploaded.",
     "url": "https://cmchbhopal.com/student-info/ug-pg-students-admission-information/",
     "date": "2026-05-13",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "ADMISSION 2026",
-    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "Ph.D Admissions 2025",
-    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
-    "date": "2026-06-07",
     "category": "enrollments"
   },
   {
@@ -220,6 +206,20 @@
     "university": "Devi Ahilya Vishwavidyalaya",
     "title": "Pay Unpaid for Direct Merit-Based Admission to MBA(Executive) Program-2026",
     "url": "https://davv.mponline.gov.in/portal/Services/DAVV/UTD_APP/IMS/Applications/Admission/PayunpaidForm_IMS.aspx?app_type=ims",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "ADMISSION 2026",
+    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "Ph.D Admissions 2025",
+    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
     "date": "2026-06-07",
     "category": "enrollments"
   },
@@ -672,6 +672,34 @@
     "category": "enrollments"
   },
   {
+    "university": "Mahakaushal University",
+    "title": "Prospectus",
+    "url": "https://mku.ac.in/prospectus/",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Admission Process",
+    "url": "https://mku.ac.in/admission-process/",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Mahakaushal University",
+    "title": "Admission for International Students",
+    "url": "https://mku.ac.in/admission-for-international-students/",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "title": "UTD Admission Year 2025-26",
+    "url": "https://mcbu.ac.in/admission",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
     "title": "Application Form For Eligibility Examination For PG Courses 2026-27",
     "url": "https://mcbu.mponline.gov.in/Portal/Services/MCBU/Service_page.aspx?req=PG_ELIG",
@@ -795,6 +823,27 @@
     "title": "Registration Open for Second Round Admission from 1st June to 8th June 2026",
     "url": "https://ptsnsuonline.com/admission/",
     "date": "2026-06-02",
+    "category": "enrollments"
+  },
+  {
+    "university": "People's University",
+    "title": "Admission Open 2026-27",
+    "url": "https://admissions.peoplesuniversity.edu.in/",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "People's University",
+    "title": "PEOPLE'S EDUFEST 2026 - CAREER & ADMISSION CARNIVAL : 14th June 2026.",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSf9y1sI-aCehBruksEwS_SIhwLiUY9BBsRA3FW8G9mSpI-FCw/viewform",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "People's University",
+    "title": "People’s EduFest 2026 – One Sunday Evening That Answers Every Admission Question You Have",
+    "url": "https://www.peoplesuniversity.edu.in/peoples-edufest-2026-one-sunday-evening-that-answers-every-admission-question-you-have/",
+    "date": "2026-06-07",
     "category": "enrollments"
   },
   {
@@ -938,6 +987,13 @@
     "category": "enrollments"
   },
   {
+    "university": "SAM Global University",
+    "title": "Download",
+    "url": "https://www.samglobaluniversity.ac.in/wp-content/uploads/2025/10/PH.D.-ENTRANCE-EXAM-NOTIFICATION-JULY-2025.pdf",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
     "university": "Sanchi University of Buddhist-Indic Studies",
     "title": "P. G. Admission 2026-27",
     "url": "https://www.sanchiuniv.edu.in/newwebsite/site/admission?page=P.+G.+Admission+2026-27",
@@ -959,20 +1015,6 @@
     "category": "enrollments"
   },
   {
-    "university": "Sanchi University of Buddhist-Indic Studies",
-    "title": "ADMISSION NOTIFICATION FOR ACADEMIC SESSION: 2026-27",
-    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/8",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "SAM Global University",
-    "title": "Download",
-    "url": "https://www.samglobaluniversity.ac.in/wp-content/uploads/2025/10/PH.D.-ENTRANCE-EXAM-NOTIFICATION-JULY-2025.pdf",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
     "university": "SAM Global University",
     "title": "Admission Open 2026-27 - Apply Now",
     "url": "https://admission.samglobaluniversity.ac.in/?utm_source=Blog",
@@ -987,9 +1029,9 @@
     "category": "enrollments"
   },
   {
-    "university": "Shri Krishna University",
-    "title": "Ph.D. Entrance Exam 2025",
-    "url": "https://www.skuindia.ac.in/content/upload/pdfs/phd-enterance-exam-2025.pdf",
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "ADMISSION NOTIFICATION FOR ACADEMIC SESSION: 2026-27",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/8",
     "date": "2026-06-07",
     "category": "enrollments"
   },
@@ -1008,6 +1050,13 @@
     "category": "enrollments"
   },
   {
+    "university": "Shri Krishna University",
+    "title": "Ph.D. Entrance Exam 2025",
+    "url": "https://www.skuindia.ac.in/content/upload/pdfs/phd-enterance-exam-2025.pdf",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
     "university": "Sri Satya Sai University of Technology & Medical Sciences",
     "title": "Entrance Exam (2026-2027)",
     "url": "https://sssutms.co.in/erp/Student/ceet",
@@ -1018,6 +1067,20 @@
     "university": "Sri Satya Sai University of Technology & Medical Sciences",
     "title": "Admission 2026-27 Enquiry",
     "url": "https://sssutms.co.in/cms/Website/Admission/Admission_Enquiry",
+    "date": "2026-06-07",
+    "category": "enrollments"
+  },
+  {
+    "university": "Vikram University",
+    "title": "Admission Notification for Academic Session 2026–27 (CUET-Based)",
+    "url": "https://vikramuniv.ac.in/uploads/gallery/media/1777599582-172612011269f4045e83dc3!%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A5%87%E0%A4%B6%20%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%82%E0%A4%A7%E0%A5%80%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A4%A8%E0%A4%BE%202026-27.pdf?1777618115",
+    "date": "2026-04-30",
+    "category": "enrollments"
+  },
+  {
+    "university": "The Indira Gandhi National Tribal University",
+    "title": "📷 Notification : Regarding Online Registration for PG/B.Ed. Admission (2026-27) IGNTU 30 May 2026 : Notice Regarding Online Registration for PG/B.Ed. Admission and Counselling through CUET PG 2026–27 Please Visit : https://igntu.ac.in/ https://igntu.ac.in/Admission/IGNTU_CUET_PG_Admission_Notification-2026-27.pdf",
+    "url": "https://nitter.net/IGNTU/status/2061407756192784612#m",
     "date": "2026-06-07",
     "category": "enrollments"
   },
@@ -1039,20 +1102,6 @@
     "university": "Vikram University",
     "title": "CUET Student Registration 2026-27 (JUL-2026)",
     "url": "https://vikram.mponline.gov.in/Portal/Services/VIKRAM/Entrance/UTD/Admission_Form.aspx",
-    "date": "2026-06-07",
-    "category": "enrollments"
-  },
-  {
-    "university": "Vikram University",
-    "title": "Admission Notification for Academic Session 2026–27 (CUET-Based)",
-    "url": "https://vikramuniv.ac.in/uploads/gallery/media/1777599582-172612011269f4045e83dc3!%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B5%E0%A5%87%E0%A4%B6%20%E0%A4%B8%E0%A4%82%E0%A4%AC%E0%A4%82%E0%A4%A7%E0%A5%80%20%E0%A4%85%E0%A4%A7%E0%A4%BF%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A4%A8%E0%A4%BE%202026-27.pdf?1777618115",
-    "date": "2026-04-30",
-    "category": "enrollments"
-  },
-  {
-    "university": "The Indira Gandhi National Tribal University",
-    "title": "📷 Notification : Regarding Online Registration for PG/B.Ed. Admission (2026-27) IGNTU 30 May 2026 : Notice Regarding Online Registration for PG/B.Ed. Admission and Counselling through CUET PG 2026–27 Please Visit : https://igntu.ac.in/ https://igntu.ac.in/Admission/IGNTU_CUET_PG_Admission_Notification-2026-27.pdf",
-    "url": "https://nitter.net/IGNTU/status/2061407756192784612#m",
     "date": "2026-06-07",
     "category": "enrollments"
   }
