@@ -86,8 +86,8 @@ export function Header() {
               </Link>
             </li>
             <li>
-              <SectionNavLink hashId="universities" className="sr-header__nav-link">
-                Universities
+              <SectionNavLink hashId="important-sections" className="sr-header__nav-link">
+                Important Link
               </SectionNavLink>
             </li>
             <li>

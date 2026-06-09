@@ -7,6 +7,7 @@ export const TELEGRAM_CHANNEL_URL = 'https://t.me/ALLMPUNIVERSITY'
 export const X_PROFILE_URL = 'https://x.com/AllmpUNIVERSITY'
 export const INSTAGRAM_PROFILE_URL =
   'https://www.instagram.com/allmpuniversity/?hl=en'
+export const LINKEDIN_PROFILE_URL = 'https://www.linkedin.com/in/allmp-university-59a473406/'
 
 function WhatsAppIcon({ className }) {
   return (
@@ -65,6 +66,24 @@ function XIcon({ className }) {
   )
 }
 
+function LinkedInIcon({ className }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect width="24" height="24" rx="5" fill="#0A66C2" />
+      <path
+        fill="#fff"
+        d="M6.94 8.61H4.5v10.02h2.44V8.61zm-1.22-2.07c.79 0 1.28-.53 1.28-1.2-.01-.68-.49-1.2-1.27-1.2-.78 0-1.28.52-1.28 1.2 0 .67.49 1.2 1.27 1.2h.01zm6.95 2.07h-2.34v10.02h2.34V14.1c0-1.67.31-3.24 2.35-3.24 2.03 0 2.04 1.78 2.04 3.34v4.82h2.34v-5.18c0-2.78-.59-4.92-4.21-4.92-1.96 0-2.8 1.08-3.27 1.84h.01z"
+      />
+    </svg>
+  )
+}
+
 /**
  * @param {{ size?: 'sm' | 'md' | 'lg', showLabels?: boolean, orientation?: 'row' | 'col' }} props
  */
@@ -73,7 +92,7 @@ export function SocialChannels({ size = 'md', showLabels = false, orientation = 
     <div
       className={`sr-social sr-social--${size} sr-social--${orientation}`}
       role="group"
-      aria-label="Follow us on WhatsApp, Telegram, X, and Instagram"
+      aria-label="Follow us on WhatsApp, Telegram, X, LinkedIn, and Instagram"
     >
       <a
         className="sr-social__link sr-social__link--whatsapp"
@@ -104,6 +123,16 @@ export function SocialChannels({ size = 'md', showLabels = false, orientation = 
       >
         <XIcon className="sr-social__icon" />
         {showLabels && <span className="sr-social__label">X</span>}
+      </a>
+      <a
+        className="sr-social__link sr-social__link--linkedin"
+        href={LINKEDIN_PROFILE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Follow on LinkedIn"
+      >
+        <LinkedInIcon className="sr-social__icon" />
+        {showLabels && <span className="sr-social__label">LinkedIn</span>}
       </a>
       <a
         className="sr-social__link sr-social__link--instagram"
