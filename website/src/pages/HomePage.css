@@ -80,6 +80,20 @@
   color: #5c0606;
 }
 
+.home-page__sponsor-wrap {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.home-page__sponsor-img {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: inline-block;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
 .home-page__group-filter {
   display: flex;
   align-items: center;
