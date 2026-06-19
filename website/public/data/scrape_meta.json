@@ -1,19 +1,19 @@
 {
-  "scrapedAt": "2026-06-10T12:07:02+00:00",
-  "websiteSyncAt": "2026-06-10T12:07:03Z",
-  "runStartedAt": "2026-06-10T12:00:04+00:00",
-  "runId": "scrapper_new_20260610T120004Z",
+  "scrapedAt": "2026-06-19T12:34:57+00:00",
+  "websiteSyncAt": "2026-06-19T12:34:57Z",
+  "runStartedAt": "2026-06-19T12:22:15+00:00",
+  "runId": "scrapper_new_20260619T122215Z",
   "scraperVersion": "scrapper_new-0.1.0",
   "siteReleaseVersion": "1.1.0",
   "source": "scrapper_new",
   "categoryCounts": {
-    "admit_cards": 473,
+    "admit_cards": 168,
     "blogs": 0,
-    "enrollments": 167,
-    "jobs": 26,
-    "news": 1617,
-    "results": 304,
-    "syllabus": 546
+    "enrollments": 103,
+    "jobs": 12,
+    "news": 724,
+    "results": 316,
+    "syllabus": 86
   },
-  "ciRunId": "27274663531"
+  "ciRunId": "27825235555"
 }
