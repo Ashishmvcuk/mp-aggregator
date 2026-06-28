@@ -25,12 +25,14 @@ export function Header() {
               decoding="async"
             />
           </Link>
-          <div className="sr-header__socials">
-            <SocialChannels size="md" />
+          <div className="sr-header__title-block">
+            <Link className="sr-header__logo" to="/">
+              All MP UNIVERSITY UPDATES <span className="sr-header__reg">®</span>
+            </Link>
+            <div className="sr-header__socials">
+              <SocialChannels size="md" />
+            </div>
           </div>
-          <Link className="sr-header__logo" to="/">
-            All MP UNIVERSITY UPDATES <span className="sr-header__reg">®</span>
-          </Link>
           <p className="sr-header__tagline">
             MP University Result {new Date().getFullYear()} — Dashboard for Madhya Pradesh university
             examination links
