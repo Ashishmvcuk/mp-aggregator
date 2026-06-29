@@ -53,6 +53,38 @@ export function HomePage() {
                   loading="lazy"
                 />
               </div>*/}
+              <div className="home-page__sponsor-wrap home-page__stickers">
+                <img
+                  src="/Sticker1.png"
+                  alt="Action sticker 1"
+                  className="home-page__sponsor-img"
+                  loading="lazy"
+                />
+                <a
+                  href="https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/Sticker2.png"
+                    alt="Action sticker 2"
+                    className="home-page__sponsor-img"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/Sticker3.png"
+                    alt="Action sticker 3"
+                    className="home-page__sponsor-img"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
               {!feeds.loading && (typeOptions.length > 0 || universityOptions.length > 0) && (
                 <div className="home-page__group-filter">
                   <label htmlFor="home-type-filter" className="home-page__group-filter-label">
