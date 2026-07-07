@@ -54,12 +54,18 @@ export function HomePage() {
                 />
               </div>*/}
               <div className="home-page__sponsor-wrap home-page__stickers">
-                <img
-                  src="/Sticker1.png"
-                  alt="Action sticker 1"
-                  className="home-page__sponsor-img"
-                  loading="lazy"
-                />
+                <a
+                  href="https://result.rgpv.ac.in/Result/ProgramSelect.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/Sticker1.png"
+                    alt="Action sticker 1"
+                    className="home-page__sponsor-img"
+                    loading="lazy"
+                  />
+                </a>
                 <a
                   href="https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx"
                   target="_blank"
