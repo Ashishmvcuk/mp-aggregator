@@ -79,7 +79,7 @@ export function HomePage() {
                   />
                 </a>
                 <a
-                  href="https://bubhopal.mponline.gov.in/Portal/Services/BARKATULLAH/Counterbase/Result/VeiwResult.aspx"
+                  href="https://result.rgpv.ac.in/Result/ProgramSelect.aspx"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
