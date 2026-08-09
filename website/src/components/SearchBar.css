@@ -27,16 +27,19 @@
 }
 
 .sr-search__row .sr-search__input {
-  flex: 1 1 280px;
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .sr-search__input {
   flex: 1;
-  min-width: 200px;
-  padding: 0.5rem 0.65rem;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
   font-size: 0.95rem;
   border: 1px solid #999;
-  border-radius: 2px;
+  border-radius: 4px;
   background: #fff;
 }
 
