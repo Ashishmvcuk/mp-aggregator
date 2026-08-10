@@ -45,15 +45,21 @@ export function HomePage() {
         <div className="home-page__container">
           <div className="home-page__layout">
             <div className="home-page__primary">
-              {/* <div className="home-page__sponsor-wrap">
-                <img
-                  src="/sponsors.png"
-                  alt="Our sponsors"
-                  className="home-page__sponsor-img"
-                  loading="lazy"
-                />
-              </div>*/}
-              <div className="home-page__sponsor-wrap home-page__stickers">
+               <div className="home-page__sponsor-wrap">
+                <a
+                  href="https://www.bubhopal.ac.in/1594/Online-Result"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/sponsors.png"
+                    alt="Our sponsors"
+                    className="home-page__sponsor-img"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              {/*<div className="home-page__sponsor-wrap home-page__stickers">
                 <a
                   href="https://result.rgpv.ac.in/Result/ProgramSelect.aspx"
                   target="_blank"
@@ -90,7 +96,7 @@ export function HomePage() {
                     loading="lazy"
                   />
                 </a>
-              </div>
+              </div>*/}
               {!feeds.loading && (typeOptions.length > 0 || universityOptions.length > 0) && (
                 <div className="home-page__group-filter">
                   <label htmlFor="home-type-filter" className="home-page__group-filter-label">
