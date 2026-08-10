@@ -3,49 +3,651 @@
     "university": "A.K.S. University",
     "title": "Curriculum Development",
     "url": "https://iqac.aksuniversity.ac.in/outcome-based-education-obe-curriculum/",
-    "date": "2026-08-05",
+    "date": "2026-08-08",
     "category": "syllabus"
   },
   {
     "university": "Abhyuday University",
     "title": "NIRF – 2026",
     "url": "http://abhyudayuniversity.edu.in/wp-content/uploads/2026/03/Final-Submission-NIRF-ABHYUDAY-UNIVERSITY20260224-.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
-    "university": "Jiwaji University",
-    "title": "Syllabus for Entrance Test 2026-27",
-    "url": "https://jiwaji.edu/assets/images/syllabus.pdf",
-    "date": "2026-08-07",
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Facebook",
+    "url": "https://www.facebook.com/LNCTUniversity",
+    "date": "2026-08-06",
     "category": "syllabus"
   },
   {
-    "university": "Jiwaji University",
-    "title": "Syllabus BCA NEP 2025-29 as per ordinance 14 (1)New",
-    "url": "https://jiwaji.edu/assets/images/BCA_2025-29-UPDATED.pdf",
-    "date": "2026-08-07",
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Twitter",
+    "url": "https://twitter.com/LNCTUniversity",
+    "date": "2026-08-06",
     "category": "syllabus"
   },
   {
-    "university": "Jiwaji University",
-    "title": "Syllabus NEP 2025-27 New",
-    "url": "https://jiwaji.edu/latest-syllabus-as-per-nep/syllabus-nep-2025-27",
-    "date": "2026-08-07",
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Youtube",
+    "url": "https://www.youtube.com/c/LNCTUniversity",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "About LNCTU",
+    "url": "https://lnctu.ac.in/about-us/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Eminent Faculties",
+    "url": "https://lnctu.ac.in/eminent-faculties/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Administration",
+    "url": "https://lnctu.ac.in/about-us/administration/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "University Ordinance",
+    "url": "https://lnctu.ac.in/ordinance/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Ranking and Recognition",
+    "url": "https://lnctu.ac.in/about-us/ranking-and-recognition/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Academic Calendar",
+    "url": "https://lnctu.ac.in/academic-calendar/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Grievance Redressal",
+    "url": "https://lnctu.ac.in/grievance-redressal/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Staff List 2025",
+    "url": "https://lnctbhopal.in/as.htm",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Architecture",
+    "url": "https://lnctu.ac.in/school-of-architecture/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Artificial Intelligence & Analytics UG/PG programs",
+    "url": "https://lnctu.ac.in/artificial-intelligence-machine-learning/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Commerce & Management",
+    "url": "https://lnctu.ac.in/school-of-commerce-economics/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Physical Education and Sports",
+    "url": "https://lnctu.ac.in/school-physical-education-sports/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Journalism & Mass Communication",
+    "url": "https://lnctu.ac.in/school-of-journalism-mass-communication/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Computer, Science & Technology",
+    "url": "https://lnctu.ac.in/school-of-engineering/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Hotel Management & Tourism",
+    "url": "https://lnctu.ac.in/school-of-hotel-management/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Legal Studies",
+    "url": "https://lnctu.ac.in/school-of-law/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "JK Paramedical College",
+    "url": "https://lnctu.ac.in/jk-paramedical-college/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Doc Verification : registrar@lnctu.ac.inMobile No : 9300925865",
+    "url": "https://lnctu.ac.in/school-of-medical-science/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Arts & Management",
+    "url": "https://lnctu.ac.in/school-of-management/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Nursing College",
+    "url": "https://lnctu.ac.in/school-of-nursing/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Pharmacy",
+    "url": "https://lnctu.ac.in/school-of-pharmacy/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Paramedical College",
+    "url": "https://lnctu.ac.in/school-of-paramedical-science/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Medical Allied Sciences",
+    "url": "https://lnctu.ac.in/school-of-science/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Humanities",
+    "url": "https://lnctu.ac.in/school-of-humanities/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Agriculture Science",
+    "url": "https://lnctu.ac.in/school-of-agriculture/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Ayurved College & Hospital",
+    "url": "https://lnctu.ac.in/school-of-ayurveda1/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Skill Development & Enterepreneurship",
+    "url": "https://lnctu.ac.in/school-skill-development-entrepreneurship/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "New Age UG & certificate Programs",
+    "url": "https://lnctu.ac.in/new-age-ug-certificate-programs/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "School of Pharmaceutical Sciences",
+    "url": "https://lnctu.ac.in/school-of-pharmaceutical-sciences/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Courses Offered",
+    "url": "https://lnctu.ac.in/courses-offered/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "CISCO Networking Academy",
+    "url": "https://lnct.ac.in/cisco-academy/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Application Procedure",
+    "url": "https://lnctu.ac.in/application-procedure/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU Scholarship",
+    "url": "https://lnctu.ac.in/scholarship/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU Overall",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2026/05/LNCTU_Overall.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU Innovation",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2026/05/LNCTU_innovation.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNMC Over All NIRF",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2024/03/LNCTU_Overall.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Medical College NIRF",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2026/05/LNCTU_Medical.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU Pharmacy",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2026/05/LNCTU_Pharmacy.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Nursing NIRF",
+    "url": "https://www.lnctu.ac.in/wp-content/uploads/NURSING_NIRF.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Education Loan",
+    "url": "https://lnctu.ac.in/education-loan/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "FAQ’s",
+    "url": "https://lnctu.ac.in/faqs-q/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Alumni Portel",
+    "url": "https://lnctu.ac.in/alumni/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Convocation 2K24",
+    "url": "https://lnctu.ac.in/convocation/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Synapse 2K23",
+    "url": "https://lnctu.ac.in/synapse-2023/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU NCC",
+    "url": "https://ncc.lnctu.ac.in/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Hostels",
+    "url": "https://lnctu.ac.in/hostels/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Classrooms",
+    "url": "https://lnctu.ac.in/classrooms/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Sports",
+    "url": "https://lnctu.ac.in/sports/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Libraries",
+    "url": "https://lnctu.ac.in/library/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Medicare",
+    "url": "https://lnctu.ac.in/medicare/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Auditorium",
+    "url": "https://lnctu.ac.in/auditorium/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Food and Cuisine",
+    "url": "https://lnctu.ac.in/food-and-cuisine/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Banks and ATMs",
+    "url": "https://lnctu.ac.in/banks-and-atms/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Transportation",
+    "url": "https://lnctu.ac.in/transportation/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Safety and Security",
+    "url": "https://lnctu.ac.in/safety-and-security/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Examination Login",
+    "url": "https://www.universitymanagementsystem.com/lnctbhopal",
+    "date": "2026-08-06",
     "category": "syllabus"
   },
   {
     "university": "LNCT UNIVERSITY BHOPAL",
     "title": "Promotion scheme",
     "url": "https://lnctu.ac.in/wp-content/uploads/2025/09/BBA-BCA-B.COM-B.Tech-CSE-AIML-Admitted-Batch-2023-and-Onwards-.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-06",
     "category": "syllabus"
   },
   {
     "university": "LNCT UNIVERSITY BHOPAL",
     "title": "Scheme and Syllabus",
     "url": "https://lnctu.ac.in/scheme-and-syllabus/",
-    "date": "2026-08-07",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "JK Hospital & Medical Research Centre",
+    "url": "https://lnctu.ac.in/j-k-hospital/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Medical College",
+    "url": "https://lnctu.ac.in/ln-medical-college/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "MARB Pro Forma",
+    "url": "https://lnctu.ac.in/marb-pro-forma/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNMC MSR",
+    "url": "https://lnctu.ac.in/lnmc-msr/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNMC Fees",
+    "url": "https://lnctu.ac.in/lnmc-fees/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LN Ayurved College",
+    "url": "https://lnctu.ac.in/lnac",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Covidwinners",
+    "url": "https://lnctu.ac.in/covidwinners/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "PhD Studies & Research",
+    "url": "https://lnctu.ac.in/phd/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Int-Student Cell",
+    "url": "https://lnctu.ac.in/international-students/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "About Cell",
+    "url": "https://lnctu.ac.in/us-international-cell/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Courses & Fees Structure",
+    "url": "https://lnctu.ac.in/international-student-courses-fees/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "New Student Registration",
+    "url": "https://lnctu.ac.in/international-students-online-apply/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Accreditation",
+    "url": "https://lnctu.ac.in/international-students-accreditation",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Pre and Post Arrival Information",
+    "url": "https://lnctu.ac.in/pre-post-arrival-information/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Important Information",
+    "url": "https://lnctu.ac.in/important-information/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Hostel Rules",
+    "url": "https://lnctu.ac.in/international-student-hostel-rules/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Hostel Fee",
+    "url": "https://lnctu.ac.in/international-student-hostel-fee/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Life @ LNCTU",
+    "url": "https://lnctu.ac.in/lifeatlnct/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "FAQ’s",
+    "url": "https://lnctu.ac.in/international-student-faqs/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Contact",
+    "url": "https://lnctu.ac.in/get-in-touch/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Online Fee Payment Instructions",
+    "url": "https://www.youtube.com/watch?v=nyQ525RMpIc&t=16s",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Update Profile",
+    "url": "https://www.lnctu.ac.in/software-registration-complete-process-students/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Employee Login",
+    "url": "https://accsoft.lnctu.ac.in/Accsoft2/login.aspx",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Online Payment",
+    "url": "https://accsoft.lnctu.ac.in/Accsoft2/studentLogin.aspx",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Contact",
+    "url": "https://lnctu.ac.in/contact/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Research",
+    "url": "https://lnctu.ac.in/phd",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "AICTE Scholarship",
+    "url": "https://fellowship.aicte.gov.in/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "UGC Mandatory Disclosures",
+    "url": "https://lnctu.ac.in/ugc-mandatory-disclosures/",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Convocation Notice",
+    "url": "https://lnctu.ac.in/wp-content/uploads/2025/12/Convocation-2025.pdf",
+    "date": "2026-08-06",
+    "category": "syllabus"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "LNCTU Blog",
+    "url": "https://blog.lnct.ac.in/",
+    "date": "2026-08-06",
     "category": "syllabus"
   },
   {
@@ -423,378 +1025,385 @@
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "National Service Scheme",
     "url": "https://gramodayachitrakoot.ac.in/nss/",
-    "date": "2026-08-07",
+    "date": "2026-08-08",
     "category": "syllabus"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Syllabus",
     "url": "https://gramodayachitrakoot.ac.in/student-corner/syllabus/",
-    "date": "2026-08-07",
+    "date": "2026-08-08",
     "category": "syllabus"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Under-Graduates",
     "url": "https://gramodayachitrakoot.ac.in/student-corner/ug-syllabus/",
-    "date": "2026-08-07",
+    "date": "2026-08-08",
     "category": "syllabus"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Undergraduate Courses",
     "url": "https://gramodayachitrakoot.ac.in/student-corner/ug-syllabus/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Postgraduate Courses",
     "url": "https://gramodayachitrakoot.ac.in/student-corner/post-graduates/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Research Courses",
     "url": "https://gramodayachitrakoot.ac.in/student-corner/research/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
     "title": "Syllabus for Open Elective and General Elective Courses 2026: AI Tools for Media & Happiness and Well-being (UG & PG Programs)",
     "url": "https://www.mcu.ac.in/wp-content/uploads/2026/04/oe-ge-notice-date-31-03-2026.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
     "title": "Syllabus for the PhD Entrance Examination 2026-27",
     "url": "https://www.mcu.ac.in/2026/03/29/syllabus-phd-entrance-2026/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "University Calendar 2026",
     "url": "https://meu.edu.in/wp-content/uploads/2026/06/University-calendar-July-to-Dec-2026.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "MPNRC Affiliation 2025-26",
     "url": "https://meu.edu.in/wp-content/uploads/2025/09/MPNRC-2025-26.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "MU Buzz January 2025 (Monthly E-Newsletter)",
     "url": "https://meu.edu.in/wp-content/uploads/2025/02/MU-BUZZ-JAN-EDITION-2025.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "MU Buzz February 2025 (Monthly E-Newsletter)",
     "url": "https://meu.edu.in/wp-content/uploads/2025/03/MU-BUZZ-FEB-EDITION-2025.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "MU Buzz March 2025 (Monthly E-Newsletter)",
     "url": "https://meu.edu.in/wp-content/uploads/2025/04/MU-BUZZ-MARCH-2025.pdf",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "Mandsaur University Men’s Football Team Selected for AIU Centre Zone Inter-University Championship 2025–26",
     "url": "https://meu.edu.in/mandsaur-university-mens-football-team-selected-for-aiu-centre-zone-inter-university-championship-2025-26/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Mandsaur University",
     "title": "Mandsaur University Clinches Two Bronze Medals in Woodball All India Inter-University Tournament at Madhyanchal Professional University Bhopal 2025-26",
     "url": "https://meu.edu.in/mandsaur-university-clinches-two-bronze-medals-in-woodball-all-india-inter-university-tournament-at-madhyanchal-professional-university-bhopal-2025-26/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "People's University",
     "title": "B.Tech Civil Engineering course details 2026 — full form, eligibility, admission, syllabus and career scope",
     "url": "https://www.peoplesuniversity.edu.in/b-tech-civil-engineering-course-details-2026-full-form-eligibility-admission-syllabus-and-career-scope/",
-    "date": "2026-08-07",
-    "category": "syllabus"
-  },
-  {
-    "university": "Raja Mansingh Tomar Music & Arts University",
-    "title": "Syllabus 2025-26",
-    "url": "https://rmtmusicandartsuniversity.com/Syllabus-2025-26",
-    "date": "2026-08-07",
-    "category": "syllabus"
-  },
-  {
-    "university": "Raja Mansingh Tomar Music & Arts University",
-    "title": "Academic Calendar 2025-26",
-    "url": "https://rmtmusicandartsuniversity.com/assets/images/academics/skm.pdf",
-    "date": "2026-08-07",
-    "category": "syllabus"
-  },
-  {
-    "university": "Raja Mansingh Tomar Music & Arts University",
-    "title": "दीक्षांत 2025",
-    "url": "https://rmtmusicandartsuniversity.com/Dikshanat-2025",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "LLB Course Guide 2026: Full Form, Eligibility, Fees, Subjects, Syllabus, Career & Top Colleges in Bhopal",
     "url": "https://www.samglobaluniversity.ac.in/llb-course-guide-2026-full-form-eligibility-fees-subjects-syllabus-career-top-colleges-in-bhopal/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
-    "title": "BCA in Cybersecurity: Subjects, Syllabus, Course Fees, Eligibility, Career & Salary (2026 Guide)",
-    "url": "https://www.samglobaluniversity.ac.in/bca-in-cybersecurity-subjects-syllabus-fees-eligibility-career-salary/",
-    "date": "2026-08-07",
+    "title": "Blog",
+    "url": "https://www.samglobaluniversity.ac.in/blog/",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
-    "title": "12th Boards Preparation Series (54)",
+    "title": "Print Media",
+    "url": "https://www.samglobaluniversity.ac.in/print-media/",
+    "date": "2026-08-10",
+    "category": "syllabus"
+  },
+  {
+    "university": "SAM Global University",
+    "title": "Sports",
+    "url": "https://www.samglobaluniversity.ac.in/sports/",
+    "date": "2026-08-10",
+    "category": "syllabus"
+  },
+  {
+    "university": "SAM Global University",
+    "title": "Placement Photos",
+    "url": "https://www.samglobaluniversity.ac.in/placement-photos/",
+    "date": "2026-08-10",
+    "category": "syllabus"
+  },
+  {
+    "university": "SAM Global University",
+    "title": "Our Achievement",
+    "url": "https://www.samglobaluniversity.ac.in/placements/our-achievement/",
+    "date": "2026-08-10",
+    "category": "syllabus"
+  },
+  {
+    "university": "SAM Global University",
+    "title": "12th Boards Preparation Series (57)",
     "url": "https://www.samglobaluniversity.ac.in/category/12th-boards-preparation-series/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
-    "title": "After 12th Careers (136)",
+    "title": "After 12th Careers (138)",
     "url": "https://www.samglobaluniversity.ac.in/category/after-12th-careers/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA Course Details",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-course-details/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA Cyber Security colleges",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-cyber-security-colleges/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA Cyber Security course",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-cyber-security-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA Cyber Security eligibility",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-cyber-security-eligibility/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA Cyber Security syllabus",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-cyber-security-syllabus/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA in Cyber Security",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-in-cyber-security/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA in Cyber Security fees",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-in-cyber-security-fees/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#BCA IT course",
     "url": "https://www.samglobaluniversity.ac.in/tag/bca-it-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Best cyber security course",
     "url": "https://www.samglobaluniversity.ac.in/tag/best-cyber-security-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Computer application course",
     "url": "https://www.samglobaluniversity.ac.in/tag/computer-application-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security careers India",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-careers-india/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security course after 12th",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-course-after-12th/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security degree",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-degree/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security engineer",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-engineer/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security future scope",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-future-scope/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security jobs 2026",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-jobs-2026/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security placement",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-placement/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Cyber Security salary India",
     "url": "https://www.samglobaluniversity.ac.in/tag/cyber-security-salary-india/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Digital security course",
     "url": "https://www.samglobaluniversity.ac.in/tag/digital-security-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Ethical Hacking course",
     "url": "https://www.samglobaluniversity.ac.in/tag/ethical-hacking-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Information Security course",
     "url": "https://www.samglobaluniversity.ac.in/tag/information-security-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "#Network Security course",
     "url": "https://www.samglobaluniversity.ac.in/tag/network-security-course/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "SAM Global University",
     "title": "Best Pharmacy Colleges in Bhopal – Courses, Fees, Admissions 2026",
     "url": "https://www.samglobaluniversity.ac.in/best-private-pharmacy-colleges-in-bhopal-courses-fees-admissions-2026/",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "M.Sc.Drugs and Pharmaceutical Chemistry (For 2 Year PG Programme) 2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1764227737-15037149616927fa994c1c3!M.Sc.Drugs%20and%20Pharmaceutical%20Chemistry%20(For%202%20Year%20PG%20Programme)%202025-26_compressed.pdf?1764227744",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "M.Sc.Drugs and Pharmaceutical Chemistry (For 1 Year PG Programme 2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1764227713-16728825586927fa814d7b6!M.Sc.Drugs%20and%20Pharmaceutical%20Chemistry%20(For%201%20Year%20PG%20Programme%202025-26_compressed.pdf?1764227744",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "MA (Criminology) I and II Sem (2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1758118258-102663725468cac172d6a28!MA_Criminology_1st___2nd_Sem_compressed.pdf?1758118263",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "M.Sc. (Forensic Sc.) 1 Yr. Program (2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1760003879-4337533968e787270d742!M.Sc._Forensic_Science__1_Year_Program_.pdf?1760003881",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "M.Sc. (Forensic Sc.) 2 Yr. Program (2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1760003865-63533034268e787197cce7!M.Sc._Forensic_Science__2_Year_Program__compressed.pdf?1760003881",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "B.Sc.(H) Forensic Sc. (2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1760003843-151109961968e7870359365!B.Sc.(Hons.)%20Forensic%20Science%201st%20&%202nd%20Sem._compressed.pdf?1760003881",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "B.Ed. Special Education (2025-26)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1756971569-204182986068b94231e544d!B.Ed.Spl._Education.pdf?1756971579",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   },
   {
     "university": "Vikram University",
     "title": "MBA (2025-27)",
     "url": "https://vikramuniv.ac.in/uploads/gallery/media/1758117562-163135760768cabeba2a490!MBA_Syllabus_2025-27_compressed.pdf?1758117564",
-    "date": "2026-08-07",
+    "date": "2026-08-10",
     "category": "syllabus"
   }
 ]
