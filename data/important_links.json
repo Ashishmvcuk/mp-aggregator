@@ -1,0 +1,482 @@
+[
+  {
+    "category": "Academics",
+    "organization": "University Grants Commission",
+    "websitelink": "https://www.ugc.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "Central Board Of Secondary Education",
+    "websitelink": "https://www.cbse.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "Delhi University",
+    "websitelink": "https://www.du.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "Jawaharlal Nehru University",
+    "websitelink": "https://www.jnu.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "National Council for Teacher Education",
+    "websitelink": "https://ncte.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "National Council for Educational Research & Training",
+    "websitelink": "https://ncert.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "Ministry of Education",
+    "websitelink": "https://www.education.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Academics",
+    "organization": "Academic Bank of Credits (ABC) ID / APAAR ID",
+    "websitelink": "https://www.abc.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Aviation",
+    "organization": "Directorate General of Civil Aviation",
+    "websitelink": "https://www.dgca.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Aviation",
+    "organization": "IATA training",
+    "websitelink": "https://www.iata.org/en/training/",
+    "logo": ""
+  },
+  {
+    "category": "Aviation",
+    "organization": "Ministry of Civil Aviation",
+    "websitelink": "https://www.civilaviation.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Aviation",
+    "organization": "Indira Gandhi Rashtriya Uran Akademi",
+    "websitelink": "https://igrua.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Banking",
+    "organization": "Reserve Bank of India",
+    "websitelink": "https://www.rbi.org.in/",
+    "logo": ""
+  },
+  {
+    "category": "Banking",
+    "organization": "State Bank of India",
+    "websitelink": "https://sbi.co.in/",
+    "logo": ""
+  },
+  {
+    "category": "Banking",
+    "organization": "NABARD",
+    "websitelink": "https://www.nabard.org/",
+    "logo": ""
+  },
+  {
+    "category": "Banking",
+    "organization": "EPFO",
+    "websitelink": "https://www.epfindia.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Banking",
+    "organization": "Department of Personal & Training",
+    "websitelink": "https://dopt.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Defence",
+    "organization": "National Defence Academy",
+    "websitelink": "https://nda.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Defence",
+    "organization": "Indian Army",
+    "websitelink": "https://indianarmy.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Defence",
+    "organization": "Join Indian Army",
+    "websitelink": "https://joinindianarmy.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Defence",
+    "organization": "Indian Air Force",
+    "websitelink": "https://indianairforce.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Defence",
+    "organization": "Indian Navy",
+    "websitelink": "https://indiannavy.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Engineering",
+    "organization": "All India Council of Technical Education",
+    "websitelink": "https://www.aicte-india.org/",
+    "logo": ""
+  },
+  {
+    "category": "Engineering",
+    "organization": "The Institutions of Engineers (India)",
+    "websitelink": "https://www.ieindia.org/",
+    "logo": ""
+  },
+  {
+    "category": "Engineering",
+    "organization": "IIT-Kharagpur",
+    "websitelink": "https://www.iitkgp.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Engineering",
+    "organization": "Bureau of Energy Efficiency",
+    "websitelink": "https://beeindia.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "The Institute Of Chartered Accountant",
+    "websitelink": "https://www.icai.org/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "The Institute Of Company Secretaries of India",
+    "websitelink": "https://www.icsi.edu/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "National Stock exchange of India",
+    "websitelink": "https://www.nseindia.com/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "Bombay Stock Exchange",
+    "websitelink": "https://www.bseindia.com/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "Indian Institute of Finance",
+    "websitelink": "https://www.iif.edu/",
+    "logo": ""
+  },
+  {
+    "category": "Finance/Accounts",
+    "organization": "Indian Institute of Statistical Institute",
+    "websitelink": "https://www.isical.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Hospitality",
+    "organization": "Incredible India",
+    "websitelink": "https://www.incredibleindia.org/",
+    "logo": ""
+  },
+  {
+    "category": "Hospitality",
+    "organization": "Ministry of Tourism",
+    "websitelink": "https://tourism.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "IT",
+    "organization": "NASSCOM",
+    "websitelink": "https://nasscom.in/",
+    "logo": ""
+  },
+  {
+    "category": "IT",
+    "organization": "Ministry of Electronics and IT",
+    "websitelink": "https://www.meity.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "IT",
+    "organization": "NIELIT",
+    "websitelink": "https://nielit.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "IT",
+    "organization": "Centre For Development of Advance Computing",
+    "websitelink": "https://www.cdac.in/",
+    "logo": ""
+  },
+  {
+    "category": "IT",
+    "organization": "Indian Institute of Technology Madras",
+    "websitelink": "https://www.iitm.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Law",
+    "organization": "Supreme Court of India",
+    "websitelink": "https://main.sci.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Law",
+    "organization": "Ministry of Law & Justice",
+    "websitelink": "https://lawmin.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Law",
+    "organization": "National Commission for Women",
+    "websitelink": "https://ncw.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Law",
+    "organization": "Central Administrative Tribunal",
+    "websitelink": "https://cgat.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Library Science",
+    "organization": "Raja Rammohun Roy Library foundation",
+    "websitelink": "https://rrrlf.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Library Science",
+    "organization": "National Archives Of India",
+    "websitelink": "https://nationalarchives.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Calcutta",
+    "websitelink": "https://www.iimcal.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Ahmedabad",
+    "websitelink": "https://www.iima.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Bangalore",
+    "websitelink": "https://www.iimb.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Lucknow",
+    "websitelink": "https://www.iiml.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Kohzikode",
+    "websitelink": "https://www.iimk.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Management",
+    "organization": "Indian Institute of Management Indore",
+    "websitelink": "https://www.iimidr.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Media",
+    "organization": "Indian Institute of Mass Commission",
+    "websitelink": "https://iimc.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Media",
+    "organization": "Publications Division",
+    "websitelink": "https://www.publicationsdivision.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Media",
+    "organization": "Doordarshan",
+    "websitelink": "https://prasarbharati.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Media",
+    "organization": "Directorate Of Advertising and Visual Publicity",
+    "websitelink": "https://cbcindia.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Media",
+    "organization": "Press Information Bureau",
+    "websitelink": "https://pib.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Medicine",
+    "organization": "Ministry of Health & Welfare",
+    "websitelink": "https://mohfw.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Medicine",
+    "organization": "Department of Ayurveda Yoga & Naturopathy Unani Siddha and Homoeopathy (AYUSH)",
+    "websitelink": "https://ayush.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Medicine",
+    "organization": "National Aids Control Organisation",
+    "websitelink": "https://naco.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Medicine",
+    "organization": "Armed Forces Medical College",
+    "websitelink": "https://afmc.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "Indian Railways",
+    "websitelink": "https://indianrailways.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "Ministry of Railways",
+    "websitelink": "https://indianrailways.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "IRCON",
+    "websitelink": "https://www.ircon.org/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "Indian Railway Catering and Tourism",
+    "websitelink": "https://www.irctc.co.in/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "Parivahan Sewa",
+    "websitelink": "https://parivahan.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Transportation",
+    "organization": "Jawaharlal Nehru Technological University",
+    "websitelink": "https://jntuh.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Trade",
+    "organization": "Indian Institute of Social Welfare and Business Management Kolkata",
+    "websitelink": "https://www.iiswbm.edu/",
+    "logo": ""
+  },
+  {
+    "category": "Trade",
+    "organization": "CSIR-UGC (NET)",
+    "websitelink": "https://csirnet.nta.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Trade",
+    "organization": "Indian Council of Medical Research",
+    "websitelink": "https://main.icmr.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Trade",
+    "organization": "Central Institute of Fisheries Nautical and Engineering Training",
+    "websitelink": "https://cifnet.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Science-IPR/PATENTS",
+    "organization": "Patent Office Govt of India",
+    "websitelink": "https://ipindia.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Science-IPR/PATENTS",
+    "organization": "Rajiv Gandhi National Institute of Intellectual Property Management",
+    "websitelink": "https://ipindia.gov.in/rgniipm.htm",
+    "logo": ""
+  },
+  {
+    "category": "Science-IPR/PATENTS",
+    "organization": "National Law University",
+    "websitelink": "https://nludelhi.ac.in/",
+    "logo": ""
+  },
+  {
+    "category": "Entrepreneurship",
+    "organization": "Central Marine Fisheries Research Institute Kochi",
+    "websitelink": "https://www.cmfri.org.in/",
+    "logo": ""
+  },
+  {
+    "category": "Entrepreneurship",
+    "organization": "Tata Institute of Social Sciences Mumbai",
+    "websitelink": "https://tiss.edu/",
+    "logo": ""
+  },
+  {
+    "category": "Entrepreneurship",
+    "organization": "Ministry of Labour & Employment",
+    "websitelink": "https://labour.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Entrepreneurship",
+    "organization": "StartUp India",
+    "websitelink": "https://www.startupindia.gov.in/",
+    "logo": ""
+  },
+  {
+    "category": "Pharmacy",
+    "organization": "Pharmacy Council of India",
+    "websitelink": "https://www.pci.nic.in/",
+    "logo": ""
+  },
+  {
+    "category": "Pharmacy",
+    "organization": "Jamia Hamdard",
+    "websitelink": "https://jamiahamdard.edu/",
+    "logo": ""
+  },
+  {
+    "category": "Pharmacy",
+    "organization": "National Institute of Pharmaceutical Education & Research (NIPER) S.A.S. Nagar Punjab",
+    "websitelink": "https://niper.gov.in/",
+    "logo": ""
+  }
+]
