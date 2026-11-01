@@ -1,0 +1,19 @@
+{
+  "scrapedAt": "2026-11-01T12:00:57+00:00",
+  "websiteSyncAt": "2026-11-01T12:00:57Z",
+  "runStartedAt": "2026-11-01T11:51:28+00:00",
+  "runId": "scrapper_new_20261101T115128Z",
+  "scraperVersion": "scrapper_new-0.1.0",
+  "siteReleaseVersion": "1.1.0",
+  "source": "scrapper_new",
+  "categoryCounts": {
+    "admit_cards": 280,
+    "blogs": 0,
+    "enrollments": 142,
+    "jobs": 24,
+    "news": 1251,
+    "results": 230,
+    "syllabus": 331
+  },
+  "ciRunId": "41303502999"
+}
