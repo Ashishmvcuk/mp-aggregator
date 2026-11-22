@@ -3,35 +3,84 @@
     "university": "A.K.S. University",
     "title": "Online Admission",
     "url": "https://admission.aksuniversity.ac.in/#/Online_Admission",
-    "date": "2026-11-10",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "A.K.S. University",
     "title": "Admission Process",
     "url": "https://www.aksuniversity.ac.in/admission-Process",
-    "date": "2026-11-10",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amity University",
+    "title": "Admission Prospectus Noida 2026",
+    "url": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amity University",
+    "title": "Admission Prospectus Patna - 2025",
+    "url": "https://www.amity.edu/pdf/admission_prospectus_bihar.pdf",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amity University",
+    "title": "Admission Prospectus Ranchi - 2026",
+    "url": "https://www.amity.edu/pdf/Admission-Prospectus-Ranchi2026.pdf",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amity University",
+    "title": "Admission Prospectus Mohali - 2026",
+    "url": "https://www.amity.edu/pdf/punjab-prospectus-2026.pdf",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Amity University",
+    "title": "Admission Prospectus Gurugram - 2025",
+    "url": "https://www.amity.edu/gurugram/pdf/amityprospectus2025.pdf",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Aryavart University",
     "title": "Admission-2026",
     "url": "https://aiuniversity.edu.in/admission-form.php",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Aryavart University",
     "title": "Registration 2026-27ENQUIRY NOW",
     "url": "https://admission.auindia.ac.in/enquiry",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Aryavart University",
     "title": "Admission 2026-27APPLY NOW",
     "url": "https://admission.auindia.ac.in/",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Atal Bihari Vajpayee Hindi Vishwavidyalaya",
+    "title": "विश्वविद्यालय के विभागों में संचालित पाठ्यक्रमों में प्रवेश के लिए आवेदन पत्र की रसीद( सत्र- 2026-27)",
+    "url": "https://abvhv.mponline.gov.in/Portal/Services/ABVHV/ADMISSION/EPravesh_AdmissionReceipt.aspx",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Notification Regarding Guest faculty Application form date extended",
+    "url": "https://bubhopal.ac.in/Site/Upload/467fdb4b-3b25-45d5-8d1a-a2cdd0464d36..pdf",
+    "date": "2026-11-13",
     "category": "enrollments"
   },
   {
@@ -50,261 +99,331 @@
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Apply for Ph.D. Entrance Test (DAVV DET -DEC-2026)",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Entrance/UTD-Entrance/Entrance/OTPVerificationPage_DET.aspx",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Pay-Unpaid/View Receipt Ph.D. Entrance Test (DAVVDET -DEC-2026)",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Entrance/UTD-Entrance/Entrance/MPHIL_PHD_PayUnpaidForm.aspx",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Apply for Ph.D.Registration Application Form-DEC-2026",
+    "url": "https://davv.mponline.gov.in/portal/Services/DAVV/Entrance/UTD-Entrance/Entrance/OTPVerificationPage_EXDET.aspx",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Pay-Unpaid/View Receipt for Ph.D.Registration Application Form-DEC-2026",
+    "url": "https://davv.mponline.gov.in/Portal/Services/DAVV/Entrance/UTD-Entrance/Entrance/MPHIL_PHD_PayUnpaidForm_EX.aspx",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "ENROLLMENT FORM MBA/BHM/BBA/BCA 2026",
+    "url": "https://davv.mponline.gov.in/portal/Services/DAVV/Affiliate/Admission/Adm_II.aspx?T=A",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
     "title": "Direct Merit Basis Admission Programmes 2026",
     "url": "https://www.dauniv.ac.in/direct-merit-basis-admission-programmes-2026",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
     "title": "Doctoral Entrance Test (DET - Dec., 2026)",
     "url": "https://www.dauniv.ac.in/det-dec2026",
-    "date": "2026-11-12",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "ADMISSION 2026",
-    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
-    "date": "2026-11-12",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "Ph.D Admissions 2025",
-    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
     "title": "Notice for UG (Session 2026-27) Admitted Student Regarding UTDs Hostel Admission Process",
     "url": "https://www.dauniv.ac.in/adminassets/pdf/07-03-2026_0539pm90550.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-25",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Admission Portal on SAMARTH is live for: MBA (ODL) and MCA (ODL)",
+    "url": "https://www.dauniv.ac.in/adminassets/pdf/06-19-2026_0306pm11199.pdf",
+    "date": "2026-11-25",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "ADMISSION 2026",
+    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "Ph.D Admissions 2025",
+    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr C V Raman University",
     "title": "Admission Open 2026-2027",
     "url": "https://cvrump.ac.in/enquiry-form",
-    "date": "2026-11-12",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
-    "title": "Admission",
-    "url": "https://dhsgsu.edu.in/index.php/en/n-admissionprocedure",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission 2026-27",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2026-27",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission 2025-26",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2025-26",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission 2024-25",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2024-25",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission 2023-24",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-2023-24",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission 2022-23",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/admission-procedure",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Brochure",
     "url": "https://dhsgsu.edu.in/index.php/en/admissions/entrance/brochure",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Admission procedure and facilities provided to International Student",
     "url": "https://dhsgsu.edu.in/index.php/en/international-students",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Guest House",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/guest-house",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Mental Health Counselling",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/mental-health-counselling",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Five Gems of the University (Museum)",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/five-gems-of-the-university-museum",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Remedial Coaching Centre",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/remedial-coaching-centre",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Bank",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/bank",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Post Office",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/post-office",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Indian Coffee House",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/indian-cafe-house",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Campus Residences",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/campus-residences",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "ICT Facilities",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/ict-facilities",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Botanical Garden",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/medicinal-plant-garden",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Medicinal Plant Garden",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/medicinal-plant-garden-2",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Swarna Jayanti Auditorium",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/swarna-jayanti-auditorium",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Kendriya Vidyalaya",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/kendriya-vidyalaya",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Dr. Harisingh Gour Vishwavidyalaya,SAGAR",
     "title": "Mahila Club",
     "url": "https://dhsgsu.edu.in/index.php/en/admission/mahila-club",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Gyanveer University",
     "title": "Admission Open for 2026-2027",
     "url": "https://www.gyanveeruniversity.edu.in/Pages/Registration.aspx",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Admission",
     "url": "https://www.iesuniversity.ac.in/admissions",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Admission Procedure",
     "url": "https://www.iesuniversity.ac.in/admission-process",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Scholarship & Education Loan",
     "url": "https://www.iesuniversity.ac.in/ies-admission/scholarship-education-loan-assistance",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Residential Facilities",
     "url": "https://www.iesuniversity.ac.in/ies-admission/residential-facilities",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Transportation Facilities",
     "url": "https://www.iesuniversity.ac.in/ies-admission/transportation-facilities",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Admission & Refund Policy",
     "url": "https://www.iesuniversity.ac.in/ies-admission/cancellation-refund-policy",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "How to Apply",
     "url": "https://www.iesuniversity.ac.in/international-cell/international-admission-policy-and-how-to-apply",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "Jaypee University of Engineering & Technology",
     "title": "Ph.D. Admission : Even Semester A.Y. 2026-27",
     "url": "https://www.juet.ac.in/jaypee/admission.php",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Jiwaji University",
+    "title": "Admission Notification 2026-27",
+    "url": "https://jiwaji.edu/assets/images/Admisstion_notification_2026-27.jpeg",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Jiwaji University",
+    "title": "Admission rules 2026-27",
+    "url": "https://jiwaji.edu/assets/images/AdmissionRulesinEnglish-FINAL.pdf",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Jiwaji University",
+    "title": "Admission notification parmedical courses 2025-26",
+    "url": "https://jiwaji.edu/assets/images/Admission_notification_for_paramedical_courses_2025-26.jpg",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "LNCT UNIVERSITY BHOPAL",
+    "title": "Admission 2026-27",
+    "url": "https://admissions.lnctu.ac.in/",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Lakshmibai National Institute of Physical Education",
+    "title": "Admission Info 2026",
+    "url": "https://www.lnipe.edu.in/sp_admission_info.php",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
@@ -521,126 +640,147 @@
     "university": "Madhyanchal Professional University",
     "title": "Ph.D. Entrance Exam-2026",
     "url": "http://65.1.88.18:3000/studentlogin",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
     "title": "UTD Admission Year 2026-27",
     "url": "https://mcbu.ac.in/admission",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "title": "Application Form For Eligibility Examination For PG Courses 2026-27",
+    "url": "https://mcbu.mponline.gov.in/Portal/Services/MCBU/Service_page.aspx?req=PG_ELIG",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Admission",
     "url": "https://gramodayachitrakoot.ac.in/category/admission/",
-    "date": "2026-11-12",
-    "category": "enrollments"
-  },
-  {
-    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
-    "title": "Admission Notification Session 2026-27 (Regular)",
-    "url": "https://gramodayachitrakoot.ac.in/2026/10/admission-notification-session-2026-27-regular/",
-    "date": "2026-11-12",
-    "category": "enrollments"
-  },
-  {
-    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
-    "title": "Date Extension Notice: Admission in Distance Education Programme Session 2026-27",
-    "url": "https://gramodayachitrakoot.ac.in/2026/10/admission-notice-distance-education-session-2026-27/",
-    "date": "2026-11-12",
+    "date": "2026-11-20",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Admission (Regular) label",
     "url": "https://gramodayachitrakootadm.samarth.edu.in/",
-    "date": "2026-11-12",
+    "date": "2026-11-20",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
-    "title": "Admission (Distance) label",
-    "url": "https://mgcgv.mponline.gov.in/Portal/Services/MGCGV/Dashboard.aspx",
-    "date": "2026-11-12",
+    "title": "Admission Notification Session 2026-27 (Regular)",
+    "url": "https://gramodayachitrakoot.ac.in/2026/10/admission-notification-session-2026-27-regular/",
+    "date": "2026-10-06",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
-    "title": "Notice related to admission in NTA-NCET (ITEP) Programmes 2026-27",
-    "url": "https://gramodayachitrakoot.ac.in/2026/09/cut-off-list-of-nta-ncet-itep-programmes-2026-27/",
-    "date": "2026-09-18",
-    "category": "enrollments"
-  },
-  {
-    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
-    "title": "Notice Related to Admission in B. Sc. (Honors) Ag. and M. Sc. (Ag.) 2026-27",
-    "url": "https://gramodayachitrakoot.ac.in/2026/09/notice-related-to-online-counselling-of-b-sc-honors-ag-and-m-sc-ag/",
-    "date": "2026-09-17",
+    "title": "Date Extension Notice: Admission in Distance Education Programme Session 2026-27",
+    "url": "https://gramodayachitrakoot.ac.in/2026/10/admission-notice-distance-education-session-2026-27/",
+    "date": "2026-10-01",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Notice & Merit List of M. Sc. Ag. Entrance Examination 2026-27",
     "url": "https://gramodayachitrakoot.ac.in/2026/08/merit-list-of-m-sc-ag-entrance-examination-2026-27/",
-    "date": "2026-11-12",
+    "date": "2026-11-20",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Application Form for Provisional Degree/Degree/Migration Certificate",
     "url": "https://gramodayachitrakoot.ac.in/2022/03/application-form-for-provisional-degree-degree-migration-certificate/",
-    "date": "2026-11-12",
+    "date": "2026-11-20",
+    "category": "enrollments"
+  },
+  {
+    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "title": "Notice related to admission in NTA-NCET (ITEP) Programmes 2026-27",
+    "url": "https://gramodayachitrakoot.ac.in/2026/09/cut-off-list-of-nta-ncet-itep-programmes-2026-27/",
+    "date": "2026-11-20",
+    "category": "enrollments"
+  },
+  {
+    "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
+    "title": "Notice Related to Admission in B. Sc. (Honors) Ag. and M. Sc. (Ag.) 2026-27",
+    "url": "https://gramodayachitrakoot.ac.in/2026/09/notice-related-to-online-counselling-of-b-sc-honors-ag-and-m-sc-ag/",
+    "date": "2026-11-20",
     "category": "enrollments"
   },
   {
     "university": "Makhanlal Chaturvedi National University of Journalism & Communication",
     "title": "संशोधित अधिसूचना : दिसंबर 2026–जनवरी 2027 परीक्षा सत्र हेतु परीक्षा आवेदन-पत्र जमा करने की अंतिम तिथि में संशोधन – दिनांक 04.11.2026",
     "url": "https://www.mcu.ac.in/2026/11/05/revised-notification-examform/",
-    "date": "2026-11-03",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Mandsaur University",
     "title": "Cancellation Policy 2026-27",
     "url": "https://meu.edu.in/wp-content/uploads/2026/05/Admission-Cancelation-Policy-2026-27_0001_0001.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Mansarovar Global University",
+    "title": "Ph.D. Entrance Examination- December 2026",
+    "url": "https://synques-dyn-cdn.s3.ap-south-1.amazonaws.com/mguindia.com/notifications_pdf/37.pdf",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Mansarovar Global University",
     "title": "Ph.D. Admission Notification 2026",
     "url": "https://synques-dyn-cdn.s3.ap-south-1.amazonaws.com/mguindia.com/notifications_pdf/34.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Mansarovar Global University",
     "title": "Ph.D. ADMISSION NOTIFICATION 2025",
     "url": "https://synques-dyn-cdn.s3.ap-south-1.amazonaws.com/mguindia.com/notifications_pdf/27.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Medi-Caps University",
     "title": "Ph.D Entrance Test 2027 - Notice",
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-test-2027-notice.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Medi-Caps University",
     "title": "Ph.D Entrance Test 2026-2027",
     "url": "https://www.medicaps.ac.in/uploads/images/phd-entrance-test-2026-27.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Nanaji Deshmukh Pashu Chikitsa Vigyan Vishwavidyalaya",
+    "title": "Spot counseling (offline) for admission Post Graduate Diploma Courses of the university for the session 2026 will be held on 12th November, 2026 in Kartavya Bhawan, Adhartal, Jabalpur.",
+    "url": "https://ndvsu.org/assets/images/important_alerts/PG_Diploma_Counseling_Notice_2026.pdf",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "National Law Institute University",
     "title": "Admission-2026",
     "url": "https://nliu.ac.in/admissions/",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Oriental University",
+    "title": "D. Pharma Exam Form Notice – Dec 2026",
+    "url": "https://oui.edu.in/d-pharma-exam-form-notice-dec-2026/",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
@@ -654,70 +794,105 @@
     "university": "People's University",
     "title": "Admission Open 2026-27",
     "url": "https://admissions.peoplesuniversity.edu.in/",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Prestige Institute of Management and Research (PIMR)",
     "title": "🚀 Admission Test on 10th May 2026 →",
     "url": "https://pimrindore.ac.in/admissions/pg-admission/",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "Admission 2025-26",
+    "url": "https://rmtmusicandartsuniversity.com/admission-2025-26",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Raja Mansingh Tomar Music & Arts University",
+    "title": "सत्र 2026-27 में नियमित प्रवेश मे समस्त विषय के एम.ए. कोर्स के Entrance Test के संबंध में।",
+    "url": "https://rmtmusicandartsuniversity.com/download/file/latest_news/M.A._Entrance_27.10-2026.pdf",
+    "date": "2026-11-21",
     "category": "enrollments"
   },
   {
     "university": "RKDF University",
     "title": "Admission Enquiry Form For Session 2026-2027 NEW",
     "url": "https://erplive.rkdf.ac.in/Enquiry/Enquiry",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "RKDF University",
     "title": "Online Student Admission Session 2026-2027 NEW",
     "url": "https://erplive.rkdf.ac.in/Home/OnlineStudent",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Shri Krishna University",
     "title": "Revised Notification for Ph.D. Entrance Exam Form 2026-27",
     "url": "https://www.skuindia.ac.in/content/upload/pdfs/revised-notification-for-phd-entrance-exam-form-2026-27.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Shri Krishna University",
     "title": "Notification for Ph.D. Entrance Exam Form 2026-27",
     "url": "https://www.skuindia.ac.in/content/upload/pdfs/Notification_for_Ph_D_Entrance_Exam_Form_2026_27.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Shri Krishna University",
     "title": "Ph.D. Entrance Exam 2025",
     "url": "https://www.skuindia.ac.in/content/upload/pdfs/phd-enterance-exam-2025.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Sri Aurobindo University",
     "title": "Notification for Exam Form Submission of M.B.B.S. Phase - I Supple Exam - November 2026",
     "url": "https://sriaurobindouniversity.edu.in/assets/notice/october-26/NOTIFICATION-Exam-Form-Submission-MBBS-Phase-I-Supple-Exam-November-2026.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Sri Aurobindo University",
     "title": "Notification for Exam Form Submission of B.D.S. 3rd & 4th Year Exam October-2026",
     "url": "https://sriaurobindouniversity.edu.in/assets/notice/september-26/Exam-Form-Submission-BDS-3rd-4th-Year-Exam-October-2026.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "category": "enrollments"
   },
   {
     "university": "Sri Aurobindo University",
     "title": "Notification for Exam Form Submission of M.D. - M.S. Final Year Sept 2026",
     "url": "https://sriaurobindouniversity.edu.in/assets/notice/august-26/Notification-Exam-Form-Submission-MD-MS-Final-Year-September-2026_compressed.pdf",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sri Satya Sai University of Technology & Medical Sciences",
+    "title": "Entrance Exam (2026-2027)",
+    "url": "https://sssutms.co.in/erp/Student/ceet",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sri Satya Sai University of Technology & Medical Sciences",
+    "title": "Admission 2026-27 Enquiry",
+    "url": "https://sssutms.co.in/cms/Website/Admission/Admission_Enquiry",
+    "date": "2026-11-22",
+    "category": "enrollments"
+  },
+  {
+    "university": "Vikram University",
+    "title": "Application for Ph.D. Admission 2026",
+    "url": "https://vikram.mponline.gov.in/portal/services/vikram/entrance/Entrance_Form.aspx",
+    "date": "2026-11-22",
     "category": "enrollments"
   }
 ]
