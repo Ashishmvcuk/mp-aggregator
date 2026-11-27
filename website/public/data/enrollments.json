@@ -14,13 +14,6 @@
     "category": "enrollments"
   },
   {
-    "university": "Aryavart University",
-    "title": "Admission-2026",
-    "url": "https://aiuniversity.edu.in/admission-form.php",
-    "date": "2026-11-27",
-    "category": "enrollments"
-  },
-  {
     "university": "Amity University",
     "title": "Admission Prospectus Noida 2026",
     "url": "https://amity.edu/pdf/Admission-Prospectus-2026.pdf",
@@ -57,6 +50,13 @@
   },
   {
     "university": "Aryavart University",
+    "title": "Admission-2026",
+    "url": "https://aiuniversity.edu.in/admission-form.php",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Aryavart University",
     "title": "Registration 2026-27ENQUIRY NOW",
     "url": "https://admission.auindia.ac.in/enquiry",
     "date": "2026-11-27",
@@ -77,9 +77,44 @@
     "category": "enrollments"
   },
   {
-    "university": "Barkatullaah University",
-    "title": "Notification Regarding Guest faculty Application form date extended",
-    "url": "https://bubhopal.ac.in/Site/Upload/467fdb4b-3b25-45d5-8d1a-a2cdd0464d36..pdf",
+    "university": "Bhabha University",
+    "title": "Admission Enquiry & Eligibility",
+    "url": "https://www.bhabhauniversity.edu.in/enquiry/",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Admission Process",
+    "url": "https://www.bhabhauniversity.edu.in/admission-process/",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Online Registration Form",
+    "url": "https://www.bhabhauniversity.edu.in/online-admission/",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Admission Helpline Numbers",
+    "url": "https://www.bhabhauniversity.edu.in/page/24/",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Prospectus 2024-25",
+    "url": "https://drive.google.com/file/d/1jhIfUzZbjtOWSCnYu77C0MM5C8U5vumt/view",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Bhabha University",
+    "title": "Chat on WhatsApp",
+    "url": "https://wa.me/919165025500?text=Hello+Bhabha+University%2C+I+have+an+admission+query.",
     "date": "2026-11-13",
     "category": "enrollments"
   },
@@ -95,6 +130,41 @@
     "title": "UG/PG Students Admission InformationClick here",
     "url": "https://cmchbhopal.com/student-info/ug-pg-students-admission-information",
     "date": "2026-10-24",
+    "category": "enrollments"
+  },
+  {
+    "university": "Barkatullaah University",
+    "title": "Notification Regarding Guest faculty Application form date extended",
+    "url": "https://bubhopal.ac.in/Site/Upload/467fdb4b-3b25-45d5-8d1a-a2cdd0464d36..pdf",
+    "date": "2026-11-13",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "ADMISSION 2026",
+    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Dharmashastra National Law University",
+    "title": "Ph.D Admissions 2025",
+    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Direct Merit Basis Admission Programmes 2026",
+    "url": "https://www.dauniv.ac.in/direct-merit-basis-admission-programmes-2026",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Devi Ahilya Vishwavidyalaya",
+    "title": "Doctoral Entrance Test (DET - Dec., 2026)",
+    "url": "https://www.dauniv.ac.in/det-dec2026",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
@@ -120,20 +190,6 @@
   },
   {
     "university": "Devi Ahilya Vishwavidyalaya",
-    "title": "Direct Merit Basis Admission Programmes 2026",
-    "url": "https://www.dauniv.ac.in/direct-merit-basis-admission-programmes-2026",
-    "date": "2026-11-27",
-    "category": "enrollments"
-  },
-  {
-    "university": "Devi Ahilya Vishwavidyalaya",
-    "title": "Doctoral Entrance Test (DET - Dec., 2026)",
-    "url": "https://www.dauniv.ac.in/det-dec2026",
-    "date": "2026-11-27",
-    "category": "enrollments"
-  },
-  {
-    "university": "Devi Ahilya Vishwavidyalaya",
     "title": "Notice for UG (Session 2026-27) Admitted Student Regarding UTDs Hostel Admission Process",
     "url": "https://www.dauniv.ac.in/adminassets/pdf/07-03-2026_0539pm90550.pdf",
     "date": "2026-11-25",
@@ -144,20 +200,6 @@
     "title": "Admission Portal on SAMARTH is live for: MBA (ODL) and MCA (ODL)",
     "url": "https://www.dauniv.ac.in/adminassets/pdf/06-19-2026_0306pm11199.pdf",
     "date": "2026-11-25",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "ADMISSION 2026",
-    "url": "https://www.mpdnlu.ac.in/clat-Admissions-2024.php",
-    "date": "2026-11-27",
-    "category": "enrollments"
-  },
-  {
-    "university": "Dharmashastra National Law University",
-    "title": "Ph.D Admissions 2025",
-    "url": "https://www.mpdnlu.ac.in/phd-admission-2025.php",
-    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
@@ -325,49 +367,49 @@
     "university": "I.E.S. University",
     "title": "Admission",
     "url": "https://www.iesuniversity.ac.in/admissions",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Admission Procedure",
     "url": "https://www.iesuniversity.ac.in/admission-process",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Scholarship & Education Loan",
     "url": "https://www.iesuniversity.ac.in/ies-admission/scholarship-education-loan-assistance",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Residential Facilities",
     "url": "https://www.iesuniversity.ac.in/ies-admission/residential-facilities",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Transportation Facilities",
     "url": "https://www.iesuniversity.ac.in/ies-admission/transportation-facilities",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "Admission & Refund Policy",
     "url": "https://www.iesuniversity.ac.in/ies-admission/cancellation-refund-policy",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "I.E.S. University",
     "title": "How to Apply",
     "url": "https://www.iesuniversity.ac.in/international-cell/international-admission-policy-and-how-to-apply",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
@@ -409,6 +451,13 @@
     "university": "LNCT UNIVERSITY BHOPAL",
     "title": "Admission 2026-27",
     "url": "https://admissions.lnctu.ac.in/",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "LNCT Vidhyapeeth University",
+    "title": "ADMISSIONS OPEN 2026-27",
+    "url": "https://lnctvu.ac.in/admission/",
     "date": "2026-11-27",
     "category": "enrollments"
   },
@@ -624,6 +673,13 @@
   },
   {
     "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
+    "title": "UTD Admission Year 2026-27",
+    "url": "https://mcbu.ac.in/admission",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Maharaja Chhatrasal Bundelkhand Vishwavidyalaya",
     "title": "Application Form For Eligibility Examination For PG Courses 2026-27",
     "url": "https://mcbu.mponline.gov.in/Portal/Services/MCBU/Service_page.aspx?req=PG_ELIG",
     "date": "2026-11-27",
@@ -661,14 +717,14 @@
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Notice & Merit List of M. Sc. Ag. Entrance Examination 2026-27",
     "url": "https://gramodayachitrakoot.ac.in/2026/08/merit-list-of-m-sc-ag-entrance-examination-2026-27/",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
     "university": "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya",
     "title": "Application Form for Provisional Degree/Degree/Migration Certificate",
     "url": "https://gramodayachitrakoot.ac.in/2022/03/application-form-for-provisional-degree-degree-migration-certificate/",
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "category": "enrollments"
   },
   {
@@ -742,9 +798,23 @@
     "category": "enrollments"
   },
   {
+    "university": "Oriental University",
+    "title": "D. Pharma Exam Form Notice – Dec 2026",
+    "url": "https://oui.edu.in/d-pharma-exam-form-notice-dec-2026/",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
     "university": "Pandit S N Shukla University",
     "title": "Admission Portal (2026-27)प्रवेश पोर्टल (2026-27)",
     "url": "https://ptsnsuonline.com/admission/",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "People's University",
+    "title": "Admission Open 2026-27",
+    "url": "https://admissions.peoplesuniversity.edu.in/",
     "date": "2026-11-27",
     "category": "enrollments"
   },
@@ -798,6 +868,55 @@
     "category": "enrollments"
   },
   {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "Ph.D. ADMISSIONS 2026-2027",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/admission?page=Ph.D.+ADMISSIONS+2026-2027",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "P. G. Admission 2026-27",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/admission?page=P.+G.+Admission+2026-27",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "P. G. Admission (CUET) 2026-27",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/admission?page=P.+G.+Admission+%28CUET%29+2026-27",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "Fee Link for Ph.D. Admission 2026",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/37",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "Ph.D.Admission Session 2026-27 List of Eligible/Not Eligible Candidates",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/35",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "Phase-II ADMISSION NOTIFICATION FOR ACADEMIC SESSION: 2026-27",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/17",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sanchi University of Buddhist-Indic Studies",
+    "title": "ADMISSION NOTIFICATION FOR ACADEMIC SESSION: 2026-27",
+    "url": "https://www.sanchiuniv.edu.in/newwebsite/site/news_details/8",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
     "university": "Shri Krishna University",
     "title": "Revised Notification for Ph.D. Entrance Exam Form 2026-27",
     "url": "https://www.skuindia.ac.in/content/upload/pdfs/revised-notification-for-phd-entrance-exam-form-2026-27.pdf",
@@ -843,6 +962,20 @@
     "university": "Vikram University",
     "title": "Application for Ph.D. Admission 2026",
     "url": "https://vikram.mponline.gov.in/portal/services/vikram/entrance/Entrance_Form.aspx",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sri Satya Sai University of Technology & Medical Sciences",
+    "title": "Entrance Exam (2026-2027)",
+    "url": "https://sssutms.co.in/erp/Student/ceet",
+    "date": "2026-11-27",
+    "category": "enrollments"
+  },
+  {
+    "university": "Sri Satya Sai University of Technology & Medical Sciences",
+    "title": "Admission 2026-27 Enquiry",
+    "url": "https://sssutms.co.in/cms/Website/Admission/Admission_Enquiry",
     "date": "2026-11-27",
     "category": "enrollments"
   }
